@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сервис заказа корпоративного транспорта</title>
+  <meta name="description" content="Кейс UX/UI-дизайнера: мобильное приложение заказа корпоративного транспорта. Внутренний продукт для крупного банка · NDA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Onest:wght@400;500&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero__eyebrow">
+        <p>Внутренний продукт для&nbsp;крупного банка · NDA</p>
+        <p>Экраны показаны с&nbsp;вымышленными данными</p>
+      </div>
+      <h1 class="hero__title">Сервис заказа корпоративного транспорта</h1>
+      <div class="hero__chips">
+        <span class="chip">Роль · UX/UI-дизайнер</span>
+        <span class="chip">Мобильное приложение</span>
+        <span class="chip">iOS / Android</span>
+      </div>
+      <div class="hero__showcase">
+        <img src="assets/hero-showcase.png" alt="Экраны приложения: карта с маршрутом и заказом транспорта, профиль сотрудника, QR-билет и закреплённый маршрут" width="1520" height="760">
+      </div>
+    </div>
+  </header>
+
+  <!-- Ticker -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span class="ticker__item">На&nbsp;работу → С&nbsp;работы · Предзаказ · Закреплённый маршрут ·&nbsp;</span>
+      <span class="ticker__item">На&nbsp;работу → С&nbsp;работы · Предзаказ · Закреплённый маршрут ·&nbsp;</span>
+      <span class="ticker__item">На&nbsp;работу → С&nbsp;работы · Предзаказ · Закреплённый маршрут ·&nbsp;</span>
+      <span class="ticker__item">На&nbsp;работу → С&nbsp;работы · Предзаказ · Закреплённый маршрут ·&nbsp;</span>
+    </div>
+  </div>
+
+  <!-- 01 · Контекст -->
+  <section class="section section--about">
+    <div class="container">
+      <div class="section__head">
+        <p class="kicker">01 · Контекст</p>
+        <h2 class="section__title">О продукте</h2>
+      </div>
+      <div class="about__cols">
+        <div class="about__left">
+          <p class="about__lead">Приложение для&nbsp;сотрудников компании: служебный транспорт до&nbsp;работы. Два сценария&nbsp;— персональный предзаказ с&nbsp;выбором направления, даты и&nbsp;времени или закреплённый служебный автобус, который назначается автоматически.</p>
+          <p class="about__body">Корпоративная развозка решает типовые задачи крупного работодателя: доступность офисов, куда сложно добраться общественным транспортом, предсказуемое начало смен и&nbsp;транспортная льгота как&nbsp;часть соцпакета. Приложение при&nbsp;этом даёт бизнесу то, чего не&nbsp;даёт «автобус по&nbsp;расписанию»: данные о&nbsp;реальном спросе для&nbsp;оптимизации маршрутов и&nbsp;контроль посадки по&nbsp;QR.</p>
+        </div>
+        <aside class="role-card">
+          <p class="role-card__label">Моя роль · спроектировала и&nbsp;отрисовала</p>
+          <ul class="role-card__list">
+            <li>Заказ транспорта</li>
+            <li>QR-билет</li>
+            <li>Профиль</li>
+            <li>Обращения в&nbsp;поддержку и&nbsp;оценка качества услуг</li>
+          </ul>
+          <p class="role-card__note">Корректировала пользовательские сценарии под&nbsp;бизнес-цели, провела конкурентный анализ.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 · Подход -->
+  <section class="section section--users">
+    <div class="container">
+      <div class="section__head">
+        <p class="kicker">02 · Подход</p>
+        <h2 class="section__title">Один интерфейс&nbsp;— два типа пользователей</h2>
+      </div>
+      <div class="users__cards">
+        <article class="user-card">
+          <div class="user-card__head">
+            <span class="user-card__badge">А</span>
+            <h3 class="user-card__title">Персональный предзаказ</h3>
+          </div>
+          <p class="user-card__body">Сотрудник сам выбирает направление и&nbsp;время&nbsp;— интерфейс строится вокруг формы заказа и&nbsp;подтверждённой поездки.</p>
+        </article>
+        <article class="user-card">
+          <div class="user-card__head">
+            <span class="user-card__badge">Б</span>
+            <h3 class="user-card__title">Закрепление за&nbsp;маршрутом</h3>
+          </div>
+          <p class="user-card__body">Транспорт назначает организация, поэтому сотруднику не&nbsp;нужно ничего делать. Интерфейс строится вокруг самого важного: маршрута на&nbsp;карте и&nbsp;времени прибытия.</p>
+        </article>
+      </div>
+      <blockquote class="quote">
+        <p>Я спроектировала оба сценария как&nbsp;единый пользовательский путь. Предзаказы помогают понять, где и&nbsp;когда людям регулярно нужен транспорт. Когда спрос становится стабильным, появляется постоянный маршрут.</p>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- 03 · Решения -->
+  <section class="section section--solutions">
+    <div class="container">
+      <div class="section__head">
+        <p class="kicker">03 · Решения</p>
+        <h2 class="section__title">Решения</h2>
+      </div>
+
+      <div class="solution">
+        <div class="solution__text">
+          <span class="solution__marker">01</span>
+          <h3 class="solution__title">Предзаказ&nbsp;— для&nbsp;сотрудников с&nbsp;нерегулярными поездками</h3>
+          <p class="solution__body">Сменные и&nbsp;гибридные графики, разовые поездки, работа в&nbsp;нетиповое время&nbsp;— для&nbsp;этих сценариев ежедневный маршрут избыточен. Предзаказ позволяет выбрать направление, дату и&nbsp;время подачи транспорта. Для&nbsp;бизнеса заявки делают нерегулярный спрос измеримым: транспорт назначается по&nbsp;фактической потребности, а&nbsp;не&nbsp;резервируется заранее.</p>
+        </div>
+        <div class="solution__phone">
+          <img src="assets/phone-preorder.png" alt="Экран предзаказа: выбор направления, даты и времени подачи транспорта" width="295" height="600">
+        </div>
+      </div>
+
+      <div class="solution solution--reverse">
+        <div class="solution__text">
+          <span class="solution__marker">02</span>
+          <h3 class="solution__title">Закреплённый маршрут&nbsp;— для&nbsp;регулярных поездок</h3>
+          <p class="solution__body">Сотрудники с&nbsp;постоянным графиком закрепляются за&nbsp;маршрутом с&nbsp;регулярными рейсами&nbsp;— транспорт назначается автоматически, ежедневные действия не&nbsp;требуются. Экран отвечает на&nbsp;главный вопрос&nbsp;— через сколько минут автобус прибудет на&nbsp;остановку; положение машины на&nbsp;карте и&nbsp;расписание каждой остановки доступны по&nbsp;касанию. Бизнес получает предсказуемую загрузку маршрутов и&nbsp;планирование по&nbsp;фактическим спискам.</p>
+        </div>
+        <div class="solution__phone">
+          <img src="assets/phone-route.png" alt="Экран закреплённого маршрута: карта с положением автобуса и время прибытия на остановку" width="295" height="600">
+        </div>
+      </div>
+
+      <div class="solution">
+        <div class="solution__text">
+          <span class="solution__marker">03</span>
+          <h3 class="solution__title">QR-билет&nbsp;— контроль посадки</h3>
+          <p class="solution__body">Водитель сканирует код при&nbsp;входе. Для&nbsp;компании это решает две задачи: транспортом пользуются только сотрудники&nbsp;— код привязан к&nbsp;учётной записи и&nbsp;автоматически обновляется, пересланный скриншот к&nbsp;моменту посадки уже недействителен,&nbsp;— а&nbsp;учёт поездок ведётся сам: кто, когда и&nbsp;каким рейсом, без&nbsp;бумажных списков.</p>
+        </div>
+        <div class="solution__phone">
+          <img src="assets/phone-qr.png" alt="Экран QR-билета для посадки в транспорт" width="295" height="600">
+        </div>
+      </div>
+
+      <div class="solution solution--reverse">
+        <div class="solution__text">
+          <span class="solution__marker">04</span>
+          <h3 class="solution__title">Обращения&nbsp;— с&nbsp;контекстом поездки</h3>
+          <p class="solution__body">Вместо свободного текста&nbsp;— структурированные данные. Поездка из&nbsp;истории, тип обращения и&nbsp;фото позволяют диспетчеру быстрее обрабатывать заявки, а&nbsp;бизнесу&nbsp;— анализировать качество маршрутов и&nbsp;работу перевозчиков. Шаг выбора поездки можно пропустить: не&nbsp;каждый вопрос связан с&nbsp;поездкой.</p>
+        </div>
+        <div class="solution__phone solution__phone--wide">
+          <img src="assets/phones-support.png" alt="Два экрана обращения в поддержку: выбор поездки из истории и форма обращения" width="570" height="560">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 · Логика продукта -->
+  <section class="section section--logic">
+    <div class="container">
+      <p class="kicker kicker--light">04 · Логика продукта&nbsp;— как&nbsp;сценарии связаны</p>
+      <div class="logic__diagram">
+        <div class="logic__step">
+          <img class="logic__dot" src="assets/step-dot.svg" alt="" width="24" height="24">
+          <p>Сотрудник заказывает поездки вручную</p>
+        </div>
+        <div class="logic__line"></div>
+        <div class="logic__step">
+          <img class="logic__dot" src="assets/step-dot.svg" alt="" width="24" height="24">
+          <p>Система видит регулярность</p>
+        </div>
+        <div class="logic__line"></div>
+        <div class="logic__step logic__step--active">
+          <img class="logic__dot" src="assets/step-dot-active.svg" alt="" width="24" height="24">
+          <p>Постоянный маршрут&nbsp;— заказывать ничего не&nbsp;нужно</p>
+        </div>
+      </div>
+      <p class="logic__statement">Чем дольше живёт продукт, тем меньше действий требует.</p>
+    </div>
+  </section>
+
+</body>
+</html>
