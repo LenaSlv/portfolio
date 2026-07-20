@@ -42,6 +42,17 @@ img {
   margin-inline: auto;
 }
 
+/* ─── Плашка черновика ─── */
+
+.draft-banner {
+  background: var(--green-light);
+  color: #0b1c10;
+  text-align: center;
+  padding: 14px 24px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
 /* ─── Hero ─── */
 
 .hero {
@@ -71,6 +82,14 @@ img {
   line-height: 1.06;
   letter-spacing: -0.02em;
   color: var(--text-light);
+}
+
+.hero__subtitle {
+  font-weight: 500;
+  font-size: clamp(18px, 1.3vw, 24px);
+  line-height: 1.5;
+  color: var(--text-muted-dark);
+  max-width: 780px;
 }
 
 .hero__chips {
@@ -439,6 +458,148 @@ img {
   color: var(--text-light);
 }
 
+/* ─── Черновик v2: 00 · Задача ─── */
+
+.section--problem {
+  background: var(--bg-page);
+  padding-bottom: 0;
+}
+
+.problem__text {
+  max-width: 920px;
+}
+
+.problem__text p {
+  font-weight: 500;
+  font-size: clamp(21px, 1.6vw, 30px);
+  line-height: 1.5;
+  color: var(--text-dark);
+}
+
+/* ─── Черновик v2: Моя роль — разделение ─── */
+
+.role-split {
+  display: flex;
+  gap: 32px;
+  align-items: stretch;
+  margin-bottom: 32px;
+}
+
+.role-block {
+  flex: 1;
+  min-width: 0;
+  border-radius: 24px;
+  padding: 40px 44px;
+}
+
+.role-block--given {
+  background: var(--bg-card);
+}
+
+.role-block--authored {
+  background: #fff;
+  border: 2px solid var(--green);
+}
+
+.role-block__label {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.14px;
+  margin-bottom: 24px;
+}
+
+.role-block--given .role-block__label {
+  color: var(--text-secondary);
+}
+
+.role-block--authored .role-block__label {
+  color: var(--green);
+}
+
+.role-block__list {
+  list-style: none;
+}
+
+.role-block__list li {
+  position: relative;
+  padding-left: 26px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.role-block__list li + li {
+  margin-top: 20px;
+}
+
+.role-block__list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-muted-dark);
+}
+
+.role-block--authored .role-block__list li {
+  color: var(--text-dark);
+}
+
+.role-block--authored .role-block__list li::before {
+  background: var(--green);
+}
+
+/* ─── Черновик v2: метка авторства на карточке решения ─── */
+
+.solution__badge {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--green);
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.13px;
+  color: var(--green);
+  margin-bottom: 16px;
+}
+
+/* ─── Черновик v2: финал с контактом ─── */
+
+.section--final {
+  background: var(--bg-dark);
+}
+
+.final__statement {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(26px, 2.2vw, 42px);
+  line-height: 1.35;
+  color: var(--text-light);
+  max-width: 900px;
+  margin-bottom: 40px;
+}
+
+.final__contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  border: 1px solid var(--chip-border);
+  border-radius: 999px;
+  padding: 16px 28px;
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+.final__contact:hover {
+  border-color: var(--green-light);
+  color: var(--green-light);
+}
+
 /* ─── Адаптив ─── */
 
 @media (max-width: 1200px) {
@@ -465,6 +626,11 @@ img {
 
   .solution__phone--wide img {
     width: 79%;
+  }
+
+  .role-split {
+    flex-direction: column;
+    gap: 24px;
   }
 }
 
