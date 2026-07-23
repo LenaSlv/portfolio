@@ -113,6 +113,7 @@ img {
   background: #050b08;
   border-radius: 28px;
   overflow: hidden;
+  position: relative;
 }
 
 .hero__showcase img {
@@ -149,33 +150,86 @@ img {
 
 .hero__phones {
   position: relative;
-  height: 480px;
+  height: 520px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  padding: 32px 40px 0;
+  padding: 40px 40px 0;
 }
 
 .hero__showcase .hero__phone {
-  width: 230px;
+  width: 260px;
   height: auto;
   border-radius: 32px;
+  filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.55));
+}
+
+.hero__card {
   position: absolute;
-  bottom: 0;
-  filter: drop-shadow(0 30px 50px rgba(0, 0, 0, 0.5));
-}
-
-.hero__phone--back {
-  left: calc(50% - 210px);
-  transform: rotate(-8deg);
-  z-index: 1;
-}
-
-.hero__phone--front {
-  left: calc(50% - 20px);
-  bottom: -12px;
-  transform: rotate(6deg);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(18, 24, 20, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 14px 18px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
   z-index: 2;
+}
+
+.hero__card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 999px;
+  background: rgba(62, 204, 110, 0.12);
+}
+
+.hero__card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hero__card-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted-dark);
+}
+
+.hero__card-value {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text-light);
+}
+
+.hero__card-status {
+  margin-left: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--green-light);
+  white-space: nowrap;
+}
+
+.hero__card-status--ok {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--green-light);
+}
+
+.hero__card--route {
+  left: 4%;
+  top: 18%;
+}
+
+.hero__card--qr {
+  right: 4%;
+  bottom: 14%;
 }
 
 /* ─── Ticker ─── */
@@ -713,20 +767,32 @@ img {
   }
 
   .hero__phones {
-    height: 320px;
+    height: 420px;
     padding: 24px 24px 0;
   }
 
   .hero__showcase .hero__phone {
-    width: 160px;
+    width: 170px;
   }
 
-  .hero__phone--back {
-    left: calc(50% - 145px);
+  .hero__card {
+    padding: 10px 14px;
+    gap: 8px;
   }
 
-  .hero__phone--front {
-    left: calc(50% - 15px);
+  .hero__card-icon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .hero__card--route {
+    left: 2%;
+    top: 10%;
+  }
+
+  .hero__card--qr {
+    right: 2%;
+    bottom: 8%;
   }
 
   .users__cards {
