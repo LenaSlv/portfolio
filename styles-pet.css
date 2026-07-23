@@ -1,0 +1,576 @@
+/* Кейс «Транспортное приложение для Калининградской области» — вёрстка по макету Figma (фрейм 1067:4645, «CASE · Транспортное приложение · Editorial atlas») */
+
+:root {
+  --bg-dark: #050810;
+  --bg-base: #0a0e16;
+  --bg-surface: #141b27;
+  --border-default: #252f40;
+  --text-primary: #eef2f7;
+  --text-secondary: #7f8c9f;
+  --accent-soft-bg: #aecbee;
+  --accent-soft-text: #0a0e16;
+
+  --bg-light: #f4f6fa;
+  --surface-light: #ffffff;
+  --border-light: #e2e7ef;
+  --text-primary-light: #0e1626;
+  --text-secondary-light: #5a6675;
+  --accent-blue: #2f6fe0;
+
+  --font-heading: 'Unbounded', sans-serif;
+  --font-text: 'Onest', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bg-dark);
+  font-family: var(--font-text);
+  color: var(--text-primary);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1248px;
+  margin-inline: auto;
+}
+
+/* ─── 01 · Обложка ─── */
+
+.pet-hero {
+  background: linear-gradient(109deg, #090e1c 2%, #0e172e 58%, #05060e 98%);
+  padding: 112px max(24px, calc((100vw - 1248px) / 2)) 72px;
+}
+
+.pet-hero .container > * + * {
+  margin-top: 28px;
+}
+
+.pet-hero__title {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: clamp(32px, 4.4vw, 58px);
+  line-height: 1.12;
+  color: var(--text-primary);
+}
+
+.pet-hero__lead {
+  font-weight: 400;
+  font-size: clamp(18px, 1.6vw, 26px);
+  line-height: 1.45;
+  color: var(--text-secondary);
+  max-width: 940px;
+}
+
+.pet-hero__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+.pet-hero__showcase {
+  border-radius: 28px;
+  overflow: hidden;
+  background: #04060e;
+}
+
+/* ─── Общие элементы секций ─── */
+
+.pet-section {
+  padding: 112px max(24px, calc((100vw - 1248px) / 2));
+}
+
+.pet-section > .container > * + * {
+  margin-top: 32px;
+}
+
+.pet-kicker {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 24px;
+  padding: 12px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  width: fit-content;
+}
+
+.pet-kicker--soft {
+  background: var(--accent-soft-bg);
+  color: var(--accent-soft-text);
+}
+
+.pet-kicker--accent {
+  background: var(--accent-blue);
+  color: #ffffff;
+}
+
+.pet-section__title {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(28px, 3.2vw, 42px);
+  line-height: 1.2;
+  color: var(--text-primary);
+  max-width: 1160px;
+}
+
+.pet-section__lead {
+  font-weight: 400;
+  font-size: clamp(18px, 1.5vw, 24px);
+  line-height: 1.5;
+  color: var(--text-secondary);
+  max-width: 1040px;
+}
+
+.pet-section__lead--wide {
+  max-width: 1248px;
+  font-size: clamp(17px, 1.4vw, 22px);
+}
+
+.pet-section--light {
+  background: var(--bg-light);
+}
+
+.pet-section--light .pet-section__title {
+  color: var(--text-primary-light);
+}
+
+.pet-section--light .pet-section__lead {
+  color: var(--text-secondary-light);
+}
+
+.pet-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: 28px;
+  padding: 24px;
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.24);
+}
+
+.pet-card__title {
+  font-family: var(--font-text);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.3;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+}
+
+.pet-card__body {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+/* ─── 02 · Проблема ─── */
+
+.pet-section--problem {
+  background: var(--bg-base);
+}
+
+.pet-problem-cards {
+  display: flex;
+  gap: 24px;
+}
+
+.pet-problem-cards .pet-card {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ─── 01 · Продуктовые гипотезы ─── */
+
+.pet-hypotheses {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.pet-hyp-card {
+  background: var(--surface-light);
+  border: 1px solid var(--border-light);
+  border-radius: 28px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.pet-hyp-card__title {
+  font-family: var(--font-text);
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 1.3;
+  color: var(--text-primary-light);
+}
+
+.pet-hyp-card__label {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.3;
+  color: var(--accent-blue);
+  margin-top: -8px;
+}
+
+.pet-hyp-card__body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-secondary-light);
+}
+
+.pet-hyp-card__value {
+  display: flex;
+  gap: 12px;
+}
+
+.pet-hyp-value {
+  flex: 1;
+  min-width: 0;
+  background: var(--bg-light);
+  border-radius: 18px;
+  padding: 12px 14px;
+}
+
+.pet-hyp-value__label {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.3;
+  color: var(--accent-blue);
+  margin-bottom: 5px;
+}
+
+.pet-hyp-value__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--text-primary-light);
+}
+
+.pet-hyp-card__solution {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--text-secondary-light);
+}
+
+/* ─── 03 · Основной User Flow ─── */
+
+.pet-section--flow {
+  background: var(--bg-base);
+}
+
+.pet-flow-image {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+/* ─── 04/05 · Решения (виртуальная карта / межгород) ─── */
+
+.pet-section--proof {
+  background: var(--bg-light);
+}
+
+.pet-proof-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+
+.pet-proof-row {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.pet-proof-row--reverse {
+  flex-direction: row-reverse;
+}
+
+.pet-proof-row .pet-hyp-card {
+  flex: 1;
+  min-width: 0;
+}
+
+.pet-proof-card {
+  flex: 1;
+  min-width: 0;
+  background: var(--surface-light);
+  border: 1px solid var(--border-light);
+  border-radius: 48px;
+  box-shadow: 0 22px 25px rgba(9, 14, 28, 0.12);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.pet-proof-card img {
+  border-radius: 24px;
+}
+
+.pet-proof-card figcaption {
+  font-family: var(--font-text);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.45;
+  color: var(--text-secondary-light);
+  text-align: center;
+}
+
+/* ─── 05 · Межгород ─── */
+
+.pet-section--intercity {
+  background: var(--bg-base);
+}
+
+.pet-wide-hyp {
+  display: flex;
+  gap: 48px;
+  background: #1d2737;
+  border: 1px solid var(--accent-soft-bg);
+  border-radius: 32px;
+  padding: 36px;
+}
+
+.pet-wide-hyp__head {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.pet-wide-hyp__eyebrow {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--accent-soft-bg);
+}
+
+.pet-wide-hyp__title {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.35;
+  color: var(--text-primary);
+}
+
+.pet-wide-hyp__body {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.pet-wide-hyp__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
+.pet-wide-hyp__value {
+  display: flex;
+  gap: 12px;
+}
+
+.pet-wide-value {
+  flex: 1;
+  min-width: 0;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 18px 20px;
+}
+
+.pet-wide-value__label {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.3;
+  color: var(--accent-soft-bg);
+  margin-bottom: 8px;
+}
+
+.pet-wide-value__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--text-primary);
+}
+
+.pet-wide-hyp__solution {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.pet-screens-panel {
+  background: #1d2737;
+  border: 1px solid var(--border-default);
+  border-radius: 48px;
+  box-shadow: 0 22px 50px -14px rgba(0, 0, 0, 0.28);
+  padding: 36px;
+  display: flex;
+  justify-content: center;
+}
+
+.pet-screens-panel img {
+  border-radius: 24px;
+}
+
+/* ─── 06 · Крайние случаи ─── */
+
+.pet-section--edge {
+  background: var(--bg-light);
+}
+
+.pet-screens-panel--light {
+  background: #1d2737;
+}
+
+/* ─── 07 · Как собран кейс ─── */
+
+.pet-section--about-case {
+  background: #0f172a;
+  padding: 72px max(24px, calc((100vw - 1248px) / 2));
+}
+
+.pet-section--about-case > .container > * + * {
+  margin-top: 24px;
+}
+
+.pet-about-case__title {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  font-size: clamp(26px, 2.8vw, 38px);
+  line-height: 1.2;
+  color: #f7f9fd;
+}
+
+.pet-about-case__lead {
+  font-weight: 400;
+  font-size: clamp(16px, 1.3vw, 20px);
+  line-height: 1.45;
+  color: #aeb9cc;
+}
+
+.pet-about-case__cards {
+  display: flex;
+  gap: 20px;
+}
+
+.pet-about-card {
+  flex: 1;
+  min-width: 0;
+  background: #18243c;
+  border: 1px solid #2a3a57;
+  border-radius: 28px;
+  padding: 20px;
+  box-shadow: 0 14px 34px -10px rgba(9, 14, 28, 0.1);
+}
+
+.pet-about-card__num {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.2;
+  color: #74a7ff;
+  margin-bottom: 10px;
+}
+
+.pet-about-card__title {
+  font-family: var(--font-text);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.25;
+  color: #f7f9fd;
+  margin-bottom: 10px;
+}
+
+.pet-about-card__body {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.45;
+  color: #aeb9cc;
+}
+
+.pet-nda-note {
+  background: var(--accent-blue);
+  border-radius: 20px;
+  padding: 18px 22px;
+  box-shadow: 0 12px 28px -10px rgba(47, 111, 224, 0.22);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.25;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* ─── Адаптив ─── */
+
+@media (max-width: 1100px) {
+  .pet-problem-cards,
+  .pet-hypotheses,
+  .pet-about-case__cards {
+    grid-template-columns: 1fr;
+    flex-direction: column;
+  }
+
+  .pet-proof-row,
+  .pet-proof-row--reverse {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .pet-wide-hyp {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .pet-wide-hyp__head {
+    width: auto;
+  }
+
+  .pet-screens-panel {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 900px) {
+  .pet-hero {
+    padding-top: 72px;
+    padding-bottom: 48px;
+  }
+
+  .pet-section,
+  .pet-section--about-case {
+    padding-block: 64px;
+  }
+
+  .pet-hero__meta {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .pet-hyp-card__value,
+  .pet-wide-hyp__value {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Транспортное приложение для Калининградской области</title>
+  <meta name="description" content="Кейс продуктового дизайнера: сервис для транспортной карты, городских поездок и билетов на межгород. Концепция на основе реального проекта под NDA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Onest:wght@400;500&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles-pet.css">
+</head>
+<body>
+
+  <!-- 01 · Обложка -->
+  <header class="pet-hero">
+    <div class="container">
+      <h1 class="pet-hero__title">Транспортное приложение<br>для Калининградской области</h1>
+      <p class="pet-hero__lead">Спроектировала единый сервис для транспортной карты, оплаты городских поездок и покупки билетов на межгород.</p>
+      <p class="pet-hero__meta">
+        <span>Роль · продуктовый дизайнер</span>
+        <span>Платформы · iOS / Android</span>
+        <span>Формат · концепция на основе реального проекта под NDA</span>
+      </p>
+      <div class="pet-hero__showcase">
+        <img src="assets/hero-showcase-pet.png" alt="Экраны приложения: карта города с транспортом, мои карты, выбор рейса на межгород и билет с QR-кодом" width="1248" height="630">
+      </div>
+    </div>
+  </header>
+
+  <!-- 01 · Проблема -->
+  <section class="pet-section pet-section--problem">
+    <div class="container">
+      <p class="pet-kicker pet-kicker--soft">01 · Проблема</p>
+      <h2 class="pet-section__title">Чтобы оплатить поездку, приходится<br>разбираться в нескольких сервисах</h2>
+      <p class="pet-section__lead">Я живу в Калининградской области и сама сталкиваюсь с этим сценарием. Для онлайн-оплаты обычных поездок есть только Telegram-бот, карта оформляется и пополняется офлайн, а межгород остаётся отдельным сценарием. Эти наблюдения стали отправной точкой гипотез.</p>
+      <div class="pet-problem-cards">
+        <article class="pet-card">
+          <h3 class="pet-card__title">Обычные поездки — через бота</h3>
+          <p class="pet-card__body">Отдельного приложения нет: онлайн-оплата поездок доступна только через Telegram-бот.</p>
+        </article>
+        <article class="pet-card">
+          <h3 class="pet-card__title">Карта и пополнение — офлайн</h3>
+          <p class="pet-card__body">Карту нужно оформлять лично и пополнять только офлайн — это требует отдельной поездки.</p>
+        </article>
+        <article class="pet-card">
+          <h3 class="pet-card__title">Межгород — отдельный сценарий</h3>
+          <p class="pet-card__body">Поиск рейса и покупка билета не связаны с оплатой обычных поездок.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02 · Продуктовые гипотезы -->
+  <section class="pet-section pet-section--light pet-section--hypotheses">
+    <div class="container">
+      <p class="pet-kicker pet-kicker--accent">02 · Продуктовые гипотезы</p>
+      <h2 class="pet-section__title">От проблем —<br>к продуктовым решениям</h2>
+      <p class="pet-section__lead pet-section__lead--wide">Сформулировала четыре гипотезы: каждая связывает проблему текущего сценария с решением, ценностью для пассажира и продукта. Проверка гипотез — следующий этап развития концепции.</p>
+
+      <div class="pet-hypotheses">
+        <article class="pet-hyp-card">
+          <h3 class="pet-hyp-card__title">Карта без кассы</h3>
+          <p class="pet-hyp-card__label">Гипотеза</p>
+          <p class="pet-hyp-card__body">Если виртуальную транспортную карту можно выпустить в приложении, пассажир сможет начать пользоваться сервисом без поездки в кассу и получения пластика.</p>
+          <div class="pet-hyp-card__value">
+            <div class="pet-hyp-value">
+              <p class="pet-hyp-value__label">Пассажиру</p>
+              <p class="pet-hyp-value__text">Быстрый старт без визита в кассу.</p>
+            </div>
+            <div class="pet-hyp-value">
+              <p class="pet-hyp-value__label">Продукту</p>
+              <p class="pet-hyp-value__text">Меньше барьеров на старте сценария.</p>
+            </div>
+          </div>
+          <p class="pet-hyp-card__solution">Решение: виртуальная карта выпускается в приложении.</p>
+        </article>
+
+        <article class="pet-hyp-card">
+          <h3 class="pet-hyp-card__title">Карта сейчас, пополнение позже</h3>
+          <p class="pet-hyp-card__label">Гипотеза</p>
+          <p class="pet-hyp-card__body">Если отделить выпуск карты от первого пополнения, пассажир сможет подготовить карту заранее и вернуться к оплате, когда появится поездка. Это может снизить барьер входа в сервис.</p>
+          <div class="pet-hyp-card__value">
+            <div class="pet-hyp-value">
+              <p class="pet-hyp-value__label">Пассажиру</p>
+              <p class="pet-hyp-value__text">Карта готова заранее, деньги можно внести перед поездкой.</p>
+            </div>
+            <div class="pet-hyp-value">
+              <p class="pet-hyp-value__label">Продукту</p>
+              <p class="pet-hyp-value__text">Меньше отказов на этапе выпуска карты.</p>
+            </div>
+          </div>
+          <p class="pet-hyp-card__solution">Решение: карта выпускается сразу, пополнение становится отдельным шагом.</p>
+        </article>
+
+        <article class="pet-hyp-card">
+          <h3 class="pet-hyp-card__title">Баланс или абонемент</h3>
+          <p class="pet-hyp-card__label">Гипотеза</p>
+          <p class="pet-hyp-card__body">Если предложить баланс для разовых поездок и абонемент для регулярных, пассажир сможет выбрать подходящую модель оплаты.</p>
+          <div class="pet-hyp-card__value">
+            <div class="pet-hyp-value">
+              <p class="pet-hyp-value__label">Пассажиру</p>
+              <p class="pet-hyp-value__text">Оплата соответствует частоте поездок.</p>
+            </div>
+            <div class="pet-hyp-value">
+              <p class="pet-hyp-value__label">Продукту</p>
+              <p class="pet-hyp-value__text">Поддержка разных сценариев использования.</p>
+            </div>
+          </div>
+          <p class="pet-hyp-card__solution">Решение: выбор между балансом и абонементом.</p>
+        </article>
+
+        <article class="pet-hyp-card">
+          <h3 class="pet-hyp-card__title">Межгород без кассы</h3>
+          <p class="pet-hyp-card__label">Гипотеза</p>
+          <p class="pet-hyp-card__body">Если добавить поиск и покупку билетов на межгород в приложение, пассажир сможет заранее спланировать поездку и оплатить её без визита в кассу.</p>
+          <div class="pet-hyp-card__value">
+            <div class="pet-hyp-value">
+              <p class="pet-hyp-value__label">Пассажиру</p>
+              <p class="pet-hyp-value__text">Расписание и покупка доступны в одном месте.</p>
+            </div>
+            <div class="pet-hyp-value">
+              <p class="pet-hyp-value__label">Продукту</p>
+              <p class="pet-hyp-value__text">Больше операций в цифровом канале.</p>
+            </div>
+          </div>
+          <p class="pet-hyp-card__solution">Решение: поиск рейса и покупка билета в приложении.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 · Основной User Flow -->
+  <section class="pet-section pet-section--flow">
+    <div class="container">
+      <p class="pet-kicker pet-kicker--soft">03 · Основной User Flow</p>
+      <h2 class="pet-section__title">Пользовательские сценарии:<br>карта и межгород</h2>
+      <p class="pet-section__lead">Два сквозных сценария включают основные действия, продуктовые развилки и крайние случаи: выпуск без оплаты, переименование карты, историю поездок, последнюю поездку по абонементу и восстановление после отсутствия рейсов.</p>
+      <div class="pet-flow-image">
+        <img src="assets/flow-diagram-pet.png" alt="Схема пользовательских путей: сценарий транспортной карты и поездок (выбор типа карты, оплата, поездка) и сценарий межгорода (поиск рейса, покупка билета)" width="1328" height="1112">
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 · Виртуальная карта -->
+  <section class="pet-section pet-section--light pet-section--proof">
+    <div class="container">
+      <p class="pet-kicker pet-kicker--accent">04 · Виртуальная карта</p>
+      <h2 class="pet-section__title">Виртуальная карта —<br>без кассы и оплаты на старте</h2>
+      <p class="pet-section__lead">Карта выпускается прямо в приложении: не нужно идти за пластиком или сразу пополнять счёт. Если карта уже есть, её можно привязать по номеру и быстро пополнять онлайн.</p>
+
+      <div class="pet-proof-rows">
+        <div class="pet-proof-row">
+          <article class="pet-hyp-card">
+            <h3 class="pet-hyp-card__title">Карта без кассы</h3>
+            <p class="pet-hyp-card__label">Гипотеза</p>
+            <p class="pet-hyp-card__body">Если виртуальную транспортную карту можно выпустить в приложении, пассажир сможет начать пользоваться сервисом без поездки в кассу и получения пластика.</p>
+            <div class="pet-hyp-card__value">
+              <div class="pet-hyp-value">
+                <p class="pet-hyp-value__label">Пассажиру</p>
+                <p class="pet-hyp-value__text">Быстрый старт без визита в кассу.</p>
+              </div>
+              <div class="pet-hyp-value">
+                <p class="pet-hyp-value__label">Продукту</p>
+                <p class="pet-hyp-value__text">Меньше барьеров на старте сценария.</p>
+              </div>
+            </div>
+            <p class="pet-hyp-card__solution">Решение: виртуальная карта выпускается в приложении.</p>
+          </article>
+          <figure class="pet-proof-card">
+            <img src="assets/solution1-proof-1.png" alt="Экраны: выбор виртуальной карты и переход к выпуску" width="686" height="692">
+            <figcaption>Выбор виртуальной карты и переход к выпуску</figcaption>
+          </figure>
+        </div>
+
+        <div class="pet-proof-row pet-proof-row--reverse">
+          <article class="pet-hyp-card">
+            <h3 class="pet-hyp-card__title">Карта сейчас, пополнение позже</h3>
+            <p class="pet-hyp-card__label">Гипотеза</p>
+            <p class="pet-hyp-card__body">Если отделить выпуск карты от первого пополнения, пассажир сможет подготовить карту заранее и вернуться к оплате, когда появится поездка. Это может снизить барьер входа в сервис.</p>
+            <div class="pet-hyp-card__value">
+              <div class="pet-hyp-value">
+                <p class="pet-hyp-value__label">Пассажиру</p>
+                <p class="pet-hyp-value__text">Карта готова заранее, деньги можно внести перед поездкой.</p>
+              </div>
+              <div class="pet-hyp-value">
+                <p class="pet-hyp-value__label">Продукту</p>
+                <p class="pet-hyp-value__text">Меньше отказов на этапе выпуска карты.</p>
+              </div>
+            </div>
+            <p class="pet-hyp-card__solution">Решение: карта выпускается сразу, пополнение становится отдельным шагом.</p>
+          </article>
+          <figure class="pet-proof-card">
+            <img src="assets/solution1-proof-2.png" alt="Экран: выпуск карты без обязательного пополнения" width="686" height="692">
+            <figcaption>Выпуск карты без обязательного пополнения</figcaption>
+          </figure>
+        </div>
+
+        <div class="pet-proof-row">
+          <article class="pet-hyp-card">
+            <h3 class="pet-hyp-card__title">Баланс или абонемент</h3>
+            <p class="pet-hyp-card__label">Гипотеза</p>
+            <p class="pet-hyp-card__body">Если предложить баланс для разовых поездок и абонемент для регулярных, пассажир сможет выбрать подходящую модель оплаты.</p>
+            <div class="pet-hyp-card__value">
+              <div class="pet-hyp-value">
+                <p class="pet-hyp-value__label">Пассажиру</p>
+                <p class="pet-hyp-value__text">Оплата соответствует частоте поездок.</p>
+              </div>
+              <div class="pet-hyp-value">
+                <p class="pet-hyp-value__label">Продукту</p>
+                <p class="pet-hyp-value__text">Поддержка разных сценариев использования.</p>
+              </div>
+            </div>
+            <p class="pet-hyp-card__solution">Решение: выбор между балансом и абонементом.</p>
+          </article>
+          <figure class="pet-proof-card">
+            <img src="assets/solution1-proof-3.png" alt="Экраны: выбор между абонементом и балансом" width="686" height="692">
+            <figcaption>Выбор между абонементом и балансом</figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 · Межгород -->
+  <section class="pet-section pet-section--intercity">
+    <div class="container">
+      <p class="pet-kicker pet-kicker--soft">05 · Межгород</p>
+      <h2 class="pet-section__title">Покупка билета на межгород —<br>по знакомой логике поиска</h2>
+      <p class="pet-section__lead">Путь строится от направления и даты к реальным вариантам рейсов. До оплаты пассажир видит время, пересадки и точку отправления, а недавний маршрут помогает повторить поездку.</p>
+
+      <div class="pet-wide-hyp">
+        <div class="pet-wide-hyp__head">
+          <p class="pet-wide-hyp__eyebrow">Продуктовая гипотеза</p>
+          <h3 class="pet-wide-hyp__title">Один заказ<br>для всей поездки</h3>
+        </div>
+        <div class="pet-wide-hyp__body">
+          <p class="pet-wide-hyp__text">Если объединить билеты на все участки межгородского маршрута с пересадкой в один заказ, пассажиру будет проще управлять поездкой и быстро находить нужный билет на каждом этапе.</p>
+          <div class="pet-wide-hyp__value">
+            <div class="pet-wide-value">
+              <p class="pet-wide-value__label">Пассажиру</p>
+              <p class="pet-wide-value__text">Весь маршрут, время пересадки и QR-коды доступны в одном месте.</p>
+            </div>
+            <div class="pet-wide-value">
+              <p class="pet-wide-value__label">Продукту</p>
+              <p class="pet-wide-value__text">Меньше риска путаницы и обращений в поддержку.</p>
+            </div>
+          </div>
+          <p class="pet-wide-hyp__solution">Один заказ объединяет поездку, но для каждого рейса может сохраняться отдельный билет и QR-код.</p>
+        </div>
+      </div>
+
+      <div class="pet-screens-panel">
+        <img src="assets/intercity-screens-1.png" alt="Экраны: недавние маршруты для повтора поездки, сравнение рейсов по времени и цене, список билетов на вкладке «Мои билеты»" width="1320" height="832">
+      </div>
+
+      <div class="pet-wide-hyp">
+        <div class="pet-wide-hyp__head">
+          <p class="pet-wide-hyp__eyebrow">Продуктовая гипотеза</p>
+          <h3 class="pet-wide-hyp__title">Понятный выбор<br>до оплаты</h3>
+        </div>
+        <div class="pet-wide-hyp__body">
+          <p class="pet-wide-hyp__text">Если до оплаты показать время, стоимость, пересадки, точку отправления и весь маршрут, пассажиру будет проще сравнить рейсы и выбрать подходящий вариант без возвратов к поиску.</p>
+          <div class="pet-wide-hyp__value">
+            <div class="pet-wide-value">
+              <p class="pet-wide-value__label">Пассажиру</p>
+              <p class="pet-wide-value__text">Условия поездки понятны до покупки билета.</p>
+            </div>
+            <div class="pet-wide-value">
+              <p class="pet-wide-value__label">Продукту</p>
+              <p class="pet-wide-value__text">Меньше отказов из-за неожиданных пересадок или непонятных деталей.</p>
+            </div>
+          </div>
+          <p class="pet-wide-hyp__solution">Решение: основные параметры показаны в списке рейсов, а полный маршрут доступен до оплаты.</p>
+        </div>
+      </div>
+
+      <div class="pet-screens-panel">
+        <img src="assets/intercity-screens-2.png" alt="Экраны: оформление билета с пересадкой и стоимостью, детали маршрута до оплаты, готовый билет с QR-кодом" width="1320" height="832">
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 · Крайние случаи -->
+  <section class="pet-section pet-section--light pet-section--edge">
+    <div class="container">
+      <p class="pet-kicker pet-kicker--accent">06 · Крайние случаи</p>
+      <h2 class="pet-section__title">Edge cases и состояния</h2>
+      <p class="pet-section__lead">Для каждого риска показываю не только сообщение, но и понятный путь восстановления: пополнить баланс, продлить абонемент, перейти к номеру карты или выбрать другую дату.</p>
+      <div class="pet-screens-panel pet-screens-panel--light">
+        <img src="assets/edge-cases-panel.png" alt="Экраны крайних случаев: предупреждение об окончании абонемента, предложение продлить абонемент после последней поездки, сообщение об отсутствии рейсов с ближайшими датами" width="1320" height="847">
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 · Как собран кейс -->
+  <section class="pet-section pet-section--about-case">
+    <div class="container">
+      <h2 class="pet-about-case__title">Основан на реальном опыте,<br>пересобран как самостоятельный продукт</h2>
+      <p class="pet-about-case__lead">Основа кейса — мой опыт работы над реальным транспортным продуктом под NDA. Оригинальный проект, его интерфейсы и детали я не могу публиковать, поэтому для портфолио создала самостоятельную концепцию. Я полностью переработала UI, пересобрала ключевые сценарии и адаптировала продуктовую логику к реалиям Калининградской области.</p>
+
+      <div class="pet-about-case__cards">
+        <article class="pet-about-card">
+          <p class="pet-about-card__num">01</p>
+          <h3 class="pet-about-card__title">Что сохранилось</h3>
+          <p class="pet-about-card__body">Опыт работы с транспортной предметной областью и понимание реальных продуктовых ограничений.</p>
+        </article>
+        <article class="pet-about-card">
+          <p class="pet-about-card__num">02</p>
+          <h3 class="pet-about-card__title">Что переосмыслено</h3>
+          <p class="pet-about-card__body">Пользовательские потоки, логика виртуальной карты, баланс, абонементы, межгород и обработка ошибок.</p>
+        </article>
+        <article class="pet-about-card">
+          <p class="pet-about-card__num">03</p>
+          <h3 class="pet-about-card__title">Что создано заново</h3>
+          <p class="pet-about-card__body">UI, визуальная система, структура приложения, тексты, экраны и вымышленные данные.</p>
+        </article>
+      </div>
+
+      <p class="pet-nda-note">Кейс не воспроизводит закрытый продукт и не раскрывает данные заказчика</p>
+    </div>
+  </section>
+
+</body>
+</html>
