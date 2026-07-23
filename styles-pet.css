@@ -49,7 +49,7 @@ img {
 
 .pet-hero {
   background: linear-gradient(109deg, #090e1c 2%, #0e172e 58%, #05060e 98%);
-  padding: 112px max(24px, calc((100vw - 1248px) / 2)) 72px;
+  padding: 80px max(24px, calc((100vw - 1248px) / 2)) 56px;
 }
 
 .pet-hero .container > * + * {
@@ -91,7 +91,7 @@ img {
 /* ─── Общие элементы секций ─── */
 
 .pet-section {
-  padding: 112px max(24px, calc((100vw - 1248px) / 2));
+  padding: 72px max(24px, calc((100vw - 1248px) / 2));
 }
 
 .pet-section > .container > * + * {
@@ -301,15 +301,6 @@ img {
   gap: 14px;
 }
 
-.pet-proof-card figcaption {
-  font-family: var(--font-text);
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 1.45;
-  color: var(--text-secondary-light);
-  text-align: center;
-}
-
 /* ─── 05 · Межгород ─── */
 
 .pet-section--intercity {
@@ -413,7 +404,7 @@ img {
 
 .pet-section--about-case {
   background: #0f172a;
-  padding: 72px max(24px, calc((100vw - 1248px) / 2));
+  padding: 56px max(24px, calc((100vw - 1248px) / 2));
 }
 
 .pet-section--about-case > .container > * + * {
@@ -517,13 +508,13 @@ img {
 
 @media (max-width: 900px) {
   .pet-hero {
-    padding-top: 72px;
-    padding-bottom: 48px;
+    padding-top: 56px;
+    padding-bottom: 40px;
   }
 
   .pet-section,
   .pet-section--about-case {
-    padding-block: 64px;
+    padding-block: 48px;
   }
 
   .pet-hero__meta {
