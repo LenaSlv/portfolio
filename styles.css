@@ -119,6 +119,65 @@ img {
   width: 100%;
 }
 
+.hero__meta {
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+  padding: 40px 40px 32px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero__meta-item {
+  flex: 1;
+  min-width: 140px;
+}
+
+.hero__meta-label {
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.13px;
+  text-transform: uppercase;
+  color: var(--text-muted-dark);
+  margin-bottom: 8px;
+}
+
+.hero__meta-value {
+  font-weight: 500;
+  font-size: 17px;
+  color: var(--text-light);
+}
+
+.hero__phones {
+  position: relative;
+  height: 480px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 32px 40px 0;
+}
+
+.hero__showcase .hero__phone {
+  width: 230px;
+  height: auto;
+  border-radius: 32px;
+  position: absolute;
+  bottom: 0;
+  filter: drop-shadow(0 30px 50px rgba(0, 0, 0, 0.5));
+}
+
+.hero__phone--back {
+  left: calc(50% - 210px);
+  transform: rotate(-8deg);
+  z-index: 1;
+}
+
+.hero__phone--front {
+  left: calc(50% - 20px);
+  bottom: -12px;
+  transform: rotate(6deg);
+  z-index: 2;
+}
+
 /* ─── Ticker ─── */
 
 .ticker {
@@ -645,6 +704,29 @@ img {
 
   .hero .container > * + * {
     margin-top: 40px;
+  }
+
+  .hero__meta {
+    flex-direction: column;
+    gap: 20px;
+    padding: 28px 24px 24px;
+  }
+
+  .hero__phones {
+    height: 320px;
+    padding: 24px 24px 0;
+  }
+
+  .hero__showcase .hero__phone {
+    width: 160px;
+  }
+
+  .hero__phone--back {
+    left: calc(50% - 145px);
+  }
+
+  .hero__phone--front {
+    left: calc(50% - 15px);
   }
 
   .users__cards {
