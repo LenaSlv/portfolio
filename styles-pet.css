@@ -275,10 +275,6 @@ img {
   background: var(--bg-base);
 }
 
-.pet-flow-image {
-  border-radius: 24px;
-  overflow: hidden;
-}
 
 /* ─── 04/05 · Решения (виртуальная карта / межгород) ─── */
 
@@ -310,19 +306,10 @@ img {
 .pet-proof-card {
   flex: 1;
   min-width: 0;
-  background: var(--surface-light);
-  border: 1px solid var(--border-light);
-  border-radius: 48px;
-  box-shadow: 0 22px 25px rgba(9, 14, 28, 0.12);
-  padding: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 14px;
-}
-
-.pet-proof-card img {
-  border-radius: 24px;
 }
 
 .pet-proof-card figcaption {
@@ -423,27 +410,14 @@ img {
 }
 
 .pet-screens-panel {
-  background: #1d2737;
-  border: 1px solid var(--border-default);
-  border-radius: 48px;
-  box-shadow: 0 22px 50px -14px rgba(0, 0, 0, 0.28);
-  padding: 36px;
   display: flex;
   justify-content: center;
-}
-
-.pet-screens-panel img {
-  border-radius: 24px;
 }
 
 /* ─── 06 · Крайние случаи ─── */
 
 .pet-section--edge {
   background: var(--bg-light);
-}
-
-.pet-screens-panel--light {
-  background: #1d2737;
 }
 
 /* ─── 07 · Как собран кейс ─── */
