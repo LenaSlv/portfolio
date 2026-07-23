@@ -49,7 +49,7 @@ img {
 
 .pet-hero {
   background: linear-gradient(109deg, #090e1c 2%, #0e172e 58%, #05060e 98%);
-  padding: 80px max(24px, calc((100vw - 1248px) / 2)) 56px;
+  padding: 80px max(24px, calc((100vw - 1248px) / 2)) 24px;
 }
 
 .pet-hero .container > * + * {
@@ -509,7 +509,7 @@ img {
 @media (max-width: 900px) {
   .pet-hero {
     padding-top: 56px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
 
   .pet-section,
