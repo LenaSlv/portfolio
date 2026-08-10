@@ -3,215 +3,265 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Сервис заказа корпоративного транспорта</title>
-  <meta name="description" content="Кейс UX/UI-дизайнера: мобильное приложение заказа корпоративного транспорта. Внутренний продукт для крупного банка · NDA.">
+  <title>Елена Сулоева — Product designer</title>
+  <meta name="description" content="Портфолио продуктового дизайнера: B2B-сервисы и B2C-продукты, CRM, дашборды и мобильные приложения.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&family=Onest:wght@400;500&family=Unbounded:wght@500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geologica:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles-site.css">
 </head>
 <body>
 
-  <!-- Hero -->
-  <header class="hero">
-    <div class="container">
-      <div class="hero__eyebrow">
-        <p>Внутренний продукт для&nbsp;крупного банка · NDA</p>
-        <p>Экраны показаны с&nbsp;вымышленными данными</p>
-      </div>
-      <h1 class="hero__title">Сервис заказа корпоративного транспорта</h1>
-      <div class="hero__showcase">
-        <div class="hero__meta">
-          <div class="hero__meta-item">
-            <p class="hero__meta-label">Роль</p>
-            <p class="hero__meta-value">UX/UI-дизайнер</p>
-          </div>
-          <div class="hero__meta-item">
-            <p class="hero__meta-label">Платформа</p>
-            <p class="hero__meta-value">iOS / Android</p>
-          </div>
-          <div class="hero__meta-item">
-            <p class="hero__meta-label">Формат</p>
-            <p class="hero__meta-value">Мобильное приложение</p>
-          </div>
-        </div>
-        <div class="hero__phones">
-          <div class="hero__card hero__card--route" aria-hidden="true">
-            <span class="hero__card-icon">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <path d="M9 1.5C5.96 1.5 3.5 3.96 3.5 7c0 4.2 5.5 9.5 5.5 9.5s5.5-5.3 5.5-9.5c0-3.04-2.46-5.5-5.5-5.5Z" stroke="#3ecc6e" stroke-width="1.4"/>
-                <circle cx="9" cy="7" r="2" stroke="#3ecc6e" stroke-width="1.4"/>
-              </svg>
-            </span>
-            <span class="hero__card-text">
-              <span class="hero__card-label">Автобус №42</span>
-              <span class="hero__card-value">Через 4 мин</span>
-            </span>
-            <span class="hero__card-status">В пути</span>
-          </div>
-          <img class="hero__phone" src="assets/phone-route.png" alt="Экран закреплённого маршрута: карта с положением автобуса и время прибытия на остановку" width="295" height="600">
-          <div class="hero__card hero__card--qr" aria-hidden="true">
-            <span class="hero__card-icon">
-              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
-                <rect x="2" y="2" width="5" height="5" rx="1" stroke="#3ecc6e" stroke-width="1.4"/>
-                <rect x="11" y="2" width="5" height="5" rx="1" stroke="#3ecc6e" stroke-width="1.4"/>
-                <rect x="2" y="11" width="5" height="5" rx="1" stroke="#3ecc6e" stroke-width="1.4"/>
-                <rect x="11" y="11" width="5" height="5" rx="1" stroke="#3ecc6e" stroke-width="1.4"/>
-              </svg>
-            </span>
-            <span class="hero__card-text">
-              <span class="hero__card-label">QR-билет</span>
-              <span class="hero__card-value">Действителен</span>
-            </span>
-            <span class="hero__card-status hero__card-status--ok" aria-hidden="true"></span>
-          </div>
-        </div>
-      </div>
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="#top" class="site-header__brand">
+        <img class="site-header__avatar" src="assets/site/avatar.png" alt="Елена Сулоева" width="48" height="48">
+        <span class="site-header__name">Елена Сулоева</span>
+      </a>
+      <nav class="site-header__nav">
+        <a href="#about">Обо мне</a>
+        <a href="#projects">Проекты</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <button class="button" type="button" data-open-contact>Связаться со мной</button>
     </div>
   </header>
 
-  <!-- Ticker -->
-  <div class="ticker" aria-hidden="true">
-    <div class="ticker__track">
-      <span class="ticker__item">На&nbsp;работу → С&nbsp;работы · Предзаказ · Закреплённый маршрут ·&nbsp;</span>
-      <span class="ticker__item">На&nbsp;работу → С&nbsp;работы · Предзаказ · Закреплённый маршрут ·&nbsp;</span>
-      <span class="ticker__item">На&nbsp;работу → С&nbsp;работы · Предзаказ · Закреплённый маршрут ·&nbsp;</span>
-      <span class="ticker__item">На&nbsp;работу → С&nbsp;работы · Предзаказ · Закреплённый маршрут ·&nbsp;</span>
+  <main id="top">
+
+    <section class="hero-section">
+      <div class="container">
+        <div class="hero-section__spacer"></div>
+        <h1 class="hero__title"><em>Елена Сулоева, Product designer</em> — превращаю сложную бизнес-логику в понятные интерфейсы</h1>
+        <p class="hero__lead">Проектирую B2B-сервисы и B2C-продукты: CRM, дашборды и мобильные приложения.</p>
+
+        <div class="competency-strip">
+          <div class="competency">
+            <div>
+              <p class="competency__title">UX-исследования</p>
+            </div>
+            <p class="competency__text">Интервью, JTBD, CJM, анализ конкурентов</p>
+            <img class="competency__icon" src="assets/site/icon-competency-1.svg" alt="">
+          </div>
+          <div class="competency">
+            <div>
+              <p class="competency__title">User flows &amp; wireframes</p>
+            </div>
+            <p class="competency__text">Сценарии, информационная архитектура, edge cases, прототипы</p>
+            <img class="competency__icon" src="assets/site/icon-competency-2.svg" alt="">
+          </div>
+          <div class="competency">
+            <div>
+              <p class="competency__title">UI-дизайн</p>
+            </div>
+            <p class="competency__text">Web, Mobile, CRM, адаптивный дизайн, iOS/Android, дизайн-системы и UI-kit, хендофф</p>
+            <img class="competency__icon" src="assets/site/icon-competency-3.svg" alt="">
+          </div>
+          <div class="competency">
+            <div>
+              <p class="competency__title">AI</p>
+            </div>
+            <p class="competency__text">Прототипы (v0, Claude), UX-тексты и контент, проработка продуктовых решений</p>
+            <img class="competency__icon" src="assets/site/icon-competency-4.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--projects" id="projects">
+      <div class="container">
+        <h2 class="section__heading">Проекты, над которыми я работала</h2>
+
+        <div class="project-cards">
+
+          <a class="project-card" href="case-transport-pet.html">
+            <div class="project-card__body">
+              <span class="kicker project-card__tag">Мобильное приложение</span>
+              <h3 class="project-card__title">Транспортное приложение для Калининградской области</h3>
+              <p class="project-card__desc">Единый сервис для транспортной карты, оплаты городских поездок и покупки билетов на межгород.</p>
+              <div class="project-card__meta">
+                <span>iOS / Android</span>
+                <span>·</span>
+                <span>B2C</span>
+                <span>·</span>
+                <span>NDA</span>
+              </div>
+              <span class="project-card__link">Смотреть кейс</span>
+            </div>
+            <div class="project-card__preview">
+              <img src="assets/site/preview-kaliningrad.png" alt="Экраны приложения транспорта Калининграда" width="560" height="424">
+            </div>
+          </a>
+
+          <a class="project-card" href="case-corporate.html">
+            <div class="project-card__body">
+              <span class="kicker project-card__tag">Внутренний продукт</span>
+              <h3 class="project-card__title">Сервис заказа корпоративного транспорта</h3>
+              <p class="project-card__desc">Один интерфейс для сотрудников с постоянным, сменным и гибридным графиком работы.</p>
+              <div class="project-card__meta">
+                <span>iOS / Android</span>
+                <span>·</span>
+                <span>B2B</span>
+                <span>·</span>
+                <span>NDA</span>
+              </div>
+              <span class="project-card__link">Смотреть кейс</span>
+            </div>
+            <div class="project-card__preview">
+              <img src="assets/site/preview-corporate.png" alt="Экраны сервиса корпоративного транспорта" width="560" height="424">
+            </div>
+          </a>
+
+          <a class="project-card" href="case-soul.html">
+            <div class="project-card__body">
+              <span class="kicker project-card__tag">Telegram MiniApp</span>
+              <h3 class="project-card__title">Soul</h3>
+              <p class="project-card__desc">Telegram Mini App, которая помогает найти мероприятие и познакомиться с людьми в новом городе.</p>
+              <div class="project-card__meta">
+                <span>iOS / Android</span>
+                <span>·</span>
+                <span>B2C</span>
+                <span>·</span>
+                <span>MVP</span>
+              </div>
+              <span class="project-card__link">Смотреть кейс</span>
+            </div>
+            <div class="project-card__preview">
+              <img src="assets/site/preview-soul.png" alt="Экраны приложения Soul" width="560" height="424">
+            </div>
+          </a>
+
+          <a class="project-card" href="case-arm-kassira.html">
+            <div class="project-card__body">
+              <span class="kicker project-card__tag"><span class="kicker__index">02</span> Внутренний продукт</span>
+              <h3 class="project-card__title">АРМ Кассира</h3>
+              <p class="project-card__desc">Редизайн рабочего пространства кассира: изменение заказа, смешанная оплата, обработка возвратов.</p>
+              <div class="project-card__meta">
+                <span>WEB</span>
+                <span>·</span>
+                <span>B2B</span>
+                <span>·</span>
+                <span>NDA</span>
+              </div>
+              <span class="project-card__link">Смотреть кейс</span>
+            </div>
+            <div class="project-card__preview">
+              <img src="assets/site/preview-arm.png" alt="Экраны АРМ кассира" width="560" height="424">
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--experience" id="about">
+      <div class="container">
+        <span class="kicker section__kicker"><span class="kicker__index">03</span> Обо мне</span>
+        <h2 class="section__heading">Опыт и образование</h2>
+        <p class="section__lead">Работаю на стыке продуктовой логики, пользовательских сценариев и визуальной системы.</p>
+
+        <div class="resume-columns">
+          <div class="resume-card">
+            <h3 class="resume-card__title">Опыт работы</h3>
+
+            <div class="resume-item">
+              <p class="resume-item__title">Технезис · UX/UI-дизайнер</p>
+              <p class="resume-item__subtitle">B2B, B2C продукты</p>
+              <p class="resume-item__date">Ноябрь 2024 — настоящее время</p>
+            </div>
+            <div class="resume-item">
+              <p class="resume-item__title">Soul · Product-дизайнер</p>
+              <p class="resume-item__subtitle">B2C стартап</p>
+              <p class="resume-item__date">Май 2025 — настоящее время</p>
+            </div>
+            <div class="resume-item">
+              <p class="resume-item__title">Проектная работа · UX/UI-дизайнер</p>
+              <p class="resume-item__subtitle">Веб и мобильные продукты</p>
+              <p class="resume-item__date">Декабрь 2023 — май 2025</p>
+            </div>
+          </div>
+
+          <div class="resume-card">
+            <h3 class="resume-card__title">Образование</h3>
+
+            <div class="resume-item">
+              <p class="resume-item__title">Нейросети для дизайнеров</p>
+              <p class="resume-item__subtitle">Логомашина</p>
+              <p class="resume-item__date">2024</p>
+            </div>
+            <div class="resume-item">
+              <p class="resume-item__title">Дизайнер интерфейсов</p>
+              <p class="resume-item__subtitle">Яндекс Практикум</p>
+              <p class="resume-item__date">2023</p>
+            </div>
+            <div class="resume-item">
+              <p class="resume-item__title">Фотохудожник и фоторепортёр</p>
+              <p class="resume-item__subtitle">РАНХиГС</p>
+              <p class="resume-item__date">2014</p>
+            </div>
+            <div class="resume-item">
+              <p class="resume-item__title">Бухгалтерский учёт, анализ и аудит</p>
+              <p class="resume-item__subtitle">ННГАСУ</p>
+              <p class="resume-item__date">2012</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--contacts" id="contacts">
+      <div class="container">
+        <span class="kicker section__kicker"><span class="kicker__index">04</span> Контакты</span>
+        <h2 class="section__heading">Открыта к сотрудничеству</h2>
+
+        <div class="contact-methods">
+          <a class="contact-item" href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener">
+            <span class="contact-item__label">Telegram</span>
+            <span class="contact-item__value">@Lena_Suloeva</span>
+          </a>
+          <a class="contact-item" href="mailto:lensuloeva@yandex.ru">
+            <span class="contact-item__label">Почта</span>
+            <span class="contact-item__value">lensuloeva@yandex.ru</span>
+          </a>
+        </div>
+
+        <div class="site-footer">
+          <p>Елена Сулоева · Product designer</p>
+          <p>Портфолио · 2026</p>
+        </div>
+
+        <div class="site-footer__route"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="modal-overlay" data-contact-modal>
+    <div class="modal-card">
+      <button class="modal-close" type="button" data-close-contact aria-label="Закрыть">
+        <img src="assets/site/icon-close.svg" alt="">
+      </button>
+      <h3 class="modal-card__title">Свяжитесь со мной</h3>
+      <p class="modal-card__lead">Расскажу о проектах подробнее и отвечу на вопросы</p>
+      <div class="modal-card__methods">
+        <a class="modal-contact" href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener">
+          <span class="modal-contact__label">Telegram</span>
+          <div class="modal-contact__row">
+            <img src="assets/site/icon-telegram.svg" alt="">
+            <span class="modal-contact__value">@Lena_Suloeva</span>
+          </div>
+        </a>
+        <a class="modal-contact" href="mailto:lensuloeva@yandex.ru">
+          <span class="modal-contact__label">Почта</span>
+          <div class="modal-contact__row">
+            <img src="assets/site/icon-email.svg" alt="">
+            <span class="modal-contact__value">lensuloeva@yandex.ru</span>
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 
-  <!-- 01 · Контекст -->
-  <section class="section section--about">
-    <div class="container">
-      <div class="section__head">
-        <p class="kicker">01 · Контекст</p>
-        <h2 class="section__title">О продукте</h2>
-      </div>
-      <div class="about__cols">
-        <div class="about__left">
-          <p class="about__lead">Приложение для&nbsp;сотрудников компании: служебный транспорт до&nbsp;работы. Два сценария&nbsp;— персональный предзаказ с&nbsp;выбором направления, даты и&nbsp;времени или закреплённый служебный автобус, который назначается автоматически.</p>
-          <p class="about__body">Корпоративная развозка решает типовые задачи крупного работодателя: доступность офисов, куда сложно добраться общественным транспортом, предсказуемое начало смен и&nbsp;транспортная льгота как&nbsp;часть соцпакета. Приложение при&nbsp;этом даёт бизнесу то, чего не&nbsp;даёт «автобус по&nbsp;расписанию»: данные о&nbsp;реальном спросе для&nbsp;оптимизации маршрутов и&nbsp;контроль посадки по&nbsp;QR.</p>
-        </div>
-        <aside class="role-card">
-          <p class="role-card__label">Моя роль · спроектировала и&nbsp;отрисовала</p>
-          <ul class="role-card__list">
-            <li>Заказ транспорта</li>
-            <li>QR-билет</li>
-            <li>Профиль</li>
-            <li>Обращения в&nbsp;поддержку и&nbsp;оценка качества услуг</li>
-          </ul>
-          <p class="role-card__note">Корректировала пользовательские сценарии под&nbsp;бизнес-цели, провела конкурентный анализ.</p>
-        </aside>
-      </div>
-    </div>
-  </section>
-
-  <!-- 02 · Подход -->
-  <section class="section section--users">
-    <div class="container">
-      <div class="section__head">
-        <p class="kicker">02 · Подход</p>
-        <h2 class="section__title">Один интерфейс&nbsp;— два типа пользователей</h2>
-      </div>
-      <div class="users__cards">
-        <article class="user-card">
-          <div class="user-card__head">
-            <span class="user-card__badge">А</span>
-            <h3 class="user-card__title">Персональный предзаказ</h3>
-          </div>
-          <p class="user-card__body">Сотрудник сам выбирает направление и&nbsp;время&nbsp;— интерфейс строится вокруг формы заказа и&nbsp;подтверждённой поездки.</p>
-        </article>
-        <article class="user-card">
-          <div class="user-card__head">
-            <span class="user-card__badge">Б</span>
-            <h3 class="user-card__title">Закрепление за&nbsp;маршрутом</h3>
-          </div>
-          <p class="user-card__body">Транспорт назначает организация, поэтому сотруднику не&nbsp;нужно ничего делать. Интерфейс строится вокруг самого важного: маршрута на&nbsp;карте и&nbsp;времени прибытия.</p>
-        </article>
-      </div>
-      <blockquote class="quote">
-        <p>Я спроектировала оба сценария как&nbsp;единый пользовательский путь. Предзаказы помогают понять, где и&nbsp;когда людям регулярно нужен транспорт. Когда спрос становится стабильным, появляется постоянный маршрут.</p>
-      </blockquote>
-    </div>
-  </section>
-
-  <!-- 03 · Решения -->
-  <section class="section section--solutions">
-    <div class="container">
-      <div class="section__head">
-        <p class="kicker">03 · Решения</p>
-        <h2 class="section__title">Решения</h2>
-      </div>
-
-      <div class="solution">
-        <div class="solution__text">
-          <span class="solution__marker">01</span>
-          <h3 class="solution__title">Предзаказ&nbsp;— для&nbsp;сотрудников с&nbsp;нерегулярными поездками</h3>
-          <p class="solution__body">Сменные и&nbsp;гибридные графики, разовые поездки, работа в&nbsp;нетиповое время&nbsp;— для&nbsp;этих сценариев ежедневный маршрут избыточен. Предзаказ позволяет выбрать направление, дату и&nbsp;время подачи транспорта. Для&nbsp;бизнеса заявки делают нерегулярный спрос измеримым: транспорт назначается по&nbsp;фактической потребности, а&nbsp;не&nbsp;резервируется заранее.</p>
-        </div>
-        <div class="solution__phone">
-          <img src="assets/phone-preorder.png" alt="Экран предзаказа: выбор направления, даты и времени подачи транспорта" width="295" height="600">
-        </div>
-      </div>
-
-      <div class="solution solution--reverse">
-        <div class="solution__text">
-          <span class="solution__marker">02</span>
-          <h3 class="solution__title">Закреплённый маршрут&nbsp;— для&nbsp;регулярных поездок</h3>
-          <p class="solution__body">Сотрудники с&nbsp;постоянным графиком закрепляются за&nbsp;маршрутом с&nbsp;регулярными рейсами&nbsp;— транспорт назначается автоматически, ежедневные действия не&nbsp;требуются. Экран отвечает на&nbsp;главный вопрос&nbsp;— через сколько минут автобус прибудет на&nbsp;остановку; положение машины на&nbsp;карте и&nbsp;расписание каждой остановки доступны по&nbsp;касанию. Бизнес получает предсказуемую загрузку маршрутов и&nbsp;планирование по&nbsp;фактическим спискам.</p>
-        </div>
-        <div class="solution__phone">
-          <img src="assets/phone-route.png" alt="Экран закреплённого маршрута: карта с положением автобуса и время прибытия на остановку" width="295" height="600">
-        </div>
-      </div>
-
-      <div class="solution">
-        <div class="solution__text">
-          <span class="solution__marker">03</span>
-          <h3 class="solution__title">QR-билет&nbsp;— контроль посадки</h3>
-          <p class="solution__body">Водитель сканирует код при&nbsp;входе. Для&nbsp;компании это решает две задачи: транспортом пользуются только сотрудники&nbsp;— код привязан к&nbsp;учётной записи и&nbsp;автоматически обновляется, пересланный скриншот к&nbsp;моменту посадки уже недействителен,&nbsp;— а&nbsp;учёт поездок ведётся сам: кто, когда и&nbsp;каким рейсом, без&nbsp;бумажных списков.</p>
-        </div>
-        <div class="solution__phone">
-          <img src="assets/phone-qr.png" alt="Экран QR-билета для посадки в транспорт" width="295" height="600">
-        </div>
-      </div>
-
-      <div class="solution solution--reverse">
-        <div class="solution__text">
-          <span class="solution__marker">04</span>
-          <h3 class="solution__title">Обращения&nbsp;— с&nbsp;контекстом поездки</h3>
-          <p class="solution__body">Вместо свободного текста&nbsp;— структурированные данные. Поездка из&nbsp;истории, тип обращения и&nbsp;фото позволяют диспетчеру быстрее обрабатывать заявки, а&nbsp;бизнесу&nbsp;— анализировать качество маршрутов и&nbsp;работу перевозчиков. Шаг выбора поездки можно пропустить: не&nbsp;каждый вопрос связан с&nbsp;поездкой.</p>
-        </div>
-        <div class="solution__phone solution__phone--wide">
-          <img src="assets/phones-support.png" alt="Два экрана обращения в поддержку: выбор поездки из истории и форма обращения" width="570" height="560">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 04 · Логика продукта -->
-  <section class="section section--logic">
-    <div class="container">
-      <p class="kicker kicker--light">04 · Логика продукта&nbsp;— как&nbsp;сценарии связаны</p>
-      <div class="logic__diagram">
-        <div class="logic__step">
-          <img class="logic__dot" src="assets/step-dot.svg" alt="" width="24" height="24">
-          <p>Сотрудник заказывает поездки вручную</p>
-        </div>
-        <div class="logic__line"></div>
-        <div class="logic__step">
-          <img class="logic__dot" src="assets/step-dot.svg" alt="" width="24" height="24">
-          <p>Система видит регулярность</p>
-        </div>
-        <div class="logic__line"></div>
-        <div class="logic__step logic__step--active">
-          <img class="logic__dot" src="assets/step-dot-active.svg" alt="" width="24" height="24">
-          <p>Постоянный маршрут&nbsp;— заказывать ничего не&nbsp;нужно</p>
-        </div>
-      </div>
-      <p class="logic__statement">Чем дольше живёт продукт, тем меньше действий требует.</p>
-    </div>
-  </section>
-
+  <script src="site.js"></script>
 </body>
 </html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>АРМ Кассира — кейс продуктового дизайнера</title>
+  <meta name="description" content="Редизайн рабочего пространства кассира на автовокзале: изменение заказа, смешанная оплата, обработка возвратов.">
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geologica:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles-site.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-header__brand">
+        <img class="site-header__avatar" src="assets/site/avatar.png" alt="Елена Сулоева" width="48" height="48">
+        <span class="site-header__name">Елена Сулоева</span>
+      </a>
+      <nav class="site-header__nav">
+        <a href="index.html#about">Обо мне</a>
+        <a href="index.html#projects">Проекты</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+      <button class="button" type="button" data-open-contact>Связаться со мной</button>
+    </div>
+  </header>
+
+  <main>
+
+    <div class="case-topbar">
+      <a class="case-topbar__back" href="index.html">На главную</a>
+    </div>
+
+    <section class="case-hero">
+      <div class="container">
+        <div class="case-hero__badges">
+          <span class="case-hero__nda">Внутренний продукт · NDA</span>
+        </div>
+        <h1 class="case-hero__title">АРМ Кассира</h1>
+        <p class="case-hero__lead">Редизайн рабочего пространства кассира на автовокзале</p>
+        <div class="case-hero__meta">
+          <span><strong>Роль</strong>UX/UI-дизайнер</span>
+          <span><strong>Платформы</strong>веб-приложение (АРМ)</span>
+          <span><strong>Формат</strong>редизайн рабочего пространства кассира</span>
+        </div>
+        <div class="case-hero__cover">
+          <img src="assets/site/preview-arm.png" alt="Рабочее пространство кассира" width="1448" height="1086">
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="container">
+        <span class="kicker case-section__kicker"><span class="kicker__index">02</span> Изменение заказа</span>
+        <h2 class="case-section__title">Изменение заказа без повторного оформления</h2>
+
+        <div class="hypothesis">
+          <h3 class="hypothesis__title">Бизнес-задача</h3>
+          <p class="hypothesis__intro">Сократить время кассира на изменение уже оформленного заказа и снизить число отменённых заказов в системе.</p>
+
+          <p class="hypothesis__text"><strong>Было.</strong> Добавить пассажира или услугу можно было только на этапе оформления заказа. Если заказ уже был оформлен, любое изменение требовало отменить его и оформить заново.</p>
+          <div class="screen-placeholder">Экран: старый интерфейс — заполнение информации о билетах, таблица пассажиров и данные о рейсе</div>
+
+          <p class="hypothesis__text"><strong>User Flow.</strong> Существующий заказ → добавить пассажира или услугу → перерасчёт → доплата</p>
+
+          <p class="hypothesis__text"><strong>Стало.</strong></p>
+          <div class="screen-placeholder">Экран: новый интерфейс — добавление пассажира или услуги через всплывающее меню («Детский без места», «Багаж», «Страховка багажа»)</div>
+          <p class="hypothesis__text">В оформленном билете предусмотрен сценарий редактирования, в котором кассир добавляет пассажиров и услуги в существующий заказ, а система автоматически рассчитывает доплату.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="container">
+        <span class="kicker case-section__kicker"><span class="kicker__index">03</span> Смешанная оплата</span>
+        <h2 class="case-section__title">Оплатить заказ, комбинируя любые способы</h2>
+
+        <div class="hypothesis">
+          <h3 class="hypothesis__title">Бизнес-задача</h3>
+          <p class="hypothesis__intro">Снизить количество кликов кассира, сделать сценарий оплаты более нативным и добавить смешанную оплату — чтобы комбинированный платёж занимал меньше действий.</p>
+
+          <p class="hypothesis__text"><strong>Было.</strong> Смешанная оплата отсутствовала: заказ можно было оплатить только одним способом целиком или разбить платёж на отдельные этапы — каждый этап открывал новое модальное окно и требовал лишних кликов.</p>
+          <div class="screen-placeholder">Экран: старый интерфейс — выбор формы оплаты и два последовательных окна оплаты (сначала наличными, затем картой)</div>
+
+          <p class="hypothesis__text"><strong>Сценарий.</strong> Наличные + карта + СБП + ещё одна карта — в любой комбинации</p>
+
+          <div class="value-pair">
+            <div class="value-pair__item">
+              <strong>Остаток виден сразу</strong>
+              Итого к оплате и остаток пересчитываются автоматически при добавлении каждого способа оплаты.
+            </div>
+          </div>
+          <ul class="solution-list">
+            <li>Кассиру: не нужно держать сумму в уме — программа сама показывает, сколько осталось внести.</li>
+            <li>Бизнесу: меньше ошибок в расчётах при смешанной оплате.</li>
+          </ul>
+          <div class="screen-placeholder">Экран: модальное окно смешанной оплаты</div>
+          <div class="screen-placeholder">Экран: список подключённых способов оплаты</div>
+
+          <div class="value-pair">
+            <div class="value-pair__item">
+              <strong>Отмена по одному способу</strong>
+              Каждый способ оплаты можно отменить отдельно — например, вернуть только оплату картой, оставив наличные. Или отменить всю оплату сразу.
+            </div>
+          </div>
+          <ul class="solution-list">
+            <li>Кассиру: не нужно отменять весь заказ, если ошибся только один платёж.</li>
+            <li>Клиенту: возврат оформляется быстрее и точнее.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="container">
+        <span class="kicker case-section__kicker"><span class="kicker__index">04</span> Edge cases</span>
+        <h2 class="case-section__title">Вернуть оплату — пересчёт</h2>
+        <div class="screen-placeholder">Экраны: «Заказ оплачен» → «Возврат наличных» → «Пересчёт после возврата»</div>
+      </div>
+    </section>
+
+    <section class="case-cta">
+      <div class="container">
+        <p class="case-cta__text">Детали проекта и остальные сценарии могу показать и рассказать на встрече.</p>
+        <a class="button" href="index.html#contacts">Обсудить проект</a>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="modal-overlay" data-contact-modal>
+    <div class="modal-card">
+      <button class="modal-close" type="button" data-close-contact aria-label="Закрыть">
+        <img src="assets/site/icon-close.svg" alt="">
+      </button>
+      <h3 class="modal-card__title">Свяжитесь со мной</h3>
+      <p class="modal-card__lead">Расскажу о проектах подробнее и отвечу на вопросы</p>
+      <div class="modal-card__methods">
+        <a class="modal-contact" href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener">
+          <span class="modal-contact__label">Telegram</span>
+          <div class="modal-contact__row">
+            <img src="assets/site/icon-telegram.svg" alt="">
+            <span class="modal-contact__value">@Lena_Suloeva</span>
+          </div>
+        </a>
+        <a class="modal-contact" href="mailto:lensuloeva@yandex.ru">
+          <span class="modal-contact__label">Почта</span>
+          <div class="modal-contact__row">
+            <img src="assets/site/icon-email.svg" alt="">
+            <span class="modal-contact__value">lensuloeva@yandex.ru</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="site.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soul — кейс продуктового дизайнера</title>
+  <meta name="description" content="Кейс: как я собрала разрозненные механики Soul в понятный сценарий поиска и участия во встречах.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geologica:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles-site.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-header__brand">
+        <img class="site-header__avatar" src="assets/site/avatar.png" alt="Елена Сулоева" width="48" height="48">
+        <span class="site-header__name">Елена Сулоева</span>
+      </a>
+      <nav class="site-header__nav">
+        <a href="index.html#about">Обо мне</a>
+        <a href="index.html#projects">Проекты</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+      <button class="button" type="button" data-open-contact>Связаться со мной</button>
+    </div>
+  </header>
+
+  <div class="case-topbar">
+    <a class="case-topbar__back" href="index.html">На главную</a>
+  </div>
+
+  <main>
+
+    <section class="case-hero">
+      <div class="container">
+        <div class="case-hero__badges">
+          <span class="kicker">Telegram MiniApp</span>
+        </div>
+        <h1 class="case-hero__title">Soul</h1>
+        <p class="case-hero__lead">Как я собрала разрозненные механики в понятный сценарий поиска и участия во встречах</p>
+        <div class="case-hero__meta">
+          <span><strong>Роль</strong>продуктовый дизайнер</span>
+          <span><strong>Платформы</strong>iOS / Android</span>
+          <span><strong>Этап</strong>MVP на тестовой аудитории</span>
+        </div>
+        <div class="case-hero__cover">
+          <img src="assets/site/preview-soul.png" alt="Экраны приложения Soul" width="1441" height="1091">
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="container">
+        <span class="kicker case-section__kicker"><span class="kicker__index">01</span> Контекст</span>
+        <h2 class="case-section__title">Проверила ключевой сценарий поиска и записи</h2>
+        <p class="case-section__lead">На задачах поиска и выбора встречи наблюдала, где пользователи теряют контекст, какие условия понимают неверно и что мешает принять решение о записи.</p>
+
+        <div class="info-cards">
+          <div class="info-card">
+            <p class="info-card__title">Продукт и аудитория</p>
+            <p class="info-card__text">Soul помогает соло-путешественникам, экспатам, диджитал-номадам и новым жителям города находить живое общение через встречи рядом.</p>
+          </div>
+          <div class="info-card">
+            <p class="info-card__title">Задача исследования</p>
+            <p class="info-card__text">Понять, где пользователь теряет контекст при поиске встречи и что мешает принять решение о записи.</p>
+          </div>
+          <div class="info-card">
+            <p class="info-card__title">Интервью — почему</p>
+            <p class="info-card__text">Просила пересказать условия, объяснить направление денег и ответить, готов ли человек прийти к этому хосту.</p>
+          </div>
+          <div class="info-card">
+            <p class="info-card__title">Наблюдение — где</p>
+            <p class="info-card__text">Смотрела, куда нажимают первой, что не долистывают и где возвращаются по экрану в поиске информации.</p>
+          </div>
+          <div class="info-card">
+            <p class="info-card__title">Моя роль</p>
+            <p class="info-card__text">Провела тесты, объединила повторяющиеся находки, приоритизировала изменения и согласовала новую логику поиска с разработчиками.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="container">
+        <h2 class="case-section__title">Пользовательские сценарии: Флоу · Экосистема Soul</h2>
+        <p class="case-section__lead">Схема составлена постфактум — приложение уже разрабатывалось без выстроенного user flow. Я собрала сценарии в единую карту, чтобы найти нестыковки и возможные пробелы в логике.</p>
+        <div class="screen-placeholder">Диаграмма: user flow «Экосистема Soul» — шесть сценариев: 01 · Вход и маршрутизация, 02 · Поиск встречи, 03 · Запись и посещение, 04 · Активности и уведомления, 05 · Создание и управление встречей, 06 · Профиль, друзья и Soul Points</div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="container">
+        <span class="kicker case-section__kicker"><span class="kicker__index">02</span> Синтез</span>
+        <h2 class="case-section__title">Объединила шесть наблюдений в три продуктовые проблемы</h2>
+        <p class="case-section__lead">Приоритизировала не отдельные дефекты интерфейса, а барьеры, которые мешали принять решение о записи.</p>
+
+        <div class="info-cards">
+          <div class="info-card">
+            <p class="info-card__title">01 · Действие и место трудно найти</p>
+            <p class="info-card__text">Кнопка находилась внизу, адрес был разделён между блоками, а важные детали скрывались под «Читать больше».</p>
+          </div>
+          <div class="info-card">
+            <p class="info-card__title">02 · Финансовые условия непонятны</p>
+            <p class="info-card__text">25 EUR, 600 SP и «первый гость» не складывались в понятные правила участия.</p>
+          </div>
+          <div class="info-card">
+            <p class="info-card__title">03 · Не хватает доверия</p>
+            <p class="info-card__text">У организатора не было подтверждённого опыта и оценок реальных участников.</p>
+          </div>
+          <div class="info-card">
+            <p class="info-card__title">Критерий приоритета</p>
+            <p class="info-card__text">Насколько проблема мешает понять встречу, довериться организатору и нажать «Я пойду».</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="container">
+        <span class="kicker case-section__kicker"><span class="kicker__index">03</span> Карточка встречи</span>
+        <h2 class="case-section__title">Решение принимается на первом экране</h2>
+        <p class="case-section__lead">Адрес, формат входа и бонус собраны в одном блоке — не нужно прокручивать длинное описание, чтобы понять, стоит ли соглашаться.</p>
+
+        <div class="hypothesis">
+          <h3 class="hypothesis__title">Ключевые условия — на первом экране</h3>
+          <p class="hypothesis__text">Гипотеза: если собрать адрес, формат входа, бонус и подготовку в одном блоке вместо распределения по экрану, пользователь примет решение и запишется без возврата к длинному описанию.</p>
+          <div class="value-pair">
+            <div class="value-pair__item"><strong>Пользователю</strong>Не прокручивает карточку в поисках ответа — все условия видны сразу.</div>
+            <div class="value-pair__item"><strong>Бизнесу</strong>Меньше отказов на этапе просмотра — решение принимается быстрее.</div>
+          </div>
+          <div class="screen-placeholder">Экраны: карточка встречи «было» и «стало»</div>
+          <p class="hypothesis__subtitle">Моё решение</p>
+          <ul class="solution-list">
+            <li>Закрепила CTA-кнопки «Я пойду» и «Пригласить» — действие остаётся доступным при прокрутке.</li>
+            <li>Собрала условия в один блок — адрес, формат входа, бонус и подготовка считываются до длинного описания.</li>
+            <li>Спроектировала рейтинг доверия — гипотеза для следующей итерации, которая должна снизить барьер перед записью.</li>
+            <li>Не давала задачу «запишись» — кнопка и так закреплена и её легко найти. Вместо этого после просмотра карточки просила по памяти назвать цену, формат входа и что взять с собой: участники называли условия без возврата к длинному описанию.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="container">
+        <span class="kicker case-section__kicker"><span class="kicker__index">04</span> Карта поиска</span>
+        <h2 class="case-section__title">Карта, которая помогает выбрать встречу</h2>
+        <p class="case-section__lead">Фильтры, превью по метке и различимые типы меток помогают сравнить варианты до перехода в детальную карточку — без блуждания по пустой выдаче.</p>
+
+        <div class="hypothesis">
+          <h3 class="hypothesis__title">Сравнение — до открытия карточки</h3>
+          <p class="hypothesis__text">Гипотеза: если вынести фильтры по месту и времени наверх, показывать превью по тапу на метку и различать метки по типу, пользователь сможет сравнить встречи прямо на карте и открывать детальную карточку осознанно, а не наугад.</p>
+          <div class="value-pair">
+            <div class="value-pair__item"><strong>Пользователю</strong>Сравнивает варианты по расстоянию и типу до перехода в карточку — не тратит тапы впустую.</div>
+            <div class="value-pair__item"><strong>Бизнесу</strong>Меньше случайных переходов в карточку — выше доля осознанных записей.</div>
+          </div>
+          <div class="screen-placeholder">Экраны: карта поиска «было» и «стало»</div>
+          <p class="hypothesis__subtitle">Моё решение</p>
+          <ul class="solution-list">
+            <li>Вынесла фильтры «где» и «когда» наверх — на задаче «найди встречу рядом на эти выходные» участники доходили до результата и в интервью подтверждали, что поняли: выбор можно сузить.</li>
+            <li>Сделала так, что тап по метке сразу открывает превью — участники стали сравнивать соседние метки, а не тыкать наугад.</li>
+            <li>Развела метки по типу и подсветила выбранную — на вопросы «сколько встреч на экране» и «где ты сейчас» участники отвечали с первого взгляда.</li>
+            <li>Вывела расстояние на превью и приглушила акцент на бонусе — фокус сместился на саму встречу, а расстояние стало одним из первых критериев решения.</li>
+            <li>Заменила инструкцию про масштаб пустым состоянием с понятной причиной и кнопкой «Показать ближайшие» — участники выходили из тупика одним действием вместо ручного зума.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section">
+      <div class="container">
+        <span class="kicker case-section__kicker"><span class="kicker__index">05</span> Выводы</span>
+        <h2 class="case-section__title">Что подтвердили тесты — и что ещё нужно измерить</h2>
+        <p class="case-section__lead">Разделила наблюдения, продуктовые гипотезы и будущие метрики, чтобы не выдавать качественные данные за рост конверсии.</p>
+
+        <div class="info-cards">
+          <div class="info-card">
+            <p class="info-card__title">Подтвердили качественно</p>
+            <p class="info-card__text">Пользователи находили фильтры, сравнивали встречи через превью, понимали пустую выдачу и видели основное действие.</p>
+          </div>
+          <div class="info-card">
+            <p class="info-card__title">Осталось гипотезой</p>
+            <p class="info-card__text">Рейтинг доверия снизит барьер записи, а создание встречи из пустой зоны поддержит рост предложения.</p>
+          </div>
+          <div class="info-card">
+            <p class="info-card__title">Нужно измерить</p>
+            <p class="info-card__text">Успешность поиска, долю пустой выдачи, переход из превью в карточку и конверсию в запись.</p>
+          </div>
+          <div class="info-card">
+            <p class="info-card__title">Мой результат как продуктового дизайнера</p>
+            <p class="info-card__text">Провела исследование, синтезировала и приоритизировала проблемы, перестроила два ключевых экрана, описала сквозной сценарий и согласовала ограничения поиска с разработчиками.</p>
+          </div>
+        </div>
+
+        <p class="case-section__lead" style="margin-top:24px;font-style:italic;">Исследование проведено на небольшой выборке; количественный эффект решений предстоит проверить на объёме.</p>
+      </div>
+    </section>
+
+    <section class="case-cta">
+      <div class="container">
+        <p class="case-cta__text">Детали проекта и остальные сценарии могу показать и рассказать на встрече.</p>
+        <a class="button" href="index.html#contacts">Обсудить проект</a>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="modal-overlay" data-contact-modal>
+    <div class="modal-card">
+      <button class="modal-close" type="button" data-close-contact aria-label="Закрыть">
+        <img src="assets/site/icon-close.svg" alt="">
+      </button>
+      <h3 class="modal-card__title">Свяжитесь со мной</h3>
+      <p class="modal-card__lead">Расскажу о проектах подробнее и отвечу на вопросы</p>
+      <div class="modal-card__methods">
+        <a class="modal-contact" href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener">
+          <span class="modal-contact__label">Telegram</span>
+          <div class="modal-contact__row">
+            <img src="assets/site/icon-telegram.svg" alt="">
+            <span class="modal-contact__value">@Lena_Suloeva</span>
+          </div>
+        </a>
+        <a class="modal-contact" href="mailto:lensuloeva@yandex.ru">
+          <span class="modal-contact__label">Почта</span>
+          <div class="modal-contact__row">
+            <img src="assets/site/icon-email.svg" alt="">
+            <span class="modal-contact__value">lensuloeva@yandex.ru</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script src="site.js"></script>
+</body>
+</html>
