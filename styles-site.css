@@ -1318,8 +1318,8 @@ a {
 .other-projects__row {
   display: flex;
   gap: 24px;
-  overflow-x: auto;
-  scroll-snap-type: x proximity;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
@@ -1448,12 +1448,8 @@ a {
     font-size: 18px;
   }
 
-  .other-projects__row {
-    scroll-snap-type: x mandatory;
-  }
-
   .other-project-card {
-    width: 84%;
+    width: min(420px, 88vw);
     flex-direction: column;
   }
 
