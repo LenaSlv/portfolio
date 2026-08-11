@@ -1442,12 +1442,18 @@ a {
     margin-top: 14px;
   }
 
-  .other-projects__nav {
-    display: none;
+  .other-projects__nav-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .other-projects__row {
+    scroll-snap-type: x mandatory;
   }
 
   .other-project-card {
-    width: min(420px, 88vw);
+    width: 84%;
     flex-direction: column;
   }
 
