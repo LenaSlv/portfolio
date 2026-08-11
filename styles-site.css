@@ -1274,6 +1274,11 @@ a {
   gap: 36px;
 }
 
+.other-projects > .container {
+  width: 100%;
+  min-width: 0;
+}
+
 .other-projects__head {
   display: flex;
   align-items: center;
