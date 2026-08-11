@@ -1316,21 +1316,17 @@ a {
 }
 
 .other-projects__row {
-  display: flex;
-  gap: 24px;
-  overflow-x: hidden;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
+  overflow: hidden;
 }
 
-.other-projects__row::-webkit-scrollbar {
-  display: none;
+.other-projects__track {
+  display: flex;
+  gap: 24px;
+  transition: transform 0.4s ease;
 }
 
 .other-project-card {
   flex: 0 0 auto;
-  scroll-snap-align: start;
   width: min(680px, 85vw);
   display: flex;
   gap: 20px;
