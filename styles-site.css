@@ -1019,12 +1019,48 @@ a {
   display: block;
 }
 
+.flow-card {
+  background: #1d2737;
+  border: 1px solid #253040;
+  border-radius: 44px;
+  padding: 15px;
+  margin-top: 32px;
+}
+
+.flow-card__inner {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 30px;
+  padding: 24px 32px 40px;
+}
+
+.flow-label {
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.flow-lead {
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.flow-note {
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.4;
+  margin-top: 12px;
+}
+
 .flow-diagram {
   position: relative;
   width: 100%;
   overflow: hidden;
-  aspect-ratio: 1154 / 645;
+  aspect-ratio: 1154 / 660;
   transition: aspect-ratio 0.4s ease;
+  margin-top: 32px;
 }
 
 .flow-diagram.is-expanded {
@@ -1037,34 +1073,13 @@ a {
   height: auto;
 }
 
-.flow-diagram::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 120px;
-  background: linear-gradient(to bottom, rgba(6, 8, 11, 0), var(--bg-card) 90%);
-  opacity: 1;
-  transition: opacity 0.3s ease;
-  pointer-events: none;
-}
-
-.flow-diagram.is-expanded::after {
-  opacity: 0;
-}
-
 .flow-toggle {
-  position: absolute;
-  left: 50%;
-  bottom: 20px;
-  transform: translateX(-50%);
   display: inline-flex;
   align-items: center;
+  margin-top: 24px;
   padding: 14px 24px;
   border-radius: var(--radius-pill);
-  background: rgba(10, 14, 22, 0.75);
-  backdrop-filter: blur(6px);
+  background: rgba(46, 110, 235, 0.1);
   border: 1px solid var(--accent);
   color: var(--accent);
   font-weight: 500;
@@ -1074,7 +1089,7 @@ a {
 }
 
 .flow-toggle:hover {
-  background: rgba(46, 110, 235, 0.22);
+  background: rgba(46, 110, 235, 0.18);
 }
 
 .solution-row--even {

@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geologica:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles-site.css?v=10">
+  <link rel="stylesheet" href="styles-site.css?v=11">
 </head>
 <body>
 
@@ -94,12 +94,16 @@
 
     <section class="case-section">
       <div class="container">
-        <p style="color:var(--accent);font-weight:500;font-size:22px;margin-bottom:12px;">User Flow</p>
-        <p class="case-section__lead">Вход в приложение, поиск и создание встреч, запись, билет, активности, профиль и система Soul Points.</p>
-        <p class="case-section__lead" style="font-size:14px;color:var(--text-dim);margin-top:8px;">Схема составлена постфактум — приложение уже разрабатывалось без выстроенного user flow. Я собрала сценарии в единую карту, чтобы найти нестыковки и возможные пробелы в логике.</p>
-        <div class="screen-card" style="margin-top:32px;">
-          <div class="flow-diagram" data-flow-diagram>
-            <img src="assets/site/soul-flow-diagram.png" alt="User flow «Экосистема Soul»: шесть сценариев — вход и маршрутизация, поиск встречи, запись и посещение, активности и уведомления, создание и управление встречей, профиль и Soul Points" loading="lazy">
+        <span class="case-kicker">02 · User Flow</span>
+        <h2 class="case-section__title">Пользовательские сценарии:</h2>
+        <div class="flow-card">
+          <div class="flow-card__inner">
+            <p class="flow-label">User Flow</p>
+            <p class="flow-lead">Вход в приложение, поиск и создание встреч, запись, билет, активности, профиль и система Soul Points.</p>
+            <p class="flow-note">Схема составлена постфактум — приложение уже разрабатывалось без выстроенного user flow. Я собрала сценарии в единую карту, чтобы найти нестыковки и возможные пробелы в логике.</p>
+            <div class="flow-diagram" data-flow-diagram>
+              <img src="assets/site/soul-flow-diagram.png" alt="User flow «Экосистема Soul»: шесть сценариев — вход и маршрутизация, поиск встречи, запись и посещение, активности и уведомления, создание и управление встречей, профиль и Soul Points" loading="lazy">
+            </div>
             <button class="flow-toggle" type="button" data-flow-toggle>Показать полный флоу →</button>
           </div>
         </div>
@@ -108,7 +112,7 @@
 
     <section class="case-section">
       <div class="container">
-        <span class="case-kicker">02 · Синтез</span>
+        <span class="case-kicker">03 · Синтез</span>
         <h2 class="case-section__title">Объединила шесть наблюдений в три продуктовые проблемы</h2>
         <p class="case-section__lead">Приоритизировала не отдельные дефекты интерфейса, а барьеры, которые мешали принять решение о записи.</p>
 
@@ -135,7 +139,7 @@
 
     <section class="case-section">
       <div class="container">
-        <span class="case-kicker">03 · Карточка встречи</span>
+        <span class="case-kicker">04 · Карточка встречи</span>
         <h2 class="case-section__title">Решение принимается на первом экране</h2>
         <p class="case-section__lead">Адрес, формат входа и бонус собраны в одном блоке — не нужно прокручивать длинное описание, чтобы понять, стоит ли соглашаться.</p>
 
@@ -162,7 +166,7 @@
 
     <section class="case-section">
       <div class="container">
-        <span class="case-kicker">04 · Карта поиска</span>
+        <span class="case-kicker">05 · Карта поиска</span>
         <h2 class="case-section__title">Карта, которая помогает выбрать встречу</h2>
         <p class="case-section__lead">Фильтры, превью по метке и различимые типы меток помогают сравнить варианты до перехода в детальную карточку — без блуждания по пустой выдаче.</p>
 
@@ -190,7 +194,7 @@
 
     <section class="case-section">
       <div class="container">
-        <span class="case-kicker">05 · Выводы</span>
+        <span class="case-kicker">06 · Выводы</span>
         <h2 class="case-section__title">Что подтвердили тесты — и что ещё нужно измерить</h2>
         <p class="case-section__lead">Разделила наблюдения, продуктовые гипотезы и будущие метрики, чтобы не выдавать качественные данные за рост конверсии.</p>
 
@@ -331,6 +335,6 @@
     </div>
   </div>
 
-  <script src="site.js?v=10"></script>
+  <script src="site.js?v=11"></script>
 </body>
 </html>
