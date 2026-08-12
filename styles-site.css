@@ -994,6 +994,19 @@ a {
   background: url('assets/site/icon-bullet.svg') no-repeat center / contain;
 }
 
+.solution-list--dot li {
+  font-size: 17px;
+  padding-left: 22px;
+}
+
+.solution-list--dot li::before {
+  content: '';
+  width: 6px;
+  height: 14px;
+  top: 3px;
+  background: url('assets/site/icon-bullet-dot.svg') no-repeat center / contain;
+}
+
 .solution-row {
   display: flex;
   gap: 24px;
