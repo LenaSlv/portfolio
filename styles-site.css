@@ -1054,20 +1054,17 @@ a {
   opacity: 0;
 }
 
-.flow-toggle-row {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  margin-top: 24px;
-}
-
 .flow-toggle {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
   display: inline-flex;
   align-items: center;
   padding: 14px 24px;
   border-radius: var(--radius-pill);
-  background: rgba(46, 110, 235, 0.1);
+  background: rgba(10, 14, 22, 0.75);
+  backdrop-filter: blur(6px);
   border: 1px solid var(--accent);
   color: var(--accent);
   font-weight: 500;
@@ -1077,17 +1074,7 @@ a {
 }
 
 .flow-toggle:hover {
-  background: rgba(46, 110, 235, 0.18);
-}
-
-.flow-toggle-caption {
-  color: var(--accent);
-  font-weight: 500;
-  font-size: 13px;
-}
-
-.flow-toggle-row.is-expanded .flow-toggle-caption {
-  display: none;
+  background: rgba(46, 110, 235, 0.22);
 }
 
 .solution-row--even {
