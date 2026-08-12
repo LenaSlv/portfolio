@@ -1019,6 +1019,77 @@ a {
   display: block;
 }
 
+.flow-diagram {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  aspect-ratio: 1154 / 645;
+  transition: aspect-ratio 0.4s ease;
+}
+
+.flow-diagram.is-expanded {
+  aspect-ratio: 1154 / 1555;
+}
+
+.flow-diagram img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.flow-diagram::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 120px;
+  background: linear-gradient(to bottom, rgba(6, 8, 11, 0), var(--bg-card) 90%);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.flow-diagram.is-expanded::after {
+  opacity: 0;
+}
+
+.flow-toggle-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.flow-toggle {
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 24px;
+  border-radius: var(--radius-pill);
+  background: rgba(46, 110, 235, 0.1);
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.flow-toggle:hover {
+  background: rgba(46, 110, 235, 0.18);
+}
+
+.flow-toggle-caption {
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.flow-toggle-row.is-expanded .flow-toggle-caption {
+  display: none;
+}
+
 .solution-row--even {
   align-items: stretch;
 }

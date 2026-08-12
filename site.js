@@ -93,3 +93,15 @@ document.querySelectorAll('.other-projects').forEach(function (block) {
   window.addEventListener('resize', update);
   update();
 });
+
+document.querySelectorAll('[data-flow-toggle]').forEach(function (btn) {
+  var diagram = document.querySelector('[data-flow-diagram]');
+  var row = document.querySelector('[data-flow-toggle-row]');
+  if (!diagram || !row) return;
+
+  btn.addEventListener('click', function () {
+    var expanded = diagram.classList.toggle('is-expanded');
+    row.classList.toggle('is-expanded', expanded);
+    btn.textContent = expanded ? 'Свернуть флоу ↑' : 'Показать полный флоу →';
+  });
+});

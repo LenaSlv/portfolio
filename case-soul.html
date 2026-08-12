@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geologica:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles-site.css?v=8">
+  <link rel="stylesheet" href="styles-site.css?v=9">
 </head>
 <body>
 
@@ -98,7 +98,13 @@
         <p class="case-section__lead">Вход в приложение, поиск и создание встреч, запись, билет, активности, профиль и система Soul Points.</p>
         <p class="case-section__lead" style="font-size:14px;color:var(--text-dim);margin-top:8px;">Схема составлена постфактум — приложение уже разрабатывалось без выстроенного user flow. Я собрала сценарии в единую карту, чтобы найти нестыковки и возможные пробелы в логике.</p>
         <div class="screen-card" style="margin-top:32px;">
-          <img src="assets/site/soul-flow-diagram.png" alt="User flow «Экосистема Soul»: шесть сценариев — вход и маршрутизация, поиск встречи, запись и посещение, активности и уведомления, создание и управление встречей, профиль и Soul Points" loading="lazy">
+          <div class="flow-diagram" data-flow-diagram>
+            <img src="assets/site/soul-flow-diagram.png" alt="User flow «Экосистема Soul»: шесть сценариев — вход и маршрутизация, поиск встречи, запись и посещение, активности и уведомления, создание и управление встречей, профиль и Soul Points" loading="lazy">
+          </div>
+        </div>
+        <div class="flow-toggle-row" data-flow-toggle-row>
+          <button class="flow-toggle" type="button" data-flow-toggle>Показать полный флоу →</button>
+          <p class="flow-toggle-caption">Полная схема · все сценарии и ветвления</p>
         </div>
       </div>
     </section>
@@ -328,6 +334,6 @@
     </div>
   </div>
 
-  <script src="site.js?v=8"></script>
+  <script src="site.js?v=9"></script>
 </body>
 </html>
