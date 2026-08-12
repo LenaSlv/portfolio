@@ -1019,6 +1019,39 @@ a {
   display: block;
 }
 
+.before-after-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.before-after-card {
+  flex: 1 1 0;
+  min-width: 0;
+  background: #000;
+  border: 1px solid var(--border-card);
+  border-radius: 28px;
+  padding: 24px 9px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.before-after-card__label {
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+}
+
+.before-after-card img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 20px;
+}
+
 .flow-card {
   background: #1d2737;
   border: 1px solid #253040;
@@ -1557,6 +1590,10 @@ a {
 
   .info-cards-row + .info-cards-row {
     margin-top: 16px;
+  }
+
+  .before-after-row {
+    flex-direction: column;
   }
 
   .competency-strip {
