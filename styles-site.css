@@ -1458,6 +1458,12 @@ a {
     height: 200px;
   }
 
+  .screen-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
   .competency-strip {
     margin-top: 28px;
   }
