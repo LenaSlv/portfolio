@@ -21,10 +21,21 @@
       <nav class="site-header__nav">
         <a href="index.html#about">Обо мне</a>
         <a href="index.html#projects">Проекты</a>
+        <a href="index.html#experience">Опыт</a>
         <a href="index.html#contacts">Контакты</a>
       </nav>
-      <button class="button" type="button" data-open-contact>Связаться со мной</button>
+      <button class="button site-header__cta" type="button" data-open-contact>Связаться со&nbsp;мной</button>
+      <button class="site-header__toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Открыть меню">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+    <nav class="site-header__mobile-menu" id="mobile-menu" data-mobile-menu>
+      <a href="index.html#about">Обо мне</a>
+      <a href="index.html#projects">Проекты</a>
+      <a href="index.html#experience">Опыт</a>
+      <a href="index.html#contacts">Контакты</a>
+      <button class="button" type="button" data-open-contact>Связаться со&nbsp;мной</button>
+    </nav>
   </header>
 
   <div class="case-topbar">
@@ -201,6 +212,85 @@
       <div class="container">
         <p class="case-cta__text">Детали проекта и остальные сценарии могу показать и рассказать на встрече.</p>
         <a class="button" href="index.html#contacts">Обсудить проект</a>
+      </div>
+    </section>
+
+    <section class="other-projects">
+      <div class="container other-projects__head">
+        <h2 class="other-projects__title">Другие проекты</h2>
+        <div class="other-projects__nav">
+          <button class="other-projects__nav-btn" type="button" data-carousel-prev aria-label="Предыдущий проект">‹</button>
+          <button class="other-projects__nav-btn" type="button" data-carousel-next aria-label="Следующий проект">›</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="other-projects__row">
+          <div class="other-projects__track">
+          <a class="other-project-card" href="case-corporate.html">
+            <div class="other-project-card__body">
+              <div class="other-project-card__top">
+                <span class="kicker">Внутренний продукт</span>
+                <h3 class="other-project-card__title">Сервис заказа корпоративного транспорта</h3>
+              </div>
+              <div class="other-project-card__bottom">
+                <div class="other-project-card__meta">
+                  <span>iOS / Android</span>
+                  <span>·</span>
+                  <span>B2B</span>
+                  <span>·</span>
+                  <span>NDA</span>
+                </div>
+                <span class="other-project-card__link">Смотреть кейс</span>
+              </div>
+            </div>
+            <div class="other-project-card__preview">
+              <img src="assets/site/preview-corporate.png" alt="Сервис заказа корпоративного транспорта" loading="lazy">
+            </div>
+          </a>
+          <a class="other-project-card" href="case-transport-pet.html">
+            <div class="other-project-card__body">
+              <div class="other-project-card__top">
+                <span class="kicker">Мобильное приложение</span>
+                <h3 class="other-project-card__title">Транспортное приложение для&nbsp;Калининградской области</h3>
+              </div>
+              <div class="other-project-card__bottom">
+                <div class="other-project-card__meta">
+                  <span>iOS / Android</span>
+                  <span>·</span>
+                  <span>B2C</span>
+                  <span>·</span>
+                  <span>NDA</span>
+                </div>
+                <span class="other-project-card__link">Смотреть кейс</span>
+              </div>
+            </div>
+            <div class="other-project-card__preview">
+              <img src="assets/site/preview-kaliningrad.png" alt="Транспортное приложение для Калининградской области" loading="lazy">
+            </div>
+          </a>
+          <a class="other-project-card" href="case-arm-kassira.html">
+            <div class="other-project-card__body">
+              <div class="other-project-card__top">
+                <span class="kicker">Внутренний продукт</span>
+                <h3 class="other-project-card__title">Автоматизированное рабочее место кассира</h3>
+              </div>
+              <div class="other-project-card__bottom">
+                <div class="other-project-card__meta">
+                  <span>WEB</span>
+                  <span>·</span>
+                  <span>B2B</span>
+                  <span>·</span>
+                  <span>NDA</span>
+                </div>
+                <span class="other-project-card__link">Смотреть кейс</span>
+              </div>
+            </div>
+            <div class="other-project-card__preview">
+              <img src="assets/site/preview-arm.png" alt="АРМ Кассира" loading="lazy">
+            </div>
+          </a>
+          </div>
+        </div>
       </div>
     </section>
 
