@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geologica:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles-site.css?v=14">
+  <link rel="stylesheet" href="styles-site.css?v=15">
 </head>
 <body>
 
@@ -178,22 +178,34 @@
 
     <section class="case-section">
       <div class="container">
-        <span class="case-kicker">05 · Карта поиска</span>
+        <span class="case-kicker">04 · Карта поиска</span>
         <h2 class="case-section__title">Карта, которая помогает выбрать встречу</h2>
         <p class="case-section__lead">Фильтры, превью по метке и различимые типы меток помогают сравнить варианты до перехода в детальную карточку — без блуждания по пустой выдаче.</p>
 
         <div class="hypothesis">
           <h3 class="hypothesis__title">Сравнение — до открытия карточки</h3>
-          <p class="hypothesis__text">Гипотеза: если вынести фильтры по месту и времени наверх, показывать превью по тапу на метку и различать метки по типу, пользователь сможет сравнить встречи прямо на карте и открывать детальную карточку осознанно, а не наугад.</p>
+          <p class="hypothesis__label">Гипотеза</p>
+          <p class="hypothesis__text">Если вынести фильтры по месту и времени наверх, показывать превью по тапу на метку и различать метки по типу, пользователь сможет сравнить встречи прямо на карте и открывать детальную карточку осознанно, а не наугад.</p>
           <div class="value-pair">
             <div class="value-pair__item"><strong>Пользователю</strong>Сравнивает варианты по расстоянию и типу до перехода в карточку — не тратит тапы впустую.</div>
             <div class="value-pair__item"><strong>Бизнесу</strong>Меньше случайных переходов в карточку — выше доля осознанных записей.</div>
           </div>
-          <div class="screen-card">
-            <img src="assets/site/soul-map-before-after.png" alt="Карта поиска: было и стало" loading="lazy">
+        </div>
+
+        <div class="before-after-row">
+          <div class="before-after-card">
+            <p class="before-after-card__label">Было</p>
+            <img src="assets/site/soul-map-before.png" alt="Карта поиска «было»" loading="lazy">
           </div>
-          <p class="hypothesis__subtitle">Моё решение</p>
-          <ul class="solution-list">
+          <div class="before-after-card">
+            <p class="before-after-card__label">Стало</p>
+            <img src="assets/site/soul-map-after.png" alt="Карта поиска «стало»" loading="lazy">
+          </div>
+        </div>
+
+        <div class="solution-card">
+          <p class="solution-card__title">Моё решение</p>
+          <ul class="solution-list solution-list--dot">
             <li>Вынесла фильтры «где» и «когда» наверх — на задаче «найди встречу рядом на эти выходные» участники доходили до результата и в интервью подтверждали, что поняли: выбор можно сузить.</li>
             <li>Сделала так, что тап по метке сразу открывает превью — участники стали сравнивать соседние метки, а не тыкать наугад.</li>
             <li>Развела метки по типу и подсветила выбранную — на вопросы «сколько встреч на экране» и «где ты сейчас» участники отвечали с первого взгляда.</li>
@@ -347,6 +359,6 @@
     </div>
   </div>
 
-  <script src="site.js?v=14"></script>
+  <script src="site.js?v=15"></script>
 </body>
 </html>
