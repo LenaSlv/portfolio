@@ -783,6 +783,20 @@ a {
   gap: 16px;
 }
 
+.info-cards-row {
+  display: flex;
+  gap: 24px;
+}
+
+.info-cards-row + .info-cards-row {
+  margin-top: 32px;
+}
+
+.info-cards-row .info-card {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
 .info-card {
   background: #141b27;
   border: 1px solid var(--border-card);
@@ -1462,6 +1476,14 @@ a {
     flex: 1 1 100%;
     max-width: 100%;
     min-width: 0;
+  }
+
+  .info-cards-row {
+    flex-direction: column;
+  }
+
+  .info-cards-row + .info-cards-row {
+    margin-top: 16px;
   }
 
   .competency-strip {
