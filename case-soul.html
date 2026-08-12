@@ -95,9 +95,12 @@
 
     <section class="case-section">
       <div class="container">
-        <h2 class="case-section__title">Пользовательские сценарии: Флоу · Экосистема Soul</h2>
-        <p class="case-section__lead">Схема составлена постфактум — приложение уже разрабатывалось без выстроенного user flow. Я собрала сценарии в единую карту, чтобы найти нестыковки и возможные пробелы в логике.</p>
-        <div class="screen-placeholder">Диаграмма: user flow «Экосистема Soul» — шесть сценариев: 01 · Вход и маршрутизация, 02 · Поиск встречи, 03 · Запись и посещение, 04 · Активности и уведомления, 05 · Создание и управление встречей, 06 · Профиль, друзья и Soul Points</div>
+        <p style="color:var(--accent);font-weight:500;font-size:22px;margin-bottom:12px;">User Flow</p>
+        <p class="case-section__lead">Вход в приложение, поиск и создание встреч, запись, билет, активности, профиль и система Soul Points.</p>
+        <p class="case-section__lead" style="font-size:14px;color:var(--text-dim);margin-top:8px;">Схема составлена постфактум — приложение уже разрабатывалось без выстроенного user flow. Я собрала сценарии в единую карту, чтобы найти нестыковки и возможные пробелы в логике.</p>
+        <div class="screen-card" style="margin-top:32px;">
+          <img src="assets/site/soul-flow-diagram.png" alt="User flow «Экосистема Soul»: шесть сценариев — вход и маршрутизация, поиск встречи, запись и посещение, активности и уведомления, создание и управление встречей, профиль и Soul Points" loading="lazy">
+        </div>
       </div>
     </section>
 
@@ -141,7 +144,9 @@
             <div class="value-pair__item"><strong>Пользователю</strong>Не прокручивает карточку в поисках ответа — все условия видны сразу.</div>
             <div class="value-pair__item"><strong>Бизнесу</strong>Меньше отказов на этапе просмотра — решение принимается быстрее.</div>
           </div>
-          <div class="screen-placeholder">Экраны: карточка встречи «было» и «стало»</div>
+          <div class="screen-card">
+            <img src="assets/site/soul-card-before-after.png" alt="Карточка встречи: было и стало" loading="lazy">
+          </div>
           <p class="hypothesis__subtitle">Моё решение</p>
           <ul class="solution-list">
             <li>Закрепила CTA-кнопки «Я пойду» и «Пригласить» — действие остаётся доступным при прокрутке.</li>
@@ -166,7 +171,9 @@
             <div class="value-pair__item"><strong>Пользователю</strong>Сравнивает варианты по расстоянию и типу до перехода в карточку — не тратит тапы впустую.</div>
             <div class="value-pair__item"><strong>Бизнесу</strong>Меньше случайных переходов в карточку — выше доля осознанных записей.</div>
           </div>
-          <div class="screen-placeholder">Экраны: карта поиска «было» и «стало»</div>
+          <div class="screen-card">
+            <img src="assets/site/soul-map-before-after.png" alt="Карта поиска: было и стало" loading="lazy">
+          </div>
           <p class="hypothesis__subtitle">Моё решение</p>
           <ul class="solution-list">
             <li>Вынесла фильтры «где» и «когда» наверх — на задаче «найди встречу рядом на эти выходные» участники доходили до результата и в интервью подтверждали, что поняли: выбор можно сузить.</li>
