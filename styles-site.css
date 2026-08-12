@@ -1028,7 +1028,7 @@ a {
 }
 
 .flow-card__inner {
-  background: var(--bg-card);
+  background: #141b27;
   border: 1px solid var(--border-card);
   border-radius: 30px;
   padding: 24px 32px 40px;
