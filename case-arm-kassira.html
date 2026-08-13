@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geologica:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles-site.css?v=16">
+  <link rel="stylesheet" href="styles-site.css?v=18">
 </head>
 <body>
 
@@ -47,10 +47,7 @@
 
     <section class="case-hero">
       <div class="container">
-        <div class="case-hero__badges">
-          <span class="case-hero__nda">Внутренний продукт · NDA</span>
-        </div>
-        <h1 class="case-hero__title">АРМ Кассира</h1>
+        <h1 class="case-hero__title">АРМ кассира</h1>
         <p class="case-hero__lead">Редизайн рабочего пространства кассира на автовокзале</p>
         <div class="case-hero__meta">
           <span><strong>Роль</strong>UX/UI-дизайнер</span>
@@ -58,7 +55,7 @@
           <span><strong>Формат</strong>редизайн рабочего пространства кассира</span>
         </div>
         <div class="case-hero__cover">
-          <img src="assets/site/preview-arm.png" alt="Рабочее пространство кассира" width="1448" height="1086">
+          <img src="assets/site/arm-hero-showcase.png" alt="Рабочее пространство кассира: экран заказа и оплаты" width="1248" height="630">
         </div>
       </div>
     </section>
@@ -68,19 +65,39 @@
         <span class="case-kicker">02 · Изменение заказа</span>
         <h2 class="case-section__title">Изменение заказа без повторного оформления</h2>
 
-        <div class="hypothesis">
-          <h3 class="hypothesis__title">Бизнес-задача</h3>
-          <p class="hypothesis__intro">Сократить время кассира на изменение уже оформленного заказа и снизить число отменённых заказов в системе.</p>
-
-          <p class="hypothesis__text"><strong>Было.</strong> Добавить пассажира или услугу можно было только на этапе оформления заказа. Если заказ уже был оформлен, любое изменение требовало отменить его и оформить заново.</p>
-          <div class="screen-placeholder">Экран: старый интерфейс — заполнение информации о билетах, таблица пассажиров и данные о рейсе</div>
-
-          <p class="hypothesis__text"><strong>User Flow.</strong> Существующий заказ → добавить пассажира или услугу → перерасчёт → доплата</p>
-
-          <p class="hypothesis__text"><strong>Стало.</strong></p>
-          <div class="screen-placeholder">Экран: новый интерфейс — добавление пассажира или услуги через всплывающее меню («Детский без места», «Багаж», «Страховка багажа»)</div>
-          <p class="hypothesis__text">В оформленном билете предусмотрен сценарий редактирования, в котором кассир добавляет пассажиров и услуги в существующий заказ, а система автоматически рассчитывает доплату.</p>
+        <div class="note-card" style="margin-bottom:24px;">
+          <p class="note-card__label">Бизнес-задача</p>
+          <p class="note-card__text">Сократить время кассира на изменение уже оформленного заказа и снизить число отменённых заказов в системе.</p>
         </div>
+
+        <div class="compare-row">
+          <div class="note-card">
+            <p class="note-card__label">Было</p>
+            <p class="note-card__text">Добавить пассажира или услугу можно было только на этапе оформления заказа. Если заказ уже был оформлен, любое изменение требовало отменить его и оформить заново.</p>
+          </div>
+          <div class="compare-screen">
+            <img src="assets/site/arm-order-before.png" alt="Старый интерфейс: заполнение информации о билетах">
+          </div>
+        </div>
+
+        <div class="flow-steps-card">
+          <p class="flow-steps-card__label">User Flow</p>
+          <div class="flow-steps">
+            <span class="flow-step">Существующий заказ</span>
+            <span class="flow-connector"></span>
+            <span class="flow-step">добавить пассажира или услугу</span>
+            <span class="flow-connector"></span>
+            <span class="flow-step flow-step--active">перерасчет</span>
+            <span class="flow-connector"></span>
+            <span class="flow-step">доплата</span>
+          </div>
+        </div>
+
+        <p class="note-card__label" style="margin-bottom:16px;">Стало</p>
+        <div class="arm-screen" style="margin-bottom:16px;">
+          <img src="assets/site/arm-order-after.png" alt="Новый интерфейс: заказ с добавленным пассажиром и услугами через всплывающее меню">
+        </div>
+        <p class="case-section__lead" style="font-size:18px;">В оформленном билете предусмотрен сценарий редактирования, в котором кассир добавляет пассажиров и услуги в существующий заказ, а система автоматически рассчитывает доплату.</p>
       </div>
     </section>
 
@@ -89,38 +106,62 @@
         <span class="case-kicker">03 · Смешанная оплата</span>
         <h2 class="case-section__title">Оплатить заказ, комбинируя любые способы</h2>
 
-        <div class="hypothesis">
-          <h3 class="hypothesis__title">Бизнес-задача</h3>
-          <p class="hypothesis__intro">Снизить количество кликов кассира, сделать сценарий оплаты более нативным и добавить смешанную оплату — чтобы комбинированный платёж занимал меньше действий.</p>
+        <div class="note-card" style="margin-bottom:24px;">
+          <p class="note-card__label">Бизнес-задача</p>
+          <p class="note-card__text">Снизить количество кликов кассира, сделать сценарий оплаты более нативным и добавить смешанную оплату — чтобы комбинированный платёж занимал меньше действий.</p>
+        </div>
 
-          <p class="hypothesis__text"><strong>Было.</strong> Смешанная оплата отсутствовала: заказ можно было оплатить только одним способом целиком или разбить платёж на отдельные этапы — каждый этап открывал новое модальное окно и требовал лишних кликов.</p>
-          <div class="screen-placeholder">Экран: старый интерфейс — выбор формы оплаты и два последовательных окна оплаты (сначала наличными, затем картой)</div>
+        <div class="compare-row">
+          <div class="note-card">
+            <p class="note-card__label">Было</p>
+            <p class="note-card__text">Смешанная оплата отсутствовала: заказ можно было оплатить только одним способом целиком или разбить платёж на отдельные этапы — каждый этап открывал новое модальное окно и требовал лишних кликов.</p>
+          </div>
+          <div class="compare-screen">
+            <img src="assets/site/arm-payment-before.png" alt="Старый интерфейс: выбор формы оплаты и два последовательных окна оплаты">
+          </div>
+        </div>
 
-          <p class="hypothesis__text"><strong>Сценарий.</strong> Наличные + карта + СБП + ещё одна карта — в любой комбинации</p>
+        <div class="flow-steps-card">
+          <div class="flow-steps">
+            <span class="flow-step">Наличные</span>
+            <span class="flow-plus">+</span>
+            <span class="flow-step">карта</span>
+            <span class="flow-plus">+</span>
+            <span class="flow-step">СБП</span>
+            <span class="flow-plus">+</span>
+            <span class="flow-step">ещё одна карта</span>
+            <span class="flow-steps-note">— в любой комбинации</span>
+          </div>
+        </div>
 
-          <div class="value-pair">
-            <div class="value-pair__item">
-              <strong>Остаток виден сразу</strong>
-              Итого к оплате и остаток пересчитываются автоматически при добавлении каждого способа оплаты.
+        <div class="pair-row">
+          <div class="proof-card">
+            <p class="proof-card__title">Остаток виден сразу</p>
+            <p class="proof-card__text">Итого к оплате и остаток пересчитываются автоматически при добавлении каждого способа оплаты.</p>
+            <div class="value-pair">
+              <div class="value-pair__item"><strong>Кассиру</strong>Не нужно держать сумму в уме — программа сама показывает, сколько осталось внести.</div>
+              <div class="value-pair__item"><strong>Бизнесу</strong>Меньше ошибок в расчётах при смешанной оплате.</div>
             </div>
           </div>
-          <ul class="solution-list">
-            <li>Кассиру: не нужно держать сумму в уме — программа сама показывает, сколько осталось внести.</li>
-            <li>Бизнесу: меньше ошибок в расчётах при смешанной оплате.</li>
-          </ul>
-          <div class="screen-placeholder">Экран: модальное окно смешанной оплаты</div>
-          <div class="screen-placeholder">Экран: список подключённых способов оплаты</div>
+          <div class="proof-card proof-card--screen">
+            <img src="assets/site/arm-payment-modal.png" alt="Модальное окно смешанной оплаты">
+            <p class="proof-card__caption">Модальное окно смешанной оплаты</p>
+          </div>
+        </div>
 
-          <div class="value-pair">
-            <div class="value-pair__item">
-              <strong>Отмена по одному способу</strong>
-              Каждый способ оплаты можно отменить отдельно — например, вернуть только оплату картой, оставив наличные. Или отменить всю оплату сразу.
+        <div class="pair-row">
+          <div class="proof-card proof-card--screen">
+            <img src="assets/site/arm-payment-methods.png" alt="Список подключённых способов оплаты">
+            <p class="proof-card__caption">Список подключённых способов оплаты</p>
+          </div>
+          <div class="proof-card">
+            <p class="proof-card__title">Отмена по одному способу</p>
+            <p class="proof-card__text">Каждый способ оплаты можно отменить отдельно — например, вернуть только оплату картой, оставив наличные. Или отменить всю оплату сразу.</p>
+            <div class="value-pair">
+              <div class="value-pair__item"><strong>Кассиру</strong>Не нужно отменять весь заказ, если ошибся только один платёж.</div>
+              <div class="value-pair__item"><strong>Клиенту</strong>Возврат оформляется быстрее и точнее.</div>
             </div>
           </div>
-          <ul class="solution-list">
-            <li>Кассиру: не нужно отменять весь заказ, если ошибся только один платёж.</li>
-            <li>Клиенту: возврат оформляется быстрее и точнее.</li>
-          </ul>
         </div>
       </div>
     </section>
@@ -168,6 +209,6 @@
     </div>
   </div>
 
-  <script src="site.js?v=16"></script>
+  <script src="site.js?v=18"></script>
 </body>
 </html>
