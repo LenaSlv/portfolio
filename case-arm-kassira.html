@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geologica:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles-site.css?v=18">
+  <link rel="stylesheet" href="styles-site.css?v=19">
 </head>
 <body>
 
@@ -170,7 +170,22 @@
       <div class="container">
         <span class="case-kicker">04 · Edge cases</span>
         <h2 class="case-section__title">Вернуть оплату — пересчёт</h2>
-        <div class="screen-placeholder">Экраны: «Заказ оплачен» → «Возврат наличных» → «Пересчёт после возврата»</div>
+        <div class="edge-row">
+          <div class="proof-card proof-card--screen">
+            <img src="assets/site/arm-refund-1.png" alt="Заказ оплачен">
+            <p class="proof-card__caption">Заказ оплачен</p>
+          </div>
+          <span class="edge-arrow">→</span>
+          <div class="proof-card proof-card--screen">
+            <img src="assets/site/arm-refund-2.png" alt="Возврат наличных">
+            <p class="proof-card__caption">Возврат наличных</p>
+          </div>
+          <span class="edge-arrow">→</span>
+          <div class="proof-card proof-card--screen">
+            <img src="assets/site/arm-refund-3.png" alt="Пересчёт после возврата">
+            <p class="proof-card__caption">Пересчёт после возврата</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -178,6 +193,85 @@
       <div class="container">
         <p class="case-cta__text">Детали проекта и остальные сценарии могу показать и рассказать на встрече.</p>
         <a class="button" href="index.html#contacts">Обсудить проект</a>
+      </div>
+    </section>
+
+    <section class="other-projects">
+      <div class="container other-projects__head">
+        <h2 class="other-projects__title">Другие проекты</h2>
+        <div class="other-projects__nav">
+          <button class="other-projects__nav-btn" type="button" data-carousel-prev aria-label="Предыдущий проект">‹</button>
+          <button class="other-projects__nav-btn" type="button" data-carousel-next aria-label="Следующий проект">›</button>
+        </div>
+      </div>
+      <div class="container">
+        <div class="other-projects__row">
+          <div class="other-projects__track">
+          <a class="other-project-card" href="case-corporate.html">
+            <div class="other-project-card__body">
+              <div class="other-project-card__top">
+                <span class="kicker">Внутренний продукт</span>
+                <h3 class="other-project-card__title">Сервис заказа корпоративного транспорта</h3>
+              </div>
+              <div class="other-project-card__bottom">
+                <div class="other-project-card__meta">
+                  <span>iOS / Android</span>
+                  <span>·</span>
+                  <span>B2B</span>
+                  <span>·</span>
+                  <span>NDA</span>
+                </div>
+                <span class="other-project-card__link">Смотреть кейс</span>
+              </div>
+            </div>
+            <div class="other-project-card__preview">
+              <img src="assets/site/preview-corporate.png" alt="Сервис заказа корпоративного транспорта" loading="lazy">
+            </div>
+          </a>
+          <a class="other-project-card" href="case-transport-pet.html">
+            <div class="other-project-card__body">
+              <div class="other-project-card__top">
+                <span class="kicker">Мобильное приложение</span>
+                <h3 class="other-project-card__title">Транспортное приложение для&nbsp;Калининградской области</h3>
+              </div>
+              <div class="other-project-card__bottom">
+                <div class="other-project-card__meta">
+                  <span>iOS / Android</span>
+                  <span>·</span>
+                  <span>B2C</span>
+                  <span>·</span>
+                  <span>NDA</span>
+                </div>
+                <span class="other-project-card__link">Смотреть кейс</span>
+              </div>
+            </div>
+            <div class="other-project-card__preview">
+              <img src="assets/site/preview-kaliningrad.png" alt="Транспортное приложение для Калининградской области" loading="lazy">
+            </div>
+          </a>
+          <a class="other-project-card" href="case-soul.html">
+            <div class="other-project-card__body">
+              <div class="other-project-card__top">
+                <span class="kicker">Telegram MiniApp</span>
+                <h3 class="other-project-card__title">SOUL&nbsp;— платформа для&nbsp;поиска компании и&nbsp;активностей в&nbsp;путешествиях</h3>
+              </div>
+              <div class="other-project-card__bottom">
+                <div class="other-project-card__meta">
+                  <span>iOS / Android</span>
+                  <span>·</span>
+                  <span>B2C</span>
+                  <span>·</span>
+                  <span>MVP</span>
+                </div>
+                <span class="other-project-card__link">Смотреть кейс</span>
+              </div>
+            </div>
+            <div class="other-project-card__preview">
+              <img src="assets/site/preview-soul.png" alt="Soul" loading="lazy">
+            </div>
+          </a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -209,6 +303,6 @@
     </div>
   </div>
 
-  <script src="site.js?v=18"></script>
+  <script src="site.js?v=19"></script>
 </body>
 </html>

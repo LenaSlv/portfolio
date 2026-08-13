@@ -1234,6 +1234,29 @@ a {
   font-size: 15px;
 }
 
+.edge-row {
+  display: flex;
+  align-items: stretch;
+  gap: 6px;
+}
+
+.edge-row .proof-card--screen {
+  flex: 1 1 0;
+  min-width: 0;
+  justify-content: flex-start;
+}
+
+.edge-row .proof-card--screen img {
+  border-radius: 12px;
+}
+
+.edge-arrow {
+  color: var(--accent);
+  font-size: 18px;
+  align-self: center;
+  flex-shrink: 0;
+}
+
 .flow-card {
   background: #1d2737;
   border: 1px solid #253040;
@@ -1799,6 +1822,14 @@ a {
 
   .pair-row {
     flex-direction: column;
+  }
+
+  .edge-row {
+    flex-direction: column;
+  }
+
+  .edge-arrow {
+    transform: rotate(90deg);
   }
 
   .competency-strip {
