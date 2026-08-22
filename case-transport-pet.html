@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Транспортное приложение для&nbsp;Калининградской области</title>
-  <meta name="description" content="Кейс продуктового дизайнера: сервис для&nbsp;транспортной карты, городских поездок и&nbsp;билетов на&nbsp;межгород. Концепция на&nbsp;основе реального проекта под&nbsp;NDA.">
+  <title>Единый транспортный сервис&nbsp;— Елена Сулоева</title>
+  <meta name="description" content="Кейс продуктового дизайнера: единый мобильный сервис для городских и междугородних поездок.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geologica:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles-site.css?v=19">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles-site.css?v=21">
 </head>
-<body>
-
+<body class="case-page case-page--pet">
   <header class="site-header">
     <div class="site-header__inner">
       <a href="index.html" class="site-header__brand">
@@ -21,384 +20,169 @@
       <nav class="site-header__nav">
         <a href="index.html#about">Обо мне</a>
         <a href="index.html#projects">Проекты</a>
-        <a href="index.html#experience">Опыт</a>
         <a href="index.html#contacts">Контакты</a>
       </nav>
       <button class="button site-header__cta" type="button" data-open-contact>Связаться со&nbsp;мной</button>
-      <button class="site-header__toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Открыть меню">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="site-header__toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Открыть меню"><span></span><span></span><span></span></button>
     </div>
     <nav class="site-header__mobile-menu" id="mobile-menu" data-mobile-menu>
-      <a href="index.html#about">Обо мне</a>
-      <a href="index.html#projects">Проекты</a>
-      <a href="index.html#experience">Опыт</a>
-      <a href="index.html#contacts">Контакты</a>
+      <a href="index.html#about">Обо мне</a><a href="index.html#projects">Проекты</a><a href="index.html#contacts">Контакты</a>
       <button class="button" type="button" data-open-contact>Связаться со&nbsp;мной</button>
     </nav>
   </header>
 
-  <div class="case-topbar">
-    <a class="case-topbar__back" href="index.html">На&nbsp;главную</a>
-  </div>
+  <div class="case-topbar"><a class="case-topbar__back" href="index.html#projects">К&nbsp;проектам</a></div>
 
   <main>
-
     <section class="case-hero">
       <div class="container">
-        <h1 class="case-hero__title">Транспортное приложение для&nbsp;Калининградской области</h1>
-        <p class="case-hero__lead">Спроектировала единый сервис для&nbsp;транспортной карты, оплаты городских поездок и&nbsp;покупки билетов на&nbsp;межгород.</p>
-        <p class="case-hero__meta"><span><strong>Роль</strong>продуктовый дизайнер</span><span><strong>Платформы</strong>iOS / Android</span><span><strong>Формат</strong>концепция на&nbsp;основе реального проекта под&nbsp;NDA</span></p>
+        <h1 class="case-hero__title">Единый транспортный сервис для&nbsp;городских и&nbsp;междугородних поездок</h1>
+        <p class="case-hero__lead">Спроектировала единый мобильный сервис: от&nbsp;выпуска транспортной карты и&nbsp;оплаты городской поездки до&nbsp;покупки межгородского билета и&nbsp;QR-кода.</p>
+        <div class="case-hero__badges case-hero__badges--meta">
+          <span class="case-hero__nda">Роль · Product designer</span>
+          <span class="case-hero__nda">Платформы · iOS / Android</span>
+        </div>
         <div class="case-hero__cover">
-          <img src="assets/site/kaliningrad-hero-showcase.png" alt="Четыре экрана приложения на телефонах: карта, транспортная карта, межгород, билет" width="1248" height="630">
+          <img src="assets/site/kaliningrad-hero-showcase.png" alt="Экраны единого транспортного сервиса" width="1248" height="630">
         </div>
       </div>
     </section>
 
-    <section class="case-section">
+    <section class="case-story">
       <div class="container">
-        <span class="case-kicker">01 · Проблема</span>
-        <h2 class="case-section__title">Чтобы оплатить поездку, приходится разбираться в&nbsp;нескольких сервисах</h2>
-        <p class="case-section__lead">Я живу в&nbsp;Калининградской области и&nbsp;сама сталкиваюсь с&nbsp;этим сценарием. Для&nbsp;онлайн-оплаты обычных поездок есть только Telegram-бот, карта оформляется и&nbsp;пополняется офлайн, а&nbsp;межгород остаётся отдельным сценарием. Эти наблюдения стали отправной точкой гипотез.</p>
-        <div class="info-cards">
-          <div class="info-card">
-            <p class="info-card__title">Обычные поездки&nbsp;— через бота</p>
-            <p class="info-card__text">Отдельного приложения нет: онлайн-оплата поездок доступна только через Telegram-бот.</p>
-          </div>
-          <div class="info-card">
-            <p class="info-card__title">Карта и&nbsp;пополнение&nbsp;— офлайн</p>
-            <p class="info-card__text">Карту нужно оформлять лично и&nbsp;пополнять только офлайн&nbsp;— это требует отдельной поездки.</p>
-          </div>
-          <div class="info-card">
-            <p class="info-card__title">Межгород&nbsp;— отдельный сценарий</p>
-            <p class="info-card__text">Поиск рейса и&nbsp;покупка билета не&nbsp;связаны с&nbsp;оплатой обычных поездок.</p>
-          </div>
+        <p class="case-story__eyebrow">01 · Контекст и&nbsp;проблема</p>
+        <h2 class="case-story__title">Частые поездки по&nbsp;городу и&nbsp;области остаются двумя разными сценариями</h2>
+        <div class="case-grid case-grid--2">
+          <article class="case-card"><p class="case-card__label">Контекст</p><p>Калининградская область компактна, поэтому поездки между городом и&nbsp;областью&nbsp;— часть повседневной жизни. Жители ездят в&nbsp;Калининград на&nbsp;работу, а&nbsp;из&nbsp;города&nbsp;— к&nbsp;морю и&nbsp;в&nbsp;соседние города.</p></article>
+          <article class="case-card case-card--accent"><p class="case-card__label">Проблема и&nbsp;задача</p><p>Для городских и&nbsp;междугородних поездок нужны разные действия, а&nbsp;их цифровые сценарии разорваны. Я&nbsp;решила объединить их в&nbsp;одном приложении, сохранив различия в&nbsp;правилах поездки и&nbsp;оплаты.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="case-section">
+    <section class="case-story">
       <div class="container">
-        <span class="case-kicker">02 · Основной User Flow</span>
-        <h2 class="case-section__title">Пользовательские сценарии: карта и&nbsp;межгород</h2>
-        <p class="case-section__lead">Два сквозных сценария включают основные действия, продуктовые развилки и&nbsp;крайние случаи: выпуск без&nbsp;оплаты, переименование карты, историю поездок, последнюю поездку по&nbsp;абонементу и&nbsp;восстановление после отсутствия рейсов.</p>
-        <div class="mockup-block">
-          <img src="assets/site/kaliningrad-userflow.png" alt="User flow «Два сценария»: транспортная карта и поездки, межгород" loading="lazy">
+        <p class="case-story__eyebrow">Решение 01 · Транспортная карта</p>
+        <h2 class="case-story__title">Убрать офлайн-барьер перед первой поездкой</h2>
+        <article class="case-card case-card--journey">
+          <h3>Как изменился путь пользователя</h3>
+          <p>Тарифы и&nbsp;способы пополнения доступны сразу&nbsp;— оформить и&nbsp;пополнить карту можно без&nbsp;поездки в&nbsp;офис.</p>
+          <div class="journey-compare">
+            <div><span>Раньше</span><p>Поездка в&nbsp;офис → Получение карты → Тариф и&nbsp;пополнение</p></div>
+            <div><span>После переноса в&nbsp;приложение</span><p>Выпуск карты → Тарифы доступны сразу → Пополнение онлайн</p></div>
+          </div>
+        </article>
+        <div class="case-grid case-grid--3 case-grid--screens">
+          <article class="case-media-card"><img src="assets/site/kaliningrad-hyp1-phones.png" alt="Выбор типа карты" loading="lazy"><p class="case-media-card__caption">Выбор типа карты</p></article>
+          <article class="case-media-card"><img src="assets/site/kaliningrad-hyp2-phones.png" alt="Выпуск виртуальной карты" loading="lazy"><p class="case-media-card__caption">Выпуск виртуальной карты</p></article>
+          <article class="case-media-card"><img src="assets/site/kaliningrad-hyp1-phones.png" alt="Карта создана" loading="lazy"><p class="case-media-card__caption">Карта создана</p></article>
         </div>
       </div>
     </section>
 
-    <section class="case-section">
+    <section class="case-story">
       <div class="container">
-        <span class="case-kicker">03 · Виртуальная карта</span>
-        <h2 class="case-section__title">Виртуальная карта&nbsp;— без&nbsp;кассы и&nbsp;оплаты на&nbsp;старте</h2>
-        <p class="case-section__lead">Карта выпускается прямо в&nbsp;приложении: не&nbsp;нужно идти за&nbsp;пластиком или сразу пополнять счёт. Если карта уже есть, её можно привязать по&nbsp;номеру и&nbsp;быстро пополнять онлайн.</p>
-
-        <div class="hyp-pair">
-          <div class="hypothesis">
-            <h3 class="hypothesis__title">Карта без&nbsp;кассы</h3>
-            <p class="hypothesis__label">Гипотеза</p>
-            <p class="hypothesis__text">Если виртуальную транспортную карту можно выпустить в&nbsp;приложении, сервисом смогут пользоваться больше пассажиров: для&nbsp;этого не&nbsp;нужно ехать в&nbsp;кассу и&nbsp;получать пластиковую карту.</p>
-            <div class="value-pair">
-              <div class="value-pair__item"><strong>Пассажиру</strong>Быстрый старт без&nbsp;визита в&nbsp;кассу.</div>
-              <div class="value-pair__item"><strong>Продукту</strong>Меньше барьеров на&nbsp;старте сценария.</div>
-            </div>
-            <p class="hypothesis__text" style="margin-bottom: 0;">Решение: виртуальная карта выпускается в&nbsp;приложении.</p>
-          </div>
-          <div class="hyp-pair__screens">
-            <img class="hyp-pair__screens-phones" src="assets/site/kaliningrad-hyp1-phones.png" alt="Экраны: выбор виртуальной карты и переход к выпуску" loading="lazy">
-            <p class="hyp-pair__screens-caption">Выбор виртуальной карты и&nbsp;переход к&nbsp;выпуску</p>
-          </div>
+        <p class="case-story__eyebrow">Решение 02 · Баланс и&nbsp;абонемент</p>
+        <h2 class="case-story__title">Баланс для&nbsp;нерегулярных поездок, абонемент&nbsp;— для&nbsp;постоянных</h2>
+        <div class="case-grid case-grid--2">
+          <article class="case-media-card case-media-card--titled"><h3>Баланс</h3><p>Оплата по&nbsp;факту использования для&nbsp;нерегулярных поездок и&nbsp;пользователей без&nbsp;абонемента.</p><img src="assets/site/kaliningrad-hyp3-phones.png" alt="Пополнение баланса транспортной карты" loading="lazy"></article>
+          <article class="case-media-card case-media-card--titled"><h3>Абонемент</h3><p>Предсказуемые расходы для&nbsp;ежедневных маршрутов и&nbsp;регулярных поездок.</p><img src="assets/site/kaliningrad-hyp3-screens.png" alt="Покупка абонемента" loading="lazy"></article>
         </div>
+        <article class="case-card case-card--accent case-subscription">
+          <h3>После покупки абонемента</h3>
+          <p>Статус и&nbsp;оставшиеся поездки видны на&nbsp;карте. Приложение заранее предупреждает, когда абонемент скоро закончится.</p>
+          <div class="case-grid case-grid--4 case-grid--screens">
+            <img src="assets/site/kaliningrad-edgecase-phone1.png" alt="Карта активна" loading="lazy">
+            <img src="assets/site/kaliningrad-edgecase-phone2.png" alt="Абонемент скоро закончится" loading="lazy">
+            <img src="assets/site/kaliningrad-intercity2-phone3.png" alt="Последняя поездка" loading="lazy">
+            <img src="assets/site/kaliningrad-edgecase-phone3.png" alt="Абонемент закончился" loading="lazy">
+          </div>
+          <h3>Жизненный цикл абонемента</h3>
+          <p>Статус меняется автоматически и&nbsp;всегда виден на&nbsp;карте. Предупреждение появляется заранее и&nbsp;не&nbsp;мешает поездке.</p>
+          <div class="lifecycle"><span>01 · Активен</span><b>→</b><span>02 · Скоро закончится</span><b>→</b><span>03 · Последняя поездка</span><b>→</b><span>04 · Закончился</span></div>
+        </article>
+      </div>
+    </section>
 
-        <div class="hyp-pair">
-          <div class="hyp-pair__screens">
-            <img class="hyp-pair__screens-phones" src="assets/site/kaliningrad-hyp2-phones.png" alt="Экран: выпуск карты без обязательного пополнения" loading="lazy">
-            <p class="hyp-pair__screens-caption">Выпуск карты без&nbsp;обязательного пополнения</p>
-          </div>
-          <div class="hypothesis">
-            <h3 class="hypothesis__title">Карта сейчас, пополнение позже</h3>
-            <p class="hypothesis__label">Гипотеза</p>
-            <p class="hypothesis__text">Если отделить выпуск карты от&nbsp;первого пополнения, пассажир сможет подготовить карту заранее и&nbsp;вернуться к&nbsp;оплате, когда появится поездка. Это может снизить барьер входа в&nbsp;сервис.</p>
-            <div class="value-pair">
-              <div class="value-pair__item"><strong>Пассажиру</strong>Карта готова заранее, деньги можно внести перед поездкой.</div>
-              <div class="value-pair__item"><strong>Продукту</strong>Меньше отказов на&nbsp;этапе выпуска карты.</div>
-            </div>
-            <p class="hypothesis__text" style="margin-bottom: 0;">Решение: карта выпускается сразу, пополнение становится отдельным шагом.</p>
-          </div>
+    <section class="case-story">
+      <div class="container">
+        <p class="case-story__eyebrow">Решение 03 · Междугородние поездки</p>
+        <h2 class="case-story__title">Найти междугородний рейс и&nbsp;понять всю поездку до&nbsp;оплаты</h2>
+        <p class="case-story__lead">При&nbsp;выборе междугороднего рейса пассажиру важны время отправления и&nbsp;прибытия, стоимость, место посадки, пересадка и&nbsp;общая длительность. Поэтому ключевые параметры показаны уже в&nbsp;результатах поиска.</p>
+        <div class="case-tags"><span>Время</span><span>Цена</span><span>Место отправления</span><span>Пересадка</span><span>Длительность</span></div>
+        <div class="case-grid case-grid--3 case-grid--screens">
+          <article class="case-media-card"><img src="assets/site/kaliningrad-intercity1-phone1.png" alt="Поиск маршрута" loading="lazy"><p class="case-media-card__caption">01 · Поиск маршрута</p></article>
+          <article class="case-media-card"><img src="assets/site/kaliningrad-intercity1-phone2.png" alt="Результаты и сравнение" loading="lazy"><p class="case-media-card__caption">02 · Результаты и&nbsp;сравнение</p></article>
+          <article class="case-media-card"><img src="assets/site/kaliningrad-intercity2-phone2.png" alt="Детали поездки" loading="lazy"><p class="case-media-card__caption">03 · Детали поездки</p></article>
         </div>
+      </div>
+    </section>
 
-        <div class="hyp-pair">
-          <div class="hypothesis">
-            <h3 class="hypothesis__title">Баланс или абонемент</h3>
-            <p class="hypothesis__label">Гипотеза</p>
-            <p class="hypothesis__text">Если предложить баланс для&nbsp;разовых поездок и&nbsp;абонемент для&nbsp;регулярных, выбор между ними поможет пассажиру подобрать удобный способ оплаты.</p>
-            <div class="value-pair">
-              <div class="value-pair__item"><strong>Пассажиру</strong>Оплата соответствует частоте поездок.</div>
-              <div class="value-pair__item"><strong>Продукту</strong>Поддержка разных сценариев использования.</div>
-            </div>
-            <p class="hypothesis__text" style="margin-bottom: 0;">Решение: выбор между балансом и&nbsp;абонементом.</p>
-          </div>
-          <div class="hyp-pair__screens">
-            <img class="hyp-pair__screens-phones" src="assets/site/kaliningrad-hyp3-phones.png" alt="Экраны: выбор между абонементом и балансом" loading="lazy">
-            <p class="hyp-pair__screens-caption">Выбор между абонементом и&nbsp;балансом</p>
+    <section class="case-story">
+      <div class="container">
+        <p class="case-story__eyebrow">Решение 04 · Пересадка</p>
+        <h2 class="case-story__title">Маршрут с&nbsp;пересадкой остаётся одной поездкой</h2>
+        <p class="case-story__lead">Технически это несколько рейсов и&nbsp;сегментов. Для пассажира&nbsp;— одна задача: попасть из&nbsp;точки А&nbsp;в&nbsp;точку Б.</p>
+        <div class="case-split case-split--reverse">
+          <article class="case-media-card"><img src="assets/site/kaliningrad-intercity2-phone3.png" alt="Единый билет на маршрут с пересадкой" loading="lazy"></article>
+          <div class="case-stack">
+            <article class="case-card case-card--accent"><p class="case-card__label">Пользователю</p><p>Легче сравнивать варианты, понятнее общая длительность, меньше риска купить несовместимые рейсы.</p></article>
+            <article class="case-card"><p class="case-card__label">Продукту</p><p>Покупка остаётся единым сценарием, заказ проще сопровождать при&nbsp;изменении одного из&nbsp;сегментов.</p></article>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="case-section">
+    <section class="case-story">
       <div class="container">
-        <span class="case-kicker">04 · Межгород</span>
-        <h2 class="case-section__title">Покупка билета на&nbsp;межгород&nbsp;— по&nbsp;знакомой логике поиска</h2>
-
-        <div class="hypothesis hypothesis--product">
-          <div class="hypothesis__aside">
-            <p class="hypothesis__label">Продуктовая гипотеза</p>
-            <h3 class="hypothesis__title">Один заказ для&nbsp;всей поездки</h3>
-          </div>
-          <div class="hypothesis__body">
-            <p class="hypothesis__text">Если объединить билеты на&nbsp;все участки межгородского маршрута с&nbsp;пересадкой в&nbsp;один заказ, пассажиру будет проще управлять поездкой и&nbsp;быстро находить нужный билет на&nbsp;каждом этапе.</p>
-            <div class="value-pair">
-              <div class="value-pair__item"><strong>Пассажиру</strong>Весь маршрут, время пересадки и&nbsp;QR-коды доступны в&nbsp;одном месте.</div>
-              <div class="value-pair__item"><strong>Продукту</strong>Меньше риска путаницы и&nbsp;обращений в&nbsp;поддержку.</div>
-            </div>
-            <p class="hypothesis__result">Один заказ объединяет поездку, но&nbsp;для&nbsp;каждого рейса может сохраняться отдельный билет и&nbsp;QR-код.</p>
-          </div>
+        <div class="case-heading-split">
+          <div><p class="case-story__eyebrow">Повторное использование</p><h2 class="case-story__title">Повторные действия и&nbsp;сбои не&nbsp;возвращают пользователя в&nbsp;начало</h2></div>
+          <p class="case-story__lead">Продумала сценарии, к&nbsp;которым пассажир возвращается каждый день, и&nbsp;состояния, в&nbsp;которых основной путь нельзя продолжить.</p>
         </div>
-        <div class="intercity-screens">
-          <div class="intercity-screens__item">
-            <img src="assets/site/kaliningrad-intercity1-phone1.png" alt="Экран «Недавние маршруты»" loading="lazy">
-            <p class="intercity-screens__title">Недавние маршруты</p>
-            <p class="intercity-screens__desc">Повтор поездки без&nbsp;повторного ввода</p>
-          </div>
-          <div class="intercity-screens__item">
-            <img src="assets/site/kaliningrad-intercity1-phone2.png" alt="Экран «Сравнение рейсов»" loading="lazy">
-            <p class="intercity-screens__title">Сравнение рейсов</p>
-            <p class="intercity-screens__desc">Время, цена и&nbsp;пересадки</p>
-          </div>
-          <div class="intercity-screens__item">
-            <img src="assets/site/kaliningrad-intercity1-phone3.png" alt="Экран «Билет в моих билетах»" loading="lazy">
-            <p class="intercity-screens__title">Билет в&nbsp;«Моих билетах»</p>
-            <p class="intercity-screens__desc">QR, пересадки и&nbsp;напоминания о&nbsp;поездке</p>
-          </div>
-        </div>
-
-        <div class="hypothesis hypothesis--product">
-          <div class="hypothesis__aside">
-            <p class="hypothesis__label">Продуктовая гипотеза</p>
-            <h3 class="hypothesis__title">Понятный выбор до&nbsp;оплаты</h3>
-          </div>
-          <div class="hypothesis__body">
-            <p class="hypothesis__text">Если до&nbsp;оплаты показать время, стоимость, пересадки, точку отправления и&nbsp;весь маршрут, пассажиру будет проще сравнить рейсы и&nbsp;выбрать подходящий вариант без&nbsp;возвратов к&nbsp;поиску.</p>
-            <div class="value-pair">
-              <div class="value-pair__item"><strong>Пассажиру</strong>Условия поездки понятны до&nbsp;покупки билета.</div>
-              <div class="value-pair__item"><strong>Продукту</strong>Меньше отказов из-за неожиданных пересадок или непонятных деталей.</div>
-            </div>
-            <p class="hypothesis__result">Решение: основные параметры показаны в&nbsp;списке рейсов, а&nbsp;полный маршрут доступен до&nbsp;оплаты.</p>
-          </div>
-        </div>
-        <div class="intercity-screens">
-          <div class="intercity-screens__item">
-            <img src="assets/site/kaliningrad-intercity2-phone1.png" alt="Экран «Оформление билета»" loading="lazy">
-            <p class="intercity-screens__title">Оформление билета</p>
-            <p class="intercity-screens__desc">Пересадка, тарифы, стоимость&nbsp;— без&nbsp;переходов между экранами</p>
-          </div>
-          <div class="intercity-screens__item">
-            <img src="assets/site/kaliningrad-intercity2-phone2.png" alt="Экран «Детали до оплаты»" loading="lazy">
-            <p class="intercity-screens__title">Детали до&nbsp;оплаты</p>
-            <p class="intercity-screens__desc">Остановки, пересадка и&nbsp;весь маршрут</p>
-          </div>
-          <div class="intercity-screens__item">
-            <img src="assets/site/kaliningrad-intercity2-phone3.png" alt="Экран «Билет в моих билетах» с QR-кодом" loading="lazy">
-            <p class="intercity-screens__title">Билет в&nbsp;«Моих билетах»</p>
-            <p class="intercity-screens__desc">QR и&nbsp;детали пересадки</p>
-          </div>
+        <div class="case-grid case-grid--3 case-grid--screens">
+          <article class="case-media-card case-media-card--titled"><h3>Недавние маршруты</h3><p>Повторить поиск без&nbsp;повторного ввода направления.</p><img src="assets/site/kaliningrad-intercity1-phone1.png" alt="Недавние маршруты" loading="lazy"></article>
+          <article class="case-media-card case-media-card--titled"><h3>Продление абонемента</h3><p>Предупреждение появляется заранее и&nbsp;не&nbsp;блокирует поездку.</p><img src="assets/site/kaliningrad-edgecase-phone2.png" alt="Продление абонемента" loading="lazy"></article>
+          <article class="case-media-card case-media-card--titled"><h3>Нет рейсов на&nbsp;дату</h3><p>Направление сохраняется, сервис предлагает ближайшие даты.</p><img src="assets/site/kaliningrad-edgecase-phone3.png" alt="Нет рейсов на дату" loading="lazy"></article>
         </div>
       </div>
     </section>
 
-    <section class="case-section case-section--pb">
+    <section class="case-story">
       <div class="container">
-        <span class="case-kicker">05 · Edge cases</span>
-        <h2 class="case-section__title">Edge cases и&nbsp;состояния</h2>
-        <p class="case-section__lead">Для&nbsp;каждого риска показываю не&nbsp;только сообщение, но&nbsp;и&nbsp;понятный путь восстановления: пополнить баланс, продлить абонемент, перейти к&nbsp;номеру карты или выбрать другую дату.</p>
-        <div class="edgecase-screens">
-          <div class="edgecase-screens__item">
-            <img src="assets/site/kaliningrad-edgecase-phone1.png" alt="Экран «Абонемент заканчивается»" loading="lazy">
-            <p class="edgecase-screens__title">Абонемент заканчивается</p>
-            <p class="edgecase-screens__desc">Предупреждение появляется заранее и&nbsp;не&nbsp;блокирует карту.</p>
-          </div>
-          <div class="edgecase-screens__item">
-            <img src="assets/site/kaliningrad-edgecase-phone2.png" alt="Экран «Последняя поездка по абонементу»" loading="lazy">
-            <p class="edgecase-screens__title">Последняя поездка по&nbsp;абонементу</p>
-            <p class="edgecase-screens__desc">Предложение продлить абонемент появляется после оплаты, когда пассажир уже никуда не&nbsp;спешит.</p>
-          </div>
-          <div class="edgecase-screens__item">
-            <img src="assets/site/kaliningrad-edgecase-phone3.png" alt="Экран «Рейсов нет»" loading="lazy">
-            <p class="edgecase-screens__title">Рейсов нет</p>
-            <p class="edgecase-screens__desc">Маршрут сохраняется, система предлагает ближайшие даты.</p>
-          </div>
+        <p class="case-story__eyebrow">Формат проекта</p>
+        <h2 class="case-story__title">Самостоятельная концепция на&nbsp;основе опыта в&nbsp;транспортной предметной области</h2>
+        <p class="case-story__lead">Кейс основан на&nbsp;опыте работы с&nbsp;реальным транспортным продуктом. Из-за NDA оригинальные интерфейсы, структура и&nbsp;материалы компании не&nbsp;используются.</p>
+        <div class="case-grid case-grid--3">
+          <article class="case-card"><span class="case-card__index">01</span><h3>Сохранила</h3><p>Понимание предметной области, типовые ограничения и&nbsp;пользовательские сценарии.</p></article>
+          <article class="case-card"><span class="case-card__index">02</span><h3>Переосмыслила</h3><p>Структуру продукта, информационную архитектуру и&nbsp;взаимодействие функций.</p></article>
+          <article class="case-card"><span class="case-card__index">03</span><h3>Создала заново</h3><p>UI, визуальную систему, тексты, данные и&nbsp;все показанные экраны.</p></article>
         </div>
-      </div>
-    </section>
-
-    <section class="case-section case-section--tight">
-      <div class="container">
-        <h2 class="case-section__title">Основан на&nbsp;реальном опыте, пересобран как&nbsp;самостоятельный продукт</h2>
-        <p class="case-section__lead">Основа кейса&nbsp;— мой опыт работы над&nbsp;реальным транспортным продуктом под&nbsp;NDA. Оригинальный проект, его интерфейсы и&nbsp;детали я&nbsp;не&nbsp;могу публиковать, поэтому для&nbsp;портфолио создала самостоятельную концепцию. Я полностью переработала UI, пересобрала ключевые сценарии и&nbsp;адаптировала продуктовую логику к&nbsp;реалиям Калининградской области.</p>
-        <div class="info-cards">
-          <div class="info-card info-card--compact">
-            <p class="info-card__index">01</p>
-            <p class="info-card__title">Что сохранилось</p>
-            <p class="info-card__text">Опыт работы с&nbsp;транспортной предметной областью и&nbsp;понимание реальных продуктовых ограничений.</p>
-          </div>
-          <div class="info-card info-card--compact">
-            <p class="info-card__index">02</p>
-            <p class="info-card__title">Что переосмыслено</p>
-            <p class="info-card__text">Пользовательские потоки, логика виртуальной карты, баланс, абонементы, межгород и&nbsp;обработка ошибок.</p>
-          </div>
-          <div class="info-card info-card--compact">
-            <p class="info-card__index">03</p>
-            <p class="info-card__title">Что создано заново</p>
-            <p class="info-card__text">UI, визуальная система, структура приложения, тексты, экраны и&nbsp;вымышленные данные.</p>
-          </div>
-        </div>
-        <p class="nda-banner">Кейс не&nbsp;воспроизводит закрытый продукт и&nbsp;не&nbsp;раскрывает данные заказчика</p>
       </div>
     </section>
 
     <section class="other-projects">
-      <div class="container other-projects__head">
-        <h2 class="other-projects__title">Другие проекты</h2>
-        <div class="other-projects__nav">
-          <button class="other-projects__nav-btn" type="button" data-carousel-prev aria-label="Предыдущий проект">‹</button>
-          <button class="other-projects__nav-btn" type="button" data-carousel-next aria-label="Следующий проект">›</button>
-        </div>
-      </div>
-      <div class="container">
-        <div class="other-projects__row">
-          <div class="other-projects__track">
-          <a class="other-project-card" href="case-corporate.html">
-            <div class="other-project-card__body">
-              <div class="other-project-card__top">
-                <span class="kicker">Внутренний продукт</span>
-                <h3 class="other-project-card__title">Сервис заказа корпоративного транспорта</h3>
-              </div>
-              <div class="other-project-card__bottom">
-                <div class="other-project-card__meta">
-                  <span>iOS / Android</span>
-                  <span>·</span>
-                  <span>B2B</span>
-                  <span>·</span>
-                  <span>NDA</span>
-                </div>
-                <span class="other-project-card__link">Смотреть кейс</span>
-              </div>
-            </div>
-            <div class="other-project-card__preview">
-              <img src="assets/site/preview-corporate.png" alt="Сервис заказа корпоративного транспорта" loading="lazy">
-            </div>
-          </a>
-          <a class="other-project-card" href="case-soul.html">
-            <div class="other-project-card__body">
-              <div class="other-project-card__top">
-                <span class="kicker">Telegram MiniApp</span>
-                <h3 class="other-project-card__title">SOUL&nbsp;— платформа для&nbsp;поиска компании и&nbsp;активностей в&nbsp;путешествиях</h3>
-              </div>
-              <div class="other-project-card__bottom">
-                <div class="other-project-card__meta">
-                  <span>iOS / Android</span>
-                  <span>·</span>
-                  <span>B2C</span>
-                  <span>·</span>
-                  <span>MVP</span>
-                </div>
-                <span class="other-project-card__link">Смотреть кейс</span>
-              </div>
-            </div>
-            <div class="other-project-card__preview">
-              <img src="assets/site/preview-soul.png" alt="Soul" loading="lazy">
-            </div>
-          </a>
-          <a class="other-project-card" href="case-arm-kassira.html">
-            <div class="other-project-card__body">
-              <div class="other-project-card__top">
-                <span class="kicker">Внутренний продукт</span>
-                <h3 class="other-project-card__title">Автоматизированное рабочее место кассира</h3>
-              </div>
-              <div class="other-project-card__bottom">
-                <div class="other-project-card__meta">
-                  <span>WEB</span>
-                  <span>·</span>
-                  <span>B2B</span>
-                  <span>·</span>
-                  <span>NDA</span>
-                </div>
-                <span class="other-project-card__link">Смотреть кейс</span>
-              </div>
-            </div>
-            <div class="other-project-card__preview">
-              <img src="assets/site/preview-arm.png" alt="АРМ Кассира" loading="lazy">
-            </div>
-          </a>
-          </div>
-        </div>
-      </div>
+      <div class="container other-projects__head"><h2 class="other-projects__title">Другие проекты</h2><div class="other-projects__nav"><button class="other-projects__nav-btn" type="button" data-carousel-prev aria-label="Предыдущий проект">‹</button><button class="other-projects__nav-btn" type="button" data-carousel-next aria-label="Следующий проект">›</button></div></div>
+      <div class="container"><div class="other-projects__row"><div class="other-projects__track">
+        <a class="other-project-card" href="case-corporate.html"><div class="other-project-card__body"><div class="other-project-card__top"><span class="kicker">Внутренний продукт</span><h3 class="other-project-card__title">Сервис заказа корпоративного транспорта</h3></div><div class="other-project-card__bottom"><div class="other-project-card__meta"><span>iOS / Android</span><span>·</span><span>B2B</span><span>·</span><span>NDA</span></div><span class="other-project-card__link">Смотреть кейс</span></div></div><div class="other-project-card__preview"><img src="assets/site/preview-corporate.png" alt="Сервис заказа корпоративного транспорта" loading="lazy"></div></a>
+        <a class="other-project-card" href="case-soul.html"><div class="other-project-card__body"><div class="other-project-card__top"><span class="kicker">Telegram MiniApp</span><h3 class="other-project-card__title">SOUL&nbsp;— платформа для&nbsp;поиска компании и&nbsp;активностей в&nbsp;путешествиях</h3></div><div class="other-project-card__bottom"><div class="other-project-card__meta"><span>iOS / Android</span><span>·</span><span>B2C</span><span>·</span><span>MVP</span></div><span class="other-project-card__link">Смотреть кейс</span></div></div><div class="other-project-card__preview"><img src="assets/site/preview-soul.png" alt="SOUL" loading="lazy"></div></a>
+        <a class="other-project-card" href="case-arm-kassira.html"><div class="other-project-card__body"><div class="other-project-card__top"><span class="kicker">Внутренний продукт</span><h3 class="other-project-card__title">Автоматизированное рабочее место кассира</h3></div><div class="other-project-card__bottom"><div class="other-project-card__meta"><span>Web</span><span>·</span><span>B2B</span><span>·</span><span>NDA</span></div><span class="other-project-card__link">Смотреть кейс</span></div></div><div class="other-project-card__preview"><img src="assets/site/preview-arm.png" alt="АРМ кассира" loading="lazy"></div></a>
+      </div></div></div>
     </section>
 
     <section class="section section--contacts">
       <div class="container">
+        <span class="kicker"><span class="kicker__index">04</span> Контакты</span>
         <h2 class="section__heading">Открыта к&nbsp;сотрудничеству</h2>
-
-        <div class="contact-methods">
-          <a class="contact-item" href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener">
-            <span class="contact-item__label">Telegram</span>
-            <span class="contact-item__value">@Lena_Suloeva</span>
-          </a>
-          <a class="contact-item" href="mailto:lensuloeva@yandex.ru">
-            <span class="contact-item__label">Почта</span>
-            <span class="contact-item__value">lensuloeva@yandex.ru</span>
-          </a>
-        </div>
-
-        <div class="site-footer">
-          <p>Елена Сулоева · Product designer</p>
-          <p>Портфолио · 2026</p>
-        </div>
-
-        <div class="site-footer__route"></div>
+        <div class="contact-methods"><a class="contact-item" href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener"><span class="contact-item__label">Telegram</span><span class="contact-item__value">@Lena_Suloeva</span></a><a class="contact-item" href="mailto:lensuloeva@yandex.ru"><span class="contact-item__label">Почта</span><span class="contact-item__value">lensuloeva@yandex.ru</span></a></div>
+        <div class="site-footer"><p>Елена Сулоева · Product designer</p><p>Портфолио · 2026</p></div><div class="site-footer__route"></div>
       </div>
     </section>
-
   </main>
 
-  <div class="modal-overlay" data-contact-modal>
-    <div class="modal-card">
-      <button class="modal-close" type="button" data-close-contact aria-label="Закрыть">
-        <img src="assets/site/icon-close.svg" alt="">
-      </button>
-      <h3 class="modal-card__title">Свяжитесь со&nbsp;мной</h3>
-      <p class="modal-card__lead">Расскажу о&nbsp;проектах подробнее и&nbsp;отвечу на&nbsp;вопросы</p>
-      <div class="modal-card__methods">
-        <a class="modal-contact" href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener">
-          <span class="modal-contact__label">Telegram</span>
-          <div class="modal-contact__row">
-            <img src="assets/site/icon-telegram.svg" alt="">
-            <span class="modal-contact__value">@Lena_Suloeva</span>
-          </div>
-        </a>
-        <a class="modal-contact" href="mailto:lensuloeva@yandex.ru">
-          <span class="modal-contact__label">Почта</span>
-          <div class="modal-contact__row">
-            <img src="assets/site/icon-email.svg" alt="">
-            <span class="modal-contact__value">lensuloeva@yandex.ru</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <script src="site.js?v=19"></script>
+  <div class="modal-overlay" data-contact-modal><div class="modal-card">
+    <button class="modal-close" type="button" data-close-contact aria-label="Закрыть"><img src="assets/site/icon-close.svg" alt=""></button>
+    <h3 class="modal-card__title">Свяжитесь со&nbsp;мной</h3><p class="modal-card__lead">Расскажу о&nbsp;проектах подробнее и&nbsp;отвечу на&nbsp;вопросы</p>
+    <div class="modal-card__methods"><a class="modal-contact" href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener"><span class="modal-contact__label">Telegram</span><div class="modal-contact__row"><img src="assets/site/icon-telegram.svg" alt=""><span class="modal-contact__value">@Lena_Suloeva</span></div></a><a class="modal-contact" href="mailto:lensuloeva@yandex.ru"><span class="modal-contact__label">Почта</span><div class="modal-contact__row"><img src="assets/site/icon-email.svg" alt=""><span class="modal-contact__value">lensuloeva@yandex.ru</span></div></a></div>
+  </div></div>
+  <script src="site.js?v=21"></script>
 </body>
 </html>

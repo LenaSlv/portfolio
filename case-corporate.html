@@ -4,14 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Сервис заказа корпоративного транспорта&nbsp;— Елена Сулоева</title>
-  <meta name="description" content="Кейс UX/UI-дизайнера: мобильное приложение заказа корпоративного транспорта. Внутренний продукт для&nbsp;крупного банка · NDA.">
+  <meta name="description" content="Кейс UX/UI-дизайнера: сервис заказа корпоративного транспорта. Внутренний продукт для крупного банка · NDA.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geologica:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles-site.css?v=19">
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles-site.css?v=21">
 </head>
-<body>
-
+<body class="case-page case-page--corporate">
   <header class="site-header">
     <div class="site-header__inner">
       <a href="index.html" class="site-header__brand">
@@ -21,7 +20,6 @@
       <nav class="site-header__nav">
         <a href="index.html#about">Обо мне</a>
         <a href="index.html#projects">Проекты</a>
-        <a href="index.html#experience">Опыт</a>
         <a href="index.html#contacts">Контакты</a>
       </nav>
       <button class="button site-header__cta" type="button" data-open-contact>Связаться со&nbsp;мной</button>
@@ -32,183 +30,179 @@
     <nav class="site-header__mobile-menu" id="mobile-menu" data-mobile-menu>
       <a href="index.html#about">Обо мне</a>
       <a href="index.html#projects">Проекты</a>
-      <a href="index.html#experience">Опыт</a>
       <a href="index.html#contacts">Контакты</a>
       <button class="button" type="button" data-open-contact>Связаться со&nbsp;мной</button>
     </nav>
   </header>
 
   <div class="case-topbar">
-    <a class="case-topbar__back" href="index.html">На&nbsp;главную</a>
+    <a class="case-topbar__back" href="index.html">Назад на&nbsp;главную</a>
   </div>
 
   <main>
-
     <section class="case-hero">
       <div class="container">
-        <div class="case-hero__badges">
-          <span class="case-hero__nda">Внутренний продукт для&nbsp;крупного банка · NDA</span>
-          <span class="case-hero__nda">Экраны показаны с&nbsp;вымышленными данными</span>
-        </div>
         <h1 class="case-hero__title">Сервис заказа корпоративного транспорта</h1>
-        <p class="case-hero__lead">Один интерфейс для&nbsp;сотрудников с&nbsp;постоянным, сменным и&nbsp;гибридным графиком.</p>
-        <p class="case-hero__meta"><span><strong>Роль</strong>UX/UI-дизайнер</span><span><strong>Платформы</strong>iOS / Android</span></p>
+        <div class="case-hero__badges case-hero__badges--meta">
+          <span class="case-hero__nda">Роль · Product designer / UX/UI designer</span>
+          <span class="case-hero__nda">Платформы · iOS / Android</span>
+          <span class="case-hero__nda">B2B2C · Mobile</span>
+        </div>
+        <p class="case-hero__notice">Экраны показаны с&nbsp;вымышленными данными</p>
         <div class="case-hero__cover">
-          <img src="assets/site/corporate-hero-showcase.png" alt="Экраны приложения: карта с маршрутом и заказом транспорта, профиль сотрудника" width="1248" height="630">
+          <img src="assets/site/corporate-hero-showcase.png" alt="Экраны сервиса корпоративного транспорта" width="1248" height="630">
         </div>
       </div>
     </section>
 
-    <section class="case-section">
+    <section class="case-story">
       <div class="container">
-        <span class="case-kicker">01 · Задача и контекст</span>
-        <h2 class="case-section__title">Один интерфейс для&nbsp;двух режимов работы</h2>
-        <p class="case-section__lead">Компании нужно перевозить сотрудников до&nbsp;офисов, куда неудобно добираться общественным транспортом. Но&nbsp;у&nbsp;сотрудников разные графики: часть работает по&nbsp;фиксированному расписанию, часть&nbsp;— сменами, гибридно или нерегулярно.</p>
-        <div class="info-cards">
-          <div class="info-card">
-            <p class="info-card__title">Два сценария как&nbsp;один путь</p>
-            <p class="info-card__text">Персональный предзаказ нужен для&nbsp;сменных и&nbsp;гибридных графиков. Закреплённый автобус&nbsp;— для&nbsp;регулярных поездок без&nbsp;ежедневных действий. При переходе на&nbsp;постоянный маршрут пользователь не&nbsp;переучивается.</p>
-          </div>
-          <div class="info-card">
-            <p class="info-card__title">Связность сценариев и&nbsp;качество данных</p>
-            <p class="info-card__text">Спроектировала заказ транспорта, QR-билет, историю поездок, профиль и&nbsp;обращения. Мои решения&nbsp;— общая логика двух сценариев, иерархия экрана закреплённого маршрута и&nbsp;структурированные обращения вместо свободного текста.</p>
-          </div>
+        <p class="case-story__eyebrow">Контекст</p>
+        <h2 class="case-story__title">Один сервис&nbsp;— разные графики</h2>
+        <p class="case-story__lead">Корпоративным транспортом пользуются сотрудники с&nbsp;разными графиками. Один и&nbsp;тот&nbsp;же человек может использовать сервис по-разному в&nbsp;зависимости от&nbsp;периода работы.</p>
+        <div class="case-grid case-grid--2">
+          <article class="case-card">
+            <h3>Постоянный и&nbsp;сменный</h3>
+            <p>Стабильный график или повторяющиеся смены.</p>
+          </article>
+          <article class="case-card">
+            <h3>Гибридный и&nbsp;нерегулярный</h3>
+            <p>Расписание меняется, отдельные поездки планируются вручную.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="case-section">
+    <section class="case-story">
       <div class="container">
-        <span class="case-kicker">02 · Персональный предзаказ</span>
-        <h2 class="case-section__title">Предзаказ для&nbsp;нерегулярных поездок</h2>
-        <p class="case-section__lead">Сменные и&nbsp;гибридные графики, разовые поездки и&nbsp;работа в&nbsp;нетиповое время не&nbsp;укладываются в&nbsp;постоянный маршрут. Предзаказ позволяет выбрать направление, дату и&nbsp;время подачи транспорта.</p>
-
-        <div class="hypothesis">
-          <h3 class="hypothesis__title">Поездка только на&nbsp;нужные дни</h3>
-          <p class="hypothesis__label">Гипотеза</p>
-          <p class="hypothesis__text">Если сотрудник может выбирать направление и&nbsp;время для&nbsp;каждой поездки, люди с&nbsp;нерегулярным графиком смогут пользоваться корпоративным транспортом без&nbsp;закрепления за&nbsp;постоянным маршрутом, а&nbsp;бизнес увидит фактический нерегулярный спрос.</p>
-          <div class="value-pair">
-            <div class="value-pair__item"><strong>Пользователю</strong>Заказывает поездку только тогда, когда она действительно нужна.</div>
-            <div class="value-pair__item"><strong>Бизнесу</strong>Нерегулярный спрос становится измеримым.</div>
-          </div>
-          <p class="hypothesis__text" style="margin-bottom: 0;">Решение: предзаказ позволяет сотруднику заказывать транспорт только на&nbsp;нужные дни и&nbsp;время, а&nbsp;бизнесу&nbsp;— видеть нерегулярный спрос и&nbsp;назначать транспорт по&nbsp;фактической потребности.</p>
+        <p class="case-story__eyebrow">Продуктовая задача</p>
+        <h2 class="case-story__title">Спроектировать два сценария в&nbsp;рамках одного продукта</h2>
+        <p class="case-story__lead">Ключевая задача&nbsp;— разделить сценарии по&nbsp;правилам доступа и&nbsp;сохранить общую логику интерфейса.</p>
+        <article class="case-card case-card--wide">
+          <h3>От требований заказчика к&nbsp;пользовательским сценариям</h3>
+          <p>На&nbsp;старте проекта я&nbsp;собрала и&nbsp;структурировала требования заказчика: сервис должен был поддерживать предзаказ и&nbsp;закреплённый маршрут для&nbsp;сотрудников с&nbsp;разными графиками.</p>
+          <p>Механика закрепления уже была частью ТЗ. Моя задача состояла в&nbsp;том, чтобы перевести бизнес-требования в&nbsp;понятные взаимоисключающие сценарии и&nbsp;сохранить между ними общую логику интерфейса. Сотрудник с&nbsp;закреплённым маршрутом не&nbsp;может оформить предзаказ самостоятельно.</p>
+          <p>Мой вклад&nbsp;— логика двух взаимоисключающих сценариев, иерархия экрана закреплённого маршрута и&nbsp;структура сбора обращений: данные вместо свободного текста.</p>
+        </article>
+        <div class="case-grid case-grid--2">
+          <article class="case-card">
+            <h3>Предзаказ</h3>
+            <p>Для сотрудников без&nbsp;закреплённого маршрута, которым нужно самостоятельно выбирать направление и&nbsp;время поездки.</p>
+          </article>
+          <article class="case-card">
+            <h3>Закреплённый маршрут</h3>
+            <p>Для сотрудников с&nbsp;назначенным маршрутом. Предзаказ в&nbsp;этом режиме недоступен.</p>
+          </article>
         </div>
+      </div>
+    </section>
 
-        <div class="solution-row solution-row--even">
-          <div class="screen-card">
-            <img src="assets/site/corporate-preorder-phone.png" alt="Экран: форма предзаказа" loading="lazy">
-          </div>
-          <div class="solution-card">
-            <p class="solution-card__title">Моё решение</p>
-            <ul class="solution-list solution-list--icon">
-              <li>Спроектировала сценарий предзаказа для&nbsp;сотрудников со&nbsp;сменным и&nbsp;гибридным графиком</li>
-              <li>Объединила выбор направления, маршрута и&nbsp;времени в&nbsp;одном экране</li>
-              <li>Сократила форму до&nbsp;обязательных параметров заказа</li>
-              <li>Показала доступные интервалы без&nbsp;отдельного экрана</li>
-              <li>Сохранила маршрут видимым на&nbsp;карте</li>
+    <section class="case-story">
+      <div class="container">
+        <p class="case-story__eyebrow">01 · Предзаказ</p>
+        <h2 class="case-story__title">Дать гибкость нерегулярному пользователю</h2>
+        <p class="case-story__lead">Если график сотрудника меняется, система не&nbsp;может заранее определить нужный маршрут. Пользователь сам выбирает направление, дату, время и&nbsp;доступную точку посадки.</p>
+        <div class="case-split">
+          <article class="case-media-card">
+            <img src="assets/site/corporate-preorder-phone.png" alt="Экран предварительного заказа" loading="lazy">
+          </article>
+          <article class="case-card case-card--solution">
+            <h3>Решение</h3>
+            <p>Сценарий построен как&nbsp;последовательный выбор только необходимых параметров.</p>
+            <p class="case-flowline">Направление → Остановка → Время → Подтверждение</p>
+            <p>Пользователь сохраняет контроль, но&nbsp;не&nbsp;сталкивается с&nbsp;лишними шагами.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-story">
+      <div class="container">
+        <p class="case-story__eyebrow">02 · Закреплённый маршрут</p>
+        <h2 class="case-story__title">Сразу показать назначенный маршрут и&nbsp;ближайший рейс</h2>
+        <p class="case-story__lead">Закреплённый маршрут назначается сотруднику заранее, поэтому предзаказ в&nbsp;этом режиме недоступен. Я&nbsp;сохранила общую логику интерфейса: карту, карточку ближайшей поездки, остановку, статус автобуса и&nbsp;QR. Пользователь сразу видит назначенный маршрут и&nbsp;ближайший рейс.</p>
+        <div class="case-grid case-grid--2 case-grid--screens">
+          <article class="case-media-card">
+            <p class="case-media-card__label">Сценарий 1 · Предзаказ</p>
+            <img src="assets/site/corporate-preorder-phone.png" alt="Сценарий предзаказа" loading="lazy">
+          </article>
+          <article class="case-media-card">
+            <p class="case-media-card__label">Сценарий 2 · Закреплённый маршрут</p>
+            <img src="assets/site/corporate-route-phones.png" alt="Экран закреплённого маршрута" loading="lazy">
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-story">
+      <div class="container">
+        <p class="case-story__eyebrow">03 · Карта как&nbsp;инструмент</p>
+        <h2 class="case-story__title">В&nbsp;обоих сценариях карта отвечает на&nbsp;конкретный вопрос</h2>
+        <p class="case-story__quote">«Где мой автобус и&nbsp;успею&nbsp;ли я&nbsp;к&nbsp;остановке?»</p>
+        <div class="case-split">
+          <article class="case-media-card">
+            <img src="assets/site/corporate-route-phones.png" alt="Карта закреплённого маршрута" loading="lazy">
+          </article>
+          <article class="case-card case-card--solution">
+            <h3>Только релевантный контекст</h3>
+            <p>На&nbsp;карте показаны:</p>
+            <ul class="case-list">
+              <li>линия маршрута;</li>
+              <li>автобус;</li>
+              <li>выбранная остановка;</li>
+              <li>положение пользователя, если доступно;</li>
+              <li>время прибытия.</li>
             </ul>
-          </div>
+            <p>Интерфейс не&nbsp;показывает все автобусы сразу и&nbsp;не&nbsp;перегружает пользователя.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="case-section">
+    <section class="case-story case-story--alt">
       <div class="container">
-        <span class="case-kicker">03 · Закреплённый маршрут</span>
-        <h2 class="case-section__title">Маршрут без&nbsp;ежедневного заказа</h2>
-        <p class="case-section__lead">Сотрудники с&nbsp;постоянным графиком закрепляются за&nbsp;маршрутом с&nbsp;регулярными рейсами. Транспорт назначается автоматически, ежедневные действия не&nbsp;требуются.</p>
-
-        <div class="hypothesis">
-          <h3 class="hypothesis__title">Сначала&nbsp;— время прибытия</h3>
-          <p class="hypothesis__label">Гипотеза</p>
-          <p class="hypothesis__text">Если на&nbsp;главном экране закреплённого маршрута показать время прибытия как&nbsp;главную информацию, а&nbsp;карту, расписание и&nbsp;данные автобуса оставить доступными по&nbsp;запросу, сотрудник сможет понять, когда выходить к&nbsp;остановке, без&nbsp;ежедневного оформления одной и&nbsp;той&nbsp;же поездки.</p>
-          <div class="value-pair">
-            <div class="value-pair__item"><strong>Пользователю</strong>Маршрут назначен заранее, а&nbsp;главный ответ&nbsp;— «Прибытие через N мин»&nbsp;— виден сразу.</div>
-            <div class="value-pair__item"><strong>Бизнесу</strong>Предсказуемая загрузка маршрутов и&nbsp;планирование по&nbsp;фактическим спискам.</div>
-          </div>
-        </div>
-
-        <div class="solution-row">
-          <div class="screen-card">
-            <img src="assets/site/corporate-route-phones.png" alt="Экраны: закреплённый маршрут — два состояния" loading="lazy">
-          </div>
-          <div class="solution-card">
-            <p class="solution-card__title">Моё решение</p>
-            <ul class="solution-list solution-list--icon">
-              <li>Построила иерархию экрана вокруг времени прибытия</li>
-              <li>Сделала «Прибытие через N мин» главным акцентом</li>
-              <li>Оставила карту как&nbsp;пространственное подтверждение движения</li>
-              <li>Разместила рядом ближайшие рейсы и&nbsp;данные автобуса</li>
-              <li>Сохранила общие элементы с&nbsp;предзаказом, чтобы пользователь не&nbsp;переучивался</li>
-            </ul>
-          </div>
+        <p class="case-story__eyebrow">04 · QR и&nbsp;посадка</p>
+        <h2 class="case-story__title">Посадка должна быть предсказуемой</h2>
+        <p class="case-story__lead">QR находится внутри актуальной поездки и&nbsp;не&nbsp;требует отдельного поиска. Перед посадкой интерфейс быстро отвечает: это моя поездка, мой автобус и&nbsp;что показать водителю.</p>
+        <div class="case-split">
+          <article class="case-media-card">
+            <img src="assets/site/corporate-qr-phone.png" alt="Обновляемый QR-код поездки" loading="lazy">
+          </article>
+          <article class="case-card case-card--solution">
+            <h3>Почему код обновляется</h3>
+            <p>QR-код привязан к&nbsp;учётной записи и&nbsp;автоматически обновляется. Пересланный скриншот к&nbsp;моменту посадки становится недействительным.</p>
+            <dl class="case-value-list">
+              <div><dt>Пользовательская ценность</dt><dd>Билет всегда под&nbsp;рукой.</dd></div>
+              <div><dt>Бизнес-ценность</dt><dd>Контроль доступа и&nbsp;автоматический учёт поездок.</dd></div>
+            </dl>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="case-section">
+    <section class="case-story">
       <div class="container">
-        <span class="case-kicker">04 · QR-билет</span>
-        <h2 class="case-section__title">Билет в&nbsp;приложении, контроль при&nbsp;посадке</h2>
-        <p class="case-section__lead">Водитель сканирует QR-код при&nbsp;входе. Код привязан к&nbsp;учётной записи и&nbsp;автоматически обновляется.</p>
-
-        <div class="hypothesis">
-          <h3 class="hypothesis__title">Динамический QR вместо передаваемого пропуска</h3>
-          <p class="hypothesis__label">Гипотеза</p>
-          <p class="hypothesis__text">Если QR-код привязан к&nbsp;учётной записи и&nbsp;обновляется автоматически, сотрудник сможет подтвердить право на&nbsp;поездку в&nbsp;приложении, а&nbsp;пересланный скриншот к&nbsp;моменту посадки станет недействительным.</p>
-          <div class="value-pair">
-            <div class="value-pair__item"><strong>Пользователю</strong>Билет всегда под рукой, бумажный носитель не&nbsp;нужен.</div>
-            <div class="value-pair__item"><strong>Бизнесу</strong>Контроль доступа и&nbsp;автоматический учёт поездок.</div>
-          </div>
-        </div>
-
-        <div class="solution-row">
-          <div class="screen-card">
-            <img src="assets/site/corporate-qr-phone.png" alt="Экран: QR-билет" loading="lazy">
-          </div>
-          <div class="solution-card">
-            <p class="solution-card__title">Почему код обновляется</p>
-            <p class="solution-card__text">Без&nbsp;привязки и&nbsp;обновления QR превращается в&nbsp;передаваемый пропуск. Автоматическое обновление делает пересланный скриншот недействительным и&nbsp;связывает посадку с&nbsp;конкретной учётной записью.</p>
-            <p class="solution-card__text" style="font-size: 16px;">Результат механики: водитель проверяет доступ при&nbsp;посадке, а&nbsp;система автоматически фиксирует, кто, когда и&nbsp;каким рейсом воспользовался.</p>
-          </div>
+        <p class="case-story__eyebrow">Бизнес-логика</p>
+        <h2 class="case-story__title">Предзаказы помогают выявлять устойчивый спрос</h2>
+        <p class="case-story__lead">Предзаказы показывают востребованные направления, дни, время и&nbsp;стабильность спроса. При&nbsp;появлении регулярного паттерна сотрудников можно переводить на&nbsp;постоянный маршрут. После перевода предзаказ для&nbsp;них недоступен.</p>
+        <p class="case-business-flow">Предзаказы → данные о&nbsp;спросе → решение о&nbsp;закреплении маршрута → меньше ручных действий</p>
+        <div class="case-grid case-grid--2">
+          <article class="case-card"><h3>Пользовательская ценность</h3><p>Меньше повторяющихся действий.</p></article>
+          <article class="case-card"><h3>Бизнес-ценность</h3><p>Более предсказуемая загрузка транспорта.</p></article>
         </div>
       </div>
     </section>
 
-    <section class="case-section case-section--pb">
+    <section class="case-story case-story--alt">
       <div class="container">
-        <span class="case-kicker">05 · Обращения в поддержку</span>
-        <h2 class="case-section__title">Обращения с&nbsp;контекстом поездки</h2>
-
-        <div class="hypothesis">
-          <h3 class="hypothesis__title">Данные вместо свободного текста</h3>
-          <p class="hypothesis__label">Гипотеза</p>
-          <p class="hypothesis__text">Если пользователь выбирает тему и&nbsp;поездку из&nbsp;готовых вариантов, а&nbsp;не&nbsp;описывает весь контекст вручную, диспетчер получит обращение, готовое к&nbsp;обработке, а&nbsp;продукт сможет использовать категории для&nbsp;анализа качества маршрутов и&nbsp;работы перевозчиков.</p>
-          <div class="value-pair">
-            <div class="value-pair__item"><strong>Пользователю</strong>Не&nbsp;нужно вручную вспоминать дату, маршрут и&nbsp;детали поездки.</div>
-            <div class="value-pair__item"><strong>Бизнесу</strong>Тип обращения, связанная поездка и&nbsp;фото превращают жалобу в&nbsp;структурированные данные.</div>
-          </div>
+        <h2 class="case-story__title">Edge cases</h2>
+        <div class="case-grid case-grid--2">
+          <article class="case-card"><h3>Рейс перенесён</h3><p>Показать новое время рейса и&nbsp;обновить карточку поездки.</p></article>
+          <article class="case-card"><h3>Рейс отменён</h3><p>Показать время следующего рейса и&nbsp;переход к&nbsp;расписанию.</p></article>
+          <article class="case-media-card"><img src="assets/site/corporate-route-phones.png" alt="Состояние перенесённого рейса" loading="lazy"></article>
+          <article class="case-media-card"><img src="assets/site/corporate-preorder-phone.png" alt="Состояние отменённого рейса" loading="lazy"></article>
         </div>
-
-        <div class="solution-card solution-card--inline">
-          <p class="solution-card__title">Моё решение</p>
-          <p class="solution-card__text">Проектировала не&nbsp;просто форму, а&nbsp;качество данных на&nbsp;выходе: поездка из&nbsp;истории вместо текстового описания, типы обращений вместо общей темы и&nbsp;фото как&nbsp;доказательство.</p>
-        </div>
-
-        <div class="screens-row">
-          <div class="screens-row__item">
-            <img src="assets/site/corporate-ticket-phone1.png" alt="Экран «Выбор темы»" loading="lazy">
-            <p class="screens-row__title"><strong>Выбор темы</strong>Категория вместо общей жалобы</p>
-          </div>
-          <div class="screens-row__item">
-            <img src="assets/site/corporate-ticket-phone2.png" alt="Экран «Выбор поездки»" loading="lazy">
-            <p class="screens-row__title"><strong>Выбор поездки</strong>Контекст из&nbsp;истории</p>
-          </div>
-          <div class="screens-row__item">
-            <img src="assets/site/corporate-ticket-phone3.png" alt="Экран «Форма обращения»" loading="lazy">
-            <p class="screens-row__title"><strong>Форма обращения</strong>Текст и&nbsp;подтверждающие материалы</p>
-          </div>
-        </div>
+        <p class="case-final-line">Детали проекта и&nbsp;остальные сценарии могу показать и&nbsp;рассказать на&nbsp;встрече</p>
       </div>
     </section>
 
@@ -221,128 +215,48 @@
         </div>
       </div>
       <div class="container">
-        <div class="other-projects__row">
-          <div class="other-projects__track">
+        <div class="other-projects__row"><div class="other-projects__track">
           <a class="other-project-card" href="case-transport-pet.html">
-            <div class="other-project-card__body">
-              <div class="other-project-card__top">
-                <span class="kicker">Мобильное приложение</span>
-                <h3 class="other-project-card__title">Транспортное приложение для&nbsp;Калининградской области</h3>
-              </div>
-              <div class="other-project-card__bottom">
-                <div class="other-project-card__meta">
-                  <span>iOS / Android</span>
-                  <span>·</span>
-                  <span>B2C</span>
-                  <span>·</span>
-                  <span>NDA</span>
-                </div>
-                <span class="other-project-card__link">Смотреть кейс</span>
-              </div>
-            </div>
-            <div class="other-project-card__preview">
-              <img src="assets/site/preview-kaliningrad.png" alt="Транспортное приложение для Калининградской области" loading="lazy">
-            </div>
+            <div class="other-project-card__body"><div class="other-project-card__top"><span class="kicker">Мобильное приложение</span><h3 class="other-project-card__title">Единый транспортный сервис</h3></div><div class="other-project-card__bottom"><div class="other-project-card__meta"><span>iOS / Android</span><span>·</span><span>B2C</span></div><span class="other-project-card__link">Смотреть кейс</span></div></div>
+            <div class="other-project-card__preview"><img src="assets/site/preview-kaliningrad.png" alt="Единый транспортный сервис" loading="lazy"></div>
           </a>
           <a class="other-project-card" href="case-soul.html">
-            <div class="other-project-card__body">
-              <div class="other-project-card__top">
-                <span class="kicker">Telegram MiniApp</span>
-                <h3 class="other-project-card__title">SOUL&nbsp;— платформа для&nbsp;поиска компании и&nbsp;активностей в&nbsp;путешествиях</h3>
-              </div>
-              <div class="other-project-card__bottom">
-                <div class="other-project-card__meta">
-                  <span>iOS / Android</span>
-                  <span>·</span>
-                  <span>B2C</span>
-                  <span>·</span>
-                  <span>MVP</span>
-                </div>
-                <span class="other-project-card__link">Смотреть кейс</span>
-              </div>
-            </div>
-            <div class="other-project-card__preview">
-              <img src="assets/site/preview-soul.png" alt="Soul" loading="lazy">
-            </div>
+            <div class="other-project-card__body"><div class="other-project-card__top"><span class="kicker">Telegram MiniApp</span><h3 class="other-project-card__title">SOUL&nbsp;— платформа для&nbsp;поиска компании и&nbsp;активностей в&nbsp;путешествиях</h3></div><div class="other-project-card__bottom"><div class="other-project-card__meta"><span>iOS / Android</span><span>·</span><span>B2C</span><span>·</span><span>MVP</span></div><span class="other-project-card__link">Смотреть кейс</span></div></div>
+            <div class="other-project-card__preview"><img src="assets/site/preview-soul.png" alt="SOUL" loading="lazy"></div>
           </a>
           <a class="other-project-card" href="case-arm-kassira.html">
-            <div class="other-project-card__body">
-              <div class="other-project-card__top">
-                <span class="kicker">Внутренний продукт</span>
-                <h3 class="other-project-card__title">Автоматизированное рабочее место кассира</h3>
-              </div>
-              <div class="other-project-card__bottom">
-                <div class="other-project-card__meta">
-                  <span>WEB</span>
-                  <span>·</span>
-                  <span>B2B</span>
-                  <span>·</span>
-                  <span>NDA</span>
-                </div>
-                <span class="other-project-card__link">Смотреть кейс</span>
-              </div>
-            </div>
-            <div class="other-project-card__preview">
-              <img src="assets/site/preview-arm.png" alt="АРМ Кассира" loading="lazy">
-            </div>
+            <div class="other-project-card__body"><div class="other-project-card__top"><span class="kicker">Внутренний продукт</span><h3 class="other-project-card__title">Автоматизированное рабочее место кассира</h3></div><div class="other-project-card__bottom"><div class="other-project-card__meta"><span>Web</span><span>·</span><span>B2B</span><span>·</span><span>NDA</span></div><span class="other-project-card__link">Смотреть кейс</span></div></div>
+            <div class="other-project-card__preview"><img src="assets/site/preview-arm.png" alt="АРМ кассира" loading="lazy"></div>
           </a>
-          </div>
-        </div>
+        </div></div>
       </div>
     </section>
 
     <section class="section section--contacts">
       <div class="container">
+        <span class="kicker"><span class="kicker__index">04</span> Контакты</span>
         <h2 class="section__heading">Открыта к&nbsp;сотрудничеству</h2>
-
         <div class="contact-methods">
-          <a class="contact-item" href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener">
-            <span class="contact-item__label">Telegram</span>
-            <span class="contact-item__value">@Lena_Suloeva</span>
-          </a>
-          <a class="contact-item" href="mailto:lensuloeva@yandex.ru">
-            <span class="contact-item__label">Почта</span>
-            <span class="contact-item__value">lensuloeva@yandex.ru</span>
-          </a>
+          <a class="contact-item" href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener"><span class="contact-item__label">Telegram</span><span class="contact-item__value">@Lena_Suloeva</span></a>
+          <a class="contact-item" href="mailto:lensuloeva@yandex.ru"><span class="contact-item__label">Почта</span><span class="contact-item__value">lensuloeva@yandex.ru</span></a>
         </div>
-
-        <div class="site-footer">
-          <p>Елена Сулоева · Product designer</p>
-          <p>Портфолио · 2026</p>
-        </div>
-
+        <div class="site-footer"><p>Елена Сулоева · Product designer</p><p>Портфолио · 2026</p></div>
         <div class="site-footer__route"></div>
       </div>
     </section>
-
   </main>
 
   <div class="modal-overlay" data-contact-modal>
     <div class="modal-card">
-      <button class="modal-close" type="button" data-close-contact aria-label="Закрыть">
-        <img src="assets/site/icon-close.svg" alt="">
-      </button>
+      <button class="modal-close" type="button" data-close-contact aria-label="Закрыть"><img src="assets/site/icon-close.svg" alt=""></button>
       <h3 class="modal-card__title">Свяжитесь со&nbsp;мной</h3>
       <p class="modal-card__lead">Расскажу о&nbsp;проектах подробнее и&nbsp;отвечу на&nbsp;вопросы</p>
       <div class="modal-card__methods">
-        <a class="modal-contact" href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener">
-          <span class="modal-contact__label">Telegram</span>
-          <div class="modal-contact__row">
-            <img src="assets/site/icon-telegram.svg" alt="">
-            <span class="modal-contact__value">@Lena_Suloeva</span>
-          </div>
-        </a>
-        <a class="modal-contact" href="mailto:lensuloeva@yandex.ru">
-          <span class="modal-contact__label">Почта</span>
-          <div class="modal-contact__row">
-            <img src="assets/site/icon-email.svg" alt="">
-            <span class="modal-contact__value">lensuloeva@yandex.ru</span>
-          </div>
-        </a>
+        <a class="modal-contact" href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener"><span class="modal-contact__label">Telegram</span><div class="modal-contact__row"><img src="assets/site/icon-telegram.svg" alt=""><span class="modal-contact__value">@Lena_Suloeva</span></div></a>
+        <a class="modal-contact" href="mailto:lensuloeva@yandex.ru"><span class="modal-contact__label">Почта</span><div class="modal-contact__row"><img src="assets/site/icon-email.svg" alt=""><span class="modal-contact__value">lensuloeva@yandex.ru</span></div></a>
       </div>
     </div>
   </div>
-
-  <script src="site.js?v=19"></script>
+  <script src="site.js?v=21"></script>
 </body>
 </html>
