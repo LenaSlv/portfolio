@@ -3,15 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>АРМ Кассира — кейс продуктового дизайнера</title>
+  <title>АРМ кассира&nbsp;— Елена Сулоева</title>
   <meta name="description" content="Редизайн рабочего пространства кассира на автовокзале: изменение заказа, смешанная оплата, обработка возвратов.">
-  <meta name="robots" content="noindex">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles-site.css?v=21">
+  <link rel="stylesheet" href="styles-site.css?v=22">
 </head>
-<body>
+<body class="case-page case-page--arm">
 
   <header class="site-header">
     <div class="site-header__inner">
@@ -22,7 +21,6 @@
       <nav class="site-header__nav">
         <a href="index.html#about">Обо мне</a>
         <a href="index.html#projects">Проекты</a>
-        <a href="index.html#experience">Опыт</a>
         <a href="index.html#contacts">Контакты</a>
       </nav>
       <button class="button site-header__cta" type="button" data-open-contact>Связаться со&nbsp;мной</button>
@@ -33,22 +31,21 @@
     <nav class="site-header__mobile-menu" id="mobile-menu" data-mobile-menu>
       <a href="index.html#about">Обо мне</a>
       <a href="index.html#projects">Проекты</a>
-      <a href="index.html#experience">Опыт</a>
       <a href="index.html#contacts">Контакты</a>
       <button class="button" type="button" data-open-contact>Связаться со&nbsp;мной</button>
     </nav>
   </header>
 
-  <main>
+  <div class="case-topbar">
+    <a class="case-topbar__back" href="index.html">Назад на&nbsp;главную</a>
+  </div>
 
-    <div class="case-topbar">
-      <a class="case-topbar__back" href="index.html">На главную</a>
-    </div>
+  <main>
 
     <section class="case-hero">
       <div class="container">
         <h1 class="case-hero__title">АРМ кассира</h1>
-        <p class="case-hero__lead">Редизайн рабочего пространства кассира на автовокзале</p>
+        <p class="case-hero__lead">Как&nbsp;сделать сложные финансовые операции понятными кассиру</p>
         <div class="case-hero__meta">
           <span><strong>Роль</strong>UX/UI-дизайнер</span>
           <span><strong>Платформы</strong>веб-приложение (АРМ)</span>
@@ -60,20 +57,38 @@
       </div>
     </section>
 
+    <section class="case-story arm-context">
+      <div class="container">
+        <p class="case-story__eyebrow">01 · Контекст</p>
+        <h2 class="case-story__title">Кассир работает быстро, а&nbsp;ошибки напрямую связаны с&nbsp;деньгами</h2>
+        <div class="case-grid case-grid--2">
+          <article class="case-card">
+            <h3>Рабочее место кассира</h3>
+            <p>Кассир обслуживает поток людей и&nbsp;не&nbsp;может каждый раз вручную проверять, что&nbsp;изменилось в&nbsp;заказе, сколько уже оплачено и&nbsp;требуется&nbsp;ли доплата или возврат.</p>
+          </article>
+          <article class="case-card arm-context__principle">
+            <p class="case-card__label">Принцип интерфейса</p>
+            <h3>Система считает и&nbsp;контролирует, кассир принимает решение</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section class="case-section">
       <div class="container">
         <span class="case-kicker">02 · Изменение заказа</span>
-        <h2 class="case-section__title">Изменение заказа без повторного оформления</h2>
+        <h2 class="case-section__title">Не&nbsp;заставлять кассира оформлять продажу заново</h2>
+        <p class="case-section__lead">Изменение выполняется внутри существующего заказа. Система пересчитывает стоимость, сравнивает её&nbsp;с&nbsp;уже оплаченной суммой и&nbsp;определяет следующий сценарий.</p>
 
-        <div class="note-card" style="margin-bottom:24px;">
+        <div class="note-card">
           <p class="note-card__label">Бизнес-задача</p>
-          <p class="note-card__text">Сократить время кассира на изменение уже оформленного заказа и снизить число отменённых заказов в системе.</p>
+          <p class="note-card__text">Сократить время кассира на&nbsp;изменение уже оформленного заказа и&nbsp;снизить число отменённых заказов в&nbsp;системе.</p>
         </div>
 
         <div class="compare-row">
           <div class="note-card">
             <p class="note-card__label">Было</p>
-            <p class="note-card__text">Добавить пассажира или услугу можно было только на этапе оформления заказа. Если заказ уже был оформлен, любое изменение требовало отменить его и оформить заново.</p>
+            <p class="note-card__text">Добавить пассажира или услугу можно было только на&nbsp;этапе оформления заказа. Если заказ уже был оформлен, любое изменение требовало отменить его и&nbsp;оформить заново.</p>
           </div>
           <div class="compare-screen">
             <img src="assets/site/arm-order-before.png" alt="Старый интерфейс: заполнение информации о билетах">
@@ -93,28 +108,31 @@
           </div>
         </div>
 
-        <p class="note-card__label" style="margin-bottom:16px;">Стало</p>
-        <div class="arm-screen" style="margin-bottom:16px;">
-          <img src="assets/site/arm-order-after.png" alt="Новый интерфейс: заказ с добавленным пассажиром и услугами через всплывающее меню">
-        </div>
-        <p class="case-section__lead" style="font-size:18px;">В оформленном билете предусмотрен сценарий редактирования, в котором кассир добавляет пассажиров и услуги в существующий заказ, а система автоматически рассчитывает доплату.</p>
+        <article class="arm-after-card">
+          <p class="note-card__label">Стало</p>
+          <div class="arm-screen">
+            <img src="assets/site/arm-order-after.png" alt="Новый интерфейс: заказ с&nbsp;добавленным пассажиром и&nbsp;услугами через всплывающее меню">
+          </div>
+          <p class="arm-after-card__text">В&nbsp;оформленном билете предусмотрен сценарий редактирования, в&nbsp;котором кассир добавляет пассажиров и&nbsp;услуги в&nbsp;существующий заказ, а&nbsp;система автоматически рассчитывает доплату.</p>
+        </article>
       </div>
     </section>
 
     <section class="case-section">
       <div class="container">
         <span class="case-kicker">03 · Смешанная оплата</span>
-        <h2 class="case-section__title">Оплатить заказ, комбинируя любые способы</h2>
+        <h2 class="case-section__title">Один заказ&nbsp;— несколько прозрачных платежей</h2>
+        <p class="case-section__lead">После каждой операции кассир видит текущее финансовое состояние заказа. Каждая оплата сохраняется отдельно со&nbsp;своим способом, суммой и&nbsp;статусом.</p>
 
-        <div class="note-card" style="margin-bottom:24px;">
+        <div class="note-card">
           <p class="note-card__label">Бизнес-задача</p>
-          <p class="note-card__text">Снизить количество кликов кассира, сделать сценарий оплаты более нативным и добавить смешанную оплату — чтобы комбинированный платёж занимал меньше действий.</p>
+          <p class="note-card__text">Снизить количество кликов кассира, сделать сценарий оплаты более нативным и&nbsp;добавить смешанную оплату&nbsp;— чтобы комбинированный платёж занимал меньше действий.</p>
         </div>
 
         <div class="compare-row">
           <div class="note-card">
             <p class="note-card__label">Было</p>
-            <p class="note-card__text">Смешанная оплата отсутствовала: заказ можно было оплатить только одним способом целиком или разбить платёж на отдельные этапы — каждый этап открывал новое модальное окно и требовал лишних кликов.</p>
+            <p class="note-card__text">Смешанная оплата отсутствовала: заказ можно было оплатить только одним способом целиком или разбить платёж на&nbsp;отдельные этапы&nbsp;— каждый этап открывал новое модальное окно и&nbsp;требовал лишних кликов.</p>
           </div>
           <div class="compare-screen">
             <img src="assets/site/arm-payment-before.png" alt="Старый интерфейс: выбор формы оплаты и два последовательных окна оплаты">
@@ -130,17 +148,18 @@
             <span class="flow-step">СБП</span>
             <span class="flow-plus">+</span>
             <span class="flow-step">ещё одна карта</span>
-            <span class="flow-steps-note">— в любой комбинации</span>
+            <span class="flow-steps-note">— в&nbsp;любой комбинации</span>
           </div>
         </div>
 
+        <div class="payment-pairs">
         <div class="pair-row">
           <div class="proof-card">
             <p class="proof-card__title">Остаток виден сразу</p>
-            <p class="proof-card__text">Итого к оплате и остаток пересчитываются автоматически при добавлении каждого способа оплаты.</p>
+            <p class="proof-card__text">Итого к&nbsp;оплате и&nbsp;остаток пересчитываются автоматически при&nbsp;добавлении каждого способа оплаты.</p>
             <div class="value-pair">
-              <div class="value-pair__item"><strong>Кассиру</strong>Не нужно держать сумму в уме — программа сама показывает, сколько осталось внести.</div>
-              <div class="value-pair__item"><strong>Бизнесу</strong>Меньше ошибок в расчётах при смешанной оплате.</div>
+              <div class="value-pair__item"><strong>Кассиру</strong>Не&nbsp;нужно держать сумму в&nbsp;уме&nbsp;— программа сама показывает, сколько осталось внести.</div>
+              <div class="value-pair__item"><strong>Бизнесу</strong>Меньше ошибок в&nbsp;расчётах при&nbsp;смешанной оплате.</div>
             </div>
           </div>
           <div class="proof-card proof-card--screen">
@@ -155,21 +174,23 @@
             <p class="proof-card__caption">Список подключённых способов оплаты</p>
           </div>
           <div class="proof-card">
-            <p class="proof-card__title">Отмена по одному способу</p>
-            <p class="proof-card__text">Каждый способ оплаты можно отменить отдельно — например, вернуть только оплату картой, оставив наличные. Или отменить всю оплату сразу.</p>
+            <p class="proof-card__title">Отмена по&nbsp;одному способу</p>
+            <p class="proof-card__text">Каждый способ оплаты можно отменить отдельно&nbsp;— например, вернуть только оплату картой, оставив наличные. Или отменить всю оплату сразу.</p>
             <div class="value-pair">
-              <div class="value-pair__item"><strong>Кассиру</strong>Не нужно отменять весь заказ, если ошибся только один платёж.</div>
-              <div class="value-pair__item"><strong>Клиенту</strong>Возврат оформляется быстрее и точнее.</div>
+              <div class="value-pair__item"><strong>Кассиру</strong>Не&nbsp;нужно отменять весь заказ, если ошибся только один платёж.</div>
+              <div class="value-pair__item"><strong>Клиенту</strong>Возврат оформляется быстрее и&nbsp;точнее.</div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>
 
     <section class="case-section case-section--pb">
       <div class="container">
-        <span class="case-kicker">04 · Edge cases</span>
-        <h2 class="case-section__title">Вернуть оплату — пересчёт</h2>
+        <span class="case-kicker">04 · Возврат наличных</span>
+        <h2 class="case-section__title">Возврат наличных не&nbsp;отменяет остальные платежи</h2>
+        <p class="case-section__lead">Система меняет статус только этой операции, сохраняет остальные платежи и&nbsp;пересчитывает остаток заказа.</p>
         <div class="edge-row">
           <div class="proof-card proof-card--screen">
             <img src="assets/site/arm-refund-1.png" alt="Заказ оплачен">
@@ -268,6 +289,19 @@
       </div>
     </section>
 
+    <section class="section section--contacts">
+      <div class="container">
+        <span class="kicker"><span class="kicker__index">05</span> Контакты</span>
+        <h2 class="section__heading">Открыта к&nbsp;сотрудничеству</h2>
+        <div class="contact-methods">
+          <a class="contact-item" href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener"><span class="contact-item__label">Telegram</span><span class="contact-item__value">@Lena_Suloeva</span></a>
+          <a class="contact-item" href="mailto:lensuloeva@yandex.ru"><span class="contact-item__label">Почта</span><span class="contact-item__value">lensuloeva@yandex.ru</span></a>
+        </div>
+        <div class="site-footer"><p>Елена Сулоева · Product designer</p><p>Портфолио · 2026</p></div>
+        <div class="site-footer__route"></div>
+      </div>
+    </section>
+
   </main>
 
   <div class="modal-overlay" data-contact-modal>
@@ -275,8 +309,8 @@
       <button class="modal-close" type="button" data-close-contact aria-label="Закрыть">
         <img src="assets/site/icon-close.svg" alt="">
       </button>
-      <h3 class="modal-card__title">Свяжитесь со мной</h3>
-      <p class="modal-card__lead">Расскажу о проектах подробнее и отвечу на вопросы</p>
+      <h3 class="modal-card__title">Свяжитесь со&nbsp;мной</h3>
+      <p class="modal-card__lead">Расскажу о&nbsp;проектах подробнее и&nbsp;отвечу на&nbsp;вопросы</p>
       <div class="modal-card__methods">
         <a class="modal-contact" href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener">
           <span class="modal-contact__label">Telegram</span>
@@ -296,6 +330,6 @@
     </div>
   </div>
 
-  <script src="site.js?v=21"></script>
+  <script src="site.js?v=22"></script>
 </body>
 </html>
