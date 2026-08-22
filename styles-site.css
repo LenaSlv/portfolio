@@ -141,9 +141,13 @@ a {
   flex: 1;
   display: flex;
   justify-content: center;
-  gap: 28px;
+  gap: 32px;
   color: var(--text-muted);
   font-size: 18px;
+}
+
+.home-page .site-header__nav a:not(:nth-child(3)) {
+  width: 90px;
 }
 
 .site-header__nav a:hover {
@@ -286,7 +290,7 @@ a {
 }
 
 .hero__lead {
-  margin-top: 20px;
+  margin-top: 0;
   font-size: 22px;
   line-height: 1.45;
   color: var(--text-secondary);
@@ -347,8 +351,8 @@ a {
 }
 
 .section--projects { background: var(--bg-projects); }
-.section--experience { background: var(--bg-experience); }
-.section--contacts { background: var(--bg-contacts); padding-bottom: 0; }
+.section--experience { background: var(--bg-projects); }
+.section--contacts { background: var(--bg-contacts); padding-bottom: 48px; }
 
 .section--projects {
   padding-top: 72px;
@@ -487,64 +491,101 @@ a {
 }
 
 /* Experience / education */
-.section--experience .section__heading {
-  margin-bottom: 12px;
-  font-size: 44px;
-  line-height: 54px;
+.section--experience {
+  min-height: 720px;
+  padding: 64px 72px;
 }
 
-.section--experience .section__lead {
-  margin: 0 0 28px;
+.section--experience > .container {
+  max-width: 1296px;
 }
 
-.resume-columns {
+.experience-layout {
   display: grid;
-  grid-template-columns: minmax(0, 604px) minmax(0, 624px);
-  gap: 20px;
+  grid-template-columns: minmax(0, 520px) minmax(0, 720px);
+  gap: 56px;
+  min-height: 420px;
+  align-items: start;
 }
 
-.resume-card {
+.experience-intro,
+.experience-list,
+.experience-item > div {
   min-width: 0;
-  height: 570px;
-  padding: 32px;
-  overflow: hidden;
-  border: 1px solid var(--border-card);
-  border-radius: 22px;
-  background: var(--bg-card);
 }
 
-.resume-card__title {
-  margin-bottom: 24px;
+.experience-title {
+  max-width: 520px;
   color: var(--text-primary);
-  font-size: 26px;
+  font-family: var(--font-display);
+  font-size: clamp(36px, 3.7vw, 52px);
   font-weight: 600;
-  line-height: 34px;
+  line-height: 58px;
+  text-wrap: balance;
 }
 
-.resume-item {
-  min-height: 108px;
-  padding: 18px 0;
+.experience-lead {
+  max-width: 470px;
+  margin-top: 26px;
+  color: var(--text-primary);
+  font-size: 19px;
+  line-height: 28px;
+}
+
+.experience-list {
+  min-height: 420px;
+}
+
+.experience-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 24px;
+  align-items: center;
+  min-height: 112px;
   border-top: 1px solid var(--border-card);
 }
 
-.resume-item__title {
+.experience-item__title {
   color: var(--text-primary);
-  font-size: 17px;
+  font-size: 19px;
   font-weight: 500;
   line-height: 23px;
 }
 
-.resume-item__subtitle {
-  margin-top: 7px;
-  color: var(--text-dim);
+.experience-item__subtitle,
+.experience-item__date {
+  color: #9e9e94;
   font-size: 14px;
-  line-height: 20px;
+  line-height: 17px;
 }
 
-.resume-item__date {
+.experience-item__subtitle {
   margin-top: 7px;
-  color: var(--text-dim);
+}
+
+.experience-item__date {
+  white-space: nowrap;
+  text-align: right;
+}
+
+.education-row {
+  display: grid;
+  grid-template-columns: 210px repeat(2, minmax(0, 430px));
+  gap: 28px;
+  align-items: start;
+  min-height: 90px;
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-card);
+  color: var(--text-primary);
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.education-row__label {
+  color: #9e9e94;
   font-size: 12px;
+  font-weight: 500;
   line-height: 18px;
 }
 
@@ -553,12 +594,17 @@ a {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
-  margin-top: 22px;
+  margin-top: 0;
 }
 
 .section--contacts .section__heading {
   font-size: 48px;
   line-height: 58px;
+  margin-bottom: 22px;
+}
+
+.section--contacts .section__kicker {
+  margin-bottom: 22px;
 }
 
 .contact-item {
@@ -569,6 +615,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  min-height: 108px;
 }
 
 .contact-item__label {
@@ -1965,13 +2012,23 @@ a {
     font-size: 15px;
   }
 
-  .resume-columns {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 16px;
+  .section--experience {
+    min-height: 0;
   }
 
-  .resume-card {
-    height: auto;
+  .experience-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 36px;
+  }
+
+  .experience-title {
+    max-width: 680px;
+    line-height: 1.12;
+  }
+
+  .education-row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
   }
 
   .contact-methods {
@@ -2058,24 +2115,32 @@ a {
   }
 
   .section--projects .section__heading,
-  .section--experience .section__heading,
   .section--contacts .section__heading {
     font-size: 32px;
     line-height: 40px;
   }
 
-  .section--experience .section__lead {
-    font-size: 16px;
-    line-height: 24px;
+  .experience-title {
+    font-size: 32px;
+    line-height: 38px;
   }
 
-  .resume-card {
-    padding: 24px;
+  .experience-lead {
+    margin-top: 18px;
+    font-size: 17px;
+    line-height: 25px;
   }
 
-  .resume-card__title {
-    font-size: 24px;
-    line-height: 32px;
+  .experience-item {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 8px;
+    align-items: start;
+    padding: 20px 0;
+  }
+
+  .experience-item__date {
+    white-space: normal;
+    text-align: left;
   }
 
   .hero-contacts {

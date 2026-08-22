@@ -8,9 +8,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles-site.css?v=24">
+  <link rel="stylesheet" href="styles-site.css?v=25">
 </head>
-<body>
+<body class="home-page">
 
   <header class="site-header">
     <div class="site-header__inner">
@@ -19,8 +19,9 @@
         <span class="site-header__name">Елена Сулоева</span>
       </a>
       <nav class="site-header__nav">
-        <a href="#experience">Обо мне</a>
+        <a href="#about">Обо мне</a>
         <a href="#projects">Проекты</a>
+        <a href="#experience">Опыт работы</a>
         <a href="#contacts">Контакты</a>
       </nav>
       <button class="button site-header__cta" type="button" data-open-contact>Связаться со&nbsp;мной</button>
@@ -29,8 +30,9 @@
       </button>
     </div>
     <nav class="site-header__mobile-menu" id="mobile-menu" data-mobile-menu>
-      <a href="#experience">Обо мне</a>
+      <a href="#about">Обо мне</a>
       <a href="#projects">Проекты</a>
+      <a href="#experience">Опыт работы</a>
       <a href="#contacts">Контакты</a>
       <button class="button" type="button" data-open-contact>Связаться со&nbsp;мной</button>
     </nav>
@@ -41,8 +43,18 @@
     <section class="hero-section" id="about">
       <div class="container">
         <div class="hero-section__spacer"></div>
+        <div class="hero-contacts" aria-label="Быстрые способы связи">
+          <a class="hero-contact" href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener">
+            <img src="assets/site/icon-telegram.svg" alt="" width="20" height="20">
+            <span>@Lena_Suloeva</span>
+          </a>
+          <a class="hero-contact" href="mailto:lensuloeva@yandex.ru">
+            <img src="assets/site/icon-email.svg" alt="" width="20" height="20">
+            <span>lensuloeva@yandex.ru</span>
+          </a>
+        </div>
         <h1 class="hero__title"><em>Елена Сулоева, Product designer&nbsp;—</em> превращаю сложную бизнес-логику в&nbsp;понятные интерфейсы</h1>
-        <p class="hero__lead">Проектирую B2B-сервисы и&nbsp;B2C-продукты: CRM, дашборды и&nbsp;мобильные приложения.</p>
+        <p class="hero__lead">Проектирую B2B и&nbsp;B2C продукты для&nbsp;Web и&nbsp;Mobile.</p>
 
         <div class="competency-strip">
           <div class="competency">
@@ -141,53 +153,41 @@
 
     <section class="section section--experience" id="experience">
       <div class="container">
-        <span class="kicker section__kicker"><span class="kicker__index">03</span> Обо мне</span>
-        <h2 class="section__heading">Опыт и&nbsp;образование</h2>
-        <p class="section__lead">Работаю на&nbsp;стыке продуктовой логики, пользовательских сценариев и&nbsp;визуальной системы.</p>
+        <div class="experience-layout">
+          <div class="experience-intro">
+            <h2 class="experience-title">Опыт в&nbsp;продуктовых и&nbsp;проектных командах</h2>
+            <p class="experience-lead">Работаю на&nbsp;стыке продуктовой логики, пользовательских сценариев и&nbsp;визуальной системы.</p>
+          </div>
 
-        <div class="resume-columns">
-          <article class="resume-card">
-            <h3 class="resume-card__title">Опыт работы</h3>
-            <div class="resume-item">
-              <p class="resume-item__title">Технезис · UX/UI-дизайнер</p>
-              <p class="resume-item__subtitle">B2B, B2C-продукты</p>
-              <p class="resume-item__date">Ноябрь 2024&nbsp;— настоящее время</p>
+          <div class="experience-list">
+            <div class="experience-item">
+              <div>
+                <p class="experience-item__title">Технезис · UX/UI-дизайнер</p>
+                <p class="experience-item__subtitle">B2B и&nbsp;B2C-продукты</p>
+              </div>
+              <p class="experience-item__date">Ноябрь 2024&nbsp;— настоящее время</p>
             </div>
-            <div class="resume-item">
-              <p class="resume-item__title">Soul · Product-дизайнер</p>
-              <p class="resume-item__subtitle">B2C-стартап</p>
-              <p class="resume-item__date">Май 2025&nbsp;— настоящее время</p>
+            <div class="experience-item">
+              <div>
+                <p class="experience-item__title">Soul · Product-дизайнер</p>
+                <p class="experience-item__subtitle">B2C-стартап</p>
+              </div>
+              <p class="experience-item__date">Май 2025&nbsp;— настоящее время</p>
             </div>
-            <div class="resume-item">
-              <p class="resume-item__title">Проектная работа · UX/UI-дизайнер</p>
-              <p class="resume-item__subtitle">Веб и&nbsp;мобильные продукты</p>
-              <p class="resume-item__date">Декабрь 2023&nbsp;— май 2025</p>
+            <div class="experience-item">
+              <div>
+                <p class="experience-item__title">Проектная работа · UX/UI-дизайнер</p>
+                <p class="experience-item__subtitle">Web и&nbsp;Mobile app</p>
+              </div>
+              <p class="experience-item__date">Декабрь 2023&nbsp;— ноябрь 2024</p>
             </div>
-          </article>
+          </div>
+        </div>
 
-          <article class="resume-card">
-            <h3 class="resume-card__title">Образование</h3>
-            <div class="resume-item">
-              <p class="resume-item__title">Нейросети для&nbsp;дизайнеров</p>
-              <p class="resume-item__subtitle">Логомашина</p>
-              <p class="resume-item__date">2024</p>
-            </div>
-            <div class="resume-item">
-              <p class="resume-item__title">Дизайнер интерфейсов</p>
-              <p class="resume-item__subtitle">Яндекс Практикум</p>
-              <p class="resume-item__date">2023</p>
-            </div>
-            <div class="resume-item">
-              <p class="resume-item__title">Фотохудожник и&nbsp;фоторепортёр</p>
-              <p class="resume-item__subtitle">РАНХиГС</p>
-              <p class="resume-item__date">2014</p>
-            </div>
-            <div class="resume-item">
-              <p class="resume-item__title">Бухгалтерский учёт, анализ и&nbsp;аудит</p>
-              <p class="resume-item__subtitle">ННГАСУ</p>
-              <p class="resume-item__date">2012</p>
-            </div>
-          </article>
+        <div class="education-row">
+          <p class="education-row__label">Профильное обучение</p>
+          <p>Яндекс Практикум · Дизайнер интерфейсов · 2023</p>
+          <p>Логомашина · Нейросети для&nbsp;дизайнеров · 2024</p>
         </div>
       </div>
     </section>
@@ -245,6 +245,6 @@
     </div>
   </div>
 
-  <script src="site.js?v=24"></script>
+  <script src="site.js?v=25"></script>
 </body>
 </html>
