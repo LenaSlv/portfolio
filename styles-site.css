@@ -41,7 +41,6 @@
 
 html {
   scroll-behavior: smooth;
-  scrollbar-gutter: stable;
 }
 
 section[id] {
@@ -351,9 +350,15 @@ a {
 .section--experience { background: var(--bg-experience); }
 .section--contacts { background: var(--bg-contacts); padding-bottom: 0; }
 
+.section--projects {
+  padding-top: 72px;
+  padding-bottom: 80px;
+}
+
 .section--projects .section__heading {
   font-size: 42px;
   line-height: 52px;
+  margin-bottom: 24px;
 }
 
 .section__heading {
@@ -382,18 +387,19 @@ a {
 .project-cards {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 24px;
 }
 
 .project-card {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 32px;
-  min-height: 520px;
-  padding: 48px;
+  height: 420px;
+  padding: 32px 48px;
   background: var(--bg-card);
-  border: 1px solid var(--border-card);
+  border: none;
   border-radius: var(--radius-lg);
+  box-shadow: inset 0 0 0 1px var(--border-card);
   overflow: clip;
 }
 
@@ -402,7 +408,7 @@ a {
   flex-direction: column;
   align-items: flex-start;
   gap: 18px;
-  min-height: 424px;
+  min-height: 356px;
   min-width: 0;
 }
 
@@ -427,28 +433,29 @@ a {
   max-width: 520px;
 }
 
+.project-card:first-child .project-card__desc {
+  color: var(--text-muted);
+}
+
 .project-card__meta {
   margin-top: auto;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 18px;
-  color: var(--text-dim);
+  color: var(--text-muted);
   font-weight: 500;
   max-width: 100%;
   overflow-wrap: anywhere;
 }
 
-.project-card__meta span {
-  margin: 0 4px;
+.project-card--arm .project-card__meta {
+  color: var(--text-dim);
+  font-size: 12px;
 }
 
 .project-card__link {
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
-  color: var(--text-primary);
-}
-
-.project-card:first-child .project-card__link {
   color: var(--accent);
 }
 
@@ -459,13 +466,18 @@ a {
 .project-card__preview {
   width: 100%;
   min-width: 0;
-  aspect-ratio: 560 / 424;
+  aspect-ratio: 560 / 356;
   border-radius: var(--radius-md);
   overflow: hidden;
   background: #09122e;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.project-card--soul .project-card__title {
+  font-size: 22px;
+  line-height: 1.25;
 }
 
 .project-card__preview img {
@@ -1936,6 +1948,7 @@ a {
   .project-card {
     grid-template-columns: minmax(0, 1fr);
     gap: 24px;
+    height: auto;
     min-height: 0;
     padding: 24px;
   }
