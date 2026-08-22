@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles-site.css?v=28">
+  <link rel="stylesheet" href="styles-site.css?v=29">
 </head>
 <body class="case-page case-page--pet">
   <header class="site-header">
@@ -49,7 +49,7 @@
       </div>
     </section>
 
-    <section class="case-story">
+    <section class="case-story pet-context">
       <div class="container">
         <p class="case-story__eyebrow">01 · Контекст и&nbsp;проблема</p>
         <h2 class="case-story__title">Частые поездки по&nbsp;городу и&nbsp;области остаются двумя разными сценариями</h2>
@@ -60,46 +60,49 @@
       </div>
     </section>
 
-    <section class="case-story">
+    <section class="case-story pet-card-section">
       <div class="container">
         <p class="case-story__eyebrow">Решение 01 · Транспортная карта</p>
         <h2 class="case-story__title">Убрать офлайн-барьер перед первой поездкой</h2>
         <article class="case-card case-card--journey">
           <h3>Как&nbsp;изменился путь пользователя</h3>
           <p>Тарифы и&nbsp;способы пополнения доступны сразу&nbsp;— оформить и&nbsp;пополнить карту можно без&nbsp;поездки в&nbsp;офис.</p>
-          <div class="journey-compare">
+          <img class="journey-compare__image" src="assets/site/pet-card-flow.png" alt="Схема изменения пути пользователя: выпуск и пополнение транспортной карты теперь доступны в приложении">
+          <div class="journey-compare journey-compare--mobile" aria-hidden="true">
             <div><span>Раньше</span><p>Поездка в&nbsp;офис → Получение карты → Тариф и&nbsp;пополнение</p></div>
             <div><span>После переноса в&nbsp;приложение</span><p>Выпуск карты → Тарифы доступны сразу → Пополнение онлайн</p></div>
           </div>
         </article>
         <div class="case-grid case-grid--3 case-grid--screens">
-          <article class="case-media-card"><img src="assets/site/kaliningrad-hyp1-phones.png" alt="Выбор типа карты" loading="lazy"><p class="case-media-card__caption">Выбор типа карты</p></article>
-          <article class="case-media-card"><img src="assets/site/kaliningrad-hyp2-phones.png" alt="Выпуск виртуальной карты" loading="lazy"><p class="case-media-card__caption">Выпуск виртуальной карты</p></article>
-          <article class="case-media-card"><img src="assets/site/kaliningrad-hyp1-phones.png" alt="Карта создана" loading="lazy"><p class="case-media-card__caption">Карта создана</p></article>
+          <article class="case-media-card pet-phone-card"><img src="assets/site/pet-card-type.png" alt="Выбор типа карты"><p class="case-media-card__caption">Выбор типа карты</p></article>
+          <article class="case-media-card pet-phone-card"><img src="assets/site/pet-card-create.png" alt="Выпуск виртуальной карты"><p class="case-media-card__caption">Выпуск виртуальной карты</p></article>
+          <article class="case-media-card pet-phone-card"><img src="assets/site/pet-card-done.png" alt="Карта создана"><p class="case-media-card__caption">Карта создана</p></article>
         </div>
       </div>
     </section>
 
-    <section class="case-story">
+    <section class="case-story pet-balance-section">
       <div class="container">
         <p class="case-story__eyebrow">Решение 02 · Баланс и&nbsp;абонемент</p>
         <h2 class="case-story__title">Баланс для&nbsp;нерегулярных поездок, абонемент&nbsp;— для&nbsp;постоянных</h2>
         <div class="case-grid case-grid--2">
-          <article class="case-media-card case-media-card--titled"><h3>Баланс</h3><p>Оплата по&nbsp;факту использования для&nbsp;нерегулярных поездок и&nbsp;пользователей без&nbsp;абонемента.</p><img src="assets/site/kaliningrad-hyp3-phones.png" alt="Пополнение баланса транспортной карты" loading="lazy"></article>
-          <article class="case-media-card case-media-card--titled"><h3>Абонемент</h3><p>Предсказуемые расходы для&nbsp;ежедневных маршрутов и&nbsp;регулярных поездок.</p><img src="assets/site/kaliningrad-hyp3-screens.png" alt="Покупка абонемента" loading="lazy"></article>
+          <article class="case-media-card case-media-card--titled pet-payment-card"><h3>Баланс</h3><p>Оплата по&nbsp;факту использования для&nbsp;нерегулярных поездок и&nbsp;пользователей без&nbsp;абонемента.</p><img src="assets/site/pet-balance.png" alt="Пополнение баланса транспортной карты"></article>
+          <article class="case-media-card case-media-card--titled pet-payment-card"><h3>Абонемент</h3><p>Предсказуемые расходы для&nbsp;ежедневных маршрутов и&nbsp;регулярных поездок.</p><img src="assets/site/pet-subscription.png" alt="Покупка абонемента"></article>
         </div>
         <article class="case-card case-card--accent case-subscription">
           <h3>После покупки абонемента</h3>
           <p>Статус и&nbsp;оставшиеся поездки видны на&nbsp;карте. Приложение заранее предупреждает, когда абонемент скоро закончится.</p>
-          <div class="case-grid case-grid--4 case-grid--screens">
-            <img src="assets/site/kaliningrad-edgecase-phone1.png" alt="Карта активна" loading="lazy">
-            <img src="assets/site/kaliningrad-edgecase-phone2.png" alt="Абонемент скоро закончится" loading="lazy">
-            <img src="assets/site/kaliningrad-intercity2-phone3.png" alt="Последняя поездка" loading="lazy">
-            <img src="assets/site/kaliningrad-edgecase-phone3.png" alt="Абонемент закончился" loading="lazy">
+          <div class="case-grid case-grid--4 case-grid--screens pet-lifecycle-screens">
+            <figure><img src="assets/site/pet-life-active.png" alt="Карта активна"><figcaption>Карта активна</figcaption></figure>
+            <figure><img src="assets/site/pet-life-warning.png" alt="Абонемент скоро закончится"><figcaption>Скоро закончится</figcaption></figure>
+            <figure><img src="assets/site/pet-life-last.png" alt="Последняя поездка по абонементу"><figcaption>Последняя поездка</figcaption></figure>
+            <figure><img src="assets/site/pet-life-ended.png" alt="Абонемент закончился"><figcaption>Абонемент закончился</figcaption></figure>
           </div>
-          <h3>Жизненный цикл абонемента</h3>
-          <p>Статус меняется автоматически и&nbsp;всегда виден на&nbsp;карте. Предупреждение появляется заранее и&nbsp;не&nbsp;мешает поездке.</p>
-          <div class="lifecycle"><span>01 · Активен</span><b>→</b><span>02 · Скоро закончится</span><b>→</b><span>03 · Последняя поездка</span><b>→</b><span>04 · Закончился</span></div>
+          <div class="pet-lifecycle-panel">
+            <h3>Жизненный цикл абонемента</h3>
+            <p>Статус меняется автоматически и&nbsp;всегда виден на&nbsp;карте. Предупреждение появляется заранее и&nbsp;не&nbsp;мешает поездке.</p>
+            <div class="lifecycle"><span>01 · Активен</span><b>→</b><span>02 · Скоро закончится</span><b>→</b><span>03 · Последняя поездка</span><b>→</b><span>04 · Закончился</span></div>
+          </div>
         </article>
       </div>
     </section>
@@ -111,9 +114,9 @@
         <p class="case-story__lead">При&nbsp;выборе междугороднего рейса пассажиру важны время отправления и&nbsp;прибытия, стоимость, место посадки, пересадка и&nbsp;общая длительность. Поэтому ключевые параметры показаны уже в&nbsp;результатах поиска.</p>
         <div class="case-tags"><span>Время</span><span>Цена</span><span>Место отправления</span><span>Пересадка</span><span>Длительность</span></div>
         <div class="case-grid case-grid--3 case-grid--screens">
-          <article class="case-media-card"><img src="assets/site/kaliningrad-intercity1-phone1.png" alt="Поиск маршрута" loading="lazy"><p class="case-media-card__caption">01 · Поиск маршрута</p></article>
-          <article class="case-media-card"><img src="assets/site/kaliningrad-intercity1-phone2.png" alt="Результаты и сравнение" loading="lazy"><p class="case-media-card__caption">02 · Результаты и&nbsp;сравнение</p></article>
-          <article class="case-media-card"><img src="assets/site/kaliningrad-intercity2-phone2.png" alt="Детали поездки" loading="lazy"><p class="case-media-card__caption">03 · Детали поездки</p></article>
+          <article class="case-media-card pet-intercity-card"><img src="assets/site/pet-intercity-search.png" alt="Поиск маршрута"><p class="case-media-card__caption">01 · Поиск маршрута</p></article>
+          <article class="case-media-card pet-intercity-card"><img src="assets/site/pet-intercity-results.png" alt="Результаты и сравнение"><p class="case-media-card__caption">02 · Результаты и&nbsp;сравнение</p></article>
+          <article class="case-media-card pet-intercity-card"><img src="assets/site/pet-intercity-details.png" alt="Детали поездки"><p class="case-media-card__caption">03 · Детали поездки</p></article>
         </div>
       </div>
     </section>
@@ -122,9 +125,9 @@
       <div class="container">
         <p class="case-story__eyebrow">Решение 04 · Пересадка</p>
         <h2 class="case-story__title">Маршрут с&nbsp;пересадкой остаётся одной поездкой</h2>
-        <p class="case-story__lead">Технически это несколько рейсов и&nbsp;сегментов. Для&nbsp;пассажира&nbsp;— одна задача: попасть из&nbsp;точки А&nbsp;в&nbsp;точку Б. Поэтому сегменты объединены общей логикой.</p>
-        <div class="case-split case-split--reverse">
-          <article class="case-media-card"><img src="assets/site/kaliningrad-intercity2-phone3.png" alt="Единый билет на маршрут с пересадкой" loading="lazy"></article>
+        <p class="case-story__lead">Технически это несколько рейсов и&nbsp;сегментов. Для&nbsp;пассажира&nbsp;— одна задача: попасть из&nbsp;точки A&nbsp;в&nbsp;точку B. Поэтому сегменты объединены общей логикой.</p>
+        <div class="case-split case-split--reverse pet-transfer">
+          <article class="case-media-card pet-transfer__visual"><div><img src="assets/site/pet-transfer-results.png" alt="Список маршрутов с пересадкой"><img src="assets/site/pet-transfer-ticket.png" alt="Единый билет на маршрут с пересадкой"></div></article>
           <div class="case-stack">
             <article class="case-card case-card--accent"><p class="case-card__label">Пользователю</p><p>Легче сравнивать варианты, понятнее общая длительность, меньше риска купить несовместимые рейсы.</p></article>
             <article class="case-card"><p class="case-card__label">Продукту</p><p>Покупка остаётся единым сценарием, заказ проще сопровождать при&nbsp;изменении одного из&nbsp;сегментов.</p></article>
@@ -133,16 +136,17 @@
       </div>
     </section>
 
-    <section class="case-story">
+    <section class="case-story pet-repeat-section">
       <div class="container">
+        <p class="case-story__eyebrow">Повторное использование</p>
         <div class="case-heading-split">
-          <div><p class="case-story__eyebrow">Повторное использование</p><h2 class="case-story__title">Повторные действия и&nbsp;сбои не&nbsp;возвращают пользователя в&nbsp;начало</h2></div>
+          <h2 class="case-story__title">Повторные действия и&nbsp;сбои не&nbsp;возвращают пользователя в&nbsp;начало</h2>
           <p class="case-story__lead">Продумала сценарии, к&nbsp;которым пассажир возвращается каждый день, и&nbsp;состояния, в&nbsp;которых основной путь нельзя продолжить.</p>
         </div>
         <div class="case-grid case-grid--3 case-grid--screens">
-          <article class="case-media-card case-media-card--titled"><h3>Недавние маршруты</h3><p>Повторить поиск без&nbsp;повторного ввода направления.</p><img src="assets/site/kaliningrad-intercity1-phone1.png" alt="Недавние маршруты" loading="lazy"></article>
-          <article class="case-media-card case-media-card--titled"><h3>Продление абонемента</h3><p>Предупреждение появляется заранее и&nbsp;не&nbsp;блокирует поездку.</p><img src="assets/site/kaliningrad-edgecase-phone2.png" alt="Продление абонемента" loading="lazy"></article>
-          <article class="case-media-card case-media-card--titled"><h3>Нет рейсов на&nbsp;дату</h3><p>Направление сохраняется, сервис предлагает ближайшие даты.</p><img src="assets/site/kaliningrad-edgecase-phone3.png" alt="Нет рейсов на дату" loading="lazy"></article>
+          <article class="case-media-card case-media-card--titled pet-repeat-card"><h3>Недавние маршруты</h3><p>Повторить поиск без&nbsp;повторного ввода направления.</p><img src="assets/site/pet-repeat-routes.png" alt="Недавние маршруты"></article>
+          <article class="case-media-card case-media-card--titled pet-repeat-card"><h3>Продление абонемента</h3><p>Предупреждение появляется заранее и&nbsp;не&nbsp;блокирует поездку.</p><img src="assets/site/pet-repeat-subscription.png" alt="Продление абонемента"></article>
+          <article class="case-media-card case-media-card--titled pet-repeat-card"><h3>Нет рейсов на&nbsp;дату</h3><p>Направление сохраняется, сервис предлагает ближайшие даты.</p><img src="assets/site/pet-repeat-no-routes.png" alt="Нет рейсов на дату"></article>
         </div>
       </div>
     </section>
@@ -184,6 +188,6 @@
     <h3 class="modal-card__title">Свяжитесь со&nbsp;мной</h3><p class="modal-card__lead">Расскажу о&nbsp;проектах подробнее и&nbsp;отвечу на&nbsp;вопросы</p>
     <div class="modal-card__methods"><a class="modal-contact" href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener"><span class="modal-contact__label">Telegram</span><div class="modal-contact__row"><img src="assets/site/icon-telegram.svg" alt=""><span class="modal-contact__value">@Lena_Suloeva</span></div></a><a class="modal-contact" href="mailto:lensuloeva@yandex.ru"><span class="modal-contact__label">Почта</span><div class="modal-contact__row"><img src="assets/site/icon-email.svg" alt=""><span class="modal-contact__value">lensuloeva@yandex.ru</span></div></a></div>
   </div></div>
-  <script src="site.js?v=28"></script>
+  <script src="site.js?v=29"></script>
 </body>
 </html>
