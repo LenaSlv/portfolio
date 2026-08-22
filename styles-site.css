@@ -3317,6 +3317,15 @@ a {
   min-height: 534px;
 }
 
+.case-page--pet .pet-phone-card img,
+.case-page--pet .pet-payment-card img,
+.case-page--pet .pet-lifecycle-screens img,
+.case-page--pet .pet-intercity-card img,
+.case-page--pet .pet-transfer__visual img,
+.case-page--pet .pet-repeat-card img {
+  border-radius: 19% / 9.5%;
+}
+
 @media (max-width: 960px) {
   .case-page--pet .case-topbar {
     padding-bottom: 20px;
