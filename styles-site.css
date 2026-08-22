@@ -2800,6 +2800,20 @@ a {
     padding-bottom: 84px;
   }
 
+  .case-page--pet .case-story {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .case-page--pet .case-story > .container {
+    gap: 24px;
+  }
+
+  .case-page--pet .case-story__title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
   .case-grid--3,
   .case-grid--4 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -2831,6 +2845,20 @@ a {
   .lifecycle span {
     flex-basis: 40%;
   }
+
+  .case-page--pet .other-projects {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    gap: 28px;
+  }
+
+  .case-page--pet .case-hero {
+    padding-bottom: 24px;
+  }
+
+  .case-page--pet .section--contacts {
+    padding-top: 28px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -2839,9 +2867,19 @@ a {
     padding-bottom: 64px;
   }
 
+  .case-page--pet .case-hero {
+    padding-top: 24px;
+    padding-bottom: 12px;
+  }
+
   .case-page .case-hero__title {
     font-size: 36px;
     line-height: 42px;
+  }
+
+  .case-page--pet .case-hero__title {
+    font-size: 30px;
+    line-height: 36px;
   }
 
   .case-page .case-hero__lead {
@@ -2857,6 +2895,14 @@ a {
     padding: 68px var(--page-padding);
   }
 
+  .case-page--pet .case-story {
+    padding: 20px var(--page-padding);
+  }
+
+  .case-page--pet .case-story > .container {
+    gap: 20px;
+  }
+
   .case-story__eyebrow {
     margin-bottom: 0;
   }
@@ -2864,6 +2910,12 @@ a {
   .case-story__title {
     font-size: 31px;
     line-height: 38px;
+    text-wrap: initial;
+  }
+
+  .case-page--pet .case-story__title {
+    font-size: 26px;
+    line-height: 32px;
     text-wrap: initial;
   }
 
@@ -2886,6 +2938,15 @@ a {
   .case-grid--4,
   .journey-compare {
     grid-template-columns: 1fr;
+  }
+
+  .case-page--pet .case-grid {
+    gap: 16px;
+  }
+
+  .case-page--pet .case-card--journey,
+  .case-page--pet .case-card--wide {
+    margin-bottom: 16px;
   }
 
   .case-card,
@@ -2920,5 +2981,21 @@ a {
   .lifecycle b {
     transform: rotate(90deg);
     text-align: center;
+  }
+
+  .case-page--pet .other-projects {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 24px;
+  }
+
+  .case-page--pet .section--contacts {
+    padding-top: 20px;
+  }
+
+  .case-page--pet .other-projects__title,
+  .case-page--pet .section--contacts .section__heading {
+    font-size: 28px;
+    line-height: 34px;
   }
 }
