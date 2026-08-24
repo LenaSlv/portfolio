@@ -3334,7 +3334,13 @@ a {
 }
 
 /* Финальная геометрия продающей версии кейса */
+.case-page--pet .site-header {
+  margin-top: 28px;
+}
+
 .case-page--pet .case-topbar {
+  top: 90px;
+  padding-top: 24px;
   padding-bottom: 39px;
 }
 
