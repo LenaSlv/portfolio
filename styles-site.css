@@ -493,11 +493,7 @@ a {
 /* Experience / education */
 .section--experience {
   min-height: 720px;
-  padding: 64px 72px;
-}
-
-.section--experience > .container {
-  max-width: 1296px;
+  padding: 64px var(--page-padding);
 }
 
 .experience-layout {
