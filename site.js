@@ -103,3 +103,20 @@ document.querySelectorAll('[data-flow-toggle]').forEach(function (btn) {
     btn.textContent = expanded ? 'Свернуть флоу ↑' : 'Показать полный флоу →';
   });
 });
+
+(function () {
+  var button = document.querySelector('[data-scroll-to-top]');
+  if (!button) return;
+
+  function update() {
+    button.classList.toggle('is-visible', window.scrollY > 480);
+  }
+
+  button.addEventListener('click', function () {
+    var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+  });
+
+  window.addEventListener('scroll', update, { passive: true });
+  update();
+})();
