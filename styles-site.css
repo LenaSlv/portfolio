@@ -290,7 +290,7 @@ a {
 }
 
 .hero__lead {
-  margin-top: 0;
+  margin-top: 16px;
   font-size: 22px;
   line-height: 1.45;
   color: var(--text-secondary);
@@ -1899,7 +1899,7 @@ a {
   }
 
   .hero__lead {
-    margin-top: 14px;
+    margin-top: 16px;
   }
 
   .hero-contact {
@@ -3363,5 +3363,112 @@ a {
 
   .case-page--pet .pet-repeat-section .case-story__title {
     line-height: 32px;
+  }
+}
+
+@media (min-width: 961px) {
+  .case-page--pet .pet-context,
+  .case-page--pet .pet-card-section,
+  .case-page--pet .pet-balance-section,
+  .case-page--pet .pet-transfer-section {
+    padding-top: 112px;
+    padding-bottom: 0;
+  }
+
+  .case-page--pet .pet-intercity-section {
+    padding-top: 112px;
+    padding-bottom: 47px;
+  }
+
+  .case-page--pet .pet-repeat-section {
+    padding-top: 88px;
+    padding-bottom: 0;
+  }
+
+  .case-page--pet .pet-format-section {
+    padding-top: 112px;
+    padding-bottom: 48px;
+  }
+
+  .case-page--pet .pet-context .case-grid,
+  .case-page--pet .pet-balance-section > .container > .case-grid--2 {
+    gap: 20px;
+  }
+
+  .case-page--pet .pet-context .case-card {
+    padding: 28px 32px 27px;
+    border-radius: 24px;
+  }
+
+  .case-page--pet .pet-phone-card {
+    padding-bottom: 30.5px;
+  }
+
+  .case-page--pet .pet-context .case-card__label {
+    margin-bottom: 29px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .case-page--pet .pet-context .case-card p:not(.case-card__label) {
+    font-size: 19px;
+    line-height: 29px;
+  }
+
+  .case-page--pet .pet-transfer__visual {
+    border: 0;
+  }
+
+  .case-page--pet .pet-intercity-card {
+    padding-bottom: 65px;
+  }
+
+  .case-page--pet .pet-format-section > .container {
+    gap: 26px;
+  }
+
+  .case-page--pet .pet-format-section .case-story__title {
+    max-width: 1120px;
+    font-size: 42px;
+    line-height: 50px;
+  }
+
+  .case-page--pet .pet-format-section .case-story__lead {
+    max-width: 1080px;
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .case-page--pet .pet-format-section .case-grid--3 {
+    grid-template-columns: repeat(3, minmax(0, 404px));
+    gap: 18px;
+  }
+
+  .case-page--pet .pet-format-section .case-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+    height: 250px;
+    padding: 22px;
+    border-radius: 18px;
+  }
+
+  .case-page--pet .pet-format-section .case-card__index {
+    margin: 0;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .case-page--pet .pet-format-section .case-card h3 {
+    margin: 0;
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .case-page--pet .pet-format-section .case-card p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 23px;
   }
 }
