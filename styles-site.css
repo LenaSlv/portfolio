@@ -3483,6 +3483,10 @@ a {
   line-height: 50px;
 }
 
+.case-page--pet .pet-repeat-section .case-story__eyebrow {
+  color: #2f6fe0;
+}
+
 .case-page--pet .pet-repeat-card {
   padding-bottom: 20px;
 }
@@ -3722,7 +3726,99 @@ a {
 
   .case-page--pet .pet-repeat-section {
     padding-top: 88px;
+    padding-right: 0;
     padding-bottom: 0;
+    padding-left: 0;
+  }
+
+  .case-page--pet .pet-repeat-section > .container {
+    width: min(1248px, calc(100vw - (2 * var(--page-padding))));
+    max-width: 1248px;
+    margin: 0 0 0 max(var(--page-padding), calc((100vw - 1248px) / 2));
+  }
+
+  .case-page--pet .pet-repeat-section .case-heading-split {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    width: 1248px;
+    margin: 0;
+  }
+
+  .case-page--pet .pet-repeat-section .case-story__eyebrow {
+    align-self: flex-start;
+    white-space: nowrap;
+  }
+
+  .case-page--pet .pet-repeat-section .case-story__title {
+    width: 900px;
+    max-width: none;
+    font-size: 42px;
+    line-height: 50px;
+    text-wrap: initial;
+  }
+
+  .case-page--pet .pet-repeat-section .case-story__lead {
+    width: 1050px;
+    max-width: none;
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  .case-page--pet .pet-repeat-section .case-grid {
+    grid-template-columns: repeat(3, 402px);
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    width: 1248px;
+    overflow: hidden;
+  }
+
+  .case-page--pet .pet-repeat-card {
+    width: 402px;
+    min-height: 0;
+    padding: 24px;
+    gap: 16px;
+    justify-content: center;
+    border-color: #252f40;
+    border-radius: 20px;
+    background: #141b27;
+  }
+
+  .case-page--pet .pet-repeat-card h3 {
+    margin: 0;
+    color: #eef2f7;
+    font-size: 23px;
+    line-height: 28px;
+    white-space: nowrap;
+  }
+
+  .case-page--pet .pet-repeat-card p {
+    width: 345px;
+    min-height: 46px;
+    margin: 0;
+    color: #8f99b2;
+    font-size: 15px;
+    line-height: 23px;
+    text-align: left;
+  }
+
+  .case-page--pet .pet-repeat-card img {
+    flex: 0 0 auto;
+    max-width: none;
+    max-height: none;
+  }
+
+  .case-page--pet .pet-repeat-card:first-child img {
+    width: 278px;
+    height: 567px;
+  }
+
+  .case-page--pet .pet-repeat-card:nth-child(2) img,
+  .case-page--pet .pet-repeat-card:nth-child(3) img {
+    width: 282px;
+    height: 576px;
   }
 
   .case-page--pet .pet-format-section {
