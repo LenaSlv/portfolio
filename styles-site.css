@@ -3387,6 +3387,21 @@ a {
   color: #eef2f7;
 }
 
+.case-page--pet .pet-format-section .case-story__eyebrow,
+.case-page--pet .pet-format-section .case-card__index {
+  color: #2f6fe0;
+}
+
+.case-page--pet .pet-format-section .case-story__title,
+.case-page--pet .pet-format-section .case-card h3 {
+  color: #eef2f7;
+}
+
+.case-page--pet .pet-format-section .case-card {
+  border-color: #252f40;
+  background: #141b27;
+}
+
 @media (max-width: 960px) {
   .case-page--pet .case-topbar {
     padding-bottom: 20px;
@@ -3543,6 +3558,12 @@ a {
     gap: 26px;
   }
 
+  .case-page--pet .pet-format-section .case-story__eyebrow {
+    align-self: flex-start;
+    width: 114px;
+    white-space: nowrap;
+  }
+
   .case-page--pet .pet-format-section .case-story__title {
     max-width: 1120px;
     font-size: 42px;
@@ -3558,6 +3579,7 @@ a {
   .case-page--pet .pet-format-section .case-grid--3 {
     grid-template-columns: repeat(3, minmax(0, 404px));
     gap: 18px;
+    overflow: hidden;
   }
 
   .case-page--pet .pet-format-section .case-card {
@@ -3565,8 +3587,9 @@ a {
     flex-direction: column;
     align-items: flex-start;
     gap: 14px;
-    height: 250px;
-    padding: 22px;
+    height: 159px;
+    padding: 21px;
+    overflow: hidden;
     border-radius: 18px;
   }
 
@@ -3583,6 +3606,7 @@ a {
   }
 
   .case-page--pet .pet-format-section .case-card p {
+    width: 350px;
     margin: 0;
     font-size: 15px;
     line-height: 23px;
