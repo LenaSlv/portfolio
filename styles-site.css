@@ -516,7 +516,7 @@ a {
 
 .experience-title {
   max-width: 520px;
-  color: var(--text-primary);
+  color: #f6f6f1;
   font-family: var(--font-display);
   font-size: clamp(36px, 3.7vw, 52px);
   font-weight: 600;
@@ -527,7 +527,7 @@ a {
 .experience-lead {
   max-width: 470px;
   margin-top: 26px;
-  color: var(--text-primary);
+  color: #f6f6f1;
   font-size: 19px;
   line-height: 28px;
 }
@@ -546,7 +546,7 @@ a {
 }
 
 .experience-item__title {
-  color: var(--text-primary);
+  color: #f6f6f1;
   font-size: 19px;
   font-weight: 500;
   line-height: 23px;
@@ -554,16 +554,17 @@ a {
 
 .experience-item__subtitle,
 .experience-item__date {
-  color: #9e9e94;
+  color: #5a6675;
   font-size: 14px;
-  line-height: 17px;
 }
 
 .experience-item__subtitle {
   margin-top: 7px;
+  line-height: 17px;
 }
 
 .experience-item__date {
+  line-height: 16px;
   white-space: nowrap;
   text-align: right;
 }
@@ -577,16 +578,46 @@ a {
   margin-top: 36px;
   padding-top: 24px;
   border-top: 1px solid var(--border-card);
-  color: var(--text-primary);
+  color: #f6f6f1;
   font-size: 15px;
   line-height: 22px;
 }
 
 .education-row__label {
-  color: #9e9e94;
-  font-size: 12px;
+  color: #5a6675;
+  font-size: 15px;
   font-weight: 500;
   line-height: 18px;
+}
+
+@media (min-width: 961px) {
+  .experience-layout {
+    height: 420px;
+    overflow: hidden;
+  }
+
+  .experience-intro {
+    height: 360px;
+    overflow: hidden;
+  }
+
+  .experience-list {
+    height: 420px;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .experience-item {
+    height: 112px;
+    min-height: 0;
+    overflow: hidden;
+  }
+
+  .education-row {
+    height: 90px;
+    min-height: 0;
+    overflow: hidden;
+  }
 }
 
 /* Contacts */
