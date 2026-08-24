@@ -824,7 +824,7 @@ a {
 
 .scroll-to-top {
   position: fixed;
-  right: max(24px, calc((100vw - 1248px) / 2));
+  right: 24px;
   bottom: 24px;
   z-index: 35;
   display: grid;
@@ -873,7 +873,7 @@ a {
 
 @media (max-width: 640px) {
   .scroll-to-top {
-    right: 16px;
+    right: 8px;
     bottom: 16px;
     width: 48px;
     height: 48px;
