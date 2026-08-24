@@ -2474,8 +2474,6 @@ a {
 
 /* Case stories — current Figma frames 1998:3750 and 2082:6266 */
 .case-page .case-topbar {
-  position: relative;
-  top: auto;
   padding-top: 10px;
   padding-bottom: 20px;
 }
