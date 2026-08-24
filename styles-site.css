@@ -3395,6 +3395,48 @@ a {
     gap: 20px;
   }
 
+  .case-page--pet .pet-balance-section .case-subscription {
+    padding: 27px;
+  }
+
+  .case-page--pet .case-subscription > h3 {
+    width: 596px;
+    margin: 0 0 8px;
+    font-size: 28px;
+    line-height: 34px;
+  }
+
+  .case-page--pet .case-subscription > p {
+    width: 596px;
+  }
+
+  .case-page--pet .pet-lifecycle-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 23px 27px;
+  }
+
+  .case-page--pet .pet-lifecycle-panel h3,
+  .case-page--pet .pet-lifecycle-panel .lifecycle {
+    margin: 0;
+  }
+
+  .case-page--pet .pet-lifecycle-panel > p {
+    width: 850px;
+  }
+
+  .case-page--pet .pet-lifecycle-panel .lifecycle,
+  .case-page--pet .pet-lifecycle-panel .lifecycle span {
+    height: 48px;
+  }
+
+  .case-page--pet .pet-lifecycle-panel .lifecycle span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .case-page--pet .pet-context .case-card {
     padding: 28px 32px 27px;
     border-radius: 24px;
