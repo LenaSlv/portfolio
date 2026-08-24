@@ -3357,6 +3357,36 @@ a {
   border-radius: 19% / 9.5%;
 }
 
+.case-page--pet .pet-context .case-story__eyebrow {
+  color: #2f6fe0;
+}
+
+.case-page--pet .pet-context .case-story__title {
+  color: #eef2f7;
+}
+
+.case-page--pet .pet-context .case-card:first-child {
+  border-color: #252f40;
+  background: #141b27;
+}
+
+.case-page--pet .pet-context .case-card--accent {
+  border-color: #2d5a95;
+  background: #091b31;
+}
+
+.case-page--pet .pet-context .case-card__label {
+  color: #89b6ff !important;
+}
+
+.case-page--pet .pet-context .case-card p:not(.case-card__label) {
+  color: #a7b4c6;
+}
+
+.case-page--pet .pet-context .case-card--accent p:not(.case-card__label) {
+  color: #eef2f7;
+}
+
 @media (max-width: 960px) {
   .case-page--pet .case-topbar {
     padding-bottom: 20px;
@@ -3426,6 +3456,19 @@ a {
     gap: 20px;
   }
 
+  .case-page--pet .pet-context .case-story__eyebrow {
+    align-self: flex-start;
+    white-space: nowrap;
+  }
+
+  .case-page--pet .pet-context .case-story__title {
+    line-height: 56px;
+  }
+
+  .case-page--pet .pet-context .case-grid {
+    overflow: hidden;
+  }
+
   .case-page--pet .pet-balance-section .case-subscription {
     padding: 27px;
   }
@@ -3469,7 +3512,7 @@ a {
   }
 
   .case-page--pet .pet-context .case-card {
-    padding: 28px 32px 27px;
+    padding: 27px 31px;
     border-radius: 24px;
   }
 
@@ -3478,7 +3521,7 @@ a {
   }
 
   .case-page--pet .pet-context .case-card__label {
-    margin-bottom: 29px;
+    margin-bottom: 30px;
     font-size: 20px;
     line-height: 28px;
   }
