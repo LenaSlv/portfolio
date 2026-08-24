@@ -2498,7 +2498,10 @@ a {
 }
 
 .case-page--pet .case-hero__title {
-  max-width: 1050px;
+  max-width: 1160px;
+  color: #eef2f7;
+  font-weight: 600;
+  font-size: clamp(38px, 4.03vw, 58px);
 }
 
 .case-page .case-hero__lead {
@@ -2508,8 +2511,22 @@ a {
   line-height: 31px;
 }
 
+.case-page--pet .case-hero__lead {
+  width: min(1040px, 100%);
+  color: #7f8c9f;
+}
+
 .case-hero__badges--meta {
   margin: 0;
+}
+
+.case-page--pet .case-hero__nda {
+  padding: 8px 12px;
+  border: 0;
+  background: #1d2737;
+  color: #7f8c9f;
+  font-size: 12px;
+  line-height: 14px;
 }
 
 .case-hero__notice {
@@ -2523,6 +2540,10 @@ a {
   aspect-ratio: 1248 / 630;
   margin: 0;
   border: 1px solid var(--border-card);
+}
+
+.case-page--pet .case-hero__cover {
+  border: 0;
 }
 
 .case-page .case-hero__cover img {
@@ -3318,7 +3339,7 @@ a {
 }
 
 .case-page--pet .case-hero {
-  padding-bottom: 103px;
+  padding-bottom: 52px;
 }
 
 .case-page--pet .pet-context .case-card {
