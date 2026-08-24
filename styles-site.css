@@ -3402,6 +3402,21 @@ a {
   background: #141b27;
 }
 
+.case-page--pet .other-projects__nav-btn img {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.case-page--pet .other-project-card__title,
+.case-page--pet .other-project-card__link {
+  color: #fff;
+}
+
+.case-page--pet .other-project-card__desc {
+  color: var(--text-secondary);
+}
+
 @media (max-width: 960px) {
   .case-page--pet .case-topbar {
     padding-bottom: 20px;
@@ -3443,6 +3458,101 @@ a {
 }
 
 @media (min-width: 961px) {
+  .case-page--pet .other-projects {
+    height: 564px;
+    min-height: 564px;
+  }
+
+  .case-page--pet .other-projects__head {
+    height: 52px;
+    overflow: hidden;
+  }
+
+  .case-page--pet .other-projects__title {
+    width: 349px;
+    font-size: 44px;
+    line-height: 52px;
+    letter-spacing: -0.88px;
+    white-space: nowrap;
+  }
+
+  .case-page--pet .other-projects__row {
+    height: 300px;
+  }
+
+  .case-page--pet .other-projects__track {
+    width: max-content;
+    height: 300px;
+  }
+
+  .case-page--pet .other-project-card {
+    width: 680px;
+    height: 300px;
+    padding: 23px;
+    overflow: hidden;
+  }
+
+  .case-page--pet .other-project-card__body,
+  .case-page--pet .other-project-card__preview {
+    flex: 0 0 305.128px;
+    width: 305.128px;
+    height: 252px;
+  }
+
+  .case-page--pet .other-project-card__body {
+    gap: 0;
+    overflow: hidden;
+  }
+
+  .case-page--pet .other-project-card__top {
+    gap: 10px;
+  }
+
+  .case-page--pet .other-project-card:nth-child(3) .other-project-card__top,
+  .case-page--pet .other-project-card:nth-child(3) .other-project-card__bottom {
+    gap: 12px;
+  }
+
+  .case-page--pet .other-project-card__top > .kicker {
+    height: 21px;
+    padding: 0 12px;
+    line-height: 9px;
+  }
+
+  .case-page--pet .other-project-card:nth-child(1) .kicker {
+    width: 147px;
+  }
+
+  .case-page--pet .other-project-card:nth-child(2) .kicker {
+    width: 158px;
+  }
+
+  .case-page--pet .other-project-card:nth-child(3) .kicker {
+    width: 82px;
+  }
+
+  .case-page--pet .other-project-card__title {
+    width: 294.231px;
+    line-height: 28px;
+  }
+
+  .case-page--pet .other-project-card__desc {
+    width: 283.333px;
+    line-height: 20px;
+  }
+
+  .case-page--pet .other-project-card__bottom {
+    gap: 12px;
+  }
+
+  .case-page--pet .other-project-card__meta {
+    line-height: 10px;
+  }
+
+  .case-page--pet .other-project-card__link {
+    line-height: 18px;
+  }
+
   .case-page--pet .pet-context,
   .case-page--pet .pet-card-section,
   .case-page--pet .pet-balance-section,
