@@ -4660,6 +4660,19 @@ a {
     line-height: 24px;
   }
 
+  .case-page--corporate .corporate-context .case-card,
+  .case-page--corporate .corporate-task .case-card--wide,
+  .case-page--corporate .corporate-task .case-grid .case-card,
+  .case-page--corporate .corporate-business .case-card,
+  .case-page--corporate .corporate-edge .case-card,
+  .case-page--corporate .case-business-flow {
+    padding: 24px;
+  }
+
+  .case-page--corporate .case-card--solution {
+    padding: 32px;
+  }
+
   .case-page--corporate .corporate-preorder .case-split,
   .case-page--corporate .corporate-map .case-split,
   .case-page--corporate .corporate-qr .case-split,
@@ -4713,7 +4726,16 @@ a {
 
   .case-page--corporate .case-card--solution {
     height: auto;
-    padding: 28px;
+    padding: 22px;
+  }
+
+  .case-page--corporate .corporate-context .case-card,
+  .case-page--corporate .corporate-task .case-card--wide,
+  .case-page--corporate .corporate-task .case-grid .case-card,
+  .case-page--corporate .corporate-business .case-card,
+  .case-page--corporate .corporate-edge .case-card,
+  .case-page--corporate .case-business-flow {
+    padding: 20px;
   }
 
   .case-page--corporate .corporate-task .case-card--wide h3,
