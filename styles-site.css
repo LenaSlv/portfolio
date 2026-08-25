@@ -3972,3 +3972,746 @@ a {
     line-height: 23px;
   }
 }
+
+/* Корпоративный транспорт — Figma 1998:3750 */
+.case-page--corporate {
+  background: #000308;
+}
+
+.case-page--corporate .site-header {
+  width: min(1248px, calc(100vw - (2 * var(--page-padding))));
+  max-width: 1248px;
+  margin: 28px 0 0 max(var(--page-padding), calc((100vw - 1248px) / 2));
+}
+
+.case-page--corporate .site-header__inner {
+  gap: 0;
+  min-height: 74px;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.case-page--corporate .site-header__brand {
+  gap: 16px;
+}
+
+.case-page--corporate .site-header__name {
+  color: #8f99b2;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.case-page--corporate .site-header__nav {
+  gap: 28px;
+  color: #8f99b2;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.case-page--corporate .site-header__nav a {
+  width: 90px;
+}
+
+.case-page--corporate .case-topbar {
+  width: min(1248px, calc(100vw - (2 * var(--page-padding))));
+  max-width: 1248px;
+  min-height: 0;
+  margin: 24px 0 20px max(var(--page-padding), calc((100vw - 1248px) / 2));
+  padding: 0 0 24px;
+  background: transparent;
+  border-color: #252f40;
+}
+
+.case-page--corporate .case-topbar__back {
+  gap: 4px;
+  color: #8f99b2;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.case-page--corporate .case-hero {
+  height: 990px;
+  padding-top: 54px;
+  padding-bottom: 52px;
+  background: #000308;
+}
+
+.case-page--corporate .case-hero > .container {
+  gap: 24px;
+}
+
+.case-page--corporate .case-hero__title {
+  max-width: 1160px;
+  color: #eef2f7;
+  font-size: 58px;
+  font-weight: 600;
+  line-height: 66px;
+  letter-spacing: -1.16px;
+}
+
+.case-page--corporate .case-hero__badges {
+  gap: 12px;
+  height: 30px;
+}
+
+.case-page--corporate .case-hero__nda {
+  height: 30px;
+  padding: 8px 12px;
+  border: 0;
+  background: #1d2737;
+  color: #7f8c9f;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.case-page--corporate .case-hero__notice {
+  color: #8f99b2;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.case-page--corporate .case-hero__cover {
+  width: 1248px;
+  height: 630px;
+  border: 0;
+  border-radius: 28px;
+}
+
+.case-page--corporate .case-story {
+  padding: 88px var(--page-padding) 72px;
+  background: #000308;
+}
+
+.case-page--corporate .case-story--alt,
+.case-page--corporate .corporate-edge {
+  background: #0e141d;
+}
+
+.case-page--corporate .case-story > .container {
+  gap: 28px;
+}
+
+.case-page--corporate .case-story__eyebrow {
+  color: #24d866;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.case-page--corporate .case-story__title {
+  max-width: 1180px;
+  color: #eef2f7;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: -0.96px;
+  text-wrap: initial;
+}
+
+.case-page--corporate .case-story__lead {
+  max-width: 1080px;
+  color: #8f99b2;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.case-page--corporate .case-card,
+.case-page--corporate .case-media-card {
+  border-color: #252f40;
+  border-radius: 20px;
+  background: #0e141d;
+}
+
+.case-page--corporate .case-card + .case-grid,
+.case-page--corporate .case-card--wide + .case-grid,
+.case-page--corporate .case-card--wide {
+  margin: 0;
+}
+
+.case-page--corporate .case-card h3,
+.case-page--corporate .case-card p,
+.case-page--corporate .case-media-card p {
+  margin: 0;
+}
+
+.case-page--corporate .corporate-context {
+  height: 481px;
+}
+
+.case-page--corporate .corporate-context .case-card {
+  height: 108px;
+  padding: 28px;
+}
+
+.case-page--corporate .corporate-context .case-card h3,
+.case-page--corporate .corporate-context .case-card p {
+  color: #eef2f7;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.case-page--corporate .corporate-task {
+  height: 892px;
+}
+
+.case-page--corporate .corporate-task .case-card--wide {
+  height: 306px;
+  padding: 32px;
+  background: #141b27;
+}
+
+.case-page--corporate .corporate-task .case-card--wide h3 {
+  margin-bottom: 16px;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.case-page--corporate .corporate-task .case-card--wide p {
+  color: #8f99b2;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.case-page--corporate .corporate-task .case-card--wide p + p {
+  margin-top: 18px;
+}
+
+.case-page--corporate .corporate-task .case-grid .case-card {
+  height: 157px;
+  padding: 32px;
+}
+
+.case-page--corporate .corporate-task .case-grid h3 {
+  margin-bottom: 16px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.case-page--corporate .corporate-task .case-grid p {
+  color: #8f99b2;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.case-page--corporate .corporate-preorder {
+  height: 1023px;
+}
+
+.case-page--corporate .case-split {
+  grid-template-columns: 500px 724px;
+  gap: 24px;
+}
+
+.case-page--corporate .corporate-preorder .case-split,
+.case-page--corporate .corporate-map .case-split {
+  height: 650px;
+}
+
+.case-page--corporate .corporate-preorder .case-media-card,
+.case-page--corporate .corporate-map .case-media-card {
+  height: 650px;
+  padding: 25px 0;
+  background: #141b27;
+}
+
+.case-page--corporate .corporate-preorder .case-media-card img {
+  width: 295px;
+  height: 600px;
+  max-height: none;
+}
+
+.case-page--corporate .case-card--solution {
+  height: 100%;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 44px;
+}
+
+.case-page--corporate .case-card--solution h3 {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.case-page--corporate .case-card--solution p,
+.case-page--corporate .case-card--solution li,
+.case-page--corporate .case-value-list dt,
+.case-page--corporate .case-value-list dd {
+  color: #8f99b2;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.case-page--corporate .case-card--solution .case-flowline {
+  color: #8f99b2 !important;
+  font-weight: 400;
+}
+
+.case-page--corporate .corporate-route {
+  height: 1151px;
+}
+
+.case-page--corporate .corporate-route .case-story__title {
+  max-width: 1040px;
+}
+
+.case-page--corporate .corporate-route .case-grid--screens {
+  height: 694px;
+}
+
+.case-page--corporate .corporate-route .case-media-card {
+  height: 694px;
+  min-height: 0;
+  justify-content: flex-start;
+  padding: 28px 32px;
+  background: #141b27;
+}
+
+.case-page--corporate .corporate-route .case-media-card__label {
+  margin-bottom: 20px;
+  font-size: 15px !important;
+  line-height: 18px !important;
+}
+
+.case-page--corporate .corporate-map {
+  height: 1059px;
+}
+
+.case-page--corporate .corporate-map .case-story__title {
+  max-width: 980px;
+}
+
+.case-page--corporate .corporate-map .case-story__quote {
+  height: 36px;
+  margin: 0;
+  color: #eef2f7;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+}
+
+.case-page--corporate .corporate-map .case-card--solution,
+.case-page--corporate .corporate-preorder .case-card--solution {
+  background: #0e141d;
+}
+
+.case-page--corporate .corporate-map .case-list {
+  margin: 0;
+}
+
+.case-page--corporate .corporate-map .case-list li {
+  padding-left: 10px;
+}
+
+.case-page--corporate .corporate-qr {
+  height: 993px;
+}
+
+.case-page--corporate .corporate-qr .case-split {
+  height: 620px;
+}
+
+.case-page--corporate .corporate-qr .case-media-card {
+  height: 620px;
+  padding: 0;
+  background: #141b27;
+}
+
+.case-page--corporate .corporate-qr .case-card--solution {
+  background: #141b27;
+}
+
+.case-page--corporate .corporate-qr .case-value-list {
+  gap: 24px;
+  margin: 4px 0 0;
+}
+
+.case-page--corporate .corporate-qr .case-value-list dt,
+.case-page--corporate .corporate-qr .case-value-list dd {
+  margin: 0;
+}
+
+.case-page--corporate .corporate-business {
+  height: 765px;
+}
+
+.case-page--corporate .corporate-business .case-story__title {
+  max-width: 1120px;
+}
+
+.case-page--corporate .case-business-flow {
+  display: flex;
+  align-items: center;
+  height: 118px;
+  margin: 0;
+  padding: 30px 32px;
+  border-radius: 20px;
+  background: #06361d;
+  color: #eef2f7;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.case-page--corporate .corporate-business .case-card {
+  height: 190px;
+  padding: 30px 32px;
+  background: #141b27;
+}
+
+.case-page--corporate .corporate-business .case-card h3 {
+  margin-bottom: 28px;
+  font-size: 17px;
+  line-height: 21px;
+}
+
+.case-page--corporate .corporate-business .case-card p {
+  color: #eef2f7;
+  font-size: 17px;
+  line-height: 26px;
+}
+
+.case-page--corporate .corporate-edge {
+  position: relative;
+  height: 1088px;
+}
+
+.case-page--corporate .corporate-edge .case-grid {
+  grid-template-rows: 160px 656px;
+}
+
+.case-page--corporate .corporate-edge .case-card {
+  height: 160px;
+  padding: 30px 32px;
+  background: #141b27;
+}
+
+.case-page--corporate .corporate-edge .case-card h3 {
+  margin-bottom: 2px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.case-page--corporate .corporate-edge .case-card p {
+  max-width: 400px;
+  color: #8f99b2;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.case-page--corporate .corporate-edge .case-media-card {
+  height: 656px;
+  padding: 28px 0;
+  background: #141b27;
+}
+
+.case-page--corporate .corporate-edge .case-final-line {
+  position: absolute;
+  right: var(--page-padding);
+  bottom: 22px;
+  left: var(--page-padding);
+  margin: 0;
+  color: #8f99b2;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.case-page--corporate .corporate-phone-crop {
+  position: relative;
+  flex: 0 0 auto;
+  width: 295px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.case-page--corporate .corporate-phone-crop > img {
+  position: absolute;
+  width: 1440px;
+  max-width: none;
+  height: auto;
+  max-height: none;
+}
+
+.case-page--corporate .corporate-phone-crop--preorder-route > img {
+  top: -451px;
+  left: -255px;
+}
+
+.case-page--corporate .corporate-phone-crop--route > img {
+  top: -451px;
+  left: -891px;
+}
+
+.case-page--corporate .corporate-phone-crop--map > img {
+  top: -362px;
+  left: -199px;
+}
+
+.case-page--corporate .corporate-phone-crop--qr {
+  width: 272px;
+  height: 554px;
+}
+
+.case-page--corporate .corporate-phone-crop--qr > img {
+  top: -334px;
+  left: -210px;
+}
+
+.case-page--corporate .corporate-phone-crop--edge-moved > img {
+  top: -388px;
+  left: -255px;
+}
+
+.case-page--corporate .corporate-phone-crop--edge-cancelled > img {
+  top: -388px;
+  left: -891px;
+}
+
+.case-page--corporate .other-projects {
+  height: 564px;
+  min-height: 564px;
+}
+
+.case-page--corporate .section--contacts {
+  height: 534px;
+  min-height: 534px;
+  padding-top: 88px;
+  padding-bottom: 70px;
+  background: #06080b;
+}
+
+.case-page--corporate .section--contacts .section__kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: 104px;
+  height: 28px;
+  margin: 0 0 22px;
+  padding: 0 12px;
+  border-radius: 99px;
+  background: #2e6eeb;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.case-page--corporate .section--contacts .section__heading {
+  margin-bottom: 22px;
+  color: #eef2f7;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.case-page--corporate .section--contacts .site-footer {
+  height: 82px;
+  margin-top: 22px;
+  padding: 0;
+}
+
+.case-page--corporate .section--contacts .site-footer__route {
+  margin-top: 22px;
+}
+
+.case-page--corporate .other-projects__nav-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 961px) {
+  .case-page--corporate .other-projects__head {
+    height: 52px;
+    overflow: hidden;
+  }
+
+  .case-page--corporate .other-projects__title {
+    font-size: 44px;
+    line-height: 52px;
+    letter-spacing: -0.88px;
+    white-space: nowrap;
+  }
+
+  .case-page--corporate .other-projects__row,
+  .case-page--corporate .other-projects__track {
+    height: 300px;
+  }
+
+  .case-page--corporate .other-projects__track {
+    width: max-content;
+  }
+
+  .case-page--corporate .other-project-card {
+    width: 680px;
+    height: 300px;
+    padding: 23px;
+    overflow: hidden;
+  }
+
+  .case-page--corporate .other-project-card__body,
+  .case-page--corporate .other-project-card__preview {
+    flex: 0 0 305.128px;
+    width: 305.128px;
+    height: 252px;
+  }
+
+  .case-page--corporate .other-project-card__body {
+    gap: 0;
+    overflow: hidden;
+  }
+
+  .case-page--corporate .other-project-card__top {
+    gap: 10px;
+  }
+
+  .case-page--corporate .other-project-card__top > .kicker {
+    height: 21px;
+    padding: 0 12px;
+    line-height: 9px;
+  }
+
+  .case-page--corporate .other-project-card__title {
+    color: #fff;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .case-page--corporate .other-project-card__link {
+    color: #fff;
+  }
+}
+
+@media (max-width: 960px) {
+  .case-page--corporate .site-header {
+    width: calc(100% - 32px);
+    margin: 20px auto 0;
+  }
+
+  .case-page--corporate .case-topbar {
+    width: calc(100% - (2 * var(--page-padding)));
+    margin: 16px auto 20px;
+    padding-bottom: 16px;
+  }
+
+  .case-page--corporate .case-hero,
+  .case-page--corporate .corporate-context,
+  .case-page--corporate .corporate-task,
+  .case-page--corporate .corporate-preorder,
+  .case-page--corporate .corporate-route,
+  .case-page--corporate .corporate-map,
+  .case-page--corporate .corporate-qr,
+  .case-page--corporate .corporate-business,
+  .case-page--corporate .corporate-edge,
+  .case-page--corporate .other-projects,
+  .case-page--corporate .section--contacts {
+    height: auto;
+    min-height: 0;
+  }
+
+  .case-page--corporate .case-hero {
+    padding-bottom: 26px;
+  }
+
+  .case-page--corporate .case-story,
+  .case-page--corporate .other-projects,
+  .case-page--corporate .section--contacts {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .case-page--corporate .case-hero__title {
+    font-size: 44px;
+    line-height: 50px;
+    letter-spacing: -0.6px;
+  }
+
+  .case-page--corporate .case-hero__badges {
+    height: auto;
+  }
+
+  .case-page--corporate .case-hero__cover {
+    width: 100%;
+    height: auto;
+  }
+
+  .case-page--corporate .case-split {
+    grid-template-columns: 1fr;
+  }
+
+  .case-page--corporate .case-media-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .case-page--corporate .corporate-preorder .case-split,
+  .case-page--corporate .corporate-map .case-split,
+  .case-page--corporate .corporate-qr .case-split,
+  .case-page--corporate .corporate-route .case-grid--screens,
+  .case-page--corporate .corporate-edge .case-grid {
+    height: auto;
+    grid-template-rows: none;
+  }
+
+  .case-page--corporate .corporate-edge .case-final-line {
+    position: static;
+    margin-top: 28px;
+  }
+}
+
+@media (max-width: 640px) {
+  .case-page--corporate .case-hero {
+    padding-top: 28px;
+    padding-bottom: 12px;
+  }
+
+  .case-page--corporate .case-hero__title,
+  .case-page--corporate .case-story__title,
+  .case-page--corporate .section--contacts .section__heading {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.32px;
+  }
+
+  .case-page--corporate .case-story {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .case-page--corporate .corporate-context .case-card,
+  .case-page--corporate .corporate-task .case-card--wide,
+  .case-page--corporate .corporate-task .case-grid .case-card,
+  .case-page--corporate .corporate-business .case-card,
+  .case-page--corporate .corporate-edge .case-card {
+    height: auto;
+  }
+
+  .case-page--corporate .corporate-preorder .case-media-card,
+  .case-page--corporate .corporate-map .case-media-card,
+  .case-page--corporate .corporate-route .case-media-card,
+  .case-page--corporate .corporate-qr .case-media-card,
+  .case-page--corporate .corporate-edge .case-media-card {
+    height: auto;
+    min-height: 0;
+  }
+
+  .case-page--corporate .case-card--solution {
+    height: auto;
+    padding: 28px;
+  }
+
+  .case-page--corporate .corporate-phone-crop {
+    transform: scale(0.92);
+    margin: -24px -12px;
+  }
+
+  .case-page--corporate .section--contacts {
+    padding-top: 20px;
+    padding-bottom: 48px;
+  }
+
+  .case-page--corporate .other-projects {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
