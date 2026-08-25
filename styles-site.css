@@ -4644,6 +4644,22 @@ a {
     min-width: 0;
   }
 
+  .case-page--corporate .corporate-task .case-card--wide h3 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .case-page--corporate .corporate-task .case-grid h3,
+  .case-page--corporate .case-card--solution h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .case-page--corporate .corporate-edge .case-card h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
   .case-page--corporate .corporate-preorder .case-split,
   .case-page--corporate .corporate-map .case-split,
   .case-page--corporate .corporate-qr .case-split,
@@ -4698,6 +4714,24 @@ a {
   .case-page--corporate .case-card--solution {
     height: auto;
     padding: 28px;
+  }
+
+  .case-page--corporate .corporate-task .case-card--wide h3,
+  .case-page--corporate .corporate-task .case-grid h3,
+  .case-page--corporate .case-card--solution h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .case-page--corporate .corporate-context .case-card h3,
+  .case-page--corporate .corporate-business .case-card h3 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .case-page--corporate .corporate-edge .case-card h3 {
+    font-size: 17px;
+    line-height: 22px;
   }
 
   .case-page--corporate .corporate-phone-crop {
