@@ -112,6 +112,15 @@ a {
   background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  transition: background-color 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+}
+
+.site-header.is-scrolled .site-header__inner {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: var(--bg-modal);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.36);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
 .site-header__brand {
@@ -135,6 +144,7 @@ a {
   font-size: 16px;
   color: var(--text-primary);
   white-space: nowrap;
+  transition: color 200ms ease;
 }
 
 .site-header__nav {
@@ -144,10 +154,15 @@ a {
   gap: 32px;
   color: var(--text-muted);
   font-size: 18px;
+  transition: color 200ms ease;
 }
 
-.home-page .site-header__nav a:not(:nth-child(3)) {
-  width: 90px;
+.site-header.is-scrolled .site-header__name {
+  color: var(--text-primary);
+}
+
+.site-header.is-scrolled .site-header__nav {
+  color: #c1c9da;
 }
 
 .site-header__nav a:hover {
@@ -183,6 +198,10 @@ a {
 .site-header__toggle.is-open span:nth-child(2) { opacity: 0; }
 .site-header__toggle.is-open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
+.site-header.is-scrolled .site-header__toggle {
+  background: #1d2737;
+}
+
 .site-header__mobile-menu {
   display: none;
   flex-direction: column;
@@ -194,10 +213,16 @@ a {
   background: rgba(255, 255, 255, 0.06);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
+  transition: background-color 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
 }
 
 .site-header__mobile-menu.is-open {
   display: flex;
+  border-color: rgba(255, 255, 255, 0.16);
+  background: var(--bg-modal);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.36);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
 .site-header__mobile-menu a {
@@ -205,6 +230,10 @@ a {
   border-radius: 12px;
   color: var(--text-muted);
   font-size: 16px;
+}
+
+.site-header__mobile-menu.is-open a {
+  color: #c1c9da;
 }
 
 .site-header__mobile-menu a:hover {
@@ -881,6 +910,13 @@ a {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .site-header__inner,
+  .site-header__name,
+  .site-header__nav,
+  .site-header__mobile-menu {
+    transition: none;
+  }
+
   .scroll-to-top {
     transition: none;
   }
@@ -4769,5 +4805,24 @@ a {
   .case-page--corporate .other-projects {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+}
+
+/* Мобильный хедер всегда сплошной: читаемость не зависит от JS и контента под ним */
+@media (max-width: 960px) {
+  .site-header .site-header__inner {
+    border-color: rgba(255, 255, 255, 0.16);
+    background: var(--bg-modal);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.36);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .site-header .site-header__name {
+    color: var(--text-primary);
+  }
+
+  .site-header .site-header__toggle {
+    background: #1d2737;
   }
 }

@@ -59,6 +59,18 @@
   });
 })();
 
+(function () {
+  var header = document.querySelector('.site-header');
+  if (!header) return;
+
+  function updateHeader() {
+    header.classList.toggle('is-scrolled', window.scrollY > 32);
+  }
+
+  window.addEventListener('scroll', updateHeader, { passive: true });
+  updateHeader();
+})();
+
 document.querySelectorAll('.other-projects').forEach(function (block) {
   var track = block.querySelector('.other-projects__track');
   var prev = block.querySelector('[data-carousel-prev]');
