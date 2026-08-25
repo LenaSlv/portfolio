@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles-site.css?v=56">
+  <link rel="stylesheet" href="styles-site.css?v=58">
 </head>
 <body class="case-page case-page--corporate">
   <header class="site-header">
@@ -44,7 +44,7 @@
       <div class="container">
         <h1 class="case-hero__title">Сервис заказа корпоративного транспорта</h1>
         <div class="case-hero__badges case-hero__badges--meta">
-          <span class="case-hero__nda">Роль · Product designer / UX/UI designer</span>
+          <span class="case-hero__nda">Роль · Product Designer / UX/UI Designer</span>
           <span class="case-hero__nda">Платформы · iOS / Android</span>
           <span class="case-hero__nda">Внутренний продукт для&nbsp;крупного банка · NDA</span>
         </div>
@@ -106,12 +106,23 @@
           <article class="case-media-card">
             <img src="assets/site/corporate-preorder-phone.png" alt="Экран предварительного заказа" loading="lazy">
           </article>
-          <article class="case-card case-card--solution">
-            <h3>Решение</h3>
-            <p>Сценарий построен как&nbsp;последовательный выбор только необходимых параметров.</p>
-            <p class="case-flowline">Направление → Остановка → Время → Подтверждение</p>
-            <p>Пользователь сохраняет контроль, но&nbsp;не&nbsp;сталкивается с&nbsp;лишними шагами.</p>
-          </article>
+          <div class="corporate-preorder__details">
+            <article class="case-card case-card--solution">
+              <h3>Решение</h3>
+              <p>Сценарий построен как&nbsp;последовательный выбор только необходимых параметров.</p>
+            </article>
+            <article class="case-card corporate-order-path">
+              <h3>Путь заказа</h3>
+              <p>Пользователь сохраняет контроль, но&nbsp;не&nbsp;сталкивается с&nbsp;лишними шагами.</p>
+              <ol class="corporate-order-path__steps" aria-label="Путь оформления заказа">
+                <li>01 · Направление</li>
+                <li>02 · Адрес</li>
+                <li>03 · Время</li>
+                <li>04 · Подтверждение</li>
+                <li>05 · Отправка заявки</li>
+              </ol>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -124,15 +135,11 @@
         <div class="case-grid case-grid--2 case-grid--screens">
           <article class="case-media-card">
             <p class="case-media-card__label">Сценарий 1 · Предзаказ</p>
-            <div class="corporate-phone-crop corporate-phone-crop--preorder-route">
-              <img src="assets/site/corporate-route-section.png" alt="Сценарий предзаказа" loading="lazy">
-            </div>
+            <img class="corporate-phone" src="assets/site/corporate-route-preorder-phone.png" alt="Сценарий предзаказа" loading="lazy">
           </article>
           <article class="case-media-card">
             <p class="case-media-card__label">Сценарий 2 · Закреплённый маршрут</p>
-            <div class="corporate-phone-crop corporate-phone-crop--route">
-              <img src="assets/site/corporate-route-section.png" alt="Экран закреплённого маршрута" loading="lazy">
-            </div>
+            <img class="corporate-phone" src="assets/site/corporate-route-assigned-phone.png" alt="Экран закреплённого маршрута" loading="lazy">
           </article>
         </div>
       </div>
@@ -145,9 +152,7 @@
         <p class="case-story__quote">«Где мой автобус и&nbsp;успею&nbsp;ли я&nbsp;к&nbsp;остановке?»</p>
         <div class="case-split">
           <article class="case-media-card">
-            <div class="corporate-phone-crop corporate-phone-crop--map">
-              <img src="assets/site/corporate-map-section.png" alt="Карта закреплённого маршрута" loading="lazy">
-            </div>
+            <img class="corporate-phone" src="assets/site/corporate-map-phone.png" alt="Карта закреплённого маршрута" loading="lazy">
           </article>
           <article class="case-card case-card--solution">
             <h3>Только релевантный контекст</h3>
@@ -168,21 +173,19 @@
     <section class="case-story case-story--alt corporate-qr">
       <div class="container">
         <p class="case-story__eyebrow">04 · QR и&nbsp;посадка</p>
-        <h2 class="case-story__title">Посадка должна быть предсказуемой</h2>
-        <p class="case-story__lead">QR находится внутри актуальной поездки и&nbsp;не&nbsp;требует отдельного поиска. Перед посадкой интерфейс быстро отвечает: это моя поездка, мой автобус и&nbsp;что показать водителю.</p>
+        <h2 class="case-story__title">QR-код всегда под&nbsp;рукой перед посадкой</h2>
+        <p class="case-story__lead">Билет вынесен в&nbsp;отдельный раздел приложения, поэтому его легко открыть перед посадкой. На&nbsp;экране сотрудник видит свои данные и&nbsp;QR-код, который показывает водителю для&nbsp;сканирования.</p>
         <div class="case-split">
-          <article class="case-media-card">
-            <div class="corporate-phone-crop corporate-phone-crop--qr">
-              <img src="assets/site/corporate-qr-section.png" alt="Обновляемый QR-код поездки" loading="lazy">
-            </div>
-          </article>
           <article class="case-card case-card--solution">
             <h3>Почему код обновляется</h3>
             <p>QR-код привязан к&nbsp;учётной записи и&nbsp;автоматически обновляется. Пересланный скриншот к&nbsp;моменту посадки становится недействительным.</p>
             <dl class="case-value-list">
-              <div><dt>Пользовательская ценность</dt><dd>Билет всегда под&nbsp;рукой.</dd></div>
-              <div><dt>Бизнес-ценность</dt><dd>Контроль доступа и&nbsp;автоматический учёт поездок.</dd></div>
+              <div><dt>Для пользователя</dt><dd>Билет всегда под&nbsp;рукой&nbsp;— бумажный пропуск не&nbsp;нужен.</dd></div>
+              <div><dt>Для бизнеса</dt><dd>Контроль доступа и&nbsp;автоматический учёт поездок.</dd></div>
             </dl>
+          </article>
+          <article class="case-media-card">
+            <img class="corporate-phone corporate-phone--qr" src="assets/site/corporate-qr-phone-v2.png" alt="Обновляемый QR-код поездки" loading="lazy">
           </article>
         </div>
       </div>
@@ -208,14 +211,10 @@
           <article class="case-card"><h3>Рейс перенесён</h3><p>Показать новое время рейса и&nbsp;обновить карточку поездки.</p></article>
           <article class="case-card"><h3>Рейс отменён</h3><p>Показать время следующего рейса и&nbsp;переход к&nbsp;расписанию.</p></article>
           <article class="case-media-card">
-            <div class="corporate-phone-crop corporate-phone-crop--edge-moved">
-              <img src="assets/site/corporate-edge-section.png" alt="Состояние перенесённого рейса" loading="lazy">
-            </div>
+            <img class="corporate-phone" src="assets/site/corporate-edge-moved-phone.png" alt="Состояние перенесённого рейса" loading="lazy">
           </article>
           <article class="case-media-card">
-            <div class="corporate-phone-crop corporate-phone-crop--edge-cancelled">
-              <img src="assets/site/corporate-edge-section.png" alt="Состояние отменённого рейса" loading="lazy">
-            </div>
+            <img class="corporate-phone" src="assets/site/corporate-edge-cancelled-phone.png" alt="Состояние отменённого рейса" loading="lazy">
           </article>
         </div>
         <p class="case-final-line">Детали проекта и&nbsp;остальные сценарии могу показать и&nbsp;рассказать на&nbsp;встрече</p>
