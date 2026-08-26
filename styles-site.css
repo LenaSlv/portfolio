@@ -1270,30 +1270,51 @@ cod.site-header.is-scrolled .site-header__inner {
   .case-page--soul .other-project-card {
     width: 680px;
     height: 300px;
-    padding: 23px;
+    padding: 24px;
     overflow: hidden;
   }
 
   .case-page--soul .other-project-card__body,
   .case-page--soul .other-project-card__preview {
-    flex: 0 0 305.128px;
-    width: 305.128px;
+    flex: 1 0 0;
+    min-width: 0;
     height: 252px;
   }
 
+  .case-page--soul .other-project-card__preview {
+    flex: 0 0 305.128px;
+    width: 305.128px;
+    border-radius: 16px;
+  }
+
   .case-page--soul .other-project-card__body {
-    gap: 0;
+    gap: 10px;
     overflow: hidden;
   }
 
   .case-page--soul .other-project-card__top {
-    gap: 10px;
+    gap: 16px;
+  }
+
+  .case-page--soul .other-project-card__top > .kicker {
+    height: 21px;
+    padding: 0 12px;
+    line-height: 9px;
   }
 
   .case-page--soul .other-project-card__title {
     color: #fff;
-    font-size: 22px;
-    line-height: 28px;
+    width: 294.231px;
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .case-page--soul .other-project-card__desc {
+    width: 283.333px;
+    max-width: 100%;
+    font-size: 14px;
+    line-height: 20.3px;
   }
 
   .case-page--soul .other-project-card__link {
