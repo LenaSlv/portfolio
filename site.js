@@ -80,6 +80,42 @@ document.querySelectorAll('.other-projects').forEach(function (block) {
   var cards = Array.prototype.slice.call(track.querySelectorAll('.other-project-card'));
   var index = 0;
 
+  if (document.body.classList.contains('case-page--soul')) {
+    var soulProjectCards = [
+      {
+        href: 'case-transport-pet.html',
+        kicker: 'Мобильное приложение',
+        title: 'Единый транспортный сервис для городских и междугородних поездок',
+        meta: ['iOS / Android', '·', 'B2C'],
+        image: 'assets/site/preview-kaliningrad.png',
+        alt: 'Единый транспортный сервис'
+      },
+      {
+        href: 'case-corporate.html',
+        kicker: 'Внутренний продукт',
+        title: 'Сервис заказа корпоративного транспорта',
+        meta: ['iOS / Android', '·', 'B2B', '·', 'NDA'],
+        image: 'assets/site/other-project-corporate.png',
+        alt: 'Сервис заказа корпоративного транспорта'
+      },
+      {
+        href: 'case-arm-kassira.html',
+        kicker: 'Внутренний продукт',
+        title: 'Автоматизированное рабочее место кассира',
+        meta: ['Web', '·', 'B2B', '·', 'NDA'],
+        image: 'assets/site/other-project-arm.png',
+        alt: 'АРМ кассира'
+      }
+    ];
+
+    cards.forEach(function (card, cardIndex) {
+      var item = soulProjectCards[cardIndex];
+      if (!item) return;
+      card.href = item.href;
+      card.innerHTML = '<div class="other-project-card__body"><div class="other-project-card__top"><span class="kicker">' + item.kicker + '</span><h3 class="other-project-card__title">' + item.title + '</h3></div><div class="other-project-card__bottom"><div class="other-project-card__meta">' + item.meta.map(function (value) { return '<span>' + value + '</span>'; }).join('') + '</div><span class="other-project-card__link">Смотреть кейс</span></div></div><div class="other-project-card__preview"><img src="' + item.image + '" alt="' + item.alt + '"></div>';
+    });
+  }
+
   cards.forEach(function (card) {
     var preview = card.querySelector('.other-project-card__preview img');
     if (preview) preview.removeAttribute('loading');
