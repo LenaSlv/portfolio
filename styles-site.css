@@ -4067,7 +4067,7 @@ a {
 }
 
 .case-page--corporate .case-hero {
-  height: 990px;
+  height: 1045px;
   padding-top: 54px;
   padding-bottom: 52px;
   background: #000308;
@@ -4084,6 +4084,10 @@ a {
   font-weight: 600;
   line-height: 66px;
   letter-spacing: -1.16px;
+}
+
+.case-page--corporate .case-hero__lead {
+  color: #8f99b2;
 }
 
 .case-page--corporate .case-hero__badges {
@@ -4568,8 +4572,20 @@ a {
   padding-bottom: 120px;
 }
 
-.case-page--corporate .corporate-edge .case-grid {
-  grid-template-rows: 131px 656px;
+.case-page--corporate .corporate-edge__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+  height: 811px;
+}
+
+.case-page--corporate .corporate-edge__states {
+  height: 131px;
+}
+
+.case-page--corporate .corporate-edge__screens {
+  height: 656px;
 }
 
 .case-page--corporate .corporate-edge .case-card {
@@ -4622,6 +4638,11 @@ a {
 .case-page--corporate .corporate-phone--qr {
   width: 261.371px;
   height: 532px;
+}
+
+.case-page--corporate .case-swipe:focus-visible {
+  outline: 2px solid #24d866;
+  outline-offset: 4px;
 }
 
 .case-page--corporate .other-projects {
@@ -4860,6 +4881,10 @@ a {
     position: static;
     margin-top: 28px;
   }
+
+  .case-page--corporate .corporate-edge__content {
+    height: auto;
+  }
 }
 
 @media (max-width: 640px) {
@@ -4971,6 +4996,32 @@ a {
   .case-page--corporate .corporate-edge .case-card h3 {
     font-size: 17px;
     line-height: 22px;
+  }
+
+  .case-page--corporate .case-swipe {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 0;
+    scrollbar-width: none;
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .case-page--corporate .case-swipe::-webkit-scrollbar {
+    display: none;
+  }
+
+  .case-page--corporate .case-swipe > .case-media-card {
+    flex: 0 0 calc(100% - 28px);
+    width: calc(100% - 28px);
+    max-width: none;
+    min-width: 0;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
   }
 
   .case-page--corporate .corporate-phone,

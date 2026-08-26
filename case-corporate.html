@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles-site.css?v=58">
+  <link rel="stylesheet" href="styles-site.css?v=59">
 </head>
 <body class="case-page case-page--corporate">
   <header class="site-header">
@@ -43,6 +43,7 @@
     <section class="case-hero">
       <div class="container">
         <h1 class="case-hero__title">Сервис заказа корпоративного транспорта</h1>
+        <p class="case-hero__lead">Как&nbsp;объединить регулярные и&nbsp;нерегулярные поездки сотрудников в&nbsp;одном продукте</p>
         <div class="case-hero__badges case-hero__badges--meta">
           <span class="case-hero__nda">Роль · Product Designer / UX/UI Designer</span>
           <span class="case-hero__nda">Платформы · iOS / Android</span>
@@ -132,7 +133,7 @@
         <p class="case-story__eyebrow">02 · Закреплённый маршрут</p>
         <h2 class="case-story__title">Сразу показать назначенный маршрут и&nbsp;ближайший рейс</h2>
         <p class="case-story__lead">Закреплённый маршрут назначается сотруднику заранее, поэтому предзаказ в&nbsp;этом режиме недоступен. Я&nbsp;сохранила общую логику интерфейса: карту, карточку ближайшей поездки, остановку, статус автобуса и&nbsp;QR. Пользователь сразу видит назначенный маршрут и&nbsp;ближайший рейс.</p>
-        <div class="case-grid case-grid--2 case-grid--screens">
+        <div class="case-grid case-grid--2 case-grid--screens case-swipe" tabindex="0" aria-label="Сравнение сценариев">
           <article class="case-media-card">
             <p class="case-media-card__label">Сценарий 1 · Предзаказ</p>
             <img class="corporate-phone" src="assets/site/corporate-route-preorder-phone.png" alt="Сценарий предзаказа" loading="lazy">
@@ -207,15 +208,19 @@
     <section class="case-story case-story--alt corporate-edge">
       <div class="container">
         <h2 class="case-story__title">Edge cases</h2>
-        <div class="case-grid case-grid--2">
-          <article class="case-card"><h3>Рейс перенесён</h3><p>Показать новое время рейса и&nbsp;обновить карточку поездки.</p></article>
-          <article class="case-card"><h3>Рейс отменён</h3><p>Показать время следующего рейса и&nbsp;переход к&nbsp;расписанию.</p></article>
-          <article class="case-media-card">
-            <img class="corporate-phone" src="assets/site/corporate-edge-moved-phone.png" alt="Состояние перенесённого рейса" loading="lazy">
-          </article>
-          <article class="case-media-card">
-            <img class="corporate-phone" src="assets/site/corporate-edge-cancelled-phone.png" alt="Состояние отменённого рейса" loading="lazy">
-          </article>
+        <div class="corporate-edge__content">
+          <div class="case-grid case-grid--2 corporate-edge__states">
+            <article class="case-card"><h3>Рейс перенесён</h3><p>Показать новое время рейса и&nbsp;обновить карточку поездки.</p></article>
+            <article class="case-card"><h3>Рейс отменён</h3><p>Показать время следующего рейса и&nbsp;переход к&nbsp;расписанию.</p></article>
+          </div>
+          <div class="case-grid case-grid--2 corporate-edge__screens case-swipe" tabindex="0" aria-label="Сравнение состояний рейса">
+            <article class="case-media-card">
+              <img class="corporate-phone" src="assets/site/corporate-edge-moved-phone.png" alt="Состояние перенесённого рейса" loading="lazy">
+            </article>
+            <article class="case-media-card">
+              <img class="corporate-phone" src="assets/site/corporate-edge-cancelled-phone.png" alt="Состояние отменённого рейса" loading="lazy">
+            </article>
+          </div>
         </div>
       </div>
     </section>
