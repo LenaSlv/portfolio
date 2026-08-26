@@ -98,18 +98,21 @@ a {
   position: sticky;
   top: 16px;
   z-index: 40;
-  margin: 42px var(--page-padding) 0;
+  width: min(1248px, calc(100vw - 32px));
+  max-width: 1248px;
+  margin: 42px auto 0;
 }
 
 .site-header__inner {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 0;
   min-height: 74px;
   padding: 12px 12px 12px 24px;
   border-radius: 20px;
   border: 1px solid var(--border-header);
   background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   transition: background-color 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
@@ -139,9 +142,11 @@ a {
 }
 
 .site-header__name {
+  width: 119px;
   font-family: var(--font-display);
   font-weight: 500;
   font-size: 16px;
+  line-height: 20px;
   color: var(--text-primary);
   white-space: nowrap;
   transition: color 200ms ease;
@@ -149,12 +154,24 @@ a {
 
 .site-header__nav {
   flex: 1;
+  align-self: stretch;
   display: flex;
+  align-items: center;
   justify-content: center;
   gap: 32px;
-  color: var(--text-muted);
+  min-width: 0;
+  overflow: hidden;
+  color: var(--text-secondary);
   font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+  white-space: nowrap;
   transition: color 200ms ease;
+}
+
+.site-header__nav a,
+.site-header__cta {
+  flex-shrink: 0;
 }
 
 .site-header.is-scrolled .site-header__name {
@@ -3435,41 +3452,6 @@ a {
   }
 }
 
-/* Транспортный кейс — хедер по фрейму Figma 2082:6267 */
-.case-page--pet .site-header {
-  width: min(1248px, calc(100vw - (2 * var(--page-padding))));
-  max-width: 1248px;
-  margin: 28px 0 0 max(var(--page-padding), calc((100vw - 1248px) / 2));
-}
-
-.case-page--pet .site-header__inner {
-  gap: 0;
-  min-height: 74px;
-  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.case-page--pet .site-header__brand {
-  gap: 16px;
-}
-
-.case-page--pet .site-header__name {
-  color: #8f99b2;
-  font-size: 20px;
-  line-height: 20px;
-}
-
-.case-page--pet .site-header__nav {
-  gap: 28px;
-  color: #8f99b2;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 400;
-}
-
-.case-page--pet .site-header__nav a {
-  width: 90px;
-}
-
 .case-page--pet .case-topbar {
   width: min(1248px, calc(100vw - (2 * var(--page-padding))));
   max-width: 1248px;
@@ -3605,11 +3587,6 @@ a {
 }
 
 @media (max-width: 960px) {
-  .case-page--pet .site-header {
-    width: calc(100% - 32px);
-    margin: 20px auto 0;
-  }
-
   .case-page--pet .case-topbar {
     width: calc(100% - (2 * var(--page-padding)));
     margin: 16px auto;
@@ -4012,40 +3989,6 @@ a {
 /* Корпоративный транспорт — Figma 1998:3750 */
 .case-page--corporate {
   background: #000308;
-}
-
-.case-page--corporate .site-header {
-  width: min(1248px, calc(100vw - (2 * var(--page-padding))));
-  max-width: 1248px;
-  margin: 28px 0 0 max(var(--page-padding), calc((100vw - 1248px) / 2));
-}
-
-.case-page--corporate .site-header__inner {
-  gap: 0;
-  min-height: 74px;
-  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-.case-page--corporate .site-header__brand {
-  gap: 16px;
-}
-
-.case-page--corporate .site-header__name {
-  color: #8f99b2;
-  font-size: 20px;
-  line-height: 20px;
-}
-
-.case-page--corporate .site-header__nav {
-  gap: 28px;
-  color: #8f99b2;
-  font-size: 18px;
-  line-height: 20px;
-  font-weight: 400;
-}
-
-.case-page--corporate .site-header__nav a {
-  width: 90px;
 }
 
 .case-page--corporate .case-topbar {
@@ -4759,11 +4702,6 @@ a {
 }
 
 @media (max-width: 960px) {
-  .case-page--corporate .site-header {
-    width: calc(100% - 32px);
-    margin: 20px auto 0;
-  }
-
   .case-page--corporate .case-topbar {
     width: calc(100% - (2 * var(--page-padding)));
     margin: 16px auto 20px;
