@@ -4062,7 +4062,7 @@ a {
 }
 
 .case-page--corporate .case-story {
-  padding: 120px var(--page-padding) 0;
+  padding: 112px var(--page-padding) 0;
   background: #000308;
 }
 
@@ -4511,8 +4511,8 @@ a {
 .case-page--corporate .corporate-edge {
   position: relative;
   height: 1139px;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 112px;
+  padding-bottom: 112px;
 }
 
 .case-page--corporate .corporate-edge__content {
