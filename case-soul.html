@@ -3,363 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Soul — кейс продуктового дизайнера</title>
-  <meta name="description" content="Кейс: как я собрала разрозненные механики Soul в понятный сценарий поиска и участия во встречах.">
+  <title>SOUL — кейс продуктового дизайнера</title>
+  <meta name="description" content="Кейс Soul: как исследование помогло перестроить поиск и выбор встреч.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles-site.css?v=61">
+  <link rel="stylesheet" href="styles-site.css?v=62">
 </head>
-<body>
-
+<body class="case-page case-page--soul">
   <header class="site-header">
     <div class="site-header__inner">
-      <a href="index.html" class="site-header__brand">
-        <img class="site-header__avatar" src="assets/site/avatar.png" alt="Елена Сулоева" width="48" height="48">
-        <span class="site-header__name">Елена Сулоева</span>
-      </a>
-      <nav class="site-header__nav">
-        <a href="index.html#about">Обо мне</a>
-        <a href="index.html#projects">Проекты</a>
-        <a href="index.html#experience">Опыт работы</a>
-        <a href="index.html#contacts">Контакты</a>
-      </nav>
+      <a href="index.html" class="site-header__brand"><img class="site-header__avatar" src="assets/site/avatar.png" alt="Елена Сулоева" width="48" height="48"><span class="site-header__name">Елена Сулоева</span></a>
+      <nav class="site-header__nav"><a href="index.html#about">Обо мне</a><a href="index.html#projects">Проекты</a><a href="index.html#experience">Опыт работы</a><a href="index.html#contacts">Контакты</a></nav>
       <button class="button site-header__cta" type="button" data-open-contact>Связаться со&nbsp;мной</button>
-      <button class="site-header__toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Открыть меню">
-        <span></span><span></span><span></span>
-      </button>
+      <button class="site-header__toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Открыть меню"><span></span><span></span><span></span></button>
     </div>
-    <nav class="site-header__mobile-menu" id="mobile-menu" data-mobile-menu>
-      <a href="index.html#about">Обо мне</a>
-      <a href="index.html#projects">Проекты</a>
-      <a href="index.html#experience">Опыт работы</a>
-      <a href="index.html#contacts">Контакты</a>
-      <button class="button" type="button" data-open-contact>Связаться со&nbsp;мной</button>
-    </nav>
+    <nav class="site-header__mobile-menu" id="mobile-menu" data-mobile-menu><a href="index.html#about">Обо мне</a><a href="index.html#projects">Проекты</a><a href="index.html#experience">Опыт работы</a><a href="index.html#contacts">Контакты</a><button class="button" type="button" data-open-contact>Связаться со&nbsp;мной</button></nav>
   </header>
-
-  <div class="case-topbar">
-    <a class="case-topbar__back" href="index.html#projects">Назад к&nbsp;проектам</a>
-  </div>
+  <div class="case-topbar"><a class="case-topbar__back" href="index.html#projects">Назад к&nbsp;проектам</a></div>
 
   <main>
+    <section class="case-hero soul-hero"><div class="container"><h1 class="case-hero__title">SOUL&nbsp;— платформа для&nbsp;поиска компании и&nbsp;активностей в&nbsp;путешествиях</h1><p class="case-hero__lead">Как исследование помогло перестроить поиск и&nbsp;выбор встреч</p><div class="case-hero__meta soul-meta"><span>Роль · Product Designer / UX/UI Designer</span><span>Платформы · iOS / Android</span><span>B2C</span></div><p class="case-hero__notice">Экраны показаны с&nbsp;вымышленными данными</p><div class="case-hero__cover"><img src="assets/site/soul-hero-showcase.png" alt="Экраны приложения Soul: карточка мероприятия, карта поиска и подробности встречи" width="1248" height="630"></div></div></section>
 
-    <section class="case-hero">
-      <div class="container">
-        <h1 class="case-hero__title">Soul</h1>
-        <p class="case-hero__lead">Как я собрала разрозненные механики в понятный сценарий поиска и участия во встречах</p>
-        <div class="case-hero__meta">
-          <span><strong>Роль</strong>продуктовый дизайнер</span>
-          <span><strong>Платформы</strong>iOS / Android</span>
-          <span><strong>Этап</strong>MVP на тестовой аудитории</span>
-        </div>
-        <div class="case-hero__cover">
-          <img src="assets/site/soul-hero-showcase.png" alt="Экраны приложения Soul: карточка мероприятия, карта поиска и подробности встречи" width="1248" height="630">
-        </div>
-      </div>
-    </section>
+    <section class="soul-section soul-context"><div class="container"><span class="soul-eyebrow">01 · Контекст и&nbsp;проблема</span><h2>Не улучшать интерфейс вслепую, а&nbsp;найти реальные барьеры</h2><p class="soul-lead">На задачах поиска и&nbsp;выбора встречи наблюдала, где пользователи теряют контекст, какие условия понимают неверно и&nbsp;что мешает принять решение о&nbsp;записи.</p><div class="soul-card-grid soul-card-grid--context"><article class="soul-card"><h3>Продукт и&nbsp;аудитория</h3><p>Soul помогает соло-путешественникам, экспатам, диджитал-номадам и&nbsp;новым жителям города находить живое общение через встречи рядом.</p></article><article class="soul-card"><h3>Продуктовая задача</h3><p>Понять, где пользователь теряет контекст при поиске встречи и&nbsp;что мешает принять решение о&nbsp;записи.</p></article></div></div></section>
 
-    <section class="case-section">
-      <div class="container">
-        <span class="case-kicker">01 · Контекст</span>
-        <h2 class="case-section__title">Проверила ключевой сценарий поиска и записи</h2>
-        <p class="case-section__lead">На задачах поиска и выбора встречи наблюдала, где пользователи теряют контекст, какие условия понимают неверно и что мешает принять решение о записи.</p>
+    <section class="soul-section soul-flow-section"><div class="container"><h2>Ключевые пользовательские пути</h2><div class="soul-flow-card"><div class="soul-flow-inner"><div class="soul-flow-heading"><h3>User Flow</h3><p>Вход в&nbsp;приложение, поиск и&nbsp;создание встреч, запись, билет, активности, профиль и&nbsp;система Soul Points.</p><p>Схема составлена постфактум&nbsp;— приложение уже разрабатывалось без&nbsp;выстроенного user flow. Я собрала сценарии в&nbsp;единую карту, чтобы найти нестыковки и&nbsp;возможные пробелы в&nbsp;логике.</p></div><div class="soul-flow-preview"><img src="assets/site/soul-flow-preview.png" alt="Компактная схема пользовательских путей Soul"></div><button class="flow-toggle soul-flow-toggle" type="button" data-flow-toggle>Показать полный флоу →</button><p class="soul-flow-caption">Полная схема · все сценарии и&nbsp;ветвления</p><div class="soul-flow-full is-expanded" data-flow-diagram><div class="soul-flow-scroll"><img src="assets/site/soul-flow-diagram.png" alt="Полная схема пользовательских путей Soul"></div></div></div></div></div></section>
 
-        <div class="info-cards-row">
-          <div class="info-card">
-            <p class="info-card__title">Продукт и аудитория</p>
-            <p class="info-card__text">Soul помогает соло-путешественникам, экспатам, диджитал-номадам и новым жителям города находить живое общение через встречи рядом.</p>
-          </div>
-          <div class="info-card">
-            <p class="info-card__title">Задача исследования</p>
-            <p class="info-card__text">Понять, где пользователь теряет контекст при поиске встречи и что мешает принять решение о записи.</p>
-          </div>
-        </div>
-        <div class="info-cards-row">
-          <div class="info-card">
-            <p class="info-card__title">Интервью — почему</p>
-            <p class="info-card__text">Просила пересказать условия, объяснить направление денег и ответить, готов ли человек прийти к этому хосту.</p>
-          </div>
-          <div class="info-card">
-            <p class="info-card__title">Наблюдение — где</p>
-            <p class="info-card__text">Смотрела, куда нажимают первой, что не долистывают и где возвращаются по экрану в поиске информации.</p>
-          </div>
-          <div class="info-card">
-            <p class="info-card__title">Моя роль</p>
-            <p class="info-card__text">Провела тесты, объединила повторяющиеся находки, приоритизировала изменения и согласовала новую логику поиска с разработчиками.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="soul-section soul-synthesis"><div class="container"><span class="soul-eyebrow">02 · Синтез</span><h2>От наблюдений&nbsp;— к&nbsp;продуктовым проблемам</h2><p class="soul-lead">Приоритизировала не&nbsp;отдельные дефекты интерфейса, а&nbsp;барьеры, которые мешали принять решение о&nbsp;записи.</p><div class="soul-card-grid soul-card-grid--three"><article class="soul-card"><span class="soul-index">01</span><h3>Действие и&nbsp;место трудно найти</h3><p>Кнопка находилась внизу, адрес был разделён между блоками, а&nbsp;важные детали скрывались под «Читать больше».</p></article><article class="soul-card"><span class="soul-index">02</span><h3>Финансовые условия непонятны</h3><p>25 EUR, 600 SP и&nbsp;«первый гость» не&nbsp;складывались в&nbsp;понятные правила участия.</p></article><article class="soul-card"><span class="soul-index">03</span><h3>Не&nbsp;хватает доверия</h3><p>У&nbsp;организатора не&nbsp;было подтверждённого опыта и&nbsp;оценок реальных участников.</p></article></div><div class="soul-priority"><strong>Критерий приоритета</strong><span>Насколько проблема мешает понять встречу, довериться организатору и&nbsp;нажать «Я пойду».</span></div></div></section>
 
-    <section class="case-section">
-      <div class="container">
-        <span class="case-kicker">02 · User Flow</span>
-        <h2 class="case-section__title">Пользовательские сценарии:</h2>
-        <div class="flow-card">
-          <div class="flow-card__inner">
-            <p class="flow-label">User Flow</p>
-            <p class="flow-lead">Вход в приложение, поиск и создание встреч, запись, билет, активности, профиль и система Soul Points.</p>
-            <p class="flow-note">Схема составлена постфактум — приложение уже разрабатывалось без выстроенного user flow. Я собрала сценарии в единую карту, чтобы найти нестыковки и возможные пробелы в логике.</p>
-            <div class="flow-diagram" data-flow-diagram>
-              <img src="assets/site/soul-flow-diagram.png" alt="User flow «Экосистема Soul»: шесть сценариев — вход и маршрутизация, поиск встречи, запись и посещение, активности и уведомления, создание и управление встречей, профиль и Soul Points" loading="lazy">
-            </div>
-            <button class="flow-toggle" type="button" data-flow-toggle>Показать полный флоу →</button>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="soul-section soul-solution soul-map"><div class="container"><span class="soul-eyebrow">03 · Решение 1</span><h2>Дать достаточно информации для&nbsp;первичного выбора</h2><div class="soul-hypothesis"><h3>Сравнение&nbsp;— до&nbsp;открытия карточки</h3><span>Гипотеза</span><p>Если вынести фильтры по&nbsp;месту и&nbsp;времени наверх, показывать превью по&nbsp;тапу на&nbsp;метку и&nbsp;различать метки по&nbsp;типу, пользователь сможет сравнить встречи прямо на&nbsp;карте и&nbsp;открывать детальную карточку осознанно, а&nbsp;не&nbsp;наугад.</p><div class="soul-value-grid"><div><strong>Пользователю</strong><p>Сравнивает варианты по&nbsp;расстоянию и&nbsp;типу до&nbsp;перехода в&nbsp;карточку&nbsp;— не&nbsp;тратит тапы впустую.</p></div><div><strong>Бизнесу</strong><p>Меньше случайных переходов в&nbsp;карточку&nbsp;— выше доля осознанных записей.</p></div></div></div><div class="soul-compare soul-compare--map"><figure><figcaption>Было</figcaption><img src="assets/site/soul-map-before.png" alt="Карта поиска — было"></figure><figure><figcaption>Стало</figcaption><img src="assets/site/soul-map-after.png" alt="Карта поиска — стало"></figure></div><div class="soul-solution-list"><h3>Моё решение</h3><ul><li>Вынесла фильтры «где» и&nbsp;«когда» наверх&nbsp;— на&nbsp;задаче «найди встречу рядом на&nbsp;эти выходные» участники доходили до&nbsp;результата и&nbsp;в&nbsp;интервью подтверждали, что поняли: выбор можно сузить.</li><li>Сделала так, что тап по&nbsp;метке сразу открывает превью&nbsp;— участники стали сравнивать соседние метки, а&nbsp;не&nbsp;тыкать наугад.</li><li>Вывела расстояние на&nbsp;превью&nbsp;— оно стало одним из&nbsp;первых критериев решения.</li><li>Заменила инструкцию про масштаб пустым состоянием с&nbsp;понятной причиной и&nbsp;кнопкой «Показать ближайшие».</li></ul></div></div></section>
 
-    <section class="case-section">
-      <div class="container">
-        <span class="case-kicker">03 · Синтез</span>
-        <h2 class="case-section__title">Объединила шесть наблюдений в три продуктовые проблемы</h2>
-        <p class="case-section__lead">Приоритизировала не отдельные дефекты интерфейса, а барьеры, которые мешали принять решение о записи.</p>
+    <section class="soul-section soul-solution soul-meeting"><div class="container"><span class="soul-eyebrow">04 · Решение 2</span><h2>Снять неопределённость до&nbsp;записи</h2><div class="soul-hypothesis"><h3>Ключевые условия&nbsp;— на&nbsp;первом экране</h3><span>Гипотеза</span><p>Если собрать адрес, формат входа, бонус и&nbsp;подготовку в&nbsp;одном блоке вместо распределения по&nbsp;экрану, пользователь примет решение и&nbsp;запишется без&nbsp;возврата к&nbsp;длинному описанию.</p><div class="soul-value-grid"><div><strong>Пользователю</strong><p>Не&nbsp;прокручивает карточку в&nbsp;поисках ответа&nbsp;— все условия видны сразу.</p></div><div><strong>Бизнесу</strong><p>Меньше отказов на&nbsp;этапе просмотра&nbsp;— решение принимается быстрее.</p></div></div></div><div class="soul-compare soul-compare--meeting"><figure><figcaption>Было</figcaption><img src="assets/site/soul-card-before.png" alt="Карточка встречи — было"></figure><figure><figcaption>Стало</figcaption><img src="assets/site/soul-card-after.png" alt="Карточка встречи — стало"></figure></div><div class="soul-solution-list"><h3>Моё решение</h3><ul><li>Закрепила CTA-кнопки «Я пойду» и&nbsp;«Пригласить»&nbsp;— действие остаётся доступным при прокрутке.</li><li>Собрала условия в&nbsp;один блок&nbsp;— адрес, формат входа, бонус и&nbsp;подготовка считываются до&nbsp;длинного описания.</li><li>Добавила пояснение к&nbsp;месту встречи: пользователю не&nbsp;обязательно открывать стороннее приложение, чтобы понять, где оно находится&nbsp;— достаточно прочитать текстовое описание и&nbsp;адрес.</li><li>Спроектировала рейтинг доверия&nbsp;— гипотеза для&nbsp;следующей итерации.</li></ul></div></div></section>
 
-        <div class="info-cards">
-          <div class="info-card">
-            <p class="info-card__title">01 · Действие и место трудно найти</p>
-            <p class="info-card__text">Кнопка находилась внизу, адрес был разделён между блоками, а важные детали скрывались под «Читать больше».</p>
-          </div>
-          <div class="info-card">
-            <p class="info-card__title">02 · Финансовые условия непонятны</p>
-            <p class="info-card__text">25 EUR, 600 SP и «первый гость» не складывались в понятные правила участия.</p>
-          </div>
-          <div class="info-card">
-            <p class="info-card__title">03 · Не хватает доверия</p>
-            <p class="info-card__text">У организатора не было подтверждённого опыта и оценок реальных участников.</p>
-          </div>
-          <div class="info-card">
-            <p class="info-card__title">Критерий приоритета</p>
-            <p class="info-card__text">Насколько проблема мешает понять встречу, довериться организатору и нажать «Я пойду».</p>
-          </div>
-        </div>
-      </div>
-    </section>
+    <section class="soul-section soul-result"><div class="container"><span class="soul-eyebrow">05 · Результат</span><h2>Что подтвердили тесты&nbsp;— и&nbsp;что ещё нужно измерить</h2><p class="soul-lead">Разделила наблюдения, продуктовые гипотезы и&nbsp;будущие метрики, чтобы не&nbsp;выдавать качественные данные за&nbsp;рост конверсии.</p><div class="soul-card-grid soul-card-grid--three"><article class="soul-card"><h3>Подтвердили качественно</h3><p>Пользователи находили фильтры, сравнивали встречи через превью, понимали пустую выдачу и&nbsp;видели основное действие.</p></article><article class="soul-card"><h3>Осталось гипотезой</h3><p>Рейтинг доверия снизит барьер записи, а&nbsp;создание встречи из&nbsp;пустой зоны поддержит рост предложения.</p></article><article class="soul-card"><h3>Нужно измерить</h3><p>Успешность поиска, долю пустой выдачи, переход из&nbsp;превью в&nbsp;карточку и&nbsp;конверсию в&nbsp;запись.</p></article></div><div class="soul-result-card"><h3>Мой результат как продуктового дизайнера</h3><p>Провела исследование, синтезировала и&nbsp;приоритизировала проблемы, перестроила два ключевых экрана, описала сквозной сценарий и&nbsp;согласовала ограничения поиска с&nbsp;разработчиками.</p></div><p class="soul-footnote">Исследование проведено на&nbsp;небольшой выборке; количественный эффект решений предстоит проверить на&nbsp;объёме.</p></div></section>
 
-    <section class="case-section">
-      <div class="container">
-        <span class="case-kicker">03 · Карточка встречи</span>
-        <h2 class="case-section__title">Решение принимается на первом экране</h2>
-        <p class="case-section__lead">Адрес, формат входа и бонус собраны в одном блоке — не нужно прокручивать длинное описание, чтобы понять, стоит ли соглашаться.</p>
+    <section class="other-projects"><div class="container other-projects__head"><h2 class="other-projects__title">Другие проекты</h2><div class="other-projects__nav"><button class="other-projects__nav-btn" type="button" data-carousel-prev aria-label="Предыдущий проект"><img src="assets/site/icon-chevron-left.svg" alt=""></button><button class="other-projects__nav-btn" type="button" data-carousel-next aria-label="Следующий проект"><img src="assets/site/icon-chevron-right.svg" alt=""></button></div></div><div class="container"><div class="other-projects__row"><div class="other-projects__track"><a class="other-project-card" href="case-corporate.html"><div class="other-project-card__body"><div class="other-project-card__top"><span class="kicker">Внутренний продукт</span><h3 class="other-project-card__title">Сервис заказа корпоративного транспорта</h3></div><div class="other-project-card__bottom"><div class="other-project-card__meta"><span>iOS / Android</span><span>B2B</span><span>NDA</span></div><span class="other-project-card__link">Смотреть кейс</span></div></div><div class="other-project-card__preview"><img src="assets/site/other-project-corporate.png" alt="Сервис заказа корпоративного транспорта" loading="lazy"></div></a><a class="other-project-card" href="case-arm-kassira.html"><div class="other-project-card__body"><div class="other-project-card__top"><span class="kicker"><span class="kicker__index">02</span> Внутренний продукт</span><h3 class="other-project-card__title">АРМ кассира</h3></div><div class="other-project-card__bottom"><div class="other-project-card__meta"><span>WEB</span><span>B2B</span></div><span class="other-project-card__link">Смотреть кейс</span></div></div><div class="other-project-card__preview"><img src="assets/site/other-project-arm.png" alt="АРМ кассира" loading="lazy"></div></a><a class="other-project-card" href="case-transport-pet.html"><div class="other-project-card__body"><div class="other-project-card__top"><span class="kicker">Pet-проект</span><h3 class="other-project-card__title">Транспорт Калининградской области</h3></div><div class="other-project-card__bottom"><div class="other-project-card__meta"><span>iOS / Android</span><span>B2C</span><span>Pet</span></div><span class="other-project-card__link">Смотреть кейс</span></div></div><div class="other-project-card__preview"><img src="assets/site/other-project-kaliningrad.png" alt="Транспорт Калининградской области" loading="lazy"></div></a></div></div></div></section>
 
-        <div class="hypothesis">
-          <h3 class="hypothesis__title">Ключевые условия — на первом экране</h3>
-          <p class="hypothesis__label">Гипотеза</p>
-          <p class="hypothesis__text">Если собрать адрес, формат входа, бонус и подготовку в одном блоке вместо распределения по экрану, пользователь примет решение и запишется без возврата к длинному описанию.</p>
-          <div class="value-pair">
-            <div class="value-pair__item"><strong>Пользователю</strong>Не прокручивает карточку в поисках ответа — все условия видны сразу.</div>
-            <div class="value-pair__item"><strong>Бизнесу</strong>Меньше отказов на этапе просмотра — решение принимается быстрее.</div>
-          </div>
-        </div>
-
-        <div class="before-after-row">
-          <div class="before-after-card">
-            <p class="before-after-card__label">Было</p>
-            <img src="assets/site/soul-card-before.png" alt="Карточка встречи «было»" loading="lazy">
-          </div>
-          <div class="before-after-card">
-            <p class="before-after-card__label">Стало</p>
-            <img src="assets/site/soul-card-after.png" alt="Карточка встречи «стало»" loading="lazy">
-          </div>
-        </div>
-
-        <div class="solution-card">
-          <p class="solution-card__title">Моё решение</p>
-          <ul class="solution-list solution-list--dot">
-            <li>Закрепила CTA-кнопки «Я пойду» и «Пригласить» — действие остаётся доступным при прокрутке.</li>
-            <li>Собрала условия в один блок — адрес, формат входа, бонус и подготовка считываются до длинного описания.</li>
-            <li>Спроектировала рейтинг доверия — гипотеза для следующей итерации, которая должна снизить барьер перед записью.</li>
-            <li>Не давала задачу «запишись» — кнопка и так закреплена и её легко найти. Вместо этого после просмотра карточки просила по памяти назвать цену, формат входа и что взять с собой: участники называли условия без возврата к длинному описанию.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="case-section">
-      <div class="container">
-        <span class="case-kicker">04 · Карта поиска</span>
-        <h2 class="case-section__title">Карта, которая помогает выбрать встречу</h2>
-        <p class="case-section__lead">Фильтры, превью по метке и различимые типы меток помогают сравнить варианты до перехода в детальную карточку — без блуждания по пустой выдаче.</p>
-
-        <div class="hypothesis">
-          <h3 class="hypothesis__title">Сравнение — до открытия карточки</h3>
-          <p class="hypothesis__label">Гипотеза</p>
-          <p class="hypothesis__text">Если вынести фильтры по месту и времени наверх, показывать превью по тапу на метку и различать метки по типу, пользователь сможет сравнить встречи прямо на карте и открывать детальную карточку осознанно, а не наугад.</p>
-          <div class="value-pair">
-            <div class="value-pair__item"><strong>Пользователю</strong>Сравнивает варианты по расстоянию и типу до перехода в карточку — не тратит тапы впустую.</div>
-            <div class="value-pair__item"><strong>Бизнесу</strong>Меньше случайных переходов в карточку — выше доля осознанных записей.</div>
-          </div>
-        </div>
-
-        <div class="before-after-row">
-          <div class="before-after-card">
-            <p class="before-after-card__label">Было</p>
-            <img src="assets/site/soul-map-before.png" alt="Карта поиска «было»" loading="lazy">
-          </div>
-          <div class="before-after-card">
-            <p class="before-after-card__label">Стало</p>
-            <img src="assets/site/soul-map-after.png" alt="Карта поиска «стало»" loading="lazy">
-          </div>
-        </div>
-
-        <div class="solution-card">
-          <p class="solution-card__title">Моё решение</p>
-          <ul class="solution-list solution-list--dot">
-            <li>Вынесла фильтры «где» и «когда» наверх — на задаче «найди встречу рядом на эти выходные» участники доходили до результата и в интервью подтверждали, что поняли: выбор можно сузить.</li>
-            <li>Сделала так, что тап по метке сразу открывает превью — участники стали сравнивать соседние метки, а не тыкать наугад.</li>
-            <li>Развела метки по типу и подсветила выбранную — на вопросы «сколько встреч на экране» и «где ты сейчас» участники отвечали с первого взгляда.</li>
-            <li>Вывела расстояние на превью и приглушила акцент на бонусе — фокус сместился на саму встречу, а расстояние стало одним из первых критериев решения.</li>
-            <li>Заменила инструкцию про масштаб пустым состоянием с понятной причиной и кнопкой «Показать ближайшие» — участники выходили из тупика одним действием вместо ручного зума.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="case-section">
-      <div class="container">
-        <span class="case-kicker">05 · Выводы</span>
-        <h2 class="case-section__title">Что подтвердили тесты — и что ещё нужно измерить</h2>
-        <p class="case-section__lead">Разделила наблюдения, продуктовые гипотезы и будущие метрики, чтобы не выдавать качественные данные за рост конверсии.</p>
-
-        <div class="info-cards-row">
-          <div class="info-card">
-            <p class="info-card__title">Подтвердили качественно</p>
-            <p class="info-card__text" style="font-size:16px;">Пользователи находили фильтры, сравнивали встречи через превью, понимали пустую выдачу и видели основное действие.</p>
-          </div>
-          <div class="info-card">
-            <p class="info-card__title">Осталось гипотезой</p>
-            <p class="info-card__text" style="font-size:16px;">Рейтинг доверия снизит барьер записи, а создание встречи из пустой зоны поддержит рост предложения.</p>
-          </div>
-          <div class="info-card">
-            <p class="info-card__title">Нужно измерить</p>
-            <p class="info-card__text" style="font-size:16px;">Успешность поиска, долю пустой выдачи, переход из превью в карточку и конверсию в запись.</p>
-          </div>
-        </div>
-
-        <div class="info-card" style="width:100%;padding:26px 28px;margin-top:24px;">
-          <p class="info-card__title">Мой результат как продуктового дизайнера</p>
-          <p class="info-card__text" style="font-size:16px;">Провела исследование, синтезировала и приоритизировала проблемы, перестроила два ключевых экрана, описала сквозной сценарий и согласовала ограничения поиска с разработчиками.</p>
-        </div>
-
-        <p class="case-section__lead" style="margin-top:24px;font-size:15px;">Исследование проведено на небольшой выборке; количественный эффект решений предстоит проверить на объёме.</p>
-      </div>
-    </section>
-
-    <section class="case-cta">
-      <div class="container">
-        <p class="case-cta__text">Детали проекта и остальные сценарии могу показать и рассказать на встрече.</p>
-        <a class="button" href="index.html#contacts">Обсудить проект</a>
-      </div>
-    </section>
-
-    <section class="other-projects">
-      <div class="container other-projects__head">
-        <h2 class="other-projects__title">Другие проекты</h2>
-        <div class="other-projects__nav">
-          <button class="other-projects__nav-btn" type="button" data-carousel-prev aria-label="Предыдущий проект">‹</button>
-          <button class="other-projects__nav-btn" type="button" data-carousel-next aria-label="Следующий проект">›</button>
-        </div>
-      </div>
-      <div class="container">
-        <div class="other-projects__row">
-          <div class="other-projects__track">
-          <a class="other-project-card" href="case-corporate.html">
-            <div class="other-project-card__body">
-              <div class="other-project-card__top">
-                <span class="kicker">Внутренний продукт</span>
-                <h3 class="other-project-card__title">Сервис заказа корпоративного транспорта</h3>
-              </div>
-              <div class="other-project-card__bottom">
-                <div class="other-project-card__meta">
-                  <span>iOS / Android</span>
-                  <span>·</span>
-                  <span>B2B</span>
-                  <span>·</span>
-                  <span>NDA</span>
-                </div>
-                <span class="other-project-card__link">Смотреть кейс</span>
-              </div>
-            </div>
-            <div class="other-project-card__preview">
-              <img src="assets/site/preview-corporate.png" alt="Сервис заказа корпоративного транспорта" loading="lazy">
-            </div>
-          </a>
-          <a class="other-project-card" href="case-transport-pet.html">
-            <div class="other-project-card__body">
-              <div class="other-project-card__top">
-                <span class="kicker">Мобильное приложение</span>
-                <h3 class="other-project-card__title">Транспортное приложение для&nbsp;Калининградской области</h3>
-              </div>
-              <div class="other-project-card__bottom">
-                <div class="other-project-card__meta">
-                  <span>iOS / Android</span>
-                  <span>·</span>
-                  <span>B2C</span>
-                  <span>·</span>
-                  <span>NDA</span>
-                </div>
-                <span class="other-project-card__link">Смотреть кейс</span>
-              </div>
-            </div>
-            <div class="other-project-card__preview">
-              <img src="assets/site/preview-kaliningrad.png" alt="Транспортное приложение для Калининградской области" loading="lazy">
-            </div>
-          </a>
-          <a class="other-project-card" href="case-arm-kassira.html">
-            <div class="other-project-card__body">
-              <div class="other-project-card__top">
-                <span class="kicker">Внутренний продукт</span>
-                <h3 class="other-project-card__title">Автоматизированное рабочее место кассира</h3>
-              </div>
-              <div class="other-project-card__bottom">
-                <div class="other-project-card__meta">
-                  <span>WEB</span>
-                  <span>·</span>
-                  <span>B2B</span>
-                  <span>·</span>
-                  <span>NDA</span>
-                </div>
-                <span class="other-project-card__link">Смотреть кейс</span>
-              </div>
-            </div>
-            <div class="other-project-card__preview">
-              <img src="assets/site/preview-arm.png" alt="АРМ Кассира" loading="lazy">
-            </div>
-          </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    <section class="section section--contacts"><div class="container"><p class="section__kicker"><span>04</span><span>Контакты</span></p><h2 class="section__heading">Открыта к&nbsp;сотрудничеству</h2><div class="contact-methods"><a class="contact-item" href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener"><span class="contact-item__label">Telegram</span><span class="contact-item__value">@Lena_Suloeva&nbsp; →</span></a><a class="contact-item" href="mailto:lensuloeva@yandex.ru"><span class="contact-item__label">Почта</span><span class="contact-item__value">lensuloeva@yandex.ru&nbsp; →</span></a></div><div class="site-footer"><p>Елена Сулоева · Product designer</p><p>Портфолио · 2026</p></div><div class="site-footer__route"></div></div></section>
   </main>
-
-  <div class="modal-overlay" data-contact-modal>
-    <div class="modal-card">
-      <button class="modal-close" type="button" data-close-contact aria-label="Закрыть">
-        <img src="assets/site/icon-close.svg" alt="">
-      </button>
-      <h3 class="modal-card__title">Свяжитесь со мной</h3>
-      <p class="modal-card__lead">Расскажу о проектах подробнее и отвечу на вопросы</p>
-      <div class="modal-card__methods">
-        <a class="modal-contact" href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener">
-          <span class="modal-contact__label">Telegram</span>
-          <div class="modal-contact__row">
-            <img src="assets/site/icon-telegram.svg" alt="">
-            <span class="modal-contact__value">@Lena_Suloeva</span>
-          </div>
-        </a>
-        <a class="modal-contact" href="mailto:lensuloeva@yandex.ru">
-          <span class="modal-contact__label">Почта</span>
-          <div class="modal-contact__row">
-            <img src="assets/site/icon-email.svg" alt="">
-            <span class="modal-contact__value">lensuloeva@yandex.ru</span>
-          </div>
-        </a>
-      </div>
-    </div>
-  </div>
-
+  <button class="scroll-to-top" type="button" data-scroll-to-top aria-label="Наверх"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"></path></svg></button>
+  <div class="modal-overlay" data-contact-modal><div class="modal-card"><button class="modal-close" type="button" data-close-contact aria-label="Закрыть"><img src="assets/site/icon-close.svg" alt=""></button><h3 class="modal-card__title">Свяжитесь со&nbsp;мной</h3><p class="modal-card__lead">Расскажу о&nbsp;проектах подробнее и&nbsp;отвечу на&nbsp;вопросы</p><div class="modal-card__methods"><a class="modal-contact" href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener"><span class="modal-contact__label">Telegram</span><div class="modal-contact__row"><img src="assets/site/icon-telegram.svg" alt=""><span class="modal-contact__value">@Lena_Suloeva</span></div></a><a class="modal-contact" href="mailto:lensuloeva@yandex.ru"><span class="modal-contact__label">Почта</span><div class="modal-contact__row"><img src="assets/site/icon-email.svg" alt=""><span class="modal-contact__value">lensuloeva@yandex.ru</span></div></a></div></div></div>
   <script src="site.js?v=38"></script>
 </body>
 </html>
