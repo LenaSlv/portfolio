@@ -92,10 +92,9 @@ document.querySelectorAll('.other-projects').forEach(function (block) {
       },
       {
         href: 'case-corporate.html',
-        kicker: 'iOS / Android · B2B2E',
+        kicker: 'Внутренний продукт',
         title: 'Сервис заказа корпоративного транспорта',
-        description: 'Как объединить регулярные и нерегулярные поездки сотрудников в одном продукте',
-        meta: [],
+        meta: ['iOS / Android', 'B2B', 'NDA'],
         image: 'assets/site/other-project-corporate.png',
         alt: 'Сервис заказа корпоративного транспорта'
       },
@@ -113,9 +112,8 @@ document.querySelectorAll('.other-projects').forEach(function (block) {
       var item = soulProjectCards[cardIndex];
       if (!item) return;
       card.href = item.href;
-      var description = item.description ? '<p class="other-project-card__desc">' + item.description + '</p>' : '';
-      var meta = item.meta.length ? '<div class="other-project-card__meta">' + item.meta.map(function (value) { return '<span>' + value + '</span>'; }).join('') + '</div>' : '';
-      card.innerHTML = '<div class="other-project-card__body"><div class="other-project-card__top"><span class="kicker">' + item.kicker + '</span><h3 class="other-project-card__title">' + item.title + '</h3>' + description + '</div><div class="other-project-card__bottom">' + meta + '<span class="other-project-card__link">Смотреть кейс&nbsp; →</span></div></div><div class="other-project-card__preview"><img src="' + item.image + '" alt="' + item.alt + '"></div>';
+      var meta = '<div class="other-project-card__meta">' + item.meta.map(function (value) { return '<span>' + value + '</span>'; }).join('') + '</div>';
+      card.innerHTML = '<div class="other-project-card__body"><span class="kicker">' + item.kicker + '</span><h3 class="other-project-card__title">' + item.title + '</h3><span class="other-project-card__spacer" aria-hidden="true"></span>' + meta + '<span class="other-project-card__link">Смотреть кейс&nbsp; →</span></div><div class="other-project-card__preview"><img src="' + item.image + '" alt="' + item.alt + '"></div>';
     });
   }
 
