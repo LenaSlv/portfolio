@@ -1239,6 +1239,77 @@ cod.site-header.is-scrolled .site-header__inner {
   .case-page--soul .case-hero__title { font-size: 38px; line-height: 1.16; }
 }
 
+/* Блок «Другие проекты» в Soul использует ту же геометрию, что и в корпоративном кейсе. */
+.case-page--soul .other-projects {
+  height: 564px;
+  min-height: 564px;
+}
+
+@media (min-width: 961px) {
+  .case-page--soul .other-projects__head {
+    height: 52px;
+    overflow: hidden;
+  }
+
+  .case-page--soul .other-projects__title {
+    font-size: 44px;
+    line-height: 52px;
+    letter-spacing: -0.88px;
+    white-space: nowrap;
+  }
+
+  .case-page--soul .other-projects__row,
+  .case-page--soul .other-projects__track {
+    height: 300px;
+  }
+
+  .case-page--soul .other-projects__track {
+    width: max-content;
+  }
+
+  .case-page--soul .other-project-card {
+    width: 680px;
+    height: 300px;
+    padding: 23px;
+    overflow: hidden;
+  }
+
+  .case-page--soul .other-project-card__body,
+  .case-page--soul .other-project-card__preview {
+    flex: 0 0 305.128px;
+    width: 305.128px;
+    height: 252px;
+  }
+
+  .case-page--soul .other-project-card__body {
+    gap: 0;
+    overflow: hidden;
+  }
+
+  .case-page--soul .other-project-card__top {
+    gap: 10px;
+  }
+
+  .case-page--soul .other-project-card__title {
+    color: #fff;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .case-page--soul .other-project-card__link {
+    color: #fff;
+  }
+}
+
+@media (max-width: 960px) {
+  .case-page--soul .other-projects {
+    height: auto;
+    min-height: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
 @media (max-width: 960px) {
   .soul-section > .container > h2,
   .soul-context h2,
