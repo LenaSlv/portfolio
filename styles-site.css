@@ -118,7 +118,7 @@ a {
   transition: background-color 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
 }
 
-.site-header.is-scrolled .site-header__inner {
+cod.site-header.is-scrolled .site-header__inner {
   border-color: rgba(255, 255, 255, 0.16);
   background: var(--bg-modal);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.36);
@@ -2285,6 +2285,7 @@ a {
 .other-project-card {
   flex: 0 0 auto;
   width: min(680px, 85vw);
+  height: 662px;
   display: flex;
   gap: 20px;
   background: var(--bg-card);
@@ -2409,6 +2410,7 @@ a {
 
   .other-project-card {
     width: min(420px, 88vw);
+    height: auto;
     flex-direction: column;
   }
 
