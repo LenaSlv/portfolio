@@ -1239,6 +1239,22 @@ a {
   .case-page--soul .case-hero__title { font-size: 38px; line-height: 1.16; }
 }
 
+@media (max-width: 960px) {
+  .soul-section > .container > h2,
+  .soul-context h2,
+  .soul-synthesis h2,
+  .soul-solution h2,
+  .soul-result h2 {
+    width: 100%;
+  }
+
+  .case-page--soul .case-hero,
+  .case-page--soul .soul-section,
+  .case-page--soul .other-projects {
+    overflow: hidden;
+  }
+}
+
 @media (max-width: 640px) {
   .soul-desktop-break { display: none; }
   .case-page--soul .case-hero__title { font-size: 38px; line-height: 1.16; }
