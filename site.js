@@ -151,9 +151,14 @@ document.querySelectorAll('.other-projects').forEach(function (block) {
 document.querySelectorAll('[data-flow-toggle]').forEach(function (btn) {
   var diagram = document.querySelector('[data-flow-diagram]');
   if (!diagram) return;
+  var card = diagram.closest('.soul-flow-card');
+  var caption = card ? card.querySelector('.soul-flow-caption') : null;
+  if (caption) caption.remove();
+  diagram.classList.remove('is-expanded');
 
   btn.addEventListener('click', function () {
     var expanded = diagram.classList.toggle('is-expanded');
+    if (card) card.classList.toggle('is-expanded', expanded);
     btn.textContent = expanded ? 'Свернуть флоу ↑' : 'Показать полный флоу →';
   });
 });

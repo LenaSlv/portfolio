@@ -1,0 +1,33 @@
+/* User Flow: по умолчанию компактная схема, полный flow — только после клика. */
+@media (min-width: 961px) {
+  .case-page--soul .soul-flow-card:not(.is-expanded) {
+    height: 1000px;
+  }
+
+  .case-page--soul .soul-flow-card:not(.is-expanded) .soul-flow-inner {
+    height: 968px;
+  }
+
+  .case-page--soul .soul-flow-card.is-expanded {
+    height: 2597.334px;
+  }
+
+  .case-page--soul .soul-flow-card.is-expanded .soul-flow-inner {
+    height: 2565.334px;
+  }
+}
+
+@media (max-width: 960px) {
+  .case-page--soul .soul-flow-card:not(.is-expanded) {
+    height: auto;
+  }
+
+  .case-page--soul .soul-flow-card:not(.is-expanded) .soul-flow-inner {
+    height: auto;
+    min-height: 0;
+  }
+
+  .case-page--soul .soul-flow-card.is-expanded .soul-flow-inner {
+    min-height: 2565.334px;
+  }
+}
