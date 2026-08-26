@@ -1144,7 +1144,7 @@ cod.site-header.is-scrolled .site-header__inner {
 .soul-synthesis {
   height: 623px;
   padding: 112px var(--page-padding) 0;
-  background: #0b0e14;
+  background: #05060a;
 }
 
 .soul-synthesis > .container,
@@ -1161,7 +1161,7 @@ cod.site-header.is-scrolled .site-header__inner {
 
 .soul-solution {
   padding: 112px var(--page-padding) 0;
-  background: #0b0e14;
+  background: #05060a;
 }
 
 .soul-map { height: 1566px; }
@@ -1195,7 +1195,7 @@ cod.site-header.is-scrolled .site-header__inner {
 .soul-result {
   height: 854px;
   padding: 112px var(--page-padding) 0;
-  background: #0b0e14;
+  background: #05060a;
 }
 
 .soul-result .soul-card-grid { height: 182px; }
