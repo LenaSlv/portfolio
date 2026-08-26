@@ -80,6 +80,11 @@ document.querySelectorAll('.other-projects').forEach(function (block) {
   var cards = Array.prototype.slice.call(track.querySelectorAll('.other-project-card'));
   var index = 0;
 
+  cards.forEach(function (card) {
+    var preview = card.querySelector('.other-project-card__preview img');
+    if (preview) preview.removeAttribute('loading');
+  });
+
   function gap() {
     return parseFloat(getComputedStyle(track).columnGap || getComputedStyle(track).gap) || 0;
   }
