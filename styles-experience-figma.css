@@ -1,0 +1,40 @@
+/* Главная · 08 Опыт · Figma 2074:10544 */
+@media (min-width: 961px) {
+  .section--experience {
+    background: #0a0e16;
+  }
+
+  .section--experience .experience-layout {
+    height: 420px;
+    min-height: 420px;
+    gap: 56px;
+  }
+
+  .section--experience .experience-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    height: 360px;
+  }
+
+  .section--experience .experience-lead {
+    margin-top: 0;
+  }
+
+  .section--experience .experience-list {
+    height: 420px;
+    min-height: 420px;
+  }
+
+  .section--experience .experience-item {
+    height: 112px;
+    min-height: 112px;
+  }
+
+  .section--experience .education-row {
+    height: 90px;
+    min-height: 90px;
+    margin-top: 36px;
+    padding-top: 24px;
+  }
+}
