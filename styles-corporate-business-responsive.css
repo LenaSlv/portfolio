@@ -2,11 +2,13 @@
 @media (max-width: 960px) {
   .case-page--corporate .corporate-business .case-business-flow {
     width: 100%;
-    height: auto;
+    height: fit-content !important;
     min-height: 0;
     box-sizing: border-box;
     align-items: flex-start;
     padding: 24px;
+    white-space: normal;
+    overflow: visible;
   }
 }
 
