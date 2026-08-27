@@ -12,3 +12,35 @@
     margin-right: 0 !important;
   }
 }
+
+@media (max-width: 960px) {
+  .case-page--soul .case-hero {
+    height: auto;
+    padding-top: 28px;
+    padding-bottom: 32px;
+  }
+
+  .case-page--soul .case-hero > .container {
+    gap: 20px;
+  }
+
+  .case-page--soul .case-hero__cover {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1248 / 630;
+    border-radius: 20px;
+  }
+
+  .case-page--soul .case-hero__cover img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .case-page--soul .soul-meta {
+    height: auto;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
