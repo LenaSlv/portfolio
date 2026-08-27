@@ -6,6 +6,7 @@
 
   .case-page--corporate .other-projects {
     padding-top: 36px;
+    padding-bottom: 36px;
   }
 }
 
@@ -16,5 +17,6 @@
 
   .case-page--corporate .other-projects {
     padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
