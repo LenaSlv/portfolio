@@ -8,9 +8,32 @@
     flex-wrap: nowrap;
     gap: 12px;
   }
-  .case-page--soul .soul-meta span {
+.case-page--soul .soul-meta span {
     margin-right: 0 !important;
   }
+}
+
+.case-page--soul .soul-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 100%;
+  margin: 0;
+}
+
+.case-page--soul .soul-chip-row span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 30px;
+  margin: 0;
+  padding: 8px 12px;
+  border-radius: 99px;
+  background: #1d2737;
+  color: #7f8c9f;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
 @media (max-width: 960px) {

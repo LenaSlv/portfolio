@@ -151,6 +151,16 @@ document.querySelectorAll('.other-projects').forEach(function (block) {
 if (document.body.classList.contains('case-page--soul')) {
   var soulHeroTitle = document.querySelector('.soul-hero .case-hero__title');
   if (soulHeroTitle) soulHeroTitle.textContent = 'Платформа для поиска компании и активностей в путешествиях';
+
+  var soulMeta = document.querySelector('.soul-hero .soul-meta');
+  var soulLead = document.querySelector('.soul-hero .case-hero__lead');
+  if (soulMeta && soulLead) {
+    var soulChipRow = document.createElement('div');
+    soulChipRow.className = 'soul-chip-row';
+    soulChipRow.innerHTML = '<span>Роль · Product Designer / UX/UI Designer</span><span>Платформы · iOS / Android</span><span>B2C</span>';
+    soulMeta.remove();
+    soulLead.insertAdjacentElement('afterend', soulChipRow);
+  }
 }
 
 document.querySelectorAll('[data-flow-toggle]').forEach(function (btn) {
