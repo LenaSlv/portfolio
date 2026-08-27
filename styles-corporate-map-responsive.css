@@ -1,5 +1,17 @@
 /* Корпоративный транспорт · «Карта как инструмент» в адаптиве */
 @media (max-width: 960px) {
+  .case-page--corporate .corporate-map .case-story__quote {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    width: 100%;
+    height: auto !important;
+    margin: 0;
+    color: #eef2f7 !important;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
   .case-page--corporate .corporate-map > .container {
     gap: 28px;
   }
