@@ -35,6 +35,62 @@
   margin-top: 32px;
 }
 
+.soul-flow-accordion {
+  display: none;
+}
+
+.soul-flow-accordion details {
+  margin: 0 0 12px;
+  border: 1px solid #253040;
+  border-radius: 16px;
+  background: #141b27;
+  overflow: hidden;
+}
+
+.soul-flow-accordion summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 64px;
+  padding: 16px 18px;
+  color: #f5f7fb;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+}
+
+.soul-flow-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.soul-flow-accordion__chevron {
+  width: 10px;
+  height: 10px;
+  flex: 0 0 10px;
+  border-right: 2px solid #f5f7fb;
+  border-bottom: 2px solid #f5f7fb;
+  transform: rotate(45deg) translateY(-3px);
+  transition: transform .2s ease;
+}
+
+.soul-flow-accordion details[open] .soul-flow-accordion__chevron {
+  transform: rotate(225deg) translate(-2px, -2px);
+}
+
+.soul-flow-accordion__content {
+  padding: 0 18px 18px;
+  color: #8b98ad;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.soul-flow-accordion__content p {
+  margin: 0;
+}
+
 .soul-flow-modal[hidden] {
   display: none;
 }
@@ -136,6 +192,18 @@ body.is-flow-modal-open {
 }
 
 @media (max-width: 960px) {
+  .case-page--soul .soul-flow-card {
+    display: none;
+  }
+
+  .case-page--soul .soul-flow-accordion {
+    display: block;
+  }
+
+  .case-page--soul .soul-flow-accordion .container {
+    width: 100%;
+  }
+
   .case-page--soul .soul-flow-inner {
     padding-bottom: 20px;
   }
