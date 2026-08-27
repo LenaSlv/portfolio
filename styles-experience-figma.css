@@ -40,3 +40,15 @@
     padding-top: 24px;
   }
 }
+
+@media (max-width: 960px) {
+  .section--experience .education-row {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .section--experience .education-row {
+    margin-top: 20px;
+  }
+}
