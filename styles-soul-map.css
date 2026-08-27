@@ -43,5 +43,7 @@
   .case-page--soul .soul-meeting .soul-compare figure img {
     height: calc(100% - 45px);
     margin-top: 18px;
+    transform: scale(1.22);
+    transform-origin: center top;
   }
 }
