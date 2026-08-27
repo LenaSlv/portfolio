@@ -4,9 +4,11 @@
     height: 1049px;
   }
   .case-page--soul .soul-meta {
+    display: flex;
+    flex-wrap: nowrap;
     gap: 12px;
   }
   .case-page--soul .soul-meta span {
-    margin-right: 0;
+    margin-right: 0 !important;
   }
 }
