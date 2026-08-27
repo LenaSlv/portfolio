@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles-site.css?v=70">
   <link rel="stylesheet" href="styles-soul-projects.css?v=1">
-  <link rel="stylesheet" href="styles-soul-flow.css?v=3">
+  <link rel="stylesheet" href="styles-soul-flow.css?v=4">
 </head>
 <body class="case-page case-page--soul">
   <header class="site-header">
@@ -29,7 +29,55 @@
 
     <section class="soul-section soul-context"><div class="container"><span class="soul-eyebrow">01 · Контекст и&nbsp;проблема</span><h2>Не улучшать интерфейс вслепую, а&nbsp;найти реальные барьеры</h2><p class="soul-lead">На задачах поиска и&nbsp;выбора встречи наблюдала, где пользователи теряют контекст, какие условия понимают неверно и&nbsp;что мешает принять решение о&nbsp;записи.</p><div class="soul-card-grid soul-card-grid--context"><article class="soul-card"><h3>Продукт и&nbsp;аудитория</h3><p>Soul помогает соло-путешественникам, экспатам, диджитал-номадам и&nbsp;новым жителям города находить живое общение через встречи рядом.</p></article><article class="soul-card"><h3>Продуктовая задача</h3><p>Понять, где пользователь теряет контекст при поиске встречи и&nbsp;что мешает принять решение о&nbsp;записи.</p></article></div></div></section>
 
-    <section class="soul-section soul-flow-section"><div class="container"><h2>Ключевые пользовательские пути</h2><div class="soul-flow-card"><div class="soul-flow-inner"><div class="soul-flow-heading"><h3>User Flow</h3><p>Вход в&nbsp;приложение, поиск и&nbsp;создание встреч, запись, билет, активности, профиль и&nbsp;система Soul Points.</p><p>Схема составлена постфактум&nbsp;— приложение уже разрабатывалось без&nbsp;выстроенного user flow. Я собрала сценарии в&nbsp;единую карту, чтобы найти нестыковки и&nbsp;возможные пробелы в&nbsp;логике.</p></div><div class="soul-flow-preview"><img src="assets/site/soul-flow-preview.png" alt="Компактная схема пользовательских путей Soul"></div><button class="flow-toggle soul-flow-toggle" type="button" data-flow-toggle>Показать полный флоу →</button><p class="soul-flow-caption">Полная схема · все сценарии и&nbsp;ветвления</p><div class="soul-flow-full is-expanded" data-flow-diagram><div class="soul-flow-scroll"><img src="assets/site/soul-flow-diagram.png" alt="Полная схема пользовательских путей Soul"></div></div><button class="flow-toggle soul-flow-collapse" type="button" data-flow-collapse hidden>Свернуть флоу ↑</button></div></div></div></section>
+    <section class="soul-section soul-flow-section">
+      <div class="container">
+        <h2>Ключевые пользовательские пути</h2>
+        <div class="soul-flow-card">
+          <div class="soul-flow-inner">
+            <div class="soul-flow-heading">
+              <h3>User Flow</h3>
+              <p>Вход в&nbsp;приложение, поиск и&nbsp;создание встреч, запись, билет, активности, профиль и&nbsp;система Soul Points.</p>
+              <p>Схема составлена постфактум&nbsp;— приложение уже разрабатывалось без&nbsp;выстроенного user flow. Я собрала сценарии в&nbsp;единую карту, чтобы найти нестыковки и&nbsp;возможные пробелы в&nbsp;логике.</p>
+            </div>
+            <ol class="soul-flow-scenarios" aria-label="Шесть сценариев User Flow">
+              <li><span>01</span>Вход и&nbsp;маршрутизация</li>
+              <li><span>02</span>Поиск встречи</li>
+              <li><span>03</span>Запись и&nbsp;посещение</li>
+              <li><span>04</span>Активности и&nbsp;уведомления</li>
+              <li><span>05</span>Создание и&nbsp;управление встречей</li>
+              <li><span>06</span>Профиль, друзья и&nbsp;Soul Points</li>
+            </ol>
+            <div class="soul-flow-preview"><img src="assets/site/soul-flow-preview.png" alt="Компактная схема пользовательских путей Soul"></div>
+            <button class="flow-toggle soul-flow-toggle" type="button" data-flow-toggle aria-expanded="false" aria-controls="soul-flow-full">Показать полный флоу →</button>
+            <p class="soul-flow-caption">Полная схема · все сценарии и&nbsp;ветвления</p>
+            <div class="soul-flow-full" id="soul-flow-full" data-flow-diagram>
+              <div class="soul-flow-scroll"><img src="assets/site/soul-flow-diagram.png" alt="Полная схема пользовательских путей Soul"></div>
+            </div>
+            <button class="flow-toggle soul-flow-collapse" type="button" data-flow-collapse hidden>Свернуть флоу ↑</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="soul-flow-modal" data-flow-modal role="dialog" aria-modal="true" aria-labelledby="soul-flow-modal-title" aria-hidden="true" hidden>
+      <div class="soul-flow-modal__dialog">
+        <header class="soul-flow-modal__header">
+          <div>
+            <span>Полная схема</span>
+            <h2 id="soul-flow-modal-title">User Flow</h2>
+          </div>
+          <button class="soul-flow-modal__close" type="button" data-flow-modal-close aria-label="Закрыть полный флоу"><img src="assets/site/icon-close.svg" alt=""></button>
+        </header>
+        <p class="soul-flow-modal__hint">Перемещайте схему по&nbsp;горизонтали и&nbsp;вертикали</p>
+        <div class="soul-flow-modal__viewport">
+          <img src="assets/site/soul-flow-diagram.png" alt="Полная схема пользовательских путей Soul">
+        </div>
+        <footer class="soul-flow-modal__footer">
+          <a href="assets/site/soul-flow-diagram.png" target="_blank" rel="noopener">Открыть отдельно ↗</a>
+          <button class="flow-toggle" type="button" data-flow-modal-close>Закрыть</button>
+        </footer>
+      </div>
+    </div>
 
     <section class="soul-section soul-synthesis"><div class="container"><span class="soul-eyebrow">02 · Синтез</span><h2>От наблюдений&nbsp;— к&nbsp;продуктовым проблемам</h2><p class="soul-lead">Приоритизировала не&nbsp;отдельные дефекты интерфейса, а&nbsp;барьеры, которые мешали принять решение о&nbsp;записи.</p><div class="soul-card-grid soul-card-grid--three"><article class="soul-card"><span class="soul-index">01</span><h3>Действие и&nbsp;место трудно найти</h3><p>Кнопка находилась внизу, адрес был разделён между блоками, а&nbsp;важные детали скрывались под «Читать больше».</p></article><article class="soul-card"><span class="soul-index">02</span><h3>Финансовые условия непонятны</h3><p>25 EUR, 600 SP и&nbsp;«первый гость» не&nbsp;складывались в&nbsp;понятные правила участия.</p></article><article class="soul-card"><span class="soul-index">03</span><h3>Не&nbsp;хватает доверия</h3><p>У&nbsp;организатора не&nbsp;было подтверждённого опыта и&nbsp;оценок реальных участников.</p></article></div><div class="soul-priority"><strong>Критерий приоритета</strong><span>Насколько проблема мешает понять встречу, довериться организатору и&nbsp;нажать «Я пойду».</span></div></div></section>
 
@@ -45,6 +93,6 @@
   </main>
   <button class="scroll-to-top" type="button" data-scroll-to-top aria-label="Наверх"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"></path></svg></button>
   <div class="modal-overlay" data-contact-modal><div class="modal-card"><button class="modal-close" type="button" data-close-contact aria-label="Закрыть"><img src="assets/site/icon-close.svg" alt=""></button><h3 class="modal-card__title">Свяжитесь со&nbsp;мной</h3><p class="modal-card__lead">Расскажу о&nbsp;проектах подробнее и&nbsp;отвечу на&nbsp;вопросы</p><div class="modal-card__methods"><a class="modal-contact" href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener"><span class="modal-contact__label">Telegram</span><div class="modal-contact__row"><img src="assets/site/icon-telegram.svg" alt=""><span class="modal-contact__value">@Lena_Suloeva</span></div></a><a class="modal-contact" href="mailto:lensuloeva@yandex.ru"><span class="modal-contact__label">Почта</span><div class="modal-contact__row"><img src="assets/site/icon-email.svg" alt=""><span class="modal-contact__value">lensuloeva@yandex.ru</span></div></a></div></div></div>
-  <script src="site.js?v=43"></script>
+  <script src="site.js?v=44"></script>
 </body>
 </html>

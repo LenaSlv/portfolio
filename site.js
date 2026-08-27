@@ -152,24 +152,82 @@ document.querySelectorAll('[data-flow-toggle]').forEach(function (btn) {
   var card = btn.closest('.soul-flow-card');
   if (!card) return;
   var diagram = card.querySelector('[data-flow-diagram]');
-  if (!diagram) return;
   var collapseBtn = card.querySelector('[data-flow-collapse]');
-  if (collapseBtn) collapseBtn.remove();
-  var caption = card.querySelector('.soul-flow-caption');
-  if (caption) caption.remove();
+  var modal = document.querySelector('[data-flow-modal]');
+  var mobile = window.matchMedia('(max-width: 960px)');
+  if (!diagram || !collapseBtn || !modal) return;
+  var modalCloseButtons = modal.querySelectorAll('[data-flow-modal-close]');
+  var modalPrimaryClose = modal.querySelector('.soul-flow-modal__close');
 
-  function setExpanded(expanded) {
+  function setInlineExpanded(expanded) {
     diagram.classList.toggle('is-expanded', expanded);
     card.classList.toggle('is-expanded', expanded);
-    btn.textContent = expanded ? 'Свернуть флоу ↑' : 'Показать полный флоу →';
-    diagram.after(btn);
+    btn.hidden = expanded;
+    collapseBtn.hidden = !expanded;
+    btn.setAttribute('aria-expanded', String(expanded));
   }
 
-  setExpanded(false);
+  function openModal() {
+    setInlineExpanded(false);
+    modal.hidden = false;
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('is-flow-modal-open');
+    btn.setAttribute('aria-expanded', 'true');
+    if (modalPrimaryClose) modalPrimaryClose.focus();
+  }
+
+  function closeModal(returnFocus) {
+    if (modal.hidden) return;
+    modal.hidden = true;
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('is-flow-modal-open');
+    btn.setAttribute('aria-expanded', 'false');
+    if (returnFocus) btn.focus();
+  }
+
+  setInlineExpanded(false);
 
   btn.addEventListener('click', function () {
-    setExpanded(!card.classList.contains('is-expanded'));
+    if (mobile.matches) {
+      openModal();
+      return;
+    }
+    setInlineExpanded(true);
   });
+
+  collapseBtn.addEventListener('click', function () {
+    setInlineExpanded(false);
+    btn.focus({ preventScroll: true });
+    btn.scrollIntoView({
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+      block: 'center'
+    });
+  });
+
+  modalCloseButtons.forEach(function (closeBtn) {
+    closeBtn.addEventListener('click', function () {
+      closeModal(true);
+    });
+  });
+
+  modal.addEventListener('click', function (event) {
+    if (event.target === modal) closeModal(true);
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && !modal.hidden) closeModal(true);
+  });
+
+  function handleViewportChange() {
+    closeModal(false);
+    setInlineExpanded(false);
+  }
+
+  if (mobile.addEventListener) {
+    mobile.addEventListener('change', handleViewportChange);
+  } else {
+    mobile.addListener(handleViewportChange);
+  }
 });
 
 (function () {

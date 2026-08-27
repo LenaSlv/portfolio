@@ -1,53 +1,222 @@
-/* User Flow: по умолчанию компактная схема, полный flow — только после клика. */
-.case-page--soul .soul-flow-section {
+/* User Flow: компактное доказательство в кейсе и полный просмотр по запросу. */
+.case-page--soul .soul-flow-section,
+.case-page--soul .soul-flow-card,
+.case-page--soul .soul-flow-inner {
   height: auto;
+  min-height: 0;
+}
+
+.case-page--soul .soul-flow-inner {
+  padding-bottom: 31px;
 }
 
 .case-page--soul .soul-flow-caption {
   display: none;
 }
 
-.case-page--soul .soul-flow-card:not(.is-expanded) .soul-flow-full,
-.case-page--soul .soul-flow-full.is-expanded {
+.case-page--soul .soul-flow-scenarios {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  width: 100%;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.case-page--soul .soul-flow-scenarios li {
+  display: flex;
+  align-items: center;
+  min-width: 0;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #21293b;
+  border-radius: 16px;
+  background: #05060a;
+  color: #eef2f7;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.case-page--soul .soul-flow-scenarios span {
+  flex: 0 0 auto;
+  margin-right: 10px;
+  color: #2e6eeb;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.case-page--soul .soul-flow-preview {
+  margin-top: 24px;
+}
+
+.case-page--soul .soul-flow-full {
   height: 0;
   margin-top: 0;
   overflow: hidden;
 }
 
 .case-page--soul .soul-flow-card.is-expanded .soul-flow-full {
-  height: 1555px;
+  height: auto;
   margin-top: 16px;
 }
 
+.case-page--soul .soul-flow-card.is-expanded .soul-flow-full img {
+  width: 100%;
+  max-width: none;
+}
+
+.case-page--soul .soul-flow-collapse {
+  margin-top: 24px;
+}
+
+.soul-flow-modal[hidden] {
+  display: none;
+}
+
+.soul-flow-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  padding: max(12px, env(safe-area-inset-top)) 12px max(12px, env(safe-area-inset-bottom));
+  background: #05060a;
+}
+
+.soul-flow-modal__dialog {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+}
+
+.soul-flow-modal__header,
+.soul-flow-modal__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 0 0 auto;
+  gap: 16px;
+  width: 100%;
+  min-width: 0;
+}
+
+.soul-flow-modal__header {
+  padding: 4px 4px 12px;
+}
+
+.soul-flow-modal__header > div {
+  min-width: 0;
+}
+
+.soul-flow-modal__header span,
+.soul-flow-modal__hint {
+  color: #7f8c9f;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.soul-flow-modal__header h2 {
+  margin: 2px 0 0;
+  color: #eef2f7;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.soul-flow-modal__close {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  margin-left: auto;
+  padding: 0;
+  border: 1px solid #253040;
+  border-radius: 50%;
+  background: #141b27;
+  cursor: pointer;
+}
+
+.soul-flow-modal__close img {
+  width: 20px;
+  height: 20px;
+}
+
+.soul-flow-modal__hint {
+  margin: 0 4px 10px;
+}
+
+.soul-flow-modal__viewport {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  overflow: auto;
+  border: 1px solid #253040;
+  border-radius: 20px;
+  background: #141b27;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.soul-flow-modal__viewport img {
+  display: block;
+  width: 1154px;
+  max-width: none;
+  height: auto;
+}
+
+.soul-flow-modal__footer {
+  padding: 12px 4px 4px;
+}
+
+.soul-flow-modal__footer a {
+  min-width: 0;
+  color: #7f8c9f;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
+.soul-flow-modal__footer .flow-toggle {
+  flex: 0 0 auto;
+  margin-left: auto;
+}
+
+body.is-flow-modal-open {
+  overflow: hidden;
+}
+
 @media (min-width: 961px) {
-  .case-page--soul .soul-flow-card:not(.is-expanded) {
-    height: 1000px;
-  }
-
-  .case-page--soul .soul-flow-card:not(.is-expanded) .soul-flow-inner {
-    height: 968px;
-  }
-
-  .case-page--soul .soul-flow-card.is-expanded {
-    height: 2597.334px;
-  }
-
-  .case-page--soul .soul-flow-card.is-expanded .soul-flow-inner {
-    height: 2565.334px;
+  .soul-flow-modal {
+    display: none !important;
   }
 }
 
 @media (max-width: 960px) {
-  .case-page--soul .soul-flow-card:not(.is-expanded) {
-    height: auto;
+  .case-page--soul .soul-flow-inner {
+    padding-bottom: 20px;
   }
 
-  .case-page--soul .soul-flow-card:not(.is-expanded) .soul-flow-inner {
-    height: auto;
-    min-height: 0;
+  .case-page--soul .soul-flow-scenarios {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .case-page--soul .soul-flow-card.is-expanded .soul-flow-inner {
-    min-height: 2565.334px;
+  .case-page--soul .soul-flow-full,
+  .case-page--soul .soul-flow-collapse {
+    display: none !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .case-page--soul .soul-flow-scenarios {
+    grid-template-columns: 1fr;
+  }
+
+  .soul-flow-modal__footer .flow-toggle {
+    padding-right: 18px;
+    padding-left: 18px;
   }
 }
