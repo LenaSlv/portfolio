@@ -1,0 +1,13 @@
+/* Soul · Контекст и проблема: секция растягивается по фактическому контенту. */
+@media (min-width: 961px) {
+  .case-page--soul .soul-context {
+    height: auto !important;
+    min-height: 440px;
+    overflow: visible;
+  }
+
+  .case-page--soul .soul-context .soul-card-grid {
+    height: auto;
+    min-height: 167px;
+  }
+}
