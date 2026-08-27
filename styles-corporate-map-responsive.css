@@ -50,6 +50,8 @@
 
   .case-page--corporate .corporate-map .case-card--solution {
     width: 100%;
+    max-width: none;
+    align-self: stretch;
     height: auto;
     min-height: 0;
     box-sizing: border-box;
