@@ -1,0 +1,36 @@
+/* Главная · 02 Избранные проекты · Figma 2074:10276 */
+@media (min-width: 961px) {
+  .section--projects {
+    padding: 72px var(--page-padding) 88px;
+    background: #0a0e16;
+  }
+
+  .section--projects .section__heading {
+    width: 980px;
+    max-width: 100%;
+    margin-bottom: 24px;
+    font-size: 42px;
+    line-height: 52px;
+  }
+
+  .section--projects .project-cards {
+    gap: 24px;
+  }
+
+  .section--projects .project-card {
+    grid-template-columns: minmax(0, 1fr) 560px;
+    gap: 32px;
+    height: 420px;
+    padding: 32px 32px 32px 48px;
+    border-radius: 24px;
+  }
+
+  .section--projects .project-card__body,
+  .section--projects .project-card__preview {
+    height: 356px;
+  }
+
+  .section--projects .project-card__preview {
+    border-radius: 20px;
+  }
+}
