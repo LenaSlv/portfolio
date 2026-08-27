@@ -152,31 +152,23 @@ document.querySelectorAll('[data-flow-toggle]').forEach(function (btn) {
   var card = btn.closest('.soul-flow-card');
   if (!card) return;
   var diagram = card.querySelector('[data-flow-diagram]');
+  if (!diagram) return;
   var collapseBtn = card.querySelector('[data-flow-collapse]');
-  if (!diagram || !collapseBtn) return;
+  if (collapseBtn) collapseBtn.remove();
   var caption = card.querySelector('.soul-flow-caption');
   if (caption) caption.remove();
 
   function setExpanded(expanded) {
     diagram.classList.toggle('is-expanded', expanded);
     card.classList.toggle('is-expanded', expanded);
-    btn.hidden = expanded;
-    collapseBtn.hidden = !expanded;
+    btn.textContent = expanded ? 'Свернуть флоу ↑' : 'Показать полный флоу →';
+    diagram.after(btn);
   }
 
   setExpanded(false);
 
   btn.addEventListener('click', function () {
-    setExpanded(true);
-  });
-
-  collapseBtn.addEventListener('click', function () {
-    setExpanded(false);
-    btn.focus({ preventScroll: true });
-    btn.scrollIntoView({
-      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
-      block: 'center'
-    });
+    setExpanded(!card.classList.contains('is-expanded'));
   });
 });
 
