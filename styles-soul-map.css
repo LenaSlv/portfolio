@@ -39,14 +39,4 @@
     padding-top: 18px;
   }
 
-  .case-page--soul .soul-map .soul-compare figure img,
-  .case-page--soul .soul-meeting .soul-compare figure img {
-    height: calc(100% - 45px);
-    margin-top: 18px;
-    width: 118%;
-    max-width: none;
-    margin-left: -9%;
-    transform: scale(1.12);
-    transform-origin: center top;
-  }
 }
