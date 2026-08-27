@@ -28,14 +28,14 @@
 @media (max-width: 640px) {
   .case-page--soul .soul-map .soul-compare,
   .case-page--soul .soul-meeting .soul-compare {
-    grid-template-columns: repeat(2, minmax(340px, 1fr));
+    grid-template-columns: repeat(2, minmax(390px, 1fr));
     gap: 16px;
   }
 
   .case-page--soul .soul-map .soul-compare figure,
   .case-page--soul .soul-meeting .soul-compare figure {
-    height: 520px;
-    min-height: 520px;
+    height: 600px;
+    min-height: 600px;
     padding-top: 18px;
   }
 
