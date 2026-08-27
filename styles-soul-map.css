@@ -62,6 +62,8 @@
     height: 531px;
     margin-top: 16px;
     mix-blend-mode: screen;
+    border-radius: 20px;
+    clip-path: inset(0 round 20px);
   }
 
   .case-page--soul .soul-map .soul-compare figure img { object-fit: fill; }
