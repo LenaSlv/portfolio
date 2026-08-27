@@ -4,6 +4,10 @@
     gap: 28px;
   }
 
+  .case-page--corporate .corporate-map .case-story__quote {
+    display: none;
+  }
+
   .case-page--corporate .corporate-map .case-split {
     display: flex;
     flex-direction: column;
