@@ -3,4 +3,10 @@
   .case-page--soul .case-hero {
     height: 1049px;
   }
+  .case-page--soul .soul-meta {
+    gap: 12px;
+  }
+  .case-page--soul .soul-meta span {
+    margin-right: 0;
+  }
 }
