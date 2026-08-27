@@ -7,8 +7,8 @@
   }
 
   .section--experience .experience-layout {
-    height: 420px;
-    min-height: 420px;
+    height: auto;
+    min-height: 0;
     gap: 56px;
   }
 
@@ -16,7 +16,7 @@
     display: flex;
     flex-direction: column;
     gap: 26px;
-    height: 360px;
+    height: auto;
   }
 
   .section--experience .experience-lead {
@@ -24,8 +24,8 @@
   }
 
   .section--experience .experience-list {
-    height: 420px;
-    min-height: 420px;
+    height: auto;
+    min-height: 0;
   }
 
   .section--experience .experience-item {
