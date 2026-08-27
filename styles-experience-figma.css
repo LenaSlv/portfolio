@@ -1,6 +1,8 @@
 /* Главная · 08 Опыт · Figma 2074:10544 */
 @media (min-width: 961px) {
   .section--experience {
+    min-height: 0;
+    padding: 0 var(--page-padding);
     background: #0a0e16;
   }
 

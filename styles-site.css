@@ -1214,7 +1214,7 @@ cod.site-header.is-scrolled .site-header__inner {
   .case-page--soul .case-hero { height: auto; padding-top: 54px; }
   .case-page--soul .case-hero__title { font-size: clamp(38px, 8vw, 58px); line-height: 1.16; }
   .case-page--soul .case-hero__notice { width: 100%; }
-  .soul-context, .soul-synthesis, .soul-map, .soul-meeting, .soul-result, .soul-flow-section { height: auto; min-height: 0; padding: 72px var(--page-padding); }
+  .soul-context, .soul-synthesis, .soul-map, .soul-meeting, .soul-result, .soul-flow-section { height: auto; min-height: 0; padding: 28px var(--page-padding); }
   .soul-context .soul-card-grid, .soul-synthesis .soul-card-grid, .soul-result .soul-card-grid { height: auto; }
   .soul-flow-card { height: auto; }
   .soul-flow-inner { height: auto; min-height: 2565px; }
@@ -1353,6 +1353,8 @@ cod.site-header.is-scrolled .site-header__inner {
   .case-page--soul .case-hero__lead { font-size: 19px; line-height: 28px; }
   .case-page--soul .soul-meta { height: auto; flex-wrap: wrap; }
   .soul-section h2 { width: 100%; font-size: 32px; }
+  .soul-context { padding-top: 32px; }
+  .soul-context, .soul-synthesis, .soul-map, .soul-meeting, .soul-result, .soul-flow-section { padding-bottom: 20px; padding-top: 20px; }
   .soul-lead { width: 100%; font-size: 18px; }
   .soul-card-grid--context, .soul-card-grid--three, .soul-value-grid { grid-template-columns: 1fr; }
   .soul-card { padding: 22px; }
