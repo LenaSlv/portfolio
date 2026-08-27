@@ -30,7 +30,7 @@
   max-width: none;
 }
 
-.case-page--soul .soul-flow-collapse {
+.case-page--soul .soul-flow-toggle {
   margin-top: 24px;
 }
 
@@ -139,8 +139,7 @@ body.is-flow-modal-open {
     padding-bottom: 20px;
   }
 
-  .case-page--soul .soul-flow-full,
-  .case-page--soul .soul-flow-collapse {
+  .case-page--soul .soul-flow-full {
     display: none !important;
   }
 }

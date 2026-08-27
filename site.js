@@ -157,18 +157,16 @@ document.querySelectorAll('[data-flow-toggle]').forEach(function (btn) {
   var card = btn.closest('.soul-flow-card');
   if (!card) return;
   var diagram = card.querySelector('[data-flow-diagram]');
-  var collapseBtn = card.querySelector('[data-flow-collapse]');
   var modal = document.querySelector('[data-flow-modal]');
   var mobile = window.matchMedia('(max-width: 960px)');
-  if (!diagram || !collapseBtn || !modal) return;
+  if (!diagram || !modal) return;
   var modalCloseButtons = modal.querySelectorAll('[data-flow-modal-close]');
   var modalPrimaryClose = modal.querySelector('.soul-flow-modal__close');
 
   function setInlineExpanded(expanded) {
     diagram.classList.toggle('is-expanded', expanded);
     card.classList.toggle('is-expanded', expanded);
-    btn.hidden = expanded;
-    collapseBtn.hidden = !expanded;
+    btn.textContent = expanded ? 'Свернуть' : 'Показать флоу';
     btn.setAttribute('aria-expanded', String(expanded));
   }
 
@@ -197,16 +195,7 @@ document.querySelectorAll('[data-flow-toggle]').forEach(function (btn) {
       openModal();
       return;
     }
-    setInlineExpanded(true);
-  });
-
-  collapseBtn.addEventListener('click', function () {
-    setInlineExpanded(false);
-    btn.focus({ preventScroll: true });
-    btn.scrollIntoView({
-      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
-      block: 'center'
-    });
+    setInlineExpanded(!card.classList.contains('is-expanded'));
   });
 
   modalCloseButtons.forEach(function (closeBtn) {
