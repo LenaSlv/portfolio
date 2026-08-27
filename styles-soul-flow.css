@@ -91,6 +91,50 @@
   margin: 0;
 }
 
+.soul-flow-steps {
+  display: grid;
+  gap: 8px;
+}
+
+.soul-flow-steps > div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 13px 14px;
+  border: 1px solid #2a3a51;
+  border-radius: 12px;
+  background: #1d293b;
+}
+
+.soul-flow-steps > div + div::before {
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  width: 1px;
+  height: 8px;
+  background: #2f7cff;
+  content: "";
+}
+
+.soul-flow-steps > .is-decision {
+  border-color: #2f7cff;
+  background: #172a4d;
+}
+
+.soul-flow-steps strong {
+  color: #f5f7fb;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+}
+
+.soul-flow-steps span {
+  color: #8b98ad;
+  font-size: 12px;
+  line-height: 16px;
+}
+
 .soul-flow-modal[hidden] {
   display: none;
 }

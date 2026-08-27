@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles-site.css?v=70">
   <link rel="stylesheet" href="styles-soul-projects.css?v=1">
-  <link rel="stylesheet" href="styles-soul-flow.css?v=13">
+  <link rel="stylesheet" href="styles-soul-flow.css?v=14">
   <link rel="stylesheet" href="styles-soul-map.css?v=9">
   <link rel="stylesheet" href="styles-soul-hero.css?v=3">
   <link rel="stylesheet" href="styles-soul-context.css?v=1">
@@ -52,27 +52,27 @@
         <h2>Ключевые пользовательские пути</h2>
         <details>
           <summary><span>01 · Вход и маршрутизация</span><span class="soul-flow-accordion__chevron" aria-hidden="true"></span></summary>
-          <div class="soul-flow-accordion__content"><p>Открывает Soul → ссылка → авторизация → первый вход → карта</p></div>
+          <div class="soul-flow-accordion__content"><div class="soul-flow-steps"><div><strong>Открывает Soul</strong><span>Telegram Mini App</span></div><div class="is-decision"><strong>По какой ссылке вошёл?</strong><span>прямая · реферальная · встреча</span></div><div><strong>Авторизация</strong><span>через Telegram WebApp API</span></div><div class="is-decision"><strong>Первый вход?</strong><span>проверка состояния аккаунта</span></div><div><strong>Онбординг и карта</strong><span>стартовый экран приложения</span></div></div></div>
         </details>
         <details>
           <summary><span>02 · Поиск встречи</span><span class="soul-flow-accordion__chevron" aria-hidden="true"></span></summary>
-          <div class="soul-flow-accordion__content"><p>Карта → геолокация → список рядом / поиск → встреча найдена → карточка</p></div>
+          <div class="soul-flow-accordion__content"><div class="soul-flow-steps"><div><strong>Карта</strong><span>встречи рядом</span></div><div class="is-decision"><strong>Разрешена геолокация?</strong><span>определяет стартовую область</span></div><div><strong>Список рядом</strong><span>открыт по умолчанию</span></div><div><strong>Поиск: город и дата</strong><span>можно искать в другом городе</span></div><div><strong>Тап по метке</strong><span>открывает превью встречи</span></div><div class="is-decision"><strong>Встреча найдена?</strong><span>переход к карточке или пустому состоянию</span></div><div><strong>Карточка встречи</strong><span>условия · адрес · хост</span></div></div></div>
         </details>
         <details>
           <summary><span>03 · Запись и посещение</span><span class="soul-flow-accordion__chevron" aria-hidden="true"></span></summary>
-          <div class="soul-flow-accordion__content"><p>«Я пойду» → билет → QR → посещение → бонус / оценка / приглашение друга</p></div>
+          <div class="soul-flow-accordion__content"><div class="soul-flow-steps"><div><strong>«Я пойду»</strong><span>основное действие в карточке</span></div><div><strong>Запись подтверждена</strong><span>встреча добавлена в активности</span></div><div><strong>Билет</strong><span>QR открывается перед встречей</span></div><div><strong>Пригласить друга</strong><span>ссылка на встречу</span></div><div class="is-decision"><strong>Сканирование QR</strong><span>организатор подтверждает вход</span></div><div><strong>Посещение подтверждено</strong><span>оценка и бонус</span></div><div><strong>Отменить запись</strong><span>доступно прямо из билета</span></div></div></div>
         </details>
         <details>
           <summary><span>04 · Активности и уведомления</span><span class="soul-flow-accordion__chevron" aria-hidden="true"></span></summary>
-          <div class="soul-flow-accordion__content"><p>Активности → предстоящие / прошедшие → изменения → уведомление → карточка</p></div>
+          <div class="soul-flow-accordion__content"><div class="soul-flow-steps"><div><strong>Активности</strong><span>отдельный раздел в таб-баре</span></div><div><strong>Предстоящие / прошедшие</strong><span>фильтр по статусу и дате</span></div><div><strong>Карточка активности</strong><span>встреча · билет · статус</span></div><div class="is-decision"><strong>Встреча изменена?</strong><span>проверка новых параметров</span></div><div><strong>Уведомление</strong><span>что изменилось или отменено</span></div><div><strong>Возврат в карточку</strong><span>актуальные детали встречи</span></div></div></div>
         </details>
         <details>
           <summary><span>05 · Создание и управление встречей</span><span class="soul-flow-accordion__chevron" aria-hidden="true"></span></summary>
-          <div class="soul-flow-accordion__content"><p>Создать → место и время → лимит гостей → Soul Points → опубликовать / изменить</p></div>
+          <div class="soul-flow-accordion__content"><div class="soul-flow-steps"><div><strong>Создать встречу</strong><span>из карты или точки выдачи</span></div><div><strong>Место и время</strong><span>точка на карте · дата</span></div><div><strong>Условия и лимит гостей</strong><span>описание · формат входа</span></div><div><strong>Бонусный фонд</strong><span>опционально Soul Points</span></div><div class="is-decision"><strong>Достаточно SP?</strong><span>проверка баланса</span></div><div><strong>Опубликовать</strong><span>встреча появляется на карте</span></div><div><strong>Редактировать / отменить</strong><span>участники получают уведомление</span></div></div></div>
         </details>
         <details>
           <summary><span>06 · Профиль, друзья и Soul Points</span><span class="soul-flow-accordion__chevron" aria-hidden="true"></span></summary>
-          <div class="soul-flow-accordion__content"><p>Профиль → ранг и XP → Soul Points → друзья → настройки → лимит приглашений</p></div>
+          <div class="soul-flow-accordion__content"><div class="soul-flow-steps"><div><strong>Профиль</strong><span>данные · рейтинг · приватность</span></div><div><strong>Ранг и XP</strong><span>Guest · Creator · Ambassador</span></div><div><strong>Soul Points</strong><span>баланс и история операций</span></div><div><strong>Друзья</strong><span>список и приглашения</span></div><div><strong>Настройки</strong><span>язык · видимость · страна</span></div><div class="is-decision"><strong>Лимит приглашений</strong><span>зависит от ранга</span></div><div><strong>Повысить лимит</strong><span>если достаточно SP</span></div></div></div>
         </details>
       </div>
     </section>
