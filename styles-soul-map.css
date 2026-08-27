@@ -21,6 +21,8 @@
   .case-page--soul .soul-map { height: auto; }
   .case-page--soul .soul-map > .container,
   .case-page--soul .soul-meeting > .container { gap: 20px; }
+  .case-page--soul .soul-map .soul-compare,
+  .case-page--soul .soul-meeting .soul-compare { margin-top: 0; }
   .case-page--soul .soul-map .soul-hypothesis,
   .case-page--soul .soul-map .soul-compare figure,
   .case-page--soul .soul-map .soul-solution-list,
