@@ -1,0 +1,20 @@
+/* Корпоративный транспорт · переход от Edge cases к другим проектам */
+@media (max-width: 960px) {
+  .case-page--corporate .corporate-edge {
+    padding-bottom: 36px;
+  }
+
+  .case-page--corporate .other-projects {
+    padding-top: 36px;
+  }
+}
+
+@media (max-width: 640px) {
+  .case-page--corporate .corporate-edge {
+    padding-bottom: 32px;
+  }
+
+  .case-page--corporate .other-projects {
+    padding-top: 32px;
+  }
+}
