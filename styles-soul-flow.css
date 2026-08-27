@@ -1,4 +1,20 @@
 /* User Flow: по умолчанию компактная схема, полный flow — только после клика. */
+.case-page--soul .soul-flow-caption {
+  display: none;
+}
+
+.case-page--soul .soul-flow-card:not(.is-expanded) .soul-flow-full,
+.case-page--soul .soul-flow-full.is-expanded {
+  height: 0;
+  margin-top: 0;
+  overflow: hidden;
+}
+
+.case-page--soul .soul-flow-card.is-expanded .soul-flow-full {
+  height: 1555px;
+  margin-top: 16px;
+}
+
 @media (min-width: 961px) {
   .case-page--soul .soul-flow-card:not(.is-expanded) {
     height: 1000px;
