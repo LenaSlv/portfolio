@@ -1,0 +1,47 @@
+/* Корпоративный транспорт · «Карта как инструмент» в адаптиве */
+@media (max-width: 960px) {
+  .case-page--corporate .corporate-map .case-split {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    height: auto;
+  }
+
+  .case-page--corporate .corporate-map .case-media-card {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 24px;
+    background: #141b27;
+  }
+
+  .case-page--corporate .corporate-map .corporate-phone {
+    width: min(295px, 100%);
+    height: auto;
+    max-width: 100%;
+    max-height: none;
+  }
+
+  .case-page--corporate .corporate-map .case-card--solution {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    box-sizing: border-box;
+    padding: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .case-page--corporate .corporate-map .case-media-card {
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .case-page--corporate .corporate-map .case-card--solution {
+    padding: 20px;
+    border-radius: 20px;
+  }
+}
