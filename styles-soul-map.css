@@ -1,0 +1,17 @@
+/* Soul · Решение 1 — геометрия блока по Figma 2166:12899. */
+@media (min-width: 961px) {
+  .case-page--soul .soul-map { height: 1502.192px; }
+  .case-page--soul .soul-map .soul-hypothesis { height: 282px; padding: 24px; }
+  .case-page--soul .soul-map .soul-compare { height: 600.192px; grid-template-columns: 604px 604px; gap: 40px; }
+  .case-page--soul .soul-map .soul-compare figure { height: 600.192px; padding: 32px 0 0; border-radius: 20px; }
+  .case-page--soul .soul-map .soul-compare figure img { width: 100%; height: 531px; margin-top: 16px; object-fit: contain; }
+  .case-page--soul .soul-map .soul-solution-list { height: 313px; padding: 36px; }
+}
+
+@media (max-width: 960px) {
+  .case-page--soul .soul-map { height: auto; }
+  .case-page--soul .soul-map .soul-hypothesis,
+  .case-page--soul .soul-map .soul-compare figure,
+  .case-page--soul .soul-map .soul-solution-list,
+  .case-page--soul .soul-map .soul-compare { height: auto; }
+}
