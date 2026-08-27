@@ -37,6 +37,7 @@
     gap: 0;
     width: 544px;
     max-width: none;
+    margin-left: 0;
   }
 
   .case-page--soul .soul-map .soul-compare figure,
@@ -45,6 +46,7 @@
     height: 600px;
     min-height: 600px;
     padding: 32px 16px 32px;
+    text-align: left;
     border: 0;
     border-radius: 0;
     background: transparent;
@@ -61,6 +63,8 @@
     width: 100%;
     height: 531px;
     margin-top: 16px;
+    margin-left: 0;
+    object-position: left top;
     mix-blend-mode: screen;
     border-radius: 20px;
     clip-path: inset(0 round 20px);
