@@ -4,6 +4,7 @@
   .case-page--soul .soul-map .soul-hypothesis { height: 282px; padding: 24px; }
   .case-page--soul .soul-map .soul-compare { height: 600.192px; grid-template-columns: 604px 604px; gap: 40px; }
   .case-page--soul .soul-map .soul-compare figure { height: 600.192px; padding: 32px 0 0; border-radius: 20px; }
+  .case-page--soul .soul-map .soul-compare figcaption { position: relative; z-index: 2; background: #000; }
   /* Мокапы в Figma собраны из исходных экранов: масштаб 1:1,
      а внутренний чёрный холст смещён вверх внутри плашки. */
   .case-page--soul .soul-map .soul-compare figure img { width: 100%; height: 611px; margin-top: 16px; object-fit: fill; transform: translateY(-49px); }
