@@ -1,0 +1,20 @@
+/* Корпоративный транспорт · бизнес-логика в адаптиве */
+@media (max-width: 960px) {
+  .case-page--corporate .corporate-business .case-business-flow {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    box-sizing: border-box;
+    align-items: flex-start;
+    padding: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  .case-page--corporate .corporate-business .case-business-flow {
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
