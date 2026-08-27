@@ -42,6 +42,11 @@
 }
 
 @media (max-width: 960px) {
+  .section--experience .experience-layout,
+  .section--experience .experience-list {
+    min-height: 0;
+  }
+
   .section--experience .education-row {
     margin-top: 24px;
   }
