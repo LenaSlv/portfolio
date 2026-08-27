@@ -24,3 +24,24 @@
   .case-page--soul .soul-map .soul-solution-list,
   .case-page--soul .soul-map .soul-compare { height: auto; }
 }
+
+@media (max-width: 640px) {
+  .case-page--soul .soul-map .soul-compare,
+  .case-page--soul .soul-meeting .soul-compare {
+    grid-template-columns: repeat(2, minmax(340px, 1fr));
+    gap: 16px;
+  }
+
+  .case-page--soul .soul-map .soul-compare figure,
+  .case-page--soul .soul-meeting .soul-compare figure {
+    height: 520px;
+    min-height: 520px;
+    padding-top: 18px;
+  }
+
+  .case-page--soul .soul-map .soul-compare figure img,
+  .case-page--soul .soul-meeting .soul-compare figure img {
+    height: calc(100% - 45px);
+    margin-top: 18px;
+  }
+}
