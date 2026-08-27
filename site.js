@@ -148,6 +148,11 @@ document.querySelectorAll('.other-projects').forEach(function (block) {
   update();
 });
 
+if (document.body.classList.contains('case-page--soul')) {
+  var soulHeroTitle = document.querySelector('.soul-hero .case-hero__title');
+  if (soulHeroTitle) soulHeroTitle.textContent = 'Платформа для поиска компании и активностей в путешествиях';
+}
+
 document.querySelectorAll('[data-flow-toggle]').forEach(function (btn) {
   var card = btn.closest('.soul-flow-card');
   if (!card) return;
