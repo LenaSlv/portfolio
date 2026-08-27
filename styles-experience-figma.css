@@ -2,7 +2,7 @@
 @media (min-width: 961px) {
   .section--experience {
     min-height: 0;
-    padding: 0 var(--page-padding);
+    padding: 72px var(--page-padding);
     background: #0a0e16;
   }
 
