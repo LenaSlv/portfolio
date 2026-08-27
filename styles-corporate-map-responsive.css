@@ -1,5 +1,9 @@
 /* Корпоративный транспорт · «Карта как инструмент» в адаптиве */
 @media (max-width: 960px) {
+  .case-page--corporate .corporate-map > .container {
+    gap: 32px;
+  }
+
   .case-page--corporate .corporate-map .case-split {
     display: flex;
     flex-direction: column;
