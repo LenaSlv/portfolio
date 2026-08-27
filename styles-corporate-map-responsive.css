@@ -1,7 +1,7 @@
 /* Корпоративный транспорт · «Карта как инструмент» в адаптиве */
 @media (max-width: 960px) {
   .case-page--corporate .corporate-map > .container {
-    gap: 32px;
+    gap: 28px;
   }
 
   .case-page--corporate .corporate-map .case-split {
@@ -10,6 +10,7 @@
     gap: 16px;
     width: 100%;
     height: auto;
+    margin-top: -28px;
   }
 
   .case-page--corporate .corporate-map .case-media-card {
