@@ -1,4 +1,8 @@
 /* User Flow: по умолчанию компактная схема, полный flow — только после клика. */
+.case-page--soul .soul-flow-section {
+  height: auto;
+}
+
 .case-page--soul .soul-flow-caption {
   display: none;
 }
