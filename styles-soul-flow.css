@@ -242,10 +242,19 @@ body.is-flow-modal-open {
 
   .case-page--soul .soul-flow-accordion {
     display: block;
+    padding: 32px var(--page-padding) 40px;
   }
 
   .case-page--soul .soul-flow-accordion .container {
     width: 100%;
+  }
+
+  .soul-flow-accordion details {
+    margin-bottom: 16px;
+  }
+
+  .soul-flow-accordion details:last-child {
+    margin-bottom: 0;
   }
 
   .case-page--soul .soul-flow-inner {
