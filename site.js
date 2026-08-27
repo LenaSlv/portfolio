@@ -157,11 +157,7 @@ document.querySelectorAll('[data-flow-toggle]').forEach(function (btn) {
   var card = btn.closest('.soul-flow-card');
   if (!card) return;
   var diagram = card.querySelector('[data-flow-diagram]');
-  var modal = document.querySelector('[data-flow-modal]');
-  var mobile = window.matchMedia('(max-width: 960px)');
-  if (!diagram || !modal) return;
-  var modalCloseButtons = modal.querySelectorAll('[data-flow-modal-close]');
-  var modalPrimaryClose = modal.querySelector('.soul-flow-modal__close');
+  if (!diagram) return;
 
   function setInlineExpanded(expanded) {
     diagram.classList.toggle('is-expanded', expanded);
@@ -170,58 +166,11 @@ document.querySelectorAll('[data-flow-toggle]').forEach(function (btn) {
     btn.setAttribute('aria-expanded', String(expanded));
   }
 
-  function openModal() {
-    setInlineExpanded(false);
-    modal.hidden = false;
-    modal.setAttribute('aria-hidden', 'false');
-    document.body.classList.add('is-flow-modal-open');
-    btn.setAttribute('aria-expanded', 'true');
-    if (modalPrimaryClose) modalPrimaryClose.focus();
-  }
-
-  function closeModal(returnFocus) {
-    if (modal.hidden) return;
-    modal.hidden = true;
-    modal.setAttribute('aria-hidden', 'true');
-    document.body.classList.remove('is-flow-modal-open');
-    btn.setAttribute('aria-expanded', 'false');
-    if (returnFocus) btn.focus();
-  }
-
   setInlineExpanded(false);
 
   btn.addEventListener('click', function () {
-    if (mobile.matches) {
-      openModal();
-      return;
-    }
     setInlineExpanded(!card.classList.contains('is-expanded'));
   });
-
-  modalCloseButtons.forEach(function (closeBtn) {
-    closeBtn.addEventListener('click', function () {
-      closeModal(true);
-    });
-  });
-
-  modal.addEventListener('click', function (event) {
-    if (event.target === modal) closeModal(true);
-  });
-
-  document.addEventListener('keydown', function (event) {
-    if (event.key === 'Escape' && !modal.hidden) closeModal(true);
-  });
-
-  function handleViewportChange() {
-    closeModal(false);
-    setInlineExpanded(false);
-  }
-
-  if (mobile.addEventListener) {
-    mobile.addEventListener('change', handleViewportChange);
-  } else {
-    mobile.addListener(handleViewportChange);
-  }
 });
 
 (function () {
