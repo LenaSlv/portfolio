@@ -33,4 +33,10 @@
   .section--projects .project-card__preview {
     border-radius: 20px;
   }
+
+  .section--projects .project-card--soul .project-card__title {
+    max-width: 540px;
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
