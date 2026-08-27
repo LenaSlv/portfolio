@@ -162,7 +162,7 @@ document.querySelectorAll('[data-flow-toggle]').forEach(function (btn) {
   function setInlineExpanded(expanded) {
     diagram.classList.toggle('is-expanded', expanded);
     card.classList.toggle('is-expanded', expanded);
-    btn.textContent = expanded ? 'Свернуть' : 'Показать флоу';
+    btn.textContent = expanded ? 'Свернуть' : 'Показать полный флоу';
     btn.setAttribute('aria-expanded', String(expanded));
   }
 

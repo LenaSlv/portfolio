@@ -48,10 +48,10 @@
       <div class="container">
         <h1 class="case-hero__title">АРМ кассира</h1>
         <p class="case-hero__lead">Как&nbsp;сделать сложные финансовые операции понятными кассиру</p>
-        <div class="case-hero__meta">
-          <span><strong>Роль</strong>UX/UI-дизайнер</span>
-          <span><strong>Платформы</strong>веб-приложение (АРМ)</span>
-          <span><strong>Формат</strong>редизайн рабочего пространства кассира</span>
+        <div class="case-hero__badges case-hero__badges--meta">
+          <span class="case-hero__nda">Роль · Product Designer / UX/UI Designer</span>
+          <span class="case-hero__nda">WEB (АРМ)</span>
+          <span class="case-hero__nda">B2B</span>
         </div>
         <div class="case-hero__cover">
           <img src="assets/site/arm-hero-showcase.png" alt="Рабочее пространство кассира: экран заказа и оплаты" width="1248" height="630">
@@ -76,7 +76,7 @@
       </div>
     </section>
 
-    <section class="case-section">
+    <section class="case-section case-section--order">
       <div class="container">
         <span class="case-kicker">02 · Изменение заказа</span>
         <h2 class="case-section__title">Не&nbsp;заставлять кассира оформлять продажу заново</h2>
@@ -120,7 +120,7 @@
       </div>
     </section>
 
-    <section class="case-section">
+    <section class="case-section case-section--payment">
       <div class="container">
         <span class="case-kicker">03 · Смешанная оплата</span>
         <h2 class="case-section__title">Один заказ&nbsp;— несколько прозрачных платежей</h2>
@@ -188,7 +188,7 @@
       </div>
     </section>
 
-    <section class="case-section case-section--pb">
+    <section class="case-section case-section--refund">
       <div class="container">
         <span class="case-kicker">04 · Возврат наличных</span>
         <h2 class="case-section__title">Возврат наличных не&nbsp;отменяет остальные платежи</h2>
@@ -216,8 +216,8 @@
       <div class="container other-projects__head">
         <h2 class="other-projects__title">Другие проекты</h2>
         <div class="other-projects__nav">
-          <button class="other-projects__nav-btn" type="button" data-carousel-prev aria-label="Предыдущий проект">‹</button>
-          <button class="other-projects__nav-btn" type="button" data-carousel-next aria-label="Следующий проект">›</button>
+          <button class="other-projects__nav-btn" type="button" data-carousel-prev aria-label="Предыдущий проект"><img src="assets/site/icon-chevron-left.svg" alt=""></button>
+          <button class="other-projects__nav-btn" type="button" data-carousel-next aria-label="Следующий проект"><img src="assets/site/icon-chevron-right.svg" alt=""></button>
         </div>
       </div>
       <div class="container">
@@ -241,28 +241,7 @@
               </div>
             </div>
             <div class="other-project-card__preview">
-              <img src="assets/site/preview-corporate.png" alt="Сервис заказа корпоративного транспорта" loading="lazy">
-            </div>
-          </a>
-          <a class="other-project-card" href="case-transport-pet.html">
-            <div class="other-project-card__body">
-              <div class="other-project-card__top">
-                <span class="kicker">Мобильное приложение</span>
-                <h3 class="other-project-card__title">Транспортное приложение для&nbsp;Калининградской области</h3>
-              </div>
-              <div class="other-project-card__bottom">
-                <div class="other-project-card__meta">
-                  <span>iOS / Android</span>
-                  <span>·</span>
-                  <span>B2C</span>
-                  <span>·</span>
-                  <span>NDA</span>
-                </div>
-                <span class="other-project-card__link">Смотреть кейс</span>
-              </div>
-            </div>
-            <div class="other-project-card__preview">
-              <img src="assets/site/preview-kaliningrad.png" alt="Транспортное приложение для Калининградской области" loading="lazy">
+              <img src="assets/site/other-project-corporate.png" alt="Сервис заказа корпоративного транспорта" loading="lazy">
             </div>
           </a>
           <a class="other-project-card" href="case-soul.html">
@@ -283,7 +262,26 @@
               </div>
             </div>
             <div class="other-project-card__preview">
-              <img src="assets/site/preview-soul.png" alt="Soul" loading="lazy">
+              <img src="assets/site/other-project-soul.png" alt="SOUL — платформа для поиска компании и активностей в путешествиях" loading="lazy">
+            </div>
+          </a>
+          <a class="other-project-card" href="case-arm-kassira.html">
+            <div class="other-project-card__body">
+              <div class="other-project-card__top">
+                <span class="kicker"><span class="kicker__index">02</span> Внутренний продукт</span>
+                <h3 class="other-project-card__title">АРМ кассира</h3>
+              </div>
+              <div class="other-project-card__bottom">
+                <div class="other-project-card__meta">
+                  <span>WEB</span>
+                  <span>B2B</span>
+                  <span>NDA</span>
+                </div>
+                <span class="other-project-card__link">Смотреть кейс</span>
+              </div>
+            </div>
+            <div class="other-project-card__preview">
+              <img src="assets/site/other-project-arm.png" alt="АРМ кассира" loading="lazy">
             </div>
           </a>
           </div>
@@ -293,6 +291,7 @@
 
     <section class="section section--contacts">
       <div class="container">
+        <p class="section__kicker"><span>04</span><span>Контакты</span></p>
         <h2 class="section__heading">Открыта к&nbsp;сотрудничеству</h2>
         <div class="contact-methods">
           <a class="contact-item" href="https://t.me/Lena_Suloeva" target="_blank" rel="noopener"><span class="contact-item__label">Telegram</span><span class="contact-item__value">@Lena_Suloeva</span></a>
@@ -304,6 +303,10 @@
     </section>
 
   </main>
+
+  <button class="scroll-to-top" type="button" data-scroll-to-top aria-label="Наверх">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"></path></svg>
+  </button>
 
   <div class="modal-overlay" data-contact-modal>
     <div class="modal-card">
@@ -331,6 +334,6 @@
     </div>
   </div>
 
-  <script src="site.js?v=48"></script>
+  <script src="site.js?v=49"></script>
 </body>
 </html>
