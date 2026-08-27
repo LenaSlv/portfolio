@@ -32,6 +32,21 @@
   }
 
   .case-page--soul .soul-meta span {
-    margin-right: 0;
+    margin-right: 0 !important;
+  }
+
+  .case-page--soul .case-hero__cover {
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0;
+    aspect-ratio: 1248 / 630 !important;
+    border-radius: 20px;
+  }
+
+  .case-page--soul .case-hero__cover img {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
   }
 }
