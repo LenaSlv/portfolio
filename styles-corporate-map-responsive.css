@@ -30,9 +30,11 @@
     height: auto;
     min-height: 0;
     box-sizing: border-box;
-    padding: 20px;
-    border-radius: 24px;
-    background: #141b27;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
   }
 
   .case-page--corporate .corporate-map .corporate-phone {
@@ -53,8 +55,8 @@
 
 @media (max-width: 640px) {
   .case-page--corporate .corporate-map .case-media-card {
-    padding: 16px;
-    border-radius: 20px;
+    padding: 0;
+    border-radius: 0;
   }
 
   .case-page--corporate .corporate-map .case-card--solution {
