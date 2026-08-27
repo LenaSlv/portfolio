@@ -27,6 +27,7 @@
   .case-page--soul .soul-meta {
     height: auto;
     flex-wrap: wrap;
-    gap: 8px;
+    column-gap: 12px;
+    row-gap: 8px;
   }
 }
