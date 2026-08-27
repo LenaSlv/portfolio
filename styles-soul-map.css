@@ -32,8 +32,11 @@
 @media (max-width: 640px) {
   .case-page--soul .soul-map .soul-compare,
   .case-page--soul .soul-meeting .soul-compare {
-    grid-template-columns: repeat(2, minmax(544px, 544px));
-    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 544px;
+    max-width: none;
   }
 
   .case-page--soul .soul-map .soul-compare figure,
