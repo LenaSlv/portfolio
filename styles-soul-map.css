@@ -4,7 +4,9 @@
   .case-page--soul .soul-map .soul-hypothesis { height: 282px; padding: 24px; }
   .case-page--soul .soul-map .soul-compare { height: 600.192px; grid-template-columns: 604px 604px; gap: 40px; }
   .case-page--soul .soul-map .soul-compare figure { height: 600.192px; padding: 32px 0 0; border-radius: 20px; }
-  .case-page--soul .soul-map .soul-compare figure img { width: 100%; height: 531px; margin-top: 16px; object-fit: contain; }
+  /* В макете мокапы занимают исходный размер и обрезаются контейнером снизу;
+     contain уменьшал их и оставлял заметные пустые поля вокруг телефонов. */
+  .case-page--soul .soul-map .soul-compare figure img { width: 100%; height: 531px; margin-top: 16px; object-fit: cover; object-position: center top; }
   .case-page--soul .soul-map .soul-solution-list { height: 313px; padding: 36px; }
 }
 
