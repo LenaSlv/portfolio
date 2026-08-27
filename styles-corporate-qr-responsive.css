@@ -1,0 +1,56 @@
+/* Корпоративный транспорт · 04 QR и посадка в адаптиве */
+@media (max-width: 960px) {
+  .case-page--corporate .corporate-qr .case-split {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    height: auto;
+  }
+
+  .case-page--corporate .corporate-qr .case-media-card {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .case-page--corporate .corporate-qr .corporate-phone--qr {
+    width: min(261.371px, 100%);
+    height: auto;
+    max-width: 100%;
+  }
+
+  .case-page--corporate .corporate-qr .case-card--solution {
+    width: 100%;
+    max-width: none;
+    height: auto;
+    min-height: 0;
+    box-sizing: border-box;
+    padding: 24px;
+  }
+
+  .case-page--corporate .corporate-qr .case-value-list {
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: auto;
+  }
+
+  .case-page--corporate .corporate-qr .case-value-list > div {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 640px) {
+  .case-page--corporate .corporate-qr .case-card--solution {
+    padding: 20px;
+  }
+}
