@@ -977,3 +977,102 @@
     object-fit: cover;
   }
 }
+
+/* Блок контактов — та же геометрия, что в корпоративном кейсе. */
+.case-page--pet .section--contacts {
+  height: 534px;
+  min-height: 534px;
+  padding-top: 88px;
+  padding-bottom: 70px;
+  background: #06080b;
+}
+
+.case-page--pet .section--contacts .section__heading {
+  margin-bottom: 22px;
+  color: #eef2f7;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.case-page--pet .section--contacts .site-footer {
+  height: 82px;
+  margin-top: 22px;
+  padding: 0;
+}
+
+.case-page--pet .section--contacts .site-footer__route {
+  margin-top: 22px;
+}
+
+@media (min-width: 641px) {
+  .case-page--pet .section--contacts {
+    height: auto;
+    min-height: 0;
+    padding: 88px var(--page-padding) 48px;
+    background: var(--bg-contacts);
+  }
+
+  .case-page--pet .section--contacts .site-footer {
+    height: auto;
+    margin-top: 0;
+    padding: 32px 0;
+  }
+
+  .case-page--pet .section--contacts .site-footer__route {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .case-page--pet .section--contacts {
+    padding: 56px var(--page-padding) 64px;
+  }
+}
+
+@media (max-width: 640px) {
+  .case-page--pet .section--contacts {
+    height: 452px;
+    min-height: 452px;
+    padding: 40px 16px 48px;
+  }
+
+  .case-page--pet .section--contacts > .container {
+    height: 364px;
+  }
+
+  .case-page--pet .section--contacts .section__heading {
+    margin-bottom: 18px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .case-page--pet .section--contacts .contact-methods {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    height: 170px;
+    margin-top: 0;
+  }
+
+  .case-page--pet .section--contacts .contact-item {
+    min-height: 79px;
+    height: 79px;
+    padding: 12px 24px;
+    box-sizing: border-box;
+  }
+
+  .case-page--pet .section--contacts .site-footer {
+    height: 60px;
+    margin-top: 28px;
+    padding: 20px 0;
+    line-height: 20px;
+    box-sizing: border-box;
+  }
+
+  .case-page--pet .section--contacts .site-footer__route {
+    height: 8px;
+    margin-top: 0;
+    border-radius: 4px;
+  }
+}
