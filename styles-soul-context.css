@@ -11,3 +11,74 @@
     min-height: 167px;
   }
 }
+
+/* Soul · Контекст и проблема: мобильный кадр Figma 2349:4626. */
+@media (max-width: 640px) {
+  .case-page--soul .soul-context {
+    height: auto;
+    min-height: 0;
+    padding: 20px 16px;
+    overflow: visible;
+  }
+
+  .case-page--soul .soul-context > .container {
+    width: 100%;
+    gap: 32px;
+  }
+
+  .case-page--soul .soul-context .soul-eyebrow {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .case-page--soul .soul-context h2 {
+    width: 100%;
+    font-size: 32px;
+    line-height: 38.4px;
+  }
+
+  .case-page--soul .soul-context .soul-lead {
+    width: 100%;
+    max-width: none;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .case-page--soul .soul-context .soul-card-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    gap: 12px;
+  }
+
+  .case-page--soul .soul-context .soul-card {
+    width: 100%;
+    min-width: 0;
+    padding: 17px;
+    margin: 0;
+  }
+
+  .case-page--soul .soul-context .soul-card h3 {
+    margin: 0;
+    font-weight: 500;
+  }
+
+  .case-page--soul .soul-context .soul-card:first-child h3 {
+    font-size: 18px;
+    line-height: 25.2px;
+  }
+
+  .case-page--soul .soul-context .soul-card:nth-child(2) h3 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .case-page--soul .soul-context .soul-card p {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
