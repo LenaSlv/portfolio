@@ -279,6 +279,31 @@ body.is-flow-modal-open {
   }
 }
 
+@media (max-width: 960px) {
+  .case-page--soul .soul-flow-steps {
+    position: relative;
+  }
+
+  .case-page--soul .soul-flow-steps::before {
+    position: absolute;
+    top: 32px;
+    bottom: 32px;
+    left: calc(50% - 0.5px);
+    z-index: 0;
+    width: 1px;
+    background: #2f7cff;
+    content: "";
+  }
+
+  .case-page--soul .soul-flow-steps > div {
+    z-index: 1;
+  }
+
+  .case-page--soul .soul-flow-steps > div + div::before {
+    display: none;
+  }
+}
+
 @media (max-width: 640px) {
   .soul-flow-modal__footer .flow-toggle {
     padding-right: 18px;
