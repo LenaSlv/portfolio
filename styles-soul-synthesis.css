@@ -1,0 +1,135 @@
+/* Soul · Синтез — адаптивная сборка по Figma 2349:5026. */
+
+@media (min-width: 641px) {
+  .case-page--soul .soul-synthesis__intro,
+  .case-page--soul .soul-synthesis__content {
+    display: contents;
+  }
+}
+
+@media (max-width: 640px) {
+  .case-page--soul .soul-synthesis {
+    height: auto;
+    min-height: 0;
+    padding: 20px 16px;
+    overflow: visible;
+  }
+
+  .case-page--soul .soul-synthesis > .container {
+    width: 100%;
+    gap: 24px;
+  }
+
+  .case-page--soul .soul-synthesis__intro,
+  .case-page--soul .soul-synthesis__content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .case-page--soul .soul-synthesis__intro {
+    gap: 16px;
+  }
+
+  .case-page--soul .soul-synthesis__content {
+    gap: 16px;
+  }
+
+  .case-page--soul .soul-synthesis h2 {
+    width: 100%;
+    font-size: 32px;
+    line-height: 38.4px;
+  }
+
+  .case-page--soul .soul-synthesis .soul-lead {
+    width: 100%;
+    max-width: none;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .case-page--soul .soul-synthesis .soul-card-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    gap: 12px;
+  }
+
+  .case-page--soul .soul-synthesis .soul-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    gap: 8px;
+    padding: 17px;
+    border-radius: 28px;
+  }
+
+  .case-page--soul .soul-synthesis .soul-card__header {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .case-page--soul .soul-synthesis .soul-index {
+    flex: 0 0 auto;
+    color: #2e6eeb;
+    font-size: 18px;
+    line-height: 25.2px;
+  }
+
+  .case-page--soul .soul-synthesis .soul-card h3 {
+    flex: 1 1 auto;
+    min-width: 0;
+    margin: 0;
+    color: #f6f9ff;
+    font-size: 18px;
+    line-height: 25.2px;
+    font-weight: 500;
+  }
+
+  .case-page--soul .soul-synthesis .soul-card p {
+    width: 312px;
+    max-width: 100%;
+    color: #8f99b2;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .case-page--soul .soul-synthesis .soul-priority {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    gap: 8px;
+    padding: 19px;
+    border-radius: 20px;
+    color: #8f99b2;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .case-page--soul .soul-synthesis .soul-priority strong {
+    width: auto;
+    flex: 0 1 auto;
+    color: #2c69df;
+    font-size: 18px;
+    line-height: 25.2px;
+    font-weight: 500;
+  }
+
+  .case-page--soul .soul-synthesis .soul-priority span {
+    width: 100%;
+    color: #8f99b2;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
