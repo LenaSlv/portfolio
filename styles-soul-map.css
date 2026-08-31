@@ -159,7 +159,7 @@
   }
 
   .case-page--soul .soul-map .soul-compare {
-    gap: 0;
+    gap: 16px;
     width: 544px;
     max-width: none;
     margin: 0;
@@ -181,6 +181,10 @@
     text-align: left;
     font-size: 16px;
     line-height: 21px;
+  }
+
+  .case-page--soul .soul-map .soul-compare figure:nth-child(2) figcaption {
+    padding-left: 16px;
   }
 
   .case-page--soul .soul-map .soul-compare figure img {
