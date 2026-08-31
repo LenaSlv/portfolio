@@ -723,79 +723,257 @@
     min-height: 728px;
   }
 
-  /* Формат проекта — 390 × 822, карточки 139 / 139 / 115 px. */
+  /* Формат проекта — точная сборка фрейма Figma 2348:4922 (390 × 822). */
   .case-page--pet .pet-format-section {
     height: 822px;
+    min-height: 822px;
+    padding: 20px 16px 40px;
   }
 
   .case-page--pet .pet-format-section > .container {
+    display: flex;
+    flex-direction: column;
+    width: 358px;
     height: 762px;
     gap: 20px;
   }
 
+  .case-page--pet .pet-format-section .case-story__eyebrow {
+    flex: 0 0 17px;
+    width: 114px;
+    height: 17px;
+    margin: 0;
+  }
+
   .case-page--pet .pet-format-section .case-story__title {
+    flex: 0 0 128px;
     width: 358px;
     height: 128px;
+    margin: 0;
   }
 
   .case-page--pet .pet-format-section .case-story__lead {
+    flex: 0 0 140px;
     width: 358px;
     height: 140px;
+    margin: 0;
   }
 
   .case-page--pet .pet-format-section .case-grid--3 {
     display: grid;
+    flex: 0 0 417px;
     width: 358px;
     height: 417px;
+    margin: 0;
     gap: 12px;
     grid-template-columns: 1fr;
+    grid-auto-rows: max-content;
+    align-content: start;
   }
 
   .case-page--pet .pet-format-section .case-grid--3 .case-card {
     display: grid;
     grid-template-columns: auto minmax(0, 1fr);
-    grid-template-rows: 25px auto;
+    grid-template-rows: auto auto;
     column-gap: 8px;
     row-gap: 0;
     width: 358px;
-    height: 139px;
+    height: auto;
     min-height: 0;
     padding: 16px;
+    box-sizing: border-box;
   }
 
   .case-page--pet .pet-format-section .case-grid--3 .case-card:nth-child(3) {
-    height: 115px;
+    height: auto;
   }
 
   .case-page--pet .pet-format-section .case-card__index {
     grid-column: 1;
     grid-row: 1;
-    height: 25px;
+    height: auto;
     margin: 0;
-    font-size: 16px;
-    line-height: 25px;
+    color: #2f6fe0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
   }
 
   .case-page--pet .pet-format-section .case-card h3 {
     grid-column: 2;
     grid-row: 1;
-    height: 25px;
-    font-size: 21px;
-    line-height: 25px;
+    height: auto;
+    min-height: 0;
+    color: #eef2f7;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25.2px;
     margin: 0;
+    align-self: start;
   }
 
   .case-page--pet .pet-format-section .case-card p {
     grid-column: 1 / -1;
     grid-row: 2;
     width: 324px;
-    height: 80px;
+    height: auto;
+    min-height: 0;
     padding-top: 8px;
     margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 24px;
   }
 
   .case-page--pet .pet-format-section .case-grid--3 .case-card:nth-child(3) p {
-    height: 56px;
+    height: auto;
+  }
+}
+
+/* Блок «Другие проекты» — та же геометрия, что в корпоративном кейсе. */
+@media (min-width: 961px) {
+  .case-page--pet .other-projects__title {
+    width: auto;
+  }
+
+  .case-page--pet .other-project-card:nth-child(3) .other-project-card__top {
+    gap: 10px;
+  }
+
+  .case-page--pet .other-project-card:nth-child(1) .kicker,
+  .case-page--pet .other-project-card:nth-child(2) .kicker,
+  .case-page--pet .other-project-card:nth-child(3) .kicker {
+    width: auto;
+  }
+
+  .case-page--pet .other-project-card__title {
+    width: auto;
+    max-width: 100%;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .case-page--pet .other-project-card__meta {
+    line-height: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .case-page--pet .other-projects {
+    height: 656.46875px;
+    min-height: 0;
+    padding: 32px 16px;
+    overflow: hidden;
+  }
+
+  .case-page--pet .other-projects__head {
+    width: 100%;
+    height: 42px;
+  }
+
+  .case-page--pet .other-projects__title {
+    width: auto;
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+
+  .case-page--pet .other-projects__nav {
+    width: 96px;
+    gap: 16px;
+  }
+
+  .case-page--pet .other-projects__nav-btn {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    border-radius: 24px;
+  }
+
+  .case-page--pet .other-projects__row {
+    width: calc(100% + 16px);
+    height: 514.46875px;
+    overflow: hidden;
+  }
+
+  .case-page--pet .other-projects__track {
+    width: max-content;
+    height: 514.46875px;
+    gap: 16px;
+  }
+
+  .case-page--pet .other-project-card {
+    flex: 0 0 343px;
+    width: 343px;
+    height: 514px;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+
+  .case-page--pet .other-project-card__body,
+  .case-page--pet .other-project-card__preview {
+    flex: 0 0 222px;
+    width: 293px;
+    height: 222px;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .case-page--pet .other-project-card__body {
+    gap: 0;
+    overflow: hidden;
+  }
+
+  .case-page--pet .other-project-card__top {
+    gap: 16px;
+  }
+
+  .case-page--pet .other-project-card__top > .kicker {
+    width: auto;
+    height: 28px;
+    padding: 6px 12px;
+    border-radius: 99px;
+    line-height: 16px;
+    box-sizing: border-box;
+  }
+
+  .case-page--pet .other-project-card__title {
+    width: auto;
+    max-width: 100%;
+    font-size: 22px;
+    line-height: 27.5px;
+    letter-spacing: 0;
+  }
+
+  .case-page--pet .other-project-card__bottom {
+    gap: 12px;
+  }
+
+  .case-page--pet .other-project-card__meta {
+    gap: 10px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .case-page--pet .other-project-card__link {
+    font-size: 15px;
+    line-height: 22.5px;
+  }
+
+  .case-page--pet .other-project-card__preview {
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .case-page--pet .other-project-card__preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
