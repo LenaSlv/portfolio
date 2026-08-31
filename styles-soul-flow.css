@@ -305,6 +305,48 @@ body.is-flow-modal-open {
 }
 
 @media (max-width: 640px) {
+  .case-page--soul .soul-flow-steps--entry {
+    overflow: visible;
+  }
+
+  .case-page--soul .soul-flow-steps--entry::after {
+    position: absolute;
+    top: calc(3 * 73px + 32px);
+    right: -1px;
+    width: 24px;
+    height: 73px;
+    z-index: 2;
+    border-top: 1px solid #2f7cff;
+    border-right: 1px solid #2f7cff;
+    border-bottom: 1px solid #2f7cff;
+    content: "";
+    pointer-events: none;
+  }
+
+  .case-page--soul .soul-flow-entry-route-label {
+    position: absolute;
+    z-index: 3;
+    padding: 0 2px;
+    background: #141b27;
+    color: #8b98ad;
+    font-size: 10px;
+    line-height: 14px;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+
+  .case-page--soul .soul-flow-entry-route-label--yes {
+    top: calc(3 * 73px + 32px + 4px);
+    left: calc(50% + 7px);
+  }
+
+  .case-page--soul .soul-flow-entry-route-label--no {
+    top: calc(3 * 73px + 32px + 22px);
+    right: 4px;
+  }
+}
+
+@media (max-width: 640px) {
   .soul-flow-modal__footer .flow-toggle {
     padding-right: 18px;
     padding-left: 18px;
