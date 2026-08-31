@@ -242,7 +242,7 @@ body.is-flow-modal-open {
 
   .case-page--soul .soul-flow-accordion {
     display: block;
-    padding: 32px var(--page-padding) 40px;
+    padding: 0 var(--page-padding) 20px;
   }
 
   .case-page--soul .soul-flow-accordion .container {
@@ -250,7 +250,7 @@ body.is-flow-modal-open {
   }
 
   .soul-flow-accordion details {
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 
   .soul-flow-accordion details:last-child {
@@ -259,6 +259,23 @@ body.is-flow-modal-open {
 
   .case-page--soul .soul-flow-inner {
     padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  .case-page--soul .soul-flow-accordion details:not([open]) {
+    height: 66px;
+    overflow: clip;
+  }
+
+  .case-page--soul .soul-flow-accordion details[open] {
+    height: auto;
+  }
+
+  .case-page--soul .soul-flow-accordion summary {
+    height: 64px;
+    min-height: 64px;
+    padding: 16px 18px;
   }
 }
 
