@@ -312,8 +312,8 @@ body.is-flow-modal-open {
   .case-page--soul .soul-flow-steps--entry::after {
     position: absolute;
     top: calc(3 * 73px + 32px);
-    right: -1px;
-    width: 24px;
+    right: 0;
+    width: 64px;
     height: 73px;
     z-index: 2;
     border-top: 1px solid #2f7cff;
@@ -321,6 +321,14 @@ body.is-flow-modal-open {
     border-bottom: 1px solid #2f7cff;
     content: "";
     pointer-events: none;
+  }
+
+  .case-page--soul .soul-flow-steps--entry > div {
+    width: calc(100% - 64px);
+  }
+
+  .case-page--soul .soul-flow-steps--entry::before {
+    left: calc(50% - 32px);
   }
 
   .case-page--soul .soul-flow-entry-route-label {
@@ -331,18 +339,22 @@ body.is-flow-modal-open {
     color: #8b98ad;
     font-size: 10px;
     line-height: 14px;
-    white-space: nowrap;
     pointer-events: none;
   }
 
   .case-page--soul .soul-flow-entry-route-label--yes {
-    top: calc(3 * 73px + 32px + 4px);
-    left: calc(50% + 7px);
+    top: calc(3 * 73px + 65px);
+    left: calc(50% - 32px + 7px);
+    font-size: 8px;
+    line-height: 8px;
   }
 
   .case-page--soul .soul-flow-entry-route-label--no {
-    top: calc(3 * 73px + 32px + 22px);
-    right: 4px;
+    top: calc(3 * 73px + 32px + 20px);
+    right: 0;
+    width: 64px;
+    text-align: center;
+    white-space: normal;
   }
 }
 
