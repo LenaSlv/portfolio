@@ -478,9 +478,9 @@ body.is-flow-modal-open {
   }
 
   .case-page--soul .soul-flow-branch-label--no {
-    top: calc(var(--branch-start) * 81px + 27px);
+    top: calc(var(--branch-start) * 81px + 18px);
     right: 2px;
-    background: transparent;
+    background: #141b27;
     text-align: right;
   }
 
@@ -494,9 +494,9 @@ body.is-flow-modal-open {
   }
 
   .case-page--soul .soul-flow-steps--entry .soul-flow-entry-route-label--no {
-    top: calc(var(--branch-start) * 81px + 27px);
+    top: calc(var(--branch-start) * 81px + 18px);
     right: 2px;
-    background: transparent;
+    background: #141b27;
     text-align: right;
   }
 }
