@@ -1239,6 +1239,492 @@ cod.site-header.is-scrolled .site-header__inner {
   .case-page--soul .case-hero__title { font-size: 38px; line-height: 1.16; }
 }
 
+/* АРМ кассира — точная сборка по Figma, фрейм 2180:13641 */
+.case-page--arm .site-header {
+  margin-top: 28px;
+}
+
+.case-page--arm .case-topbar {
+  position: relative;
+  top: auto;
+  height: 87px;
+  padding: 24px var(--page-padding) 45px;
+  border: 0;
+}
+
+.case-page--arm .case-topbar::after {
+  content: '';
+  position: absolute;
+  right: var(--page-padding);
+  bottom: 20px;
+  left: var(--page-padding);
+  height: 1px;
+  background: #21293b;
+}
+
+.case-page--arm .case-topbar__back {
+  color: #8f99b2;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.case-page--arm .case-hero {
+  height: 935px;
+  padding-top: 54px;
+  padding-bottom: 52px;
+}
+
+.case-page--arm .case-hero__title {
+  color: #eef2f7;
+  font-weight: 600;
+  line-height: 66px;
+}
+
+.case-page--arm .case-hero__lead {
+  width: min(900px, 100%);
+  color: #7f8c9f;
+}
+
+.case-page--arm .case-hero__badges {
+  gap: 12px;
+  margin: 0;
+}
+
+.case-page--arm .case-hero__nda {
+  padding: 8px 12px;
+  border: 0;
+  background: #1d2737;
+  color: #7f8c9f;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.case-page--arm .case-hero__cover {
+  border: 0;
+}
+
+.case-page--arm .case-story,
+.case-page--arm .case-section {
+  background: #05060a;
+}
+
+.case-page--arm .arm-context {
+  height: 362px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.case-page--arm .arm-context .case-grid {
+  gap: 20px;
+}
+
+.case-page--arm .arm-context .case-card {
+  height: 177px;
+  border: 0;
+  background: #141b27;
+  box-shadow: inset 0 0 0 1px #263246;
+}
+
+.case-page--arm .arm-context .case-card p {
+  color: #7f8c9f;
+}
+
+.case-page--arm .arm-context .arm-context__principle {
+  background: #101827;
+  box-shadow: inset 0 0 0 1px #2e6eeb;
+}
+
+.case-page--arm .case-section {
+  padding-top: 112px;
+  padding-bottom: 0;
+}
+
+.case-page--arm .case-section--order {
+  height: 2117.0203px;
+}
+
+.case-page--arm .case-section--payment {
+  height: 2321px;
+}
+
+.case-page--arm .case-section--refund {
+  height: 829px;
+  padding-bottom: 72px;
+}
+
+.case-page--arm .note-card,
+.case-page--arm .flow-steps-card,
+.case-page--arm .arm-after-card,
+.case-page--arm .compare-screen {
+  border: 0;
+  box-shadow: inset 0 0 0 1px #21293b, 0 16px 36px -10px rgba(0, 0, 0, 0.24);
+}
+
+.case-page--arm .compare-row {
+  display: grid;
+  gap: 31px;
+  height: 495px;
+  flex-wrap: nowrap;
+}
+
+.case-page--arm .case-section--order .compare-row {
+  grid-template-columns: 489px 728px;
+}
+
+.case-page--arm .case-section--payment .compare-row {
+  grid-template-columns: 612.5px 604.5px;
+}
+
+.case-page--arm .compare-row .note-card,
+.case-page--arm .compare-screen {
+  width: 100%;
+  height: 495px;
+}
+
+.case-page--arm .compare-screen {
+  justify-content: center;
+  overflow: hidden;
+}
+
+.case-page--arm .case-section--order .compare-screen img {
+  width: 680px;
+  height: 447px;
+  object-fit: fill;
+}
+
+.case-page--arm .case-section--payment .compare-screen img {
+  width: 556.5px;
+  height: 447px;
+  object-fit: fill;
+}
+
+.case-page--arm .flow-steps-card {
+  flex-shrink: 0;
+}
+
+.case-page--arm .case-section--order .flow-steps-card {
+  height: 125px;
+}
+
+.case-page--arm .case-section--payment .flow-steps-card {
+  height: 92px;
+}
+
+.case-page--arm .arm-after-card {
+  height: 931.0203px;
+}
+
+.case-page--arm .arm-after-card .arm-screen,
+.case-page--arm .arm-after-card .arm-screen img {
+  width: 1200px;
+  height: 786.0203px;
+}
+
+.case-page--arm .arm-after-card .arm-screen img {
+  object-fit: fill;
+}
+
+.case-page--arm .payment-pairs,
+.case-page--arm .value-pair {
+  margin-bottom: 0;
+}
+
+.case-page--arm .pair-row > .proof-card {
+  height: 548px;
+  min-height: 548px;
+}
+
+.case-page--arm .case-section--refund .edge-row {
+  width: 1165px;
+  height: 404px;
+}
+
+.case-page--arm .case-section--refund .proof-card--screen {
+  flex: none;
+  height: 404px;
+  border: 0;
+  box-shadow: inset 0 0 0 1px #21293b, 0 16px 36px -10px rgba(0, 0, 0, 0.24);
+}
+
+.case-page--arm .case-section--refund .proof-card--screen:nth-of-type(1),
+.case-page--arm .case-section--refund .proof-card--screen:nth-of-type(3) {
+  width: 390px;
+}
+
+.case-page--arm .case-section--refund .proof-card--screen:nth-of-type(2) {
+  width: 331px;
+}
+
+.case-page--arm .case-section--refund .proof-card--screen:nth-of-type(1) img,
+.case-page--arm .case-section--refund .proof-card--screen:nth-of-type(3) img {
+  width: 342px;
+  height: 326px;
+  object-fit: cover;
+}
+
+.case-page--arm .case-section--refund .proof-card--screen:nth-of-type(2) img {
+  width: 283px;
+  height: 326px;
+  object-fit: cover;
+}
+
+.case-page--arm .other-projects {
+  height: 564px;
+  min-height: 564px;
+}
+
+.case-page--arm .section--contacts {
+  height: 534px;
+  min-height: 534px;
+  padding-top: 88px;
+  padding-bottom: 70px;
+  background: #06080b;
+}
+
+.case-page--arm .section--contacts .section__kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  width: 104px;
+  height: 28px;
+  margin: 0 0 22px;
+  padding: 0 12px;
+  border-radius: 99px;
+  background: #2e6eeb;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.case-page--arm .section--contacts .section__heading {
+  margin-bottom: 22px;
+  color: #eef2f7;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.case-page--arm .section--contacts .site-footer {
+  height: 82px;
+  margin-top: 22px;
+  padding: 0;
+}
+
+.case-page--arm .section--contacts .site-footer__route {
+  margin-top: 22px;
+}
+
+.case-page--arm .other-projects__nav-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 961px) {
+  .case-page--arm .other-projects__head {
+    height: 52px;
+    overflow: hidden;
+  }
+
+  .case-page--arm .other-projects__title {
+    font-size: 44px;
+    line-height: 52px;
+    letter-spacing: -0.88px;
+    white-space: nowrap;
+  }
+
+  .case-page--arm .other-projects__row,
+  .case-page--arm .other-projects__track {
+    height: 300px;
+  }
+
+  .case-page--arm .other-projects__track {
+    width: max-content;
+  }
+
+  .case-page--arm .other-project-card {
+    width: 680px;
+    height: 300px;
+    padding: 23px;
+    overflow: hidden;
+  }
+
+  .case-page--arm .other-project-card__body,
+  .case-page--arm .other-project-card__preview {
+    flex: 0 0 305.128px;
+    width: 305.128px;
+    height: 252px;
+  }
+
+  .case-page--arm .other-project-card__body {
+    gap: 0;
+    overflow: hidden;
+  }
+
+  .case-page--arm .other-project-card__top {
+    gap: 10px;
+  }
+
+  .case-page--arm .other-project-card__top > .kicker {
+    height: 21px;
+    padding: 0 12px;
+    line-height: 9px;
+  }
+
+  .case-page--arm .other-project-card__title {
+    color: #fff;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .case-page--arm .other-project-card__link {
+    color: #fff;
+  }
+}
+
+@media (max-width: 960px) {
+  .case-page--arm .site-header {
+    margin-top: 16px;
+  }
+
+  .case-page--arm .case-topbar {
+    width: calc(100% - (2 * var(--page-padding)));
+    height: auto;
+    margin: 16px auto 20px;
+    padding: 0 0 17px;
+  }
+
+  .case-page--arm .case-topbar::after {
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .case-page--arm .case-hero,
+  .case-page--arm .arm-context,
+  .case-page--arm .case-section,
+  .case-page--arm .other-projects,
+  .case-page--arm .section--contacts {
+    height: auto;
+    min-height: 0;
+  }
+
+  .case-page--arm .case-hero {
+    padding-top: 28px;
+    padding-bottom: 26px;
+  }
+
+  .case-page--arm .case-story,
+  .case-page--arm .case-section,
+  .case-page--arm .other-projects,
+  .case-page--arm .section--contacts {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .case-page--arm .case-hero__title {
+    font-size: 44px;
+    line-height: 50px;
+  }
+
+  .case-page--arm .compare-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .case-page--arm .compare-row .note-card,
+  .case-page--arm .compare-screen,
+  .case-page--arm .flow-steps-card,
+  .case-page--arm .arm-after-card,
+  .case-page--arm .pair-row > .proof-card {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+  }
+
+  .case-page--arm .compare-screen img,
+  .case-page--arm .case-section--order .compare-screen img,
+  .case-page--arm .case-section--payment .compare-screen img,
+  .case-page--arm .arm-after-card .arm-screen,
+  .case-page--arm .arm-after-card .arm-screen img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .case-page--arm .case-section--refund .edge-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: auto;
+  }
+
+  .case-page--arm .case-section--refund .proof-card--screen:nth-of-type(n) {
+    width: 100%;
+    height: auto;
+  }
+
+  .case-page--arm .case-section--refund .proof-card--screen:nth-of-type(n) img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 520px;
+    object-fit: contain;
+  }
+
+  .case-page--arm .edge-arrow {
+    transform: rotate(90deg);
+  }
+
+  .case-page--arm .section--contacts .section__heading {
+    font-size: 38px;
+    line-height: 46px;
+  }
+}
+
+@media (max-width: 640px) {
+  .case-page--arm .case-hero {
+    padding-top: 28px;
+    padding-bottom: 12px;
+  }
+
+  .case-page--arm .case-hero__title,
+  .case-page--arm .case-story__title,
+  .case-page--arm .case-section__title,
+  .case-page--arm .section--contacts .section__heading {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.32px;
+  }
+
+  .case-page--arm .case-story,
+  .case-page--arm .case-section,
+  .case-page--arm .other-projects {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .case-page--arm .section--contacts {
+    padding-top: 20px;
+    padding-bottom: 48px;
+  }
+
+  .case-page--arm .arm-context .case-card {
+    height: auto;
+  }
+
+  .case-page--arm .pair-row {
+    flex-direction: column;
+  }
+
+  .case-page--arm .pair-row > .proof-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+}
+
 /* Блок «Другие проекты» в Soul использует ту же геометрию, что и в корпоративном кейсе. */
 .case-page--soul .other-projects {
   height: 564px;
@@ -1328,6 +1814,49 @@ cod.site-header.is-scrolled .site-header__inner {
     min-height: 0;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+}
+
+/* Точные внутренние отступы карточки из Figma 2006:3542. */
+@media (min-width: 961px) {
+  .case-page--soul .other-project-card__body {
+    flex: 0 0 305.128px;
+    width: 305.128px;
+    height: 252px;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+
+  .case-page--soul .other-project-card__body > .kicker {
+    align-self: flex-start;
+    height: 21px;
+    padding: 0 12px;
+    line-height: 9px;
+  }
+
+  .case-page--soul .other-project-card__body > .other-project-card__title {
+    width: 294.231px;
+    max-width: 100%;
+    font-size: 22px;
+    line-height: 27.5px;
+  }
+
+  .case-page--soul .other-project-card__spacer {
+    flex: 1 0 0;
+    min-height: 1px;
+  }
+
+  .case-page--soul .other-project-card__body > .other-project-card__meta {
+    gap: 10px;
+    color: #616b80;
+    font-size: 12px;
+    line-height: 9.808px;
+  }
+
+  .case-page--soul .other-project-card__body > .other-project-card__link {
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
   }
 }
 
@@ -5450,4 +5979,104 @@ cod.site-header.is-scrolled .site-header__inner {
 }
 @media (max-width: 640px) {
   .case-page--soul .case-hero__title { font-size: 38px; line-height: 1.16; }
+}
+
+/* Final ARM overrides after shared responsive rules. */
+.case-page--arm .case-story,
+.case-page--arm .case-section {
+  background: #05060a;
+}
+
+.case-page--arm .case-hero__cover {
+  border: 0;
+}
+
+.case-page--arm .case-hero__cover img {
+  width: 100%;
+  height: 100%;
+}
+
+.case-page--arm .case-section {
+  padding-top: 112px;
+  padding-bottom: 0;
+}
+
+.case-page--arm .case-section--refund {
+  padding-bottom: 72px;
+}
+
+.case-page--arm .compare-row {
+  gap: 31px;
+}
+
+@media (min-width: 961px) {
+  .case-page--arm .case-hero > .container {
+    height: 829px;
+  }
+
+  .case-page--arm .case-hero__title {
+    width: min(1120px, 100%);
+    max-width: 1120px;
+    font-size: 58px;
+    line-height: 66px;
+  }
+
+  .case-page--arm .case-hero__lead {
+    width: min(900px, 100%);
+    max-width: 900px;
+  }
+
+  .case-page--arm .case-hero__badges .case-hero__nda:nth-child(1) {
+    width: 259px;
+  }
+
+  .case-page--arm .case-hero__badges .case-hero__nda:nth-child(2) {
+    width: 88px;
+  }
+
+  .case-page--arm .case-hero__badges .case-hero__nda:nth-child(3) {
+    width: 51px;
+  }
+
+  .case-page--arm .case-hero__cover {
+    width: 1248px;
+    height: 630px;
+    aspect-ratio: auto;
+  }
+}
+
+@media (max-width: 960px) {
+  .case-page--arm .case-hero {
+    height: auto;
+    padding-top: 28px;
+    padding-bottom: 26px;
+  }
+
+  .case-page--arm .case-section {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .case-page--arm .case-section--order .compare-row,
+  .case-page--arm .case-section--payment .compare-row {
+    grid-template-columns: minmax(0, 1fr);
+    height: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .case-page--arm .case-hero {
+    padding-top: 28px;
+    padding-bottom: 12px;
+  }
+
+  .case-page--arm .case-section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .case-page--arm .section--contacts {
+    padding-top: 20px;
+    padding-bottom: 48px;
+  }
 }

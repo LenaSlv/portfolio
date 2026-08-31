@@ -1,0 +1,801 @@
+/* Единый транспортный сервис — мобильный фрейм Figma 2348:4584 (390 px) */
+
+.pet-context__mobile-break {
+  display: none;
+}
+
+/* Цвет заголовков разделов по макету Figma 2348:4704. */
+.case-page--pet .case-story__eyebrow {
+  color: #2f6fe0;
+}
+
+@media (max-width: 640px) {
+  .case-page--pet {
+    width: 100%;
+    overflow-x: clip;
+  }
+
+  /* В Figma топбар занимает отдельные 52 px между шапкой и контентом. */
+  .case-page--pet .case-topbar {
+    width: 100%;
+    height: 52px;
+    margin: 0 0 16px;
+    padding: 16px var(--page-padding) 17px;
+    align-items: flex-start;
+  }
+
+  .case-page--pet .case-topbar__back {
+    width: 137px;
+    height: 19px;
+    line-height: 19px;
+    white-space: nowrap;
+  }
+
+  /* Hero: Section 390 × 546.71875, container 358 px. */
+  .case-page--pet .case-hero {
+    height: 546.71875px;
+    padding: 20px var(--page-padding) 12px;
+  }
+
+  .case-page--pet .case-hero > .container {
+    height: 514.71875px;
+    gap: 0;
+  }
+
+  .case-page--pet .case-hero__title {
+    width: 358px;
+    height: 144px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .case-page--pet .case-hero__lead {
+    width: 358px;
+    height: 54px;
+    margin-top: 16px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .case-page--pet .case-hero__badges--meta {
+    width: 358px;
+    height: 72px;
+    margin-top: 24px;
+    column-gap: 10px;
+    row-gap: 12px;
+  }
+
+  .case-page--pet .case-hero__nda {
+    height: 30px;
+    padding: 8px 12px;
+  }
+
+  .case-page--pet .case-hero__nda:nth-child(1) { width: 159px; }
+  .case-page--pet .case-hero__nda:nth-child(2) { width: 178px; }
+  .case-page--pet .case-hero__nda:nth-child(3) { width: 49px; }
+
+  .case-page--pet .case-hero__cover {
+    width: 358px;
+    height: 180.71875px;
+    margin-top: 24px;
+    aspect-ratio: auto;
+  }
+
+  /* Базовый ритм секций: 20 px внутри контейнера, 24 px между элементами. */
+  .case-page--pet .case-story {
+    padding: 20px var(--page-padding);
+  }
+
+  .case-page--pet .case-story > .container {
+    width: 358px;
+    gap: 20px;
+  }
+
+  .case-page--pet .case-story__eyebrow {
+    width: 358px;
+    height: 17px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .case-page--pet .case-story__title {
+    width: 358px;
+    font-size: 26px;
+    line-height: 32px;
+    text-wrap: initial;
+  }
+
+  /* 01 · Контекст и проблема — 390 × 633. */
+  .case-page--pet .pet-context {
+    height: 633px;
+  }
+
+  .case-page--pet .pet-context > .container {
+    height: 593px;
+    gap: 24px;
+  }
+
+  .case-page--pet .pet-context .case-story__title {
+    height: 96px;
+  }
+
+  .case-page--pet .pet-context .case-grid {
+    width: 358px;
+    height: 432px;
+    gap: 12px;
+  }
+
+  .case-page--pet .pet-context .case-card {
+    width: 358px;
+    height: 210px;
+    min-height: 210px;
+    padding: 16px;
+  }
+
+  .case-page--pet .pet-context .case-card__label {
+    height: 24px;
+    margin-bottom: 0;
+    line-height: 24px;
+  }
+
+  .case-page--pet .pet-context .case-card p:not(.case-card__label) {
+    height: 152px;
+    margin-top: 0 !important;
+    padding-top: 8px;
+    line-height: 24px;
+    box-sizing: border-box;
+  }
+
+  .case-page--pet .pet-context__mobile-break {
+    display: block;
+  }
+
+  /* 01 · Транспортная карта — 390 × 2359. Размеры блока 2348:4683. */
+  .case-page--pet .pet-card-section {
+    height: 2359px;
+  }
+
+  .case-page--pet .pet-card-section > .container {
+    height: 2319px;
+    gap: 24px;
+  }
+
+  .case-page--pet .pet-card-section .case-story__title {
+    height: 64px;
+  }
+
+  .case-page--pet .pet-card-section .case-card--journey {
+    width: 358px;
+    height: 438px;
+    min-height: 438px;
+    margin: 0;
+    padding: 16px;
+  }
+
+  .case-page--pet .pet-card-section .case-card--journey h3 {
+    width: 324px;
+    height: 50px;
+    margin: 0;
+    font-size: 21px;
+    line-height: 25px;
+  }
+
+  .case-page--pet .pet-card-section .case-card--journey > p {
+    width: 324px;
+    height: 108px;
+    margin: 0;
+    padding-top: 12px;
+    line-height: 24px;
+  }
+
+  .case-page--pet .pet-card-section .journey-compare--mobile {
+    display: grid;
+    width: 324px;
+    height: 230px;
+    margin-top: 16px;
+    gap: 12px;
+    grid-template-columns: 1fr;
+  }
+
+  .case-page--pet .pet-card-section .journey-compare--mobile > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 324px;
+    height: 109px;
+    padding: 16px !important;
+    padding-block: 16px !important;
+    padding-inline: 16px !important;
+    border-radius: 14px;
+    box-sizing: border-box;
+  }
+
+  .case-page--pet .pet-card-section .journey-compare--mobile span {
+    width: 292px;
+    margin: 0;
+    height: 21px;
+    line-height: 21px;
+  }
+
+  .case-page--pet .pet-card-section .journey-compare--mobile p {
+    width: 292px;
+    height: 56px;
+    margin: 0;
+    padding-top: 8px;
+    line-height: 24px;
+  }
+
+  .case-page--pet .pet-card-section .case-grid--screens {
+    width: 358px;
+    height: 1728px;
+    gap: 12px;
+  }
+
+  .case-page--pet .pet-card-section .pet-phone-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: 358px;
+    height: 568px;
+    min-height: 568px;
+    padding: 20px 23px;
+    gap: 0;
+  }
+
+  /* В макете подпись находится над экраном: Paragraph 36 px, Image 240 × 490. */
+  .case-page--pet .pet-card-section .pet-phone-card .case-media-card__caption {
+    order: 0;
+    width: max-content;
+    max-width: 100%;
+    height: 36px;
+    margin: 0;
+    padding: 0 0 16px;
+    box-sizing: border-box;
+    font-size: 15px;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+
+  .case-page--pet .pet-card-section .pet-phone-card:nth-child(1) .case-media-card__caption { width: 134px; }
+  .case-page--pet .pet-card-section .pet-phone-card:nth-child(2) .case-media-card__caption { width: 201px; }
+  .case-page--pet .pet-card-section .pet-phone-card:nth-child(3) .case-media-card__caption { width: 106px; }
+
+  .case-page--pet .pet-card-section .pet-phone-card img {
+    order: 1;
+    width: 240px;
+    height: 490px;
+    max-width: 100%;
+    max-height: none;
+    margin: 0;
+    flex: 0 0 auto;
+  }
+
+  /* 02 · Баланс и абонемент — 390 × 2818. */
+  .case-page--pet .pet-balance-section {
+    height: 2818px;
+  }
+
+  .case-page--pet .pet-balance-section > .container {
+    height: 2778px;
+    gap: 20px;
+  }
+
+  .case-page--pet .pet-balance-section .case-story__title {
+    height: 96px;
+  }
+
+  .case-page--pet .pet-balance-section > .container > .case-grid--2 {
+    width: 358px;
+    height: 1336px;
+    gap: 16px;
+  }
+
+  .case-page--pet .pet-payment-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    width: 358px;
+    height: 660px;
+    min-height: 660px;
+    padding: 22px;
+    gap: 0;
+  }
+
+  .case-page--pet .pet-payment-card h3 {
+    width: max-content;
+    height: 38px;
+    flex: 0 0 38px;
+    margin: 0;
+    padding: 0 0 8px;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .case-page--pet .pet-payment-card:first-child h3 { width: 88px; }
+  .case-page--pet .pet-payment-card:nth-child(2) h3 { width: 133px; }
+
+  .case-page--pet .pet-payment-card p {
+    width: 312px;
+    height: 88px;
+    flex: 0 0 88px;
+    min-height: 0;
+    margin: 0;
+    padding: 0 0 16px;
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .case-page--pet .pet-payment-card img {
+    width: 240px;
+    height: 490px;
+    max-width: none;
+    max-height: none;
+    margin: 0;
+    flex: 0 0 auto;
+  }
+
+  .case-page--pet .pet-balance-section .case-subscription {
+    width: 358px;
+    height: 1269px;
+    min-height: 1269px;
+    margin: 0;
+    padding: 16px;
+    overflow: hidden;
+  }
+
+  .case-page--pet .case-subscription > h3 {
+    width: 324px;
+    height: 58px;
+    margin: 6px 0 0;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .case-page--pet .case-subscription > p {
+    width: 324px;
+    height: 108px;
+    margin: 0;
+    padding-top: 12px;
+    line-height: 24px;
+  }
+
+  .case-page--pet .pet-lifecycle-screens {
+    display: flex !important;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 324px;
+    height: 576px;
+    margin: 0 !important;
+    gap: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    touch-action: pan-x;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .case-page--pet .pet-lifecycle-screens::-webkit-scrollbar {
+    display: none;
+  }
+
+  .case-page--pet .pet-lifecycle-screens figure {
+    display: flex;
+    flex: 0 0 257px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 257px;
+    height: 536px;
+    margin-top: 24px;
+    padding: 0 0 0 16px;
+    box-sizing: border-box;
+    scroll-snap-align: start;
+  }
+
+  .case-page--pet .pet-lifecycle-screens figure:first-child {
+    flex-basis: 241px;
+    width: 241px;
+    padding-left: 0;
+  }
+
+  .case-page--pet .pet-lifecycle-screens figcaption {
+    order: 0;
+    width: 241px;
+    height: 28px;
+    margin: 0;
+    padding-top: 12px;
+    line-height: 16px;
+  }
+
+  .case-page--pet .pet-lifecycle-screens img {
+    order: 1;
+    width: 241px;
+    height: 492px;
+    margin: 0;
+    flex: 0 0 auto;
+    border-radius: 40px;
+  }
+
+  .case-page--pet .pet-lifecycle-screens figure:first-child img {
+    margin-top: 16px;
+  }
+
+  .case-page--pet .pet-lifecycle-screens figure:nth-child(2) img {
+    margin-top: 16px;
+  }
+
+  .case-page--pet .pet-lifecycle-panel {
+    width: 324px;
+    height: 481px;
+    margin: 0;
+    padding: 28px 0 0;
+    border: 0;
+    border-radius: 14px;
+    background: transparent;
+    box-shadow: none;
+    overflow: hidden;
+  }
+
+  .case-page--pet .pet-lifecycle-panel h3 {
+    width: 324px;
+    height: 58px;
+    margin: 0;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .case-page--pet .pet-lifecycle-panel > p {
+    width: 324px;
+    height: 108px;
+    margin: 0;
+    padding-top: 12px;
+    line-height: 24px;
+  }
+
+  .case-page--pet .pet-lifecycle-panel .lifecycle {
+    position: relative;
+    display: block;
+    width: 324px;
+    height: 287px;
+    margin: 0;
+  }
+
+  .case-page--pet .pet-lifecycle-panel .lifecycle span,
+  .case-page--pet .pet-lifecycle-panel .lifecycle b {
+    position: absolute;
+    left: 0;
+    width: 324px;
+    box-sizing: border-box;
+  }
+
+  .case-page--pet .pet-lifecycle-panel .lifecycle span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    padding: 12px 20px;
+    margin: 0;
+    border-radius: 10px;
+    color: #8da5cf;
+    font-size: 13px;
+    line-height: 19.5px;
+    white-space: nowrap;
+  }
+
+  .case-page--pet .pet-lifecycle-panel .lifecycle span:nth-of-type(1) { top: 16px; }
+  .case-page--pet .pet-lifecycle-panel .lifecycle span:nth-of-type(2) { top: 91px; }
+  .case-page--pet .pet-lifecycle-panel .lifecycle span:nth-of-type(3) { top: 166px; }
+  .case-page--pet .pet-lifecycle-panel .lifecycle span:nth-of-type(4) { top: 241px; }
+
+  .case-page--pet .pet-lifecycle-panel .lifecycle b {
+    z-index: 1;
+    width: 20px;
+    height: 13px;
+    left: 152px;
+    color: #949eb8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0;
+    line-height: 13px;
+    text-align: center;
+    transform: none;
+  }
+
+  .case-page--pet .pet-lifecycle-panel .lifecycle b::before {
+    content: "→";
+    display: block;
+    color: #949eb8;
+    font-size: 16px;
+    line-height: 0;
+    transform: rotate(90deg);
+  }
+
+  .case-page--pet .pet-lifecycle-panel .lifecycle b:nth-of-type(1) { top: 70px; }
+  .case-page--pet .pet-lifecycle-panel .lifecycle b:nth-of-type(2) { top: 145px; }
+  .case-page--pet .pet-lifecycle-panel .lifecycle b:nth-of-type(3) { top: 220px; }
+
+  /* 03 · Междугородние поездки — 390 × 2312. */
+  .case-page--pet .pet-intercity-section {
+    height: 2312px;
+  }
+
+  .case-page--pet .pet-intercity-section > .container {
+    height: 2272px;
+    gap: 0;
+  }
+
+  .case-page--pet .pet-intercity-section .case-story__title {
+    height: 96px;
+    margin-top: 24px;
+  }
+
+  .case-page--pet .pet-intercity-section .case-story__lead {
+    width: 358px;
+    height: 168px;
+    margin-top: 16px;
+  }
+
+  .case-page--pet .pet-intercity-section .case-tags {
+    width: 358px;
+    height: 77px;
+    margin: 24px 0 0;
+    gap: 10px 9px;
+    align-content: flex-start;
+  }
+
+  .case-page--pet .pet-intercity-section .case-tags span {
+    height: 33.5px;
+    padding: 7px 14px;
+    line-height: 20px;
+  }
+
+  .case-page--pet .pet-intercity-section .case-grid--screens {
+    width: 358px;
+    height: 1826px;
+    margin-top: 24px;
+    gap: 16px;
+  }
+
+  .case-page--pet .pet-intercity-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 358px;
+    height: 598px;
+    min-height: 598px;
+    padding: 22px;
+  }
+
+  .case-page--pet .pet-intercity-card .case-media-card__caption {
+    order: 0;
+    flex: 0 0 32px;
+    width: auto;
+    height: 32px;
+    margin: 0;
+    padding: 0 0 16px;
+    box-sizing: border-box;
+    line-height: 18px;
+  }
+
+  .case-page--pet .pet-intercity-card img {
+    order: 1;
+    flex: 0 0 520px;
+    width: 278px;
+    height: 520px;
+    margin: 0;
+  }
+
+  /* 04 · Пересадка — горизонтальный ряд двух телефонов. */
+  .case-page--pet .pet-transfer-section {
+    height: 1208.26513671875px;
+    overflow: hidden;
+  }
+
+  .case-page--pet .pet-transfer-section > .container {
+    height: 1168.26513671875px;
+    gap: 0;
+  }
+
+  .case-page--pet .pet-transfer-section .case-story__title {
+    height: 64px;
+    margin-top: 24px;
+  }
+
+  .case-page--pet .pet-transfer-section .case-story__lead {
+    width: 358px;
+    height: 140px;
+    margin-top: 16px;
+  }
+
+  .case-page--pet .pet-transfer {
+    display: flex;
+    flex-direction: column;
+    width: 358px;
+    height: 883.26513671875px;
+    margin-top: 24px;
+    gap: 24px;
+    overflow: visible;
+  }
+
+  .case-page--pet .pet-transfer__visual {
+    flex: 0 0 567.26513671875px;
+    width: 604px;
+    height: 567.26513671875px;
+    min-height: 567.26513671875px;
+    padding: 0;
+    border: 0;
+    overflow: visible;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .case-page--pet .pet-transfer__visual > div {
+    width: 604px;
+    height: 567.26513671875px;
+    padding-left: 16px;
+    gap: 16px;
+    justify-content: flex-start;
+  }
+
+  .case-page--pet .pet-transfer__visual img {
+    flex: 0 0 278px;
+    width: 278px;
+    height: 567.26513671875px;
+    max-width: none;
+    max-height: none;
+  }
+
+  .case-page--pet .pet-transfer .case-stack {
+    width: 358px;
+    height: 292px;
+    gap: 16px;
+  }
+
+  .case-page--pet .pet-transfer .case-stack .case-card {
+    width: 358px;
+    height: 138px;
+    min-height: 138px;
+    padding: 16px;
+  }
+
+  .case-page--pet .pet-transfer .case-card__label {
+    height: 24px;
+    margin: 0;
+    line-height: 24px;
+  }
+
+  .case-page--pet .pet-transfer .case-card p:not(.case-card__label) {
+    width: 324px;
+    height: 80px;
+    margin: 0;
+    padding-top: 8px;
+    line-height: 24px;
+  }
+
+  /* 05 · Быстрый доступ — геометрия уже совпадает с фреймом. */
+  .case-page--pet .pet-repeat-section {
+    height: 2541px;
+  }
+
+  .case-page--pet .pet-repeat-section > .container {
+    height: 2501px;
+    gap: 20px;
+  }
+
+  .case-page--pet .pet-repeat-section .case-heading-split {
+    width: 358px;
+    height: 228px;
+    margin: 0;
+    gap: 0;
+  }
+
+  .case-page--pet .pet-repeat-section .case-story__title {
+    width: 358px;
+    height: 96px;
+  }
+
+  .case-page--pet .pet-repeat-section .case-story__lead {
+    width: 358px;
+    height: 112px;
+    margin-top: 20px;
+  }
+
+  .case-page--pet .pet-repeat-section .case-grid--3 {
+    width: 358px;
+    height: 2216px;
+    gap: 16px;
+  }
+
+  .case-page--pet .pet-repeat-card {
+    width: 358px;
+    height: 728px;
+    min-height: 728px;
+  }
+
+  /* Формат проекта — 390 × 822, карточки 139 / 139 / 115 px. */
+  .case-page--pet .pet-format-section {
+    height: 822px;
+  }
+
+  .case-page--pet .pet-format-section > .container {
+    height: 762px;
+    gap: 20px;
+  }
+
+  .case-page--pet .pet-format-section .case-story__title {
+    width: 358px;
+    height: 128px;
+  }
+
+  .case-page--pet .pet-format-section .case-story__lead {
+    width: 358px;
+    height: 140px;
+  }
+
+  .case-page--pet .pet-format-section .case-grid--3 {
+    display: grid;
+    width: 358px;
+    height: 417px;
+    gap: 12px;
+    grid-template-columns: 1fr;
+  }
+
+  .case-page--pet .pet-format-section .case-grid--3 .case-card {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    grid-template-rows: 25px auto;
+    column-gap: 8px;
+    row-gap: 0;
+    width: 358px;
+    height: 139px;
+    min-height: 0;
+    padding: 16px;
+  }
+
+  .case-page--pet .pet-format-section .case-grid--3 .case-card:nth-child(3) {
+    height: 115px;
+  }
+
+  .case-page--pet .pet-format-section .case-card__index {
+    grid-column: 1;
+    grid-row: 1;
+    height: 25px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .case-page--pet .pet-format-section .case-card h3 {
+    grid-column: 2;
+    grid-row: 1;
+    height: 25px;
+    font-size: 21px;
+    line-height: 25px;
+    margin: 0;
+  }
+
+  .case-page--pet .pet-format-section .case-card p {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: 324px;
+    height: 80px;
+    padding-top: 8px;
+    margin: 0;
+    line-height: 24px;
+  }
+
+  .case-page--pet .pet-format-section .case-grid--3 .case-card:nth-child(3) p {
+    height: 56px;
+  }
+}

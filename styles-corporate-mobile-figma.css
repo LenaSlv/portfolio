@@ -1,0 +1,797 @@
+/* Корпоративный транспорт · мобильный адаптив по фрейму Figma 2347:4584 */
+
+.case-page--corporate .corporate-mobile-break {
+  display: none;
+}
+
+/* Блок контактов на кейсе использует ту же геометрию, что и главная. */
+@media (min-width: 641px) {
+  .case-page--corporate .section--contacts {
+    height: auto;
+    min-height: 0;
+    padding: 88px var(--page-padding) 48px;
+    background: var(--bg-contacts);
+  }
+
+  .case-page--corporate .section--contacts .site-footer {
+    height: auto;
+    margin-top: 0;
+    padding: 32px 0;
+  }
+
+  .case-page--corporate .section--contacts .site-footer__route {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 960px) {
+  .case-page--corporate .section--contacts {
+    padding: 56px var(--page-padding) 64px;
+  }
+}
+
+@media (max-width: 640px) {
+  /* На узких viewport'ах Chrome резервирует полосу прокрутки. Фрейм Figma
+     рассчитывается по полной ширине устройства, поэтому растягиваем body
+     до viewport и сохраняем 16px внутренние поля секций. */
+  .case-page--corporate {
+    width: 100vw;
+  }
+
+  .case-page--corporate main > section,
+  .case-page--corporate .other-projects,
+  .case-page--corporate .section--contacts {
+    box-sizing: border-box;
+  }
+
+  .case-page--corporate .case-hero > .container,
+  .case-page--corporate .case-story > .container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .case-page--corporate .case-hero {
+    height: 629.71875px;
+    min-height: 0;
+    padding: 20px 16px 12px;
+  }
+
+  .case-page--corporate .case-hero > .container {
+    gap: 24px;
+  }
+
+  .case-page--corporate .case-hero__lead {
+    margin-top: -8px;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .case-page--corporate .case-hero__cover {
+    width: 100%;
+    height: 180.71875px;
+    border-radius: 28px;
+  }
+
+  .case-page--corporate .case-hero__cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .case-page--corporate .case-story {
+    padding: 20px 16px;
+  }
+
+  .case-page--corporate .case-story > .container {
+    gap: 24px;
+  }
+
+  .case-page--corporate .case-story__title {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.32px;
+  }
+
+  .case-page--corporate .case-story__lead {
+    font-size: 18px;
+    line-height: 28px;
+    margin-top: -8px;
+  }
+
+  .case-page--corporate .corporate-mobile-break {
+    display: inline;
+  }
+
+  .case-page--corporate .corporate-map .case-story__quote {
+    height: 50px;
+    margin-top: -8px;
+    color: #eef2f7;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+
+  /* Контекст */
+  .case-page--corporate .corporate-context {
+    min-height: 565px;
+    height: auto;
+  }
+
+  .case-page--corporate .corporate-context .case-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    height: 228px;
+  }
+
+  .case-page--corporate .corporate-context .case-card {
+    height: 106px;
+    padding: 16px;
+  }
+
+  .case-page--corporate .corporate-context .case-card h3 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .case-page--corporate .corporate-context .case-card p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 26px;
+  }
+
+  /* Продуктовая задача */
+  .case-page--corporate .corporate-task {
+    min-height: 1227px;
+    height: auto;
+  }
+
+  .case-page--corporate .corporate-task .case-card--wide {
+    min-height: 572px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .case-page--corporate .corporate-task .case-card--wide h3 {
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .case-page--corporate .corporate-task .case-card--wide p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .case-page--corporate .corporate-task .case-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    height: 312px;
+  }
+
+  .case-page--corporate .corporate-task .case-grid .case-card {
+    padding: 16px;
+  }
+
+  .case-page--corporate .corporate-task .case-grid .case-card:nth-child(1) {
+    height: 160px;
+  }
+
+  .case-page--corporate .corporate-task .case-grid .case-card:nth-child(2) {
+    height: 136px;
+  }
+
+  .case-page--corporate .corporate-task .case-grid h3 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .case-page--corporate .corporate-task .case-grid p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  /* 01 · Предзаказ */
+  .case-page--corporate .corporate-preorder {
+    height: 1636px;
+  }
+
+  .case-page--corporate .corporate-preorder .case-split {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: 1261px;
+  }
+
+  .case-page--corporate .corporate-preorder .case-media-card {
+    width: 100%;
+    height: 616px;
+    flex: 0 0 616px;
+    padding: 8px 0;
+    border: 0;
+    border-radius: 20px;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .case-page--corporate .corporate-preorder .case-media-card img {
+    width: 295px;
+    height: 600px;
+    max-width: none;
+    max-height: none;
+    object-fit: contain;
+  }
+
+  .case-page--corporate .corporate-preorder__details {
+    width: 100%;
+    height: 621px;
+    gap: 16px;
+  }
+
+  .case-page--corporate .corporate-preorder .case-card--solution {
+    width: 100%;
+    height: 136px;
+    padding: 16px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 1px #252f40;
+    gap: 8px;
+  }
+
+  .case-page--corporate .corporate-preorder .case-card--solution h3,
+  .case-page--corporate .corporate-order-path h3 {
+    margin: 0;
+  }
+
+  .case-page--corporate .corporate-preorder .case-card--solution h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .case-page--corporate .corporate-preorder .case-card--solution p {
+    height: auto;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .case-page--corporate .corporate-order-path {
+    width: 100%;
+    height: 469px;
+    padding: 16px;
+    border-radius: 20px;
+    justify-content: flex-start;
+    gap: 0;
+  }
+
+  .case-page--corporate .corporate-order-path > p {
+    height: 48px;
+    margin: 8px 0 20px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .case-page--corporate .corporate-order-path__steps {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 23px;
+    width: 100%;
+    height: 332px;
+  }
+
+  .case-page--corporate .corporate-order-path__steps li:nth-child(n) {
+    width: 100%;
+    height: 48px;
+    margin: 0;
+  }
+
+  .case-page--corporate .corporate-order-path__steps li:not(:last-child)::after {
+    content: '↓';
+    top: 49px;
+    left: 50%;
+    width: 16px;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+  /* 02 · Закреплённый маршрут */
+  .case-page--corporate .corporate-route {
+    min-height: 1130px;
+    height: auto;
+  }
+
+  .case-page--corporate .corporate-route .case-grid--screens {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    height: 633px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+  }
+
+  .case-page--corporate .corporate-route .case-grid--screens::-webkit-scrollbar {
+    display: none;
+  }
+
+  .case-page--corporate .corporate-route .case-grid--screens > .case-media-card {
+    flex: 0 0 306px;
+    width: 306px;
+    height: 633px;
+    padding: 20px;
+    border-radius: 20px;
+    background: #141b27;
+    scroll-snap-align: start;
+  }
+
+  .case-page--corporate .corporate-route .case-grid--screens > .case-media-card:nth-child(2) {
+    flex-basis: 298px;
+    width: 298px;
+    padding: 16px;
+  }
+
+  .case-page--corporate .corporate-route .case-media-card__label {
+    width: 100%;
+    height: 36px;
+    margin: 0 0 16px;
+    font-size: 15px !important;
+    line-height: 18px !important;
+  }
+
+  .case-page--corporate .corporate-route .case-media-card img {
+    width: 266px;
+    height: 541px;
+    max-width: none;
+    max-height: none;
+    object-fit: contain;
+  }
+
+  /* 03 · Карта */
+  .case-page--corporate .corporate-map {
+    height: 1161px;
+  }
+
+  .case-page--corporate .corporate-map .case-split {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    height: 876px;
+  }
+
+  .case-page--corporate .corporate-map .case-media-card {
+    width: 100%;
+    height: 616px;
+    flex: 0 0 616px;
+    padding: 8px 0;
+    border: 0;
+    border-radius: 20px;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .case-page--corporate .corporate-map .case-media-card img {
+    width: 295px;
+    height: 600px;
+    max-width: none;
+    max-height: none;
+    object-fit: contain;
+  }
+
+  .case-page--corporate .corporate-map .case-card--solution {
+    width: 100%;
+    height: 244px;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    justify-content: flex-start;
+    gap: 0;
+  }
+
+  .case-page--corporate .corporate-map .case-card--solution h3 {
+    margin: 0 0 12px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .case-page--corporate .corporate-map .case-card--solution p,
+  .case-page--corporate .corporate-map .case-card--solution li {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .case-page--corporate .corporate-map .case-card--solution p {
+    margin: 0;
+  }
+
+  .case-page--corporate .corporate-map .case-list {
+    height: 144px;
+    margin: 0 0 16px;
+  }
+
+  .case-page--corporate .corporate-map .case-list li {
+    height: 24px;
+    padding-left: 10px;
+  }
+
+  /* 04 · QR */
+  .case-page--corporate .corporate-qr {
+    height: 1361.6875px;
+  }
+
+  .case-page--corporate .corporate-qr .case-split {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    height: 958.6875px;
+  }
+
+  .case-page--corporate .corporate-qr .case-card--solution {
+    width: 100%;
+    height: 396px;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  .case-page--corporate .corporate-qr .case-card--solution h3 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .case-page--corporate .corporate-qr .case-card--solution > p {
+    height: 96px;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .case-page--corporate .corporate-qr .case-value-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    width: 100%;
+    height: 244px;
+    margin: 0;
+  }
+
+  .case-page--corporate .corporate-qr .case-value-list > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 114px;
+    min-height: 0;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .case-page--corporate .corporate-qr .case-value-list dt,
+  .case-page--corporate .corporate-qr .case-value-list dd {
+    margin: 0;
+  }
+
+  .case-page--corporate .corporate-qr .case-value-list dt {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .case-page--corporate .corporate-qr .case-value-list dd {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .case-page--corporate .corporate-qr .case-media-card {
+    width: 100%;
+    height: 546.6875px;
+    flex: 0 0 546.6875px;
+    padding: 8px 0;
+    border: 0;
+    border-radius: 20px;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .case-page--corporate .corporate-qr .corporate-phone--qr {
+    width: 261.359375px;
+    height: 530.6875px;
+    max-width: none;
+    max-height: none;
+    object-fit: contain;
+  }
+
+  /* Бизнес-логика */
+  .case-page--corporate .corporate-business {
+    height: 761px;
+  }
+
+  .case-page--corporate .corporate-business .case-business-flow {
+    width: 100%;
+    height: 104px;
+    margin: 0;
+    padding: 16px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: normal;
+  }
+
+  .case-page--corporate .corporate-business .case-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    height: 214px;
+    margin-top: -12px;
+  }
+
+  .case-page--corporate .corporate-business .case-card {
+    padding: 16px;
+  }
+
+  .case-page--corporate .corporate-business .case-card:nth-child(1) {
+    height: 88px;
+  }
+
+  .case-page--corporate .corporate-business .case-card:nth-child(2) {
+    height: 114px;
+  }
+
+  .case-page--corporate .corporate-business .case-card h3 {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .case-page--corporate .corporate-business .case-card p {
+    margin: 8px 0 0;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 26px;
+  }
+
+  /* Edge cases */
+  .case-page--corporate .corporate-edge {
+    height: 1022px;
+    padding-bottom: 40px;
+  }
+
+  .case-page--corporate .corporate-edge__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    height: 900px;
+  }
+
+  .case-page--corporate .corporate-edge__states {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    height: 244px;
+  }
+
+  .case-page--corporate .corporate-edge .case-card {
+    height: 116px;
+    padding: 16px;
+  }
+
+  .case-page--corporate .corporate-edge .case-card h3 {
+    margin: 0;
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .case-page--corporate .corporate-edge .case-card p {
+    margin: 0;
+    width: 318px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+  }
+
+  .case-page--corporate .corporate-edge__screens {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    height: 640px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+  }
+
+  .case-page--corporate .corporate-edge__screens::-webkit-scrollbar {
+    display: none;
+  }
+
+  .case-page--corporate .corporate-edge__screens > .case-media-card {
+    flex: 0 0 327px;
+    width: 327px;
+    height: 640px;
+    padding: 20px 16px;
+    border-radius: 20px;
+    background: #141b27;
+    scroll-snap-align: start;
+  }
+
+  .case-page--corporate .corporate-edge__screens .corporate-phone {
+    width: 295px;
+    height: 600px;
+    max-width: none;
+    max-height: none;
+    object-fit: contain;
+  }
+
+  /* Другие проекты и контакты */
+  .case-page--corporate .other-projects {
+    height: 656.46875px;
+    min-height: 0;
+    padding: 32px 16px;
+    overflow: hidden;
+  }
+
+  .case-page--corporate .other-projects__head {
+    width: 100%;
+    height: 42px;
+  }
+
+  .case-page--corporate .other-projects__title {
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+
+  .case-page--corporate .other-projects__nav {
+    width: 96px;
+    gap: 16px;
+  }
+
+  .case-page--corporate .other-projects__nav-btn {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    border-radius: 24px;
+  }
+
+  .case-page--corporate .other-projects__row {
+    width: calc(100% + 16px);
+    height: 514.46875px;
+    overflow: hidden;
+  }
+
+  .case-page--corporate .other-projects__track {
+    width: max-content;
+    height: 514.46875px;
+    gap: 16px;
+    transition: transform 0.4s ease;
+  }
+
+  .case-page--corporate .other-project-card {
+    flex: 0 0 343px;
+    width: 343px;
+    height: 514px;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+
+  .case-page--corporate .other-project-card__body,
+  .case-page--corporate .other-project-card__preview {
+    flex: 0 0 222px;
+    width: 293px;
+    height: 222px;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .case-page--corporate .other-project-card__body {
+    gap: 0;
+    overflow: hidden;
+  }
+
+  .case-page--corporate .other-project-card__top {
+    gap: 16px;
+  }
+
+  .case-page--corporate .other-project-card__top > .kicker {
+    height: 28px;
+    padding: 6px 12px;
+    border-radius: 99px;
+    line-height: 16px;
+    box-sizing: border-box;
+  }
+
+  .case-page--corporate .other-project-card__title {
+    font-size: 22px;
+    line-height: 27.5px;
+    letter-spacing: 0;
+  }
+
+  .case-page--corporate .other-project-card__bottom {
+    gap: 12px;
+  }
+
+  .case-page--corporate .other-project-card__meta {
+    gap: 10px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .case-page--corporate .other-project-card__link {
+    font-size: 15px;
+    line-height: 22.5px;
+  }
+
+  .case-page--corporate .other-project-card__preview {
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .case-page--corporate .other-project-card__preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .case-page--corporate .section--contacts {
+    height: 452px;
+    min-height: 452px;
+    padding: 40px 16px 48px;
+  }
+
+  .case-page--corporate .section--contacts > .container {
+    height: 364px;
+  }
+
+  .case-page--corporate .section--contacts .section__heading {
+    margin-bottom: 18px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .case-page--corporate .section--contacts .contact-methods {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    height: 170px;
+    margin-top: 0;
+  }
+
+  .case-page--corporate .section--contacts .contact-item {
+    min-height: 79px;
+    height: 79px;
+    padding: 12px 24px;
+    box-sizing: border-box;
+  }
+
+  .case-page--corporate .section--contacts .site-footer {
+    height: 60px;
+    margin-top: 28px;
+    padding: 20px 0;
+    line-height: 20px;
+    box-sizing: border-box;
+  }
+
+  .case-page--corporate .section--contacts .site-footer__route {
+    height: 8px;
+    margin-top: 0;
+    border-radius: 4px;
+  }
+}

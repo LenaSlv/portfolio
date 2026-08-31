@@ -38,6 +38,8 @@
     width: 544px;
     max-width: none;
     margin-left: 0;
+    margin-right: auto;
+    align-self: flex-start;
   }
 
   .case-page--soul .soul-map .soul-compare figure,

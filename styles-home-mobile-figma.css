@@ -1,0 +1,139 @@
+/* Главная · мобильный адаптив по фрейму Figma 2346:4599 */
+.home-mobile-break {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .home-page .hero-section__spacer {
+    height: 40px;
+  }
+
+  .home-page .hero-contacts {
+    margin-bottom: 0;
+  }
+
+  .home-page .hero-contact {
+    min-height: 40px;
+    padding: 9px 12px;
+    line-height: 20px;
+  }
+
+  .home-page .hero__title {
+    padding-top: 16px;
+  }
+
+  .home-page .hero__lead {
+    margin-top: 0;
+    padding-top: 16px;
+    font-size: 20px;
+    line-height: 31.9px;
+  }
+
+  .home-page .competency-strip {
+    gap: 12px;
+  }
+
+  .home-page .competency {
+    background: #080c14;
+    row-gap: 8px;
+  }
+
+  /* В обновлённом мобильном макете карточки идут от исследований к AI. */
+  .home-page .competency:nth-child(1) { order: 1; }
+  .home-page .competency:nth-child(2) { order: 2; }
+  .home-page .competency:nth-child(3) { order: 3; }
+  .home-page .competency:nth-child(4) { order: 4; }
+
+  .home-page .section--projects .section__heading {
+    margin-bottom: 24px;
+  }
+
+  .home-page .section--projects {
+    padding-bottom: 20px;
+  }
+
+  .home-page .home-mobile-break {
+    display: inline;
+  }
+
+  .home-page .section--projects .project-card {
+    grid-template-rows: auto auto;
+    row-gap: 24px;
+  }
+
+  .home-page .section--projects .project-card__body {
+    height: 254px;
+  }
+
+  .home-page .section--projects .project-card:nth-child(2) .project-card__body {
+    height: 276px;
+  }
+
+  .home-page .section--projects .project-card--soul,
+  .home-page .section--projects .project-card--arm {
+    gap: 20px;
+    border: 1px solid var(--border-card);
+    box-shadow: none;
+  }
+
+  .home-page .section--projects .project-card--soul .project-card__body {
+    height: 267px;
+  }
+
+  .home-page .section--projects .project-card--arm .project-card__body {
+    height: 214px;
+  }
+
+  .home-page .section--projects .project-card--soul .project-card__preview,
+  .home-page .section--projects .project-card--arm .project-card__preview {
+    height: 204.6875px;
+    aspect-ratio: auto;
+  }
+
+  .home-page .section--projects .project-card__desc {
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .home-page .section--projects .project-card:first-child .project-card__desc {
+    font-size: 16px;
+  }
+
+  .home-page .section--projects .project-card__meta {
+    margin-top: auto;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .home-page .section--projects .project-card__preview {
+    border-radius: 16px;
+  }
+
+  .home-page .section--contacts .section__heading {
+    margin-bottom: 18px;
+  }
+
+  .home-page .section--experience {
+    padding-top: 20px;
+  }
+
+  .home-page .section--contacts .contact-methods {
+    margin-top: 0;
+  }
+
+  .home-page .section--contacts .contact-item {
+    min-height: 79px;
+    padding: 12px 24px;
+  }
+
+  .home-page .section--contacts .site-footer {
+    margin-top: 28px;
+    padding: 20px 0;
+    line-height: 20px;
+  }
+
+  .home-page .section--contacts .site-footer__route {
+    height: 8px;
+    border-radius: 4px;
+  }
+}

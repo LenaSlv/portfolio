@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сервис заказа корпоративного транспорта — черновик Editorial Atlas</title>
+  <meta name="robots" content="noindex">
+  <meta name="description" content="Черновик кейса в стиле «Editorial Atlas»: мобильное приложение заказа корпоративного транспорта. Внутренний продукт для крупного банка · NDA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles-atlas-draft.css">
+</head>
+<body>
+
+  <div class="atlas-draft-banner">Черновик кейса в&nbsp;стиле «Editorial Atlas» · текст и&nbsp;стиль — для&nbsp;обсуждения</div>
+
+  <!-- 01 · Обложка -->
+  <header class="atlas-hero">
+    <div class="container">
+      <p class="atlas-hero__eyebrow">Внутренний продукт для&nbsp;крупного банка · NDA</p>
+      <h1 class="atlas-hero__title">Сервис заказа<br>корпоративного транспорта</h1>
+      <p class="atlas-hero__lead">Один интерфейс для&nbsp;сотрудников с&nbsp;постоянным, сменным и&nbsp;гибридным графиком.</p>
+      <p class="atlas-hero__meta">
+        <span>Роль · UX/UI-дизайнер</span>
+        <span>Платформы · iOS / Android</span>
+        <span>Экраны показаны с&nbsp;вымышленными данными</span>
+      </p>
+      <div class="atlas-hero__showcase">
+        <img src="assets/hero-showcase.png" alt="Экраны приложения: карта с маршрутом и заказом транспорта, профиль сотрудника, QR-билет и закреплённый маршрут" width="1520" height="760">
+      </div>
+    </div>
+  </header>
+
+  <!-- 02 · Задача и контекст -->
+  <section class="atlas-section">
+    <div class="container">
+      <p class="atlas-kicker">Задача и&nbsp;контекст</p>
+      <h2 class="atlas-section__title">Один интерфейс для&nbsp;двух режимов работы</h2>
+      <p class="atlas-section__lead">Компании нужно перевозить сотрудников до&nbsp;офисов, куда неудобно добираться общественным транспортом. Но&nbsp;у&nbsp;сотрудников разные графики: часть работает по&nbsp;фиксированному расписанию, часть&nbsp;— сменами, гибридно или нерегулярно.</p>
+      <div class="atlas-info-cards">
+        <article class="atlas-info-card">
+          <h3 class="atlas-info-card__title">Два сценария<br>как&nbsp;один путь</h3>
+          <p class="atlas-info-card__body">Персональный предзаказ нужен для&nbsp;сменных и&nbsp;гибридных графиков. Закреплённый автобус&nbsp;— для&nbsp;регулярных поездок без&nbsp;ежедневных действий. При&nbsp;переходе на&nbsp;постоянный маршрут пользователь не&nbsp;переучивается.</p>
+        </article>
+        <article class="atlas-info-card">
+          <h3 class="atlas-info-card__title">Связность сценариев<br>и&nbsp;качество данных</h3>
+          <p class="atlas-info-card__body">Спроектировала заказ транспорта, QR-билет, историю поездок, профиль и&nbsp;обращения. Мои решения&nbsp;— общая логика двух сценариев, иерархия экрана закреплённого маршрута и&nbsp;структурированные обращения вместо свободного текста.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 · Персональный предзаказ -->
+  <section class="atlas-section atlas-section--alt">
+    <div class="container">
+      <p class="atlas-kicker">Персональный предзаказ</p>
+      <h2 class="atlas-section__title">Предзаказ для&nbsp;нерегулярных поездок</h2>
+      <p class="atlas-section__lead">Сменные и&nbsp;гибридные графики, разовые поездки и&nbsp;работа в&nbsp;нетиповое время не&nbsp;укладываются в&nbsp;постоянный маршрут. Предзаказ позволяет выбрать направление, дату и&nbsp;время подачи транспорта.</p>
+
+      <article class="atlas-hyp">
+        <p class="atlas-hyp__label">Продуктовая гипотеза</p>
+        <h3 class="atlas-hyp__title">Поездка только на&nbsp;нужные дни</h3>
+        <p class="atlas-hyp__body">Если сотрудник может выбирать направление и&nbsp;время для&nbsp;каждой поездки, люди с&nbsp;нерегулярным графиком смогут пользоваться корпоративным транспортом без&nbsp;закрепления за&nbsp;постоянным маршрутом, а&nbsp;бизнес увидит фактический нерегулярный спрос.</p>
+        <p class="atlas-hyp__solution">Предзаказ позволяет сотруднику заказывать транспорт только на&nbsp;нужные дни и&nbsp;время, а&nbsp;бизнесу&nbsp;— видеть нерегулярный спрос и&nbsp;назначать транспорт по&nbsp;фактической потребности.</p>
+      </article>
+
+      <div class="atlas-row">
+        <div class="atlas-row__screen">
+          <img src="assets/phone-preorder.png" alt="Экран предзаказа: выбор направления, даты и времени подачи транспорта" width="295" height="600">
+        </div>
+        <article class="atlas-solution">
+          <p class="atlas-solution__title">Моё решение</p>
+          <ul class="atlas-solution__list">
+            <li>Спроектировала сценарий предзаказа для&nbsp;сотрудников со&nbsp;сменным и&nbsp;гибридным графиком</li>
+            <li>Объединила выбор направления, маршрута и&nbsp;времени в&nbsp;одном экране</li>
+            <li>Сократила форму до&nbsp;обязательных параметров заказа</li>
+            <li>Показала доступные интервалы без&nbsp;отдельного экрана</li>
+            <li>Сохранила маршрут видимым на&nbsp;карте</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 · Закреплённый маршрут -->
+  <section class="atlas-section">
+    <div class="container">
+      <p class="atlas-kicker">Закреплённый маршрут</p>
+      <h2 class="atlas-section__title">Маршрут без&nbsp;ежедневного заказа</h2>
+      <p class="atlas-section__lead">Сотрудники с&nbsp;постоянным графиком закрепляются за&nbsp;маршрутом с&nbsp;регулярными рейсами. Транспорт назначается автоматически, ежедневные действия не&nbsp;требуются.</p>
+
+      <article class="atlas-hyp">
+        <p class="atlas-hyp__label">Продуктовая гипотеза</p>
+        <h3 class="atlas-hyp__title">Сначала&nbsp;— время прибытия</h3>
+        <p class="atlas-hyp__body">Если на&nbsp;главном экране закреплённого маршрута показать время прибытия как&nbsp;главную информацию, а&nbsp;карту, расписание и&nbsp;данные автобуса оставить доступными по&nbsp;запросу, сотрудник сможет понять, когда выходить к&nbsp;остановке, без&nbsp;ежедневного оформления одной и&nbsp;той же поездки.</p>
+        <div class="atlas-hyp__values">
+          <div class="atlas-value">
+            <p class="atlas-value__label">Пользователю</p>
+            <p class="atlas-value__text">Маршрут назначен заранее, а&nbsp;главный ответ&nbsp;— «Прибытие через N мин»&nbsp;— виден сразу.</p>
+          </div>
+          <div class="atlas-value">
+            <p class="atlas-value__label">Бизнесу</p>
+            <p class="atlas-value__text">Предсказуемая загрузка маршрутов и&nbsp;планирование по&nbsp;фактическим спискам.</p>
+          </div>
+        </div>
+      </article>
+
+      <div class="atlas-row">
+        <div class="atlas-row__screen">
+          <img src="assets/phone-route.png" alt="Экран закреплённого маршрута: карта с положением автобуса и время прибытия на остановку" width="295" height="600">
+        </div>
+        <article class="atlas-solution">
+          <p class="atlas-solution__title">Моё решение</p>
+          <ul class="atlas-solution__list">
+            <li>Построила иерархию экрана вокруг времени прибытия</li>
+            <li>Сделала «Прибытие через N мин» главным акцентом</li>
+            <li>Оставила карту как&nbsp;пространственное подтверждение движения</li>
+            <li>Разместила рядом ближайшие рейсы и&nbsp;данные автобуса</li>
+            <li>Сохранила общие элементы с&nbsp;предзаказом, чтобы пользователь не&nbsp;переучивался</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05 · QR-билет -->
+  <section class="atlas-section atlas-section--alt">
+    <div class="container">
+      <p class="atlas-kicker">QR-билет</p>
+      <h2 class="atlas-section__title">Билет в&nbsp;приложении, контроль при&nbsp;посадке</h2>
+      <p class="atlas-section__lead">Водитель сканирует QR-код при&nbsp;входе. Код привязан к&nbsp;учётной записи и&nbsp;автоматически обновляется.</p>
+
+      <article class="atlas-hyp">
+        <p class="atlas-hyp__label">Продуктовая гипотеза</p>
+        <h3 class="atlas-hyp__title">Динамический QR вместо&nbsp;передаваемого пропуска</h3>
+        <p class="atlas-hyp__body">Если QR-код привязан к&nbsp;учётной записи и&nbsp;обновляется автоматически, сотрудник сможет подтвердить право на&nbsp;поездку в&nbsp;приложении, а&nbsp;пересланный скриншот к&nbsp;моменту посадки станет недействительным.</p>
+        <p class="atlas-hyp__solution">Пользователю&nbsp;· билет всегда под&nbsp;рукой и&nbsp;не&nbsp;нужен бумажный носитель. Бизнесу&nbsp;· контроль доступа и&nbsp;автоматический учёт поездок.</p>
+      </article>
+
+      <div class="atlas-row">
+        <div class="atlas-row__screen atlas-row__screen--narrow">
+          <img src="assets/phone-qr.png" alt="Экран QR-билета для посадки в транспорт" width="295" height="600">
+        </div>
+        <article class="atlas-solution">
+          <p class="atlas-solution__title">Почему код обновляется</p>
+          <p class="atlas-solution__text">Без&nbsp;привязки и&nbsp;обновления QR превращается в&nbsp;передаваемый пропуск. Автоматическое обновление делает пересланный скриншот недействительным и&nbsp;связывает посадку с&nbsp;конкретной учётной записью.</p>
+          <p class="atlas-solution__note">Результат механики&nbsp;· водитель проверяет доступ при&nbsp;посадке, а&nbsp;система автоматически фиксирует, кто, когда и&nbsp;каким рейсом воспользовался.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 · Обращения с контекстом поездки -->
+  <section class="atlas-section">
+    <div class="container">
+      <p class="atlas-kicker">Обращения в&nbsp;поддержку</p>
+      <h2 class="atlas-section__title">Обращения с&nbsp;контекстом поездки</h2>
+
+      <article class="atlas-hyp">
+        <p class="atlas-hyp__label">Продуктовая гипотеза</p>
+        <h3 class="atlas-hyp__title">Данные вместо&nbsp;свободного текста</h3>
+        <p class="atlas-hyp__body">Если пользователь выбирает тему и&nbsp;поездку из&nbsp;готовых вариантов, а&nbsp;не&nbsp;описывает весь контекст вручную, диспетчер получит обращение, готовое к&nbsp;обработке, а&nbsp;продукт сможет использовать категории для&nbsp;анализа качества маршрутов и&nbsp;работы перевозчиков.</p>
+        <div class="atlas-hyp__values">
+          <div class="atlas-value">
+            <p class="atlas-value__label">Пользователю</p>
+            <p class="atlas-value__text">Не&nbsp;нужно вручную вспоминать дату, маршрут и&nbsp;детали поездки.</p>
+          </div>
+          <div class="atlas-value">
+            <p class="atlas-value__label">Бизнесу</p>
+            <p class="atlas-value__text">Тип обращения, связанная поездка и&nbsp;фото превращают жалобу в&nbsp;структурированные данные.</p>
+          </div>
+        </div>
+      </article>
+
+      <div class="atlas-solution-bar">
+        <p class="atlas-solution-bar__title">Моё решение</p>
+        <p class="atlas-solution-bar__text">Проектировала не&nbsp;просто форму, а&nbsp;качество данных на&nbsp;выходе: поездка из&nbsp;истории вместо текстового описания, типы обращений вместо общей темы и&nbsp;фото как&nbsp;доказательство.</p>
+      </div>
+
+      <div class="atlas-screens-panel">
+        <img src="assets/phones-support.png" alt="Два экрана обращения в поддержку: выбор поездки из истории и форма обращения" width="570" height="560">
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 · Финал -->
+  <section class="atlas-section atlas-section--final">
+    <div class="container">
+      <p class="atlas-final__statement">Детали проекта и&nbsp;остальные сценарии могу показать и&nbsp;рассказать на&nbsp;встрече.</p>
+    </div>
+  </section>
+
+</body>
+</html>
