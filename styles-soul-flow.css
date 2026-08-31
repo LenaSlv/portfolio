@@ -364,3 +364,102 @@ body.is-flow-modal-open {
     padding-left: 18px;
   }
 }
+
+@media (max-width: 640px) {
+  .case-page--soul .soul-flow-steps--branch-lane {
+    overflow: visible;
+    padding-right: 64px;
+  }
+
+  .case-page--soul .soul-flow-steps--branch-lane > div {
+    width: 100%;
+  }
+
+  .case-page--soul .soul-flow-steps--branch-lane::before {
+    left: calc(50% - 32px);
+  }
+
+  .case-page--soul .soul-flow-steps--branch-lane::after {
+    position: absolute;
+    top: calc(var(--branch-start) * 73px + 32px);
+    right: 0;
+    width: 64px;
+    height: calc(var(--branch-span) * 73px);
+    z-index: 2;
+    border-top: 1px solid #2f7cff;
+    border-right: 1px solid #2f7cff;
+    border-bottom: 1px solid #2f7cff;
+    content: "";
+    pointer-events: none;
+  }
+
+  .case-page--soul .soul-flow-steps--entry {
+    --branch-start: 3;
+    --branch-span: 1;
+  }
+
+  .case-page--soul .soul-flow-steps--search {
+    --branch-start: 5;
+    --branch-span: 1;
+  }
+
+  .case-page--soul .soul-flow-steps--attend {
+    --branch-start: 4;
+    --branch-span: 1;
+  }
+
+  .case-page--soul .soul-flow-steps--activity {
+    --branch-start: 3;
+    --branch-span: 2;
+  }
+
+  .case-page--soul .soul-flow-steps--create {
+    --branch-start: 4;
+    --branch-span: 2;
+  }
+
+  .case-page--soul .soul-flow-steps--profile {
+    --branch-start: 5;
+    --branch-span: 1;
+  }
+
+  .case-page--soul .soul-flow-branch-label {
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    width: 64px;
+    padding: 0 2px;
+    background: #141b27;
+    color: #8b98ad;
+    font-size: 8px;
+    line-height: 10px;
+    text-align: center;
+    pointer-events: none;
+  }
+
+  .case-page--soul .soul-flow-branch-label--yes {
+    top: calc(var(--branch-start) * 73px + 4px);
+  }
+
+  .case-page--soul .soul-flow-branch-label--no {
+    top: calc(var(--branch-start) * 73px + 22px);
+  }
+
+  .case-page--soul .soul-flow-entry-route-label {
+    right: 0;
+    left: auto;
+    width: 64px;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .case-page--soul .soul-flow-entry-route-label--yes {
+    top: calc(var(--branch-start) * 73px + 4px);
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .case-page--soul .soul-flow-entry-route-label--no {
+    top: calc(var(--branch-start) * 73px + 22px);
+  }
+}
