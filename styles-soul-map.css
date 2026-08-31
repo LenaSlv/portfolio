@@ -189,13 +189,14 @@
 
   .case-page--soul .soul-map .soul-compare figure img {
     width: 512px;
-    height: 499px;
+    height: 611px;
     margin-top: 12px;
     object-fit: fill;
     object-position: left top;
     mix-blend-mode: screen;
     border-radius: 20px;
     clip-path: inset(0 round 20px);
+    transform: translateY(-49px);
   }
 
   .case-page--soul .soul-map .soul-solution-list {
