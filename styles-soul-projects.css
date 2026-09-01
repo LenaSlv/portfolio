@@ -87,6 +87,10 @@
     box-sizing: border-box;
   }
 
+  .case-page--soul .other-project-card:nth-child(1) .other-project-card__top > .kicker {
+    width: 114px;
+  }
+
   .case-page--soul .other-project-card__title {
     font-size: 22px;
     line-height: 27.5px;
