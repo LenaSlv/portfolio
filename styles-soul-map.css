@@ -1,4 +1,6 @@
 /* Soul · Решение 1 — геометрия блока по Figma 2166:12899. */
+.case-page--soul .soul-compare--meeting-mobile { display: none; }
+
 @media (min-width: 961px) {
   .case-page--soul .soul-map { height: 1502.192px; }
   .case-page--soul .soul-map .soul-hypothesis { height: 282px; padding: 24px; }
@@ -390,4 +392,62 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  /* Решение 2: четыре отдельных мокапа из Figma. Размер телефона фиксирован,
+     поэтому подписи и отступы не зависят от пропорций исходного изображения. */
+  .case-page--soul .soul-meeting .soul-compare--meeting {
+    width: 544px;
+    max-width: none;
+    gap: 16px;
+    overflow: hidden;
+  }
+
+  .case-page--soul .soul-meeting .soul-meeting-screen-group {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .case-page--soul .soul-meeting .soul-meeting-screen-group--before {
+    width: 440px;
+  }
+
+  .case-page--soul .soul-meeting .soul-meeting-screen-group--after {
+    width: 428px;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+
+  .case-page--soul .soul-meeting .soul-meeting-caption {
+    display: block;
+    padding-left: 16px;
+    color: #f6f9ff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+  }
+
+  .case-page--soul .soul-meeting .soul-meeting-phone-row {
+    display: flex;
+    flex: 0 0 auto;
+    gap: 16px;
+  }
+
+  .case-page--soul .soul-meeting .soul-meeting-screen-group--before .soul-meeting-phone-row {
+    padding-left: 16px;
+  }
+
+  .case-page--soul .soul-meeting .soul-meeting-phone {
+    display: block;
+    flex: 0 0 195.812px;
+    width: 195.812px;
+    height: 399px;
+    max-width: none;
+    object-fit: fill;
+    border-radius: 0;
+  }
+
+  .case-page--soul .soul-compare--meeting-desktop { display: none; }
+  .case-page--soul .soul-compare--meeting-mobile { display: flex; }
 }
