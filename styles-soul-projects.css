@@ -1,5 +1,34 @@
-/* Карточки Soul по Figma 2006:3542. */
+/* Блоки внизу Soul используют ту же геометрию, что и корпоративный кейс. */
 .case-page--soul .other-projects { height: 564px; min-height: 564px; }
+.case-page--soul .section--contacts {
+  height: 534px;
+  min-height: 534px;
+  padding-top: 88px;
+  padding-bottom: 70px;
+  background: #06080b;
+}
+
+.case-page--soul .section--contacts .section__heading {
+  margin-bottom: 22px;
+  color: #eef2f7;
+  font-size: 48px;
+  line-height: 58px;
+}
+
+.case-page--soul .section--contacts .site-footer {
+  height: 82px;
+  margin-top: 22px;
+  padding: 0;
+}
+
+.case-page--soul .section--contacts .site-footer__route {
+  margin-top: 22px;
+}
+
+.case-page--soul .other-projects__nav-btn img {
+  width: 20px;
+  height: 20px;
+}
 
 @media (min-width: 961px) {
   .case-page--soul .other-projects__head { height: 52px; overflow: hidden; }
@@ -7,16 +36,36 @@
   .case-page--soul .other-projects__row,
   .case-page--soul .other-projects__track { height: 300px; }
   .case-page--soul .other-projects__track { width: max-content; }
-  .case-page--soul .other-project-card { width: 680px; height: 300px; padding: 24px; gap: 20px; overflow: hidden; }
-  .case-page--soul .other-project-card__body { flex: 0 0 305.128px; width: 305.128px; height: 252px; gap: 20px; justify-content: flex-start; overflow: hidden; }
+  .case-page--soul .other-project-card { width: 680px; height: 300px; padding: 23px; overflow: hidden; }
+  .case-page--soul .other-project-card__body,
+  .case-page--soul .other-project-card__preview { flex: 0 0 305.128px; width: 305.128px; height: 252px; }
+  .case-page--soul .other-project-card__body { gap: 0; overflow: hidden; }
+  .case-page--soul .other-project-card__top { gap: 10px; }
   .case-page--soul .other-project-card__body > .kicker { align-self: flex-start; height: 21px; padding: 0 12px; line-height: 9px; }
-  .case-page--soul .other-project-card__body > .other-project-card__title { width: 294.231px; max-width: 100%; font-size: 22px; line-height: 27.5px; }
-  .case-page--soul .other-project-card__spacer { flex: 1 0 0; min-height: 1px; }
+  .case-page--soul .other-project-card__title { color: #fff; font-size: 22px; line-height: 28px; }
   .case-page--soul .other-project-card__body > .other-project-card__meta { gap: 10px; color: #616b80; font-size: 12px; line-height: 9.808px; }
-  .case-page--soul .other-project-card__body > .other-project-card__link { color: #fff; font-size: 15px; line-height: 18px; }
+  .case-page--soul .other-project-card__link { color: #fff; }
   .case-page--soul .other-project-card__preview { flex: 0 0 305.128px; width: 305.128px; height: 252px; border-radius: 16px; }
 }
 
 @media (max-width: 960px) {
-  .case-page--soul .other-projects { height: auto; min-height: 0; padding-top: 20px; padding-bottom: 20px; }
+  .case-page--soul .other-projects,
+  .case-page--soul .section--contacts { height: auto; min-height: 0; }
+  .case-page--soul .other-projects { padding-top: 28px; padding-bottom: 28px; }
+}
+
+@media (max-width: 640px) {
+  .case-page--soul .other-projects,
+  .case-page--soul .section--contacts {
+    padding-top: 20px;
+  }
+
+  .case-page--soul .other-projects { padding-bottom: 20px; }
+  .case-page--soul .section--contacts { padding-bottom: 48px; }
+
+  .case-page--soul .section--contacts .section__heading {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.32px;
+  }
 }
