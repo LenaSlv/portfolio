@@ -448,6 +448,6 @@
     border-radius: 0;
   }
 
-  .case-page--soul .soul-compare--meeting-desktop { display: none; }
-  .case-page--soul .soul-compare--meeting-mobile { display: flex; }
+  .case-page--soul .soul-meeting .soul-compare--meeting-desktop { display: none; }
+  .case-page--soul .soul-meeting .soul-compare--meeting-mobile { display: flex; }
 }
