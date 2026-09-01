@@ -344,7 +344,7 @@
     mix-blend-mode: screen;
     border-radius: 20px;
     clip-path: inset(0 round 20px);
-    transform: translate(-41px, -45px);
+    transform: translate(-41px, -30px);
   }
 
   .case-page--soul .soul-meeting .soul-compare figure:nth-child(2) {
@@ -359,7 +359,7 @@
   .case-page--soul .soul-meeting .soul-compare figure:nth-child(2) img {
     width: 490px;
     margin-left: 0;
-    transform: translate(-41px, -45px);
+    transform: translate(-41px, -30px);
   }
 
   .case-page--soul .soul-meeting .soul-solution-list {
