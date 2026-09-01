@@ -1,0 +1,108 @@
+/* Soul · Результат · геометрия мобильного экрана по Figma 2349:5237. */
+.case-page--soul .soul-result__content,
+.case-page--soul .soul-result__cards {
+  display: contents;
+}
+
+@media (max-width: 640px) {
+  .case-page--soul .soul-result {
+    height: auto;
+    min-height: 0;
+    padding: 20px 16px;
+  }
+
+  .case-page--soul .soul-result > .container {
+    width: 100%;
+    gap: 24px;
+  }
+
+  .case-page--soul .soul-result h2 {
+    width: 358px;
+    max-width: 100%;
+    font-size: 32px;
+    line-height: 38.4px;
+  }
+
+  .case-page--soul .soul-result__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .case-page--soul .soul-result__content > .soul-lead {
+    width: 358px;
+    max-width: 100%;
+    margin: 0;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .case-page--soul .soul-result__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .case-page--soul .soul-result__cards > .soul-card-grid {
+    display: contents;
+    width: auto;
+    height: auto;
+  }
+
+  .case-page--soul .soul-result__cards .soul-card {
+    width: 358px;
+    max-width: 100%;
+    min-width: 0;
+    padding: 17px;
+    box-sizing: border-box;
+    border-radius: 28px;
+  }
+
+  .case-page--soul .soul-result__cards .soul-card h3 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 25.2px;
+  }
+
+  .case-page--soul .soul-result__cards .soul-card p {
+    margin: 0;
+    padding-top: 8px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .case-page--soul .soul-result__cards .soul-result-card {
+    width: 358px;
+    max-width: 100%;
+    height: auto;
+    min-height: 0;
+    padding: 17px;
+    box-sizing: border-box;
+    border: 1px solid #2d5a95;
+    border-radius: 22px;
+  }
+
+  .case-page--soul .soul-result__cards .soul-result-card h3 {
+    margin: 0;
+    color: #2e6eeb;
+    font-size: 18px;
+    line-height: 25.2px;
+  }
+
+  .case-page--soul .soul-result__cards .soul-result-card p {
+    margin: 0;
+    padding-top: 12px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .case-page--soul .soul-result > .container > .soul-footnote {
+    width: 358px;
+    max-width: 100%;
+    margin: 0;
+    font-size: 15px;
+    line-height: 23px;
+  }
+}
