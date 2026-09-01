@@ -1,0 +1,121 @@
+/* Адаптивный блок «Другие проекты» скопирован из корпоративного кейса. */
+@media (max-width: 640px) {
+  .case-page--soul {
+    width: 100vw;
+  }
+
+  .case-page--soul .other-projects {
+    height: 656.46875px;
+    min-height: 0;
+    padding: 32px 16px;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .case-page--soul .other-projects__head {
+    width: 100%;
+    height: 42px;
+  }
+
+  .case-page--soul .other-projects__title {
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+
+  .case-page--soul .other-projects__nav {
+    width: 96px;
+    gap: 16px;
+  }
+
+  .case-page--soul .other-projects__nav-btn {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    border-radius: 24px;
+  }
+
+  .case-page--soul .other-projects__row {
+    width: calc(100% + 16px);
+    height: 514.46875px;
+    overflow: hidden;
+  }
+
+  .case-page--soul .other-projects__track {
+    width: max-content;
+    height: 514.46875px;
+    gap: 16px;
+    transition: transform 0.4s ease;
+  }
+
+  .case-page--soul .other-project-card {
+    flex: 0 0 343px;
+    width: 343px;
+    height: 514px;
+    flex-direction: column;
+    gap: 20px;
+    padding: 24px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-sizing: border-box;
+  }
+
+  .case-page--soul .other-project-card__body,
+  .case-page--soul .other-project-card__preview {
+    flex: 0 0 222px;
+    width: 293px;
+    height: 222px;
+    min-width: 0;
+    box-sizing: border-box;
+  }
+
+  .case-page--soul .other-project-card__body {
+    gap: 0;
+    overflow: hidden;
+  }
+
+  .case-page--soul .other-project-card__top {
+    gap: 16px;
+  }
+
+  .case-page--soul .other-project-card__top > .kicker {
+    height: 28px;
+    padding: 6px 12px;
+    border-radius: 99px;
+    line-height: 16px;
+    box-sizing: border-box;
+  }
+
+  .case-page--soul .other-project-card__title {
+    font-size: 22px;
+    line-height: 27.5px;
+    letter-spacing: 0;
+  }
+
+  .case-page--soul .other-project-card__bottom {
+    gap: 12px;
+  }
+
+  .case-page--soul .other-project-card__meta {
+    gap: 10px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .case-page--soul .other-project-card__link {
+    font-size: 15px;
+    line-height: 22.5px;
+  }
+
+  .case-page--soul .other-project-card__preview {
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .case-page--soul .other-project-card__preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
