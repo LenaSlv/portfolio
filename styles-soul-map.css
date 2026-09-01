@@ -440,11 +440,14 @@
 
   .case-page--soul .soul-meeting .soul-meeting-phone {
     display: block;
-    flex: 0 0 195.812px;
-    width: 195.812px;
-    height: 399px;
-    max-width: none;
-    object-fit: fill;
+    flex: 0 0 195.812px !important;
+    width: 195.812px !important;
+    min-width: 195.812px;
+    max-width: 195.812px !important;
+    height: 399px !important;
+    min-height: 399px;
+    object-fit: contain;
+    aspect-ratio: 195.812 / 399;
     border-radius: 0;
   }
 
