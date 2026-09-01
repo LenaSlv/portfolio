@@ -334,9 +334,9 @@
   }
 
   .case-page--soul .soul-meeting .soul-compare figure img {
-    width: 507px;
+    width: 490px;
     max-width: none;
-    height: 496px;
+    height: auto;
     margin-top: 12px;
     margin-left: 16px;
     object-fit: fill;
@@ -344,7 +344,7 @@
     mix-blend-mode: screen;
     border-radius: 20px;
     clip-path: inset(0 round 20px);
-    transform: translate(-42px, -45px);
+    transform: translate(-41px, -45px);
   }
 
   .case-page--soul .soul-meeting .soul-compare figure:nth-child(2) {
@@ -357,9 +357,9 @@
   }
 
   .case-page--soul .soul-meeting .soul-compare figure:nth-child(2) img {
-    width: 487px;
+    width: 490px;
     margin-left: 0;
-    transform: translate(-40px, -45px);
+    transform: translate(-41px, -45px);
   }
 
   .case-page--soul .soul-meeting .soul-solution-list {
