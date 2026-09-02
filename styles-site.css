@@ -8756,3 +8756,95 @@ cod.site-header.is-scrolled .site-header__inner {
     flex: 0 0 1px;
   }
 }
+
+/* ARM web — точная обложка по Figma 2180:13656. */
+@media (min-width: 961px) {
+  body.case-page.case-page--arm:not(.case-page--soul) .case-hero {
+    width: 100vw;
+    height: 935px;
+    padding: 54px 96px 52px;
+    box-sizing: border-box;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-hero > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    width: 1248px;
+    max-width: 1248px;
+    height: 829px;
+    margin: 0;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-hero__title {
+    width: 1120px;
+    max-width: 1120px;
+    height: 66px;
+    margin: 0;
+    color: #eef2f7;
+    font-size: 58px;
+    font-weight: 600;
+    line-height: 66px;
+    letter-spacing: normal;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-hero__lead {
+    width: 900px;
+    max-width: 900px;
+    height: 31px;
+    margin: 0;
+    color: #7f8c9f;
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 31px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-hero__badges {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    width: 422px;
+    height: 30px;
+    margin: 0;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-hero__badges .case-hero__nda {
+    position: static;
+    display: flex;
+    flex: 0 0 auto;
+    align-items: flex-start;
+    height: 30px;
+    padding: 8px 12px;
+    overflow: hidden;
+    border: 0;
+    border-radius: 99px;
+    background: #1d2737;
+    color: #7f8c9f;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-hero__badges .case-hero__nda:nth-child(1) { width: 259px !important; }
+  body.case-page.case-page--arm:not(.case-page--soul) .case-hero__badges .case-hero__nda:nth-child(2) { width: 88px !important; }
+  body.case-page.case-page--arm:not(.case-page--soul) .case-hero__badges .case-hero__nda:nth-child(3) { width: 51px !important; }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-hero__cover {
+    width: 1248px;
+    height: 630px;
+    margin: 0;
+    border: 0;
+    border-radius: 28px;
+    aspect-ratio: auto;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-hero__cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
