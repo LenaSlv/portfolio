@@ -294,3 +294,83 @@
     object-fit: cover;
   }
 }
+
+/* Десктопный шаблон карточки SOUL совпадает с веб-версией корпоративного кейса. */
+@media (min-width: 961px) {
+  .case-page--soul .other-projects__row {
+    overflow: hidden;
+  }
+
+  .case-page--soul .other-project-card__body--desktop {
+    display: flex;
+    flex: 0 0 305.128px;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 305.128px;
+    height: 252px;
+    gap: 20px;
+  }
+
+  .case-page--soul .other-project-card__body--desktop .other-project-card__top {
+    display: flex;
+    flex: 1 1 auto;
+    width: 305.128px;
+    height: auto;
+    min-height: 0;
+    gap: 20px;
+  }
+
+  .case-page--soul .other-project-card__body--desktop .other-project-card__top > .kicker {
+    height: 21px;
+    padding: 6px 12px;
+    font-size: 12px;
+    line-height: 9px;
+  }
+
+  .case-page--soul .other-project-card__body--desktop .other-project-card__title {
+    flex: 1 1 auto;
+    width: 294.23px;
+    min-height: 0;
+    margin: 0;
+    font-size: 22px;
+    line-height: 27.5px;
+  }
+
+  .case-page--soul .other-project-card__body--desktop .other-project-card__meta {
+    display: flex;
+    flex: 0 0 10px;
+    align-items: center;
+    gap: 10px;
+    width: 305.128px;
+    height: 10px;
+    color: #616b80;
+    font-size: 12px;
+    line-height: 10px;
+    white-space: nowrap;
+  }
+
+  .case-page--soul .other-project-card__body--desktop .other-project-card__link {
+    flex: 0 0 18px;
+    height: 18px;
+    margin: 0;
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .case-page--soul .other-project-card__body--desktop .other-project-card__link::after {
+    content: '  →';
+  }
+
+  .case-page--soul .other-project-card__preview {
+    flex: 0 0 305.128px;
+    width: 305.128px;
+    height: 252px;
+  }
+
+  .case-page--soul .other-project-card__preview img {
+    width: 305.128px;
+    height: 252px;
+    object-fit: cover;
+  }
+}

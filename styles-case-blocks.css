@@ -245,3 +245,250 @@
     padding-left: var(--page-padding);
   }
 }
+
+/* Web-версия кейса «Единый транспортный сервис»: геометрия Figma 2117:4700 и 2117:4752. */
+@media (min-width: 961px) {
+  .case-page.case-page--pet:not(.case-page--soul) .other-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    width: 100%;
+    height: 564px;
+    min-height: 564px;
+    padding: 88px var(--page-padding);
+    box-sizing: border-box;
+    background: #141b27;
+    overflow: hidden;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .other-projects > .container {
+    width: 100%;
+    max-width: 1248px;
+    margin: 0 auto;
+    min-width: 0;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .other-projects__head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 52px;
+    min-height: 52px;
+    overflow: hidden;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .other-projects__title {
+    width: auto;
+    max-width: none;
+    color: #f6f9ff;
+    font-size: 44px;
+    line-height: 52px;
+    letter-spacing: -0.88px;
+    white-space: nowrap;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .other-projects__nav {
+    width: 112px;
+    height: 48px;
+    gap: 16px;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .other-projects__nav-btn {
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+    border-radius: 24px;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .other-projects__row {
+    width: 100%;
+    height: 300px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .other-projects__track {
+    display: flex;
+    width: max-content;
+    height: 300px;
+    gap: 24px;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .other-project-card {
+    display: flex;
+    flex: 0 0 680px;
+    flex-direction: row;
+    width: 680px;
+    height: 300px;
+    gap: 20px;
+    padding: 24px;
+    border: 1px solid #21293b;
+    border-radius: 20px;
+    background: #06080b;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .other-project-card__body {
+    display: flex;
+    flex: 0 0 305.128px;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 305.128px;
+    height: 252px;
+    min-width: 0;
+    gap: 0;
+    overflow: hidden;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .other-project-card__top,
+  .case-page.case-page--pet:not(.case-page--soul) .other-project-card__bottom {
+    display: contents;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .other-project-card__top > .kicker {
+    width: max-content;
+    height: 21px;
+    padding: 0 12px;
+    line-height: 9px;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .other-project-card__title {
+    width: 294.231px;
+    max-width: 100%;
+    margin: 16px 0;
+    color: #f6f9ff;
+    font-size: 22px;
+    line-height: 27.5px;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .other-project-card:first-child .other-project-card__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .other-project-card__desc {
+    width: 283.333px;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    color: #5a6675;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20.3px;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .other-project-card__link {
+    margin-top: auto;
+    color: #f6f9ff;
+    font-size: 15px;
+    line-height: 22.5px;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .other-project-card__preview {
+    flex: 0 0 305.128px;
+    width: 305.128px;
+    height: 252px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .other-project-card__preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .section--contacts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 484px;
+    min-height: 484px;
+    padding: 88px var(--page-padding) 0;
+    box-sizing: border-box;
+    background: #06080b;
+    overflow: hidden;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .section--contacts > .container {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 100%;
+    max-width: 1248px;
+    height: 396px;
+    margin: 0 auto;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .section--contacts > .container::after {
+    content: '';
+    flex: 0 0 48px;
+    width: 1px;
+    height: 48px;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .section--contacts .section__heading {
+    flex: 0 0 58px;
+    width: 1050px;
+    height: 58px;
+    max-width: 100%;
+    margin: 0;
+    color: #f6f9ff;
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .section--contacts .contact-methods {
+    display: flex;
+    flex: 0 0 108px;
+    flex-direction: row;
+    width: 100%;
+    height: 108px;
+    gap: 16px;
+    margin: 0;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .section--contacts .contact-item {
+    display: flex;
+    flex: 1 0 0;
+    flex-direction: column;
+    width: auto;
+    height: 108px;
+    min-height: 108px;
+    gap: 8px;
+    padding: 20px 24px;
+    border-radius: 18px;
+    box-sizing: border-box;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .section--contacts .contact-item__label {
+    height: 20px;
+    line-height: 19.5px;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .section--contacts .contact-item__value {
+    height: 27px;
+    line-height: 27px;
+    white-space: nowrap;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .section--contacts .site-footer {
+    display: flex;
+    flex: 0 0 82px;
+    width: 100%;
+    height: 82px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .case-page.case-page--pet:not(.case-page--soul) .section--contacts .site-footer__route {
+    flex: 0 0 12px;
+    width: 100%;
+    height: 12px;
+    margin: 0;
+    border-radius: 6px;
+  }
+}

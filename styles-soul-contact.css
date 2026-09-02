@@ -210,3 +210,36 @@
   }
 
 }
+
+/* Веб-версия контактов SOUL использует ту же горизонтальную раскладку, что и корпоративный кейс. */
+@media (min-width: 961px) {
+  .case-page--soul .soul-contact {
+    width: 100vw;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .case-page--soul .soul-contact > .container {
+    flex: 0 0 396px;
+    width: 100%;
+    max-width: 1248px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .case-page--soul .soul-contact__links {
+    flex-direction: row;
+    width: 1248px;
+    max-width: 100%;
+    height: 108px;
+    gap: 16px;
+  }
+
+  .case-page--soul .soul-contact__link {
+    flex: 1 1 0;
+    width: auto;
+    height: 108px;
+    min-height: 108px;
+    box-sizing: border-box;
+  }
+}

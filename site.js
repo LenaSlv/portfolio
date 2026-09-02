@@ -133,7 +133,8 @@ document.querySelectorAll('.other-projects').forEach(function (block) {
       return item.href !== currentPage;
     });
 
-    var isArmDesktop = document.body.classList.contains('case-page--arm') && window.matchMedia('(min-width: 961px)').matches;
+    var isCaseDesktop = window.matchMedia('(min-width: 961px)').matches;
+    var isArmDesktop = document.body.classList.contains('case-page--arm') && isCaseDesktop;
     if (isArmDesktop) {
       var desktopOrder = ['case-corporate.html', 'case-soul.html', 'case-transport-pet.html'];
       visibleProjectCards.sort(function (a, b) {
@@ -148,9 +149,10 @@ document.querySelectorAll('.other-projects').forEach(function (block) {
         return;
       }
       card.href = item.href;
-      if (isArmDesktop) {
-        var tags = item.tags.map(function (tag) {
-          return '<span>' + tag + '</span>';
+      if (isCaseDesktop) {
+        var tags = item.tags.map(function (tag, tagIndex) {
+          var separator = tagIndex < item.tags.length - 1 ? '<span>·</span>' : '';
+          return '<span>' + tag + '</span>' + separator;
         }).join('');
         card.innerHTML = '<div class="other-project-card__body other-project-card__body--desktop"><div class="other-project-card__top"><span class="kicker">' + item.desktopKicker + '</span><h3 class="other-project-card__title">' + item.desktopTitle + '</h3></div><div class="other-project-card__meta">' + tags + '</div><span class="other-project-card__link">Смотреть кейс</span></div><div class="other-project-card__preview"><img src="' + item.image + '" alt="' + item.alt + '"></div>';
       } else {
