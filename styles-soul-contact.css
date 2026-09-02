@@ -1,0 +1,108 @@
+/* Блок контактов — точная геометрия Figma 2354:6800. */
+.case-page--soul .soul-contact {
+  height: 452px;
+  min-height: 452px;
+  padding: 40px 16px 48px;
+  background: #06080b;
+  overflow: hidden;
+}
+
+.case-page--soul .soul-contact > .container {
+  width: min(358px, calc(100vw - 32px));
+  max-width: 1248px;
+  height: 364px;
+  margin: 0;
+}
+
+.case-page--soul .soul-contact__body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 356px;
+  gap: 28px;
+}
+
+.case-page--soul .soul-contact__top {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 268px;
+  gap: 18px;
+}
+
+.case-page--soul .soul-contact h2 {
+  width: 100%;
+  height: 80px;
+  color: #f6f9ff;
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.case-page--soul .soul-contact__links {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 170px;
+  gap: 12px;
+}
+
+.case-page--soul .soul-contact__link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 79px;
+  padding: 12px 24px;
+  border-radius: 18px;
+  background: #0e1118;
+}
+
+.case-page--soul .soul-contact__label {
+  height: 20px;
+  color: #949eb8;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+}
+
+.case-page--soul .soul-contact__value {
+  height: 27px;
+  color: #f6f9ff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  white-space: nowrap;
+}
+
+.case-page--soul .soul-contact__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  padding: 20px 0;
+}
+
+.case-page--soul .soul-contact__footer p {
+  color: #949eb8;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+  white-space: nowrap;
+}
+
+.case-page--soul .soul-contact__bar {
+  width: 100%;
+  height: 8px;
+  border-radius: 6px;
+  background: #2e6eeb;
+}
+
+@media (min-width: 961px) {
+  .case-page--soul .soul-contact {
+    padding-right: var(--page-padding);
+    padding-left: var(--page-padding);
+  }
+}
