@@ -1,0 +1,159 @@
+/* Веб-версия блока «Возврат наличных» по Figma 2180:13928. */
+.refund-web-title-break {
+  display: none;
+}
+
+@media (min-width: 961px) {
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--refund {
+    display: block;
+    width: 100%;
+    height: 829px;
+    min-height: 829px;
+    padding: 112px 96px 72px;
+    box-sizing: border-box;
+    background: #05060a;
+    overflow: hidden;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--refund > .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    width: 1248px;
+    max-width: 1248px;
+    height: 645px;
+    margin: 0 auto;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--refund .arm-refund-intro {
+    display: contents;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--refund .arm-refund-intro .case-kicker {
+    flex: 0 0 17px;
+    width: 320px;
+    height: 17px;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    color: #2f6fe0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--refund .arm-refund-intro .case-section__title {
+    flex: 0 0 112px;
+    width: 1248px;
+    max-width: 1248px;
+    height: 112px;
+    margin: 0;
+    color: #eef2f7;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--refund .refund-web-title-break {
+    display: block;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--refund .arm-refund-intro .case-section__lead {
+    display: block;
+    flex: 0 0 28px;
+    width: 1248px;
+    max-width: 1248px;
+    height: 28px;
+    margin: 0;
+    color: #7f8c9f;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--refund .edge-row {
+    display: flex;
+    flex: 0 0 404px;
+    align-items: center;
+    gap: 6px;
+    width: 1165.011px;
+    height: 404px;
+    margin: 0;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--refund .edge-arrow {
+    flex: 0 0 15px;
+    width: 15px;
+    height: 22px;
+    color: #2e6eeb;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--refund .edge-row .proof-card--screen {
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    height: 404px;
+    padding: 24px;
+    border: 1px solid #21293b;
+    border-radius: 28px;
+    background: #1d2737;
+    box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.24);
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--refund .edge-row .proof-card--screen:nth-of-type(1),
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--refund .edge-row .proof-card--screen:nth-of-type(3) {
+    height: 403.969px;
+    width: 390px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--refund .edge-row .proof-card--screen:nth-of-type(2) {
+    width: 331.011px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--refund .edge-row .proof-card--screen img {
+    flex: 0 0 auto;
+    max-width: none;
+    object-fit: cover;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--refund .edge-row .proof-card--screen:nth-of-type(1) img {
+    width: 342px;
+    height: 325.969px;
+    border-radius: 9.202px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--refund .edge-row .proof-card--screen:nth-of-type(2) img {
+    width: 283.011px;
+    height: 326px;
+    border-radius: 12px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--refund .edge-row .proof-card--screen:nth-of-type(3) img {
+    width: 342px;
+    height: 326px;
+    border-radius: 12px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--refund .proof-card__caption {
+    flex: 0 0 18px;
+    width: auto;
+    height: 18px;
+    margin: 0;
+    color: #8f99b2;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+    white-space: nowrap;
+  }
+}
