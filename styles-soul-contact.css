@@ -2,13 +2,13 @@
 .case-page--soul .soul-contact {
   height: 452px;
   min-height: 452px;
-  padding: 40px 16px 48px;
+  padding: 40px var(--page-padding) 48px;
   background: #06080b;
   overflow: hidden;
 }
 
 .case-page--soul .soul-contact > .container {
-  width: min(358px, calc(100vw - 32px));
+  width: min(358px, calc(100vw - (2 * var(--page-padding))));
   max-width: 1248px;
   height: 364px;
   margin: 0;
@@ -102,7 +102,111 @@
 
 @media (min-width: 961px) {
   .case-page--soul .soul-contact {
-    padding-right: var(--page-padding);
-    padding-left: var(--page-padding);
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    box-sizing: border-box;
+    height: 484px;
+    min-height: 484px;
+    padding: 88px var(--page-padding) 0;
+    background: #06080b;
+    overflow: hidden;
   }
+
+  .case-page--soul .soul-contact > .container {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 100%;
+    max-width: 1248px;
+    height: 396px;
+    margin: 0 auto;
+  }
+
+  .case-page--soul .soul-contact__body,
+  .case-page--soul .soul-contact__top {
+    display: contents;
+    width: auto;
+    height: auto;
+  }
+
+  .case-page--soul .soul-contact h2 {
+    flex: 0 0 58px;
+    width: 1050px;
+    max-width: 100%;
+    height: 58px;
+    margin: 0;
+    color: #f6f9ff;
+    font-size: 48px;
+    line-height: 58px;
+  }
+
+  .case-page--soul .soul-contact__links {
+    display: flex;
+    flex: 0 0 108px;
+    flex-direction: row;
+    width: 100%;
+    height: 108px;
+    gap: 16px;
+  }
+
+  .case-page--soul .soul-contact__link {
+    flex: 1 0 0;
+    width: auto;
+    height: 108px;
+    min-width: 0;
+    gap: 8px;
+    padding: 20px 24px;
+    border-radius: 18px;
+  }
+
+  .case-page--soul .soul-contact__label {
+    flex: 0 0 18px;
+    width: 100%;
+    height: 18px;
+    line-height: 18px;
+  }
+
+  .case-page--soul .soul-contact__value {
+    flex: 0 0 25px;
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+  }
+
+  .case-page--soul .soul-contact__footer {
+    flex: 0 0 82px;
+    width: 100%;
+    height: 82px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .case-page--soul .soul-contact__footer p {
+    line-height: 18px;
+  }
+
+  .case-page--soul .soul-contact__footer p:first-child {
+    width: 360px;
+  }
+
+  .case-page--soul .soul-contact__footer p:last-child {
+    width: 240px;
+    text-align: right;
+  }
+
+  .case-page--soul .soul-contact__bar {
+    flex: 0 0 12px;
+    width: 100%;
+    height: 12px;
+    border-radius: 6px;
+  }
+
+  .case-page--soul .soul-contact::after {
+    content: '';
+    flex: 0 0 48px;
+    width: 1px;
+    height: 48px;
+  }
+
 }

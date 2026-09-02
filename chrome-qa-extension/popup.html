@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio QA Lens</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="popup">
+    <header class="popup__header">
+      <div>
+        <p class="eyebrow">Portfolio QA Lens</p>
+        <h1>Проверка страницы</h1>
+      </div>
+      <span class="status-dot" id="statusDot" aria-hidden="true"></span>
+    </header>
+
+    <p class="page-title" id="pageTitle">Открываю страницу…</p>
+
+    <div class="actions">
+      <button class="button button--primary" id="auditButton" type="button">Проверить</button>
+      <button class="button" id="highlightButton" type="button">Подсветить проблемы</button>
+      <button class="button" id="screenshotButton" type="button">Снять скриншот</button>
+      <button class="button button--bundle" id="bundleButton" type="button">Собрать комплект</button>
+    </div>
+
+    <div class="metrics" id="metrics" hidden></div>
+    <p class="status" id="status" role="status">Запускаю проверку…</p>
+    <ul class="issues" id="issues"></ul>
+
+    <footer class="popup__footer">
+      <button class="text-button" id="copyButton" type="button">Скопировать отчёт</button>
+      <button class="text-button" id="saveButton" type="button">Сохранить JSON</button>
+    </footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+/* Общие блоки кейсов по компонентам Figma 2405:16839 и 2354:6800. */
+.case-page:not(.case-page--soul) .other-projects {
+  height: 664px;
+  min-height: 664px;
+  padding: 32px 16px;
+  gap: 36px;
+  background: #141b27;
+  overflow: hidden;
+}
+
+.case-page:not(.case-page--soul) .other-projects > .container {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  min-width: 0;
+}
+
+.case-page:not(.case-page--soul) .other-projects__head {
+  width: 358px;
+  max-width: 100%;
+  height: 42px;
+  overflow: hidden;
+}
+
+.case-page:not(.case-page--soul) .other-projects > .container.other-projects__head {
+  width: min(358px, calc(100vw - 32px));
+  max-width: 358px;
+}
+
+.case-page:not(.case-page--soul) .other-projects__title {
+  font-size: 28px;
+  line-height: 42px;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.case-page:not(.case-page--soul) .other-projects__nav {
+  width: 96px;
+  gap: 16px;
+}
+
+.case-page:not(.case-page--soul) .other-projects__nav-btn {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  border-radius: 24px;
+  background: #1d2737;
+}
+
+.case-page:not(.case-page--soul) .other-projects__nav-btn img {
+  display: block;
+  width: 20px;
+  height: 20px;
+}
+
+.case-page:not(.case-page--soul) .other-projects__row {
+  width: 100%;
+  height: 522px;
+  overflow: hidden;
+}
+
+.case-page:not(.case-page--soul) .other-projects__track {
+  width: max-content;
+  height: 522px;
+  gap: 16px;
+}
+
+.case-page:not(.case-page--soul) .other-project-card {
+  flex: 0 0 343px;
+  width: 343px;
+  height: 522px;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+  background: #06080b;
+  border: 1px solid #21293b;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.case-page:not(.case-page--soul) .other-project-card__body {
+  flex: 0 0 238px;
+  width: 293px;
+  height: 238px;
+  min-width: 0;
+  gap: 32px;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.case-page:not(.case-page--soul) .other-project-card__top {
+  width: 100%;
+  height: 127px;
+  gap: 16px;
+}
+
+.case-page:not(.case-page--soul) .other-project-card__top > .kicker {
+  height: 28px;
+  padding: 6px 12px;
+  line-height: 16px;
+}
+
+.case-page:not(.case-page--soul) .other-project-card__title {
+  width: 294px;
+  max-width: 100%;
+  color: #f6f9ff;
+  font-size: 22px;
+  line-height: 27.5px;
+}
+
+.case-page:not(.case-page--soul) .other-project-card__bottom {
+  width: 100%;
+  gap: 12px;
+}
+
+.case-page:not(.case-page--soul) .other-project-card__desc {
+  width: 100%;
+  height: 36px;
+  color: #949eb8;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.case-page:not(.case-page--soul) .other-project-card:first-child .other-project-card__desc {
+  height: 44px;
+}
+
+.case-page:not(.case-page--soul) .other-project-card__link {
+  color: #f6f9ff;
+  font-size: 15px;
+  line-height: 22.5px;
+}
+
+.case-page:not(.case-page--soul) .other-project-card__preview {
+  flex: 0 0 214px;
+  width: 293px;
+  height: 214px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.case-page:not(.case-page--soul) .other-project-card__preview img {
+  width: 100%;
+  height: 222px;
+  object-fit: cover;
+}
+
+.case-page:not(.case-page--soul) .section--contacts {
+  height: 452px;
+  min-height: 452px;
+  padding: 40px 16px 48px;
+  background: #06080b;
+  overflow: hidden;
+}
+
+.case-page:not(.case-page--soul) .section--contacts > .container {
+  display: flex;
+  flex-direction: column;
+  width: min(358px, calc(100vw - 32px));
+  max-width: 1248px;
+  height: 364px;
+  margin: 0;
+}
+
+.case-page:not(.case-page--soul) .section--contacts .section__heading {
+  width: 100%;
+  height: 80px;
+  max-width: 980px;
+  margin: 0;
+  color: #f6f9ff;
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0;
+}
+
+.case-page:not(.case-page--soul) .section--contacts .contact-methods {
+  display: flex;
+  flex: 0 0 170px;
+  flex-direction: column;
+  width: 100%;
+  height: 170px;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.case-page:not(.case-page--soul) .section--contacts .contact-item {
+  display: flex;
+  flex: 0 0 79px;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 79px;
+  min-height: 79px;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 18px;
+  background: #0e1118;
+}
+
+.case-page:not(.case-page--soul) .section--contacts .contact-item__label {
+  height: 20px;
+  color: #949eb8;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+}
+
+.case-page:not(.case-page--soul) .section--contacts .contact-item__value {
+  height: 27px;
+  color: #f6f9ff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  white-space: nowrap;
+}
+
+.case-page:not(.case-page--soul) .section--contacts .site-footer {
+  display: flex;
+  flex: 0 0 60px;
+  width: 100%;
+  height: 60px;
+  margin-top: 28px;
+  padding: 20px 0;
+  color: #949eb8;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+  white-space: nowrap;
+}
+
+.case-page:not(.case-page--soul) .section--contacts .site-footer__route {
+  width: 100%;
+  height: 8px;
+  margin: 0;
+  border-radius: 6px;
+  background: #2e6eeb;
+}
+
+@media (min-width: 961px) {
+  .case-page:not(.case-page--soul) .section--contacts {
+    padding-right: var(--page-padding);
+    padding-left: var(--page-padding);
+  }
+}

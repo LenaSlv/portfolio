@@ -2,7 +2,7 @@
 .case-page--soul .other-projects {
   height: 664px;
   min-height: 664px;
-  padding: 32px 16px;
+  padding: 32px var(--page-padding);
   gap: 36px;
   background: #141b27;
   overflow: hidden;
@@ -23,7 +23,7 @@
 }
 
 .case-page--soul .other-projects > .container.other-projects__head {
-  width: min(358px, calc(100vw - 32px));
+  width: min(358px, calc(100vw - (2 * var(--page-padding))));
   max-width: 358px;
 }
 
@@ -144,4 +144,153 @@
   width: 100%;
   height: 222px;
   object-fit: cover;
+}
+
+/* Web-версия — точная геометрия Figma 2117:4700. */
+@media (min-width: 961px) {
+  .case-page--soul .other-projects {
+    height: 564px;
+    min-height: 564px;
+    padding: 88px var(--page-padding);
+    gap: 36px;
+    background: #141b27;
+    overflow: hidden;
+  }
+
+  .case-page--soul .other-projects > .container {
+    width: 100%;
+    max-width: 1248px;
+    margin: 0 auto;
+    min-width: 0;
+  }
+
+  .case-page--soul .other-projects__head {
+    width: 100%;
+    max-width: 1248px;
+    height: 52px;
+    overflow: hidden;
+  }
+
+  .case-page--soul .other-projects > .container.other-projects__head {
+    width: 100%;
+    max-width: 1248px;
+  }
+
+  .case-page--soul .other-projects__title {
+    width: auto;
+    max-width: none;
+    font-size: 44px;
+    line-height: 52px;
+    letter-spacing: -0.88px;
+    white-space: nowrap;
+  }
+
+  .case-page--soul .other-projects__nav {
+    width: 112px;
+    height: 48px;
+    gap: 16px;
+  }
+
+  .case-page--soul .other-projects__nav-btn {
+    width: 48px;
+    height: 48px;
+    flex: 0 0 48px;
+    border-radius: 24px;
+  }
+
+  .case-page--soul .other-projects__row {
+    width: 100%;
+    height: 300px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .case-page--soul .other-projects__track {
+    width: max-content;
+    height: 300px;
+    gap: 24px;
+  }
+
+  .case-page--soul .other-project-card {
+    flex: 0 0 680px;
+    width: 680px;
+    height: 300px;
+    flex-direction: row;
+    gap: 20px;
+    padding: 24px;
+    background: #06080b;
+    border: 1px solid #21293b;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .case-page--soul .other-project-card__body {
+    flex: 1 0 0;
+    width: auto;
+    height: 252px;
+    min-width: 0;
+    gap: 0;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+
+  .case-page--soul .other-project-card__top {
+    display: contents;
+  }
+
+  .case-page--soul .other-project-card__top > .kicker {
+    height: 21px;
+    padding: 6px 12px;
+    line-height: 8.718px;
+  }
+
+  .case-page--soul .other-project-card__title {
+    width: 294.231px;
+    max-width: 100%;
+    margin: 16px 0;
+    color: #f6f9ff;
+    font-size: 22px;
+    line-height: 27.5px;
+  }
+
+  .case-page--soul .other-project-card:first-child .other-project-card__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .case-page--soul .other-project-card__bottom {
+    display: contents;
+  }
+
+  .case-page--soul .other-project-card__desc {
+    width: 283.333px;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    color: #5a6675;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20.3px;
+  }
+
+  .case-page--soul .other-project-card__link {
+    margin-top: auto;
+    color: #f6f9ff;
+    font-size: 15px;
+    line-height: 22.5px;
+  }
+
+  .case-page--soul .other-project-card__preview {
+    flex: 0 0 305.128px;
+    width: 305.128px;
+    height: 252px;
+    border-radius: 16px;
+    overflow: hidden;
+  }
+
+  .case-page--soul .other-project-card__preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }

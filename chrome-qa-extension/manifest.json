@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Portfolio QA Lens",
+  "version": "0.1.0",
+  "description": "Проверка адаптива и быстрый скриншот открытой страницы портфолио.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "tabs",
+    "downloads",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "<all_urls>",
+    "file:///*"
+  ],
+  "action": {
+    "default_title": "Проверить страницу",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>",
+        "file:///*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
