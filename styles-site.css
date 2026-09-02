@@ -8774,7 +8774,7 @@ cod.site-header.is-scrolled .site-header__inner {
     width: 1248px;
     max-width: 1248px;
     height: 829px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   body.case-page.case-page--arm:not(.case-page--soul) .case-hero__title {
