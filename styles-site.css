@@ -8890,7 +8890,7 @@ cod.site-header.is-scrolled .site-header__inner {
     font-size: 48px;
     font-weight: 600;
     line-height: 56px;
-    text-wrap: balance;
+    text-wrap: initial;
   }
 
   body.case-page.case-page--arm:not(.case-page--soul) .arm-context .case-grid {
@@ -8961,5 +8961,231 @@ cod.site-header.is-scrolled .site-header__inner {
     font-weight: 400;
     line-height: 33.6px;
     letter-spacing: normal;
+  }
+}
+
+/* ARM web — точная геометрия блока 02 · Изменение заказа по Figma 2180:13667. */
+@media (min-width: 961px) {
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order {
+    height: 2117.02px;
+    padding: 112px 96px 0;
+    box-sizing: border-box;
+    background: #05060a;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order > .container {
+    display: grid;
+    grid-template-columns: 489px 728px;
+    grid-template-rows: 17px 112px 56px 101px 495px 125px 931.02px;
+    column-gap: 31px;
+    row-gap: 28px;
+    width: 1248px;
+    max-width: 1248px;
+    height: 2005.02px;
+    margin: 0 auto;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order > .container > .case-kicker {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    align-self: start;
+    width: 155px;
+    height: 17px;
+    margin: 0;
+    padding: 0;
+    color: #2f6fe0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    background: transparent;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order > .container > .case-section__title {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    width: 1080px;
+    max-width: 1080px;
+    height: 112px;
+    margin: 0;
+    color: #eef2f7;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    text-wrap: initial;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order > .container > .case-section__lead {
+    display: block;
+    grid-column: 1 / -1;
+    grid-row: 3;
+    width: 1080px;
+    max-width: 1080px;
+    height: 56px;
+    margin: 0;
+    color: #7f8c9f;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-order-notes {
+    display: contents;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-order-notes .note-card:first-child {
+    grid-column: 1 / -1;
+    grid-row: 4;
+    width: 1248px;
+    height: 101px;
+    padding: 24px 28px;
+    border: 1px solid #21293b;
+    border-radius: 28px;
+    background: #141b27;
+    box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.24);
+    box-sizing: border-box;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .note-card__label {
+    width: 1192px;
+    height: 17px;
+    margin: 0;
+    color: #2e6eeb;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .note-card__text {
+    width: 1192px;
+    height: 24px;
+    margin: 0;
+    color: #f6f9ff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-order-notes .note-card:nth-child(2) {
+    grid-column: 1;
+    grid-row: 5;
+    width: 489px;
+    height: 495px;
+    padding: 24px 28px;
+    border: 1px solid #21293b;
+    border-radius: 28px;
+    background: #141b27;
+    box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.24);
+    box-sizing: border-box;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-order-notes .note-card:nth-child(2) .note-card__label {
+    width: 433px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-order-notes .note-card:nth-child(2) .note-card__text {
+    width: 433px;
+    height: 96px;
+    line-height: 24px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-figma-screen--before {
+    grid-column: 2;
+    grid-row: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 728px;
+    height: 495px;
+    padding: 24px;
+    overflow: hidden;
+    border: 1px solid #21293b;
+    border-radius: 28px;
+    background: #1d2737;
+    box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.24);
+    box-sizing: border-box;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-figma-screen--before img {
+    width: 680px;
+    height: 447px;
+    max-width: none;
+    object-fit: fill;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .flow-steps-card {
+    grid-column: 1 / -1;
+    grid-row: 6;
+    width: 1248px;
+    height: 125px;
+    margin: 0;
+    padding: 24px 28px;
+    border: 1px solid #21293b;
+    border-radius: 28px;
+    background: #141b27;
+    box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.24);
+    box-sizing: border-box;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .flow-steps-card__label {
+    width: 1192px;
+    height: 17px;
+    margin: 0;
+    color: #2e6eeb;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .flow-steps {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 885px;
+    height: 44px;
+    flex-wrap: nowrap;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .flow-step {
+    height: 44px;
+    padding: 12px 20px;
+    border-radius: 18px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    box-sizing: border-box;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .flow-step:nth-of-type(1) { width: 212px; }
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .flow-step:nth-of-type(3) { width: 295px; }
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .flow-step:nth-of-type(5) { width: 133px; }
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .flow-step:nth-of-type(7) { width: 107px; }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .flow-connector {
+    width: 22px;
+    height: 2px;
+    flex: 0 0 22px;
+    border-radius: 1px;
+    background: #2e6eeb;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .flow-step--active {
+    padding: 12px 20px;
+    border: 1.5px solid #2e6eeb;
+    color: #2e6eeb;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-after-card {
+    grid-column: 1 / -1;
+    grid-row: 7;
+    width: 1248px;
+    height: 931.02px;
+    margin: 0;
+    padding: 24px;
+    border: 1px solid #21293b;
+    border-radius: 28px;
+    background: #141b27;
+    box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.24);
+    box-sizing: border-box;
   }
 }
