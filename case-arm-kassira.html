@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles-site.css?v=71">
+  <link rel="stylesheet" href="styles-site.css?v=73">
 </head>
 <body class="case-page case-page--arm">
 
@@ -82,19 +82,19 @@
         <h2 class="case-section__title">Не&nbsp;заставлять кассира оформлять продажу заново</h2>
         <p class="case-section__lead">Изменение выполняется внутри существующего заказа. Система пересчитывает стоимость, сравнивает её&nbsp;с&nbsp;уже оплаченной суммой и&nbsp;определяет следующий сценарий.</p>
 
-        <div class="note-card">
-          <p class="note-card__label">Бизнес-задача</p>
-          <p class="note-card__text">Сократить время кассира на&nbsp;изменение уже оформленного заказа и&nbsp;снизить число отменённых заказов в&nbsp;системе.</p>
-        </div>
-
-        <div class="compare-row">
+        <div class="arm-order-notes">
+          <div class="note-card">
+            <p class="note-card__label">Бизнес-задача</p>
+            <p class="note-card__text">Сократить время кассира на&nbsp;изменение уже оформленного заказа и&nbsp;снизить число отменённых заказов в&nbsp;системе.</p>
+          </div>
           <div class="note-card">
             <p class="note-card__label">Было</p>
             <p class="note-card__text">Добавить пассажира или услугу можно было только на&nbsp;этапе оформления заказа. Если заказ уже был оформлен, любое изменение требовало отменить его и&nbsp;оформить заново.</p>
           </div>
-          <div class="compare-screen">
-            <img src="assets/site/arm-order-before.png" alt="Старый интерфейс: заполнение информации о билетах">
-          </div>
+        </div>
+
+        <div class="arm-figma-screen arm-figma-screen--before">
+          <img src="assets/site/arm-order-before.png" alt="Старый интерфейс: заполнение информации о билетах">
         </div>
 
         <div class="flow-steps-card">
@@ -111,9 +111,18 @@
         </div>
 
         <article class="arm-after-card">
-          <p class="note-card__label">Стало</p>
-          <div class="arm-screen">
-            <img src="assets/site/arm-order-after.png" alt="Новый интерфейс: заказ с&nbsp;добавленным пассажиром и&nbsp;услугами через всплывающее меню">
+          <div class="arm-after-visual">
+            <p class="note-card__label arm-after-card__label">Стало</p>
+            <div class="arm-after-stage">
+              <div class="arm-screen">
+                <img src="assets/site/arm-order-after.png" alt="Новый интерфейс: заказ с&nbsp;добавленным пассажиром и&nbsp;услугами через всплывающее меню">
+              </div>
+              <div class="arm-order-popup" aria-label="Доступные дополнительные услуги">
+                <span>Детский без места <em>[Ctrl+D]</em></span>
+                <span>Багаж <em>[Ctrl + B]</em></span>
+                <span>Страховка багажа <em>[Ctrl + S]</em></span>
+              </div>
+            </div>
           </div>
           <p class="arm-after-card__text">В&nbsp;оформленном билете предусмотрен сценарий редактирования, в&nbsp;котором кассир добавляет пассажиров и&nbsp;услуги в&nbsp;существующий заказ, а&nbsp;система автоматически рассчитывает доплату.</p>
         </article>
@@ -123,39 +132,43 @@
     <section class="case-section case-section--payment">
       <div class="container">
         <span class="case-kicker">03 · Смешанная оплата</span>
-        <h2 class="case-section__title">Один заказ&nbsp;— несколько прозрачных платежей</h2>
-        <p class="case-section__lead">После каждой операции кассир видит текущее финансовое состояние заказа. Каждая оплата сохраняется отдельно со&nbsp;своим способом, суммой и&nbsp;статусом.</p>
-
-        <div class="note-card">
-          <p class="note-card__label">Бизнес-задача</p>
-          <p class="note-card__text">Снизить количество кликов кассира, сделать сценарий оплаты более нативным и&nbsp;добавить смешанную оплату&nbsp;— чтобы комбинированный платёж занимал меньше действий.</p>
+        <div class="arm-payment-intro">
+          <h2 class="case-section__title">Один заказ&nbsp;— несколько прозрачных платежей</h2>
+          <p class="case-section__lead">После каждой операции кассир видит текущее финансовое состояние заказа. Каждая оплата сохраняется отдельно со&nbsp;своим способом, суммой и&nbsp;статусом.</p>
         </div>
 
-        <div class="compare-row">
+        <div class="arm-payment-notes">
+          <div class="note-card">
+            <p class="note-card__label">Бизнес-задача</p>
+            <p class="note-card__text">Снизить количество кликов кассира, сделать сценарий оплаты более нативным и&nbsp;добавить смешанную оплату&nbsp;— чтобы комбинированный платёж занимал меньше действий.</p>
+          </div>
           <div class="note-card">
             <p class="note-card__label">Было</p>
             <p class="note-card__text">Смешанная оплата отсутствовала: заказ можно было оплатить только одним способом целиком или разбить платёж на&nbsp;отдельные этапы&nbsp;— каждый этап открывал новое модальное окно и&nbsp;требовал лишних кликов.</p>
           </div>
-          <div class="compare-screen">
-            <img src="assets/site/arm-payment-before.png" alt="Старый интерфейс: выбор формы оплаты и два последовательных окна оплаты">
-          </div>
         </div>
 
-        <div class="flow-steps-card">
-          <div class="flow-steps">
-            <span class="flow-step">Наличные</span>
-            <span class="flow-plus">+</span>
-            <span class="flow-step">карта</span>
-            <span class="flow-plus">+</span>
-            <span class="flow-step">СБП</span>
-            <span class="flow-plus">+</span>
-            <span class="flow-step">ещё одна карта</span>
-            <span class="flow-steps-note">— в&nbsp;любой комбинации</span>
+        <div class="arm-payment-before-flow">
+          <div class="arm-figma-screen arm-figma-screen--payment-before">
+            <img src="assets/site/arm-payment-before.png" alt="Старый интерфейс: выбор формы оплаты и два последовательных окна оплаты">
+          </div>
+
+          <div class="flow-steps-card">
+            <div class="flow-steps">
+              <span class="flow-step">Наличные</span>
+              <span class="flow-plus">+</span>
+              <span class="flow-step">Карта</span>
+              <span class="flow-plus">+</span>
+              <span class="flow-step">СБП</span>
+              <span class="flow-plus">+</span>
+              <span class="flow-step">Ещё одна карта</span>
+              <span class="flow-steps-note">в&nbsp;любой комбинации</span>
+            </div>
           </div>
         </div>
 
         <div class="payment-pairs">
-        <div class="pair-row">
+          <div class="pair-row pair-row--first">
           <div class="proof-card">
             <p class="proof-card__title">Остаток виден сразу</p>
             <p class="proof-card__text">Итого к&nbsp;оплате и&nbsp;остаток пересчитываются автоматически при&nbsp;добавлении каждого способа оплаты.</p>
@@ -168,13 +181,9 @@
             <img src="assets/site/arm-payment-modal.png" alt="Модальное окно смешанной оплаты">
             <p class="proof-card__caption">Модальное окно смешанной оплаты</p>
           </div>
-        </div>
-
-        <div class="pair-row">
-          <div class="proof-card proof-card--screen">
-            <img src="assets/site/arm-payment-methods.png" alt="Список подключённых способов оплаты">
-            <p class="proof-card__caption">Список подключённых способов оплаты</p>
           </div>
+
+          <div class="pair-row pair-row--second">
           <div class="proof-card">
             <p class="proof-card__title">Отмена по&nbsp;одному способу</p>
             <p class="proof-card__text">Каждый способ оплаты можно отменить отдельно&nbsp;— например, вернуть только оплату картой, оставив наличные. Или отменить всю оплату сразу.</p>
@@ -183,7 +192,11 @@
               <div class="value-pair__item"><strong>Клиенту</strong>Возврат оформляется быстрее и&nbsp;точнее.</div>
             </div>
           </div>
-        </div>
+            <div class="proof-card proof-card--screen">
+              <img src="assets/site/arm-payment-methods.png" alt="Список подключённых способов оплаты">
+              <p class="proof-card__caption">Список подключённых способов оплаты</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -191,8 +204,10 @@
     <section class="case-section case-section--refund">
       <div class="container">
         <span class="case-kicker">04 · Возврат наличных</span>
-        <h2 class="case-section__title">Возврат наличных не&nbsp;отменяет остальные платежи</h2>
-        <p class="case-section__lead">Система меняет статус только этой операции, сохраняет остальные платежи и&nbsp;пересчитывает остаток заказа.</p>
+        <div class="arm-refund-intro">
+          <h2 class="case-section__title">Возврат наличных не&nbsp;отменяет остальные платежи</h2>
+          <p class="case-section__lead">Система меняет статус только этой операции, сохраняет остальные платежи и пересчитывает остаток заказа.</p>
+        </div>
         <div class="edge-row">
           <div class="proof-card proof-card--screen">
             <img src="assets/site/arm-refund-1.png" alt="Заказ оплачен">
@@ -334,7 +349,7 @@
     </div>
   </div>
 
-  <script src="site.js?v=50"></script>
+  <script src="site.js?v=53"></script>
 <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
 </body>
 </html>

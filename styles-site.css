@@ -1581,150 +1581,6 @@ cod.site-header.is-scrolled .site-header__inner {
     color: #fff;
   }
 }
-
-@media (max-width: 960px) {
-  .case-page--arm .site-header {
-    margin-top: 16px;
-  }
-
-  .case-page--arm .case-topbar {
-    width: calc(100% - (2 * var(--page-padding)));
-    height: auto;
-    margin: 16px auto 20px;
-    padding: 0 0 17px;
-  }
-
-  .case-page--arm .case-topbar::after {
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-
-  .case-page--arm .case-hero,
-  .case-page--arm .arm-context,
-  .case-page--arm .case-section,
-  .case-page--arm .other-projects,
-  .case-page--arm .section--contacts {
-    height: auto;
-    min-height: 0;
-  }
-
-  .case-page--arm .case-hero {
-    padding-top: 28px;
-    padding-bottom: 26px;
-  }
-
-  .case-page--arm .case-story,
-  .case-page--arm .case-section,
-  .case-page--arm .other-projects,
-  .case-page--arm .section--contacts {
-    padding-top: 28px;
-    padding-bottom: 28px;
-  }
-
-  .case-page--arm .case-hero__title {
-    font-size: 44px;
-    line-height: 50px;
-  }
-
-  .case-page--arm .compare-row {
-    display: grid;
-    grid-template-columns: 1fr;
-    height: auto;
-  }
-
-  .case-page--arm .compare-row .note-card,
-  .case-page--arm .compare-screen,
-  .case-page--arm .flow-steps-card,
-  .case-page--arm .arm-after-card,
-  .case-page--arm .pair-row > .proof-card {
-    width: 100%;
-    height: auto;
-    min-height: 0;
-  }
-
-  .case-page--arm .compare-screen img,
-  .case-page--arm .case-section--order .compare-screen img,
-  .case-page--arm .case-section--payment .compare-screen img,
-  .case-page--arm .arm-after-card .arm-screen,
-  .case-page--arm .arm-after-card .arm-screen img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-
-  .case-page--arm .case-section--refund .edge-row {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 100%;
-    height: auto;
-  }
-
-  .case-page--arm .case-section--refund .proof-card--screen:nth-of-type(n) {
-    width: 100%;
-    height: auto;
-  }
-
-  .case-page--arm .case-section--refund .proof-card--screen:nth-of-type(n) img {
-    width: auto;
-    max-width: 100%;
-    height: auto;
-    max-height: 520px;
-    object-fit: contain;
-  }
-
-  .case-page--arm .edge-arrow {
-    transform: rotate(90deg);
-  }
-
-  .case-page--arm .section--contacts .section__heading {
-    font-size: 38px;
-    line-height: 46px;
-  }
-}
-
-@media (max-width: 640px) {
-  .case-page--arm .case-hero {
-    padding-top: 28px;
-    padding-bottom: 12px;
-  }
-
-  .case-page--arm .case-hero__title,
-  .case-page--arm .case-story__title,
-  .case-page--arm .case-section__title,
-  .case-page--arm .section--contacts .section__heading {
-    font-size: 32px;
-    line-height: 38px;
-    letter-spacing: -0.32px;
-  }
-
-  .case-page--arm .case-story,
-  .case-page--arm .case-section,
-  .case-page--arm .other-projects {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-
-  .case-page--arm .section--contacts {
-    padding-top: 20px;
-    padding-bottom: 48px;
-  }
-
-  .case-page--arm .arm-context .case-card {
-    height: auto;
-  }
-
-  .case-page--arm .pair-row {
-    flex-direction: column;
-  }
-
-  .case-page--arm .pair-row > .proof-card {
-    flex: 1 1 100%;
-    max-width: 100%;
-    min-width: 0;
-  }
-}
-
 /* Блок «Другие проекты» в Soul использует ту же геометрию, что и в корпоративном кейсе. */
 .case-page--soul .other-projects {
   height: 564px;
@@ -4726,7 +4582,7 @@ cod.site-header.is-scrolled .site-header__inner {
     align-items: flex-start;
     gap: 28px;
     width: 1248px;
-    margin: 0;
+    margin: 0 !important;
   }
 
   .case-page--pet .pet-repeat-section .case-story__eyebrow {
@@ -6079,4 +5935,1213 @@ cod.site-header.is-scrolled .site-header__inner {
     padding-top: 20px;
     padding-bottom: 48px;
   }
+}
+
+/* Старый ARM-адаптив отключён: геометрия собрана заново ниже.
+@media (max-width: 640px) {
+  html {
+    overflow-x: clip;
+  }
+
+  .case-page--arm .arm-context .arm-context__principle h3 {
+    margin: 0 !important;
+  }
+
+  .case-page--arm .arm-payment-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .case-page--arm .arm-refund-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .case-page--arm .arm-refund-intro .case-section__lead {
+    width: 340px;
+    max-width: 100%;
+  }
+
+  .case-page--arm .arm-order-notes .note-card:first-child {
+    height: 137px !important;
+  }
+
+  .case-page--arm .arm-order-notes .note-card:nth-child(2) {
+    height: 185px !important;
+  }
+
+  .case-page--arm .arm-after-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .case-page--arm .case-section--order .flow-steps-card {
+    height: 282px !important;
+    flex: 0 0 282px !important;
+  }
+
+  .case-page--arm .case-section--order .flow-step--active {
+    height: 43px;
+    box-sizing: border-box;
+    padding: 11.5px 19.5px;
+  }
+
+  .case-page--arm .arm-payment-notes {
+    gap: 12px !important;
+  }
+
+  .case-page--arm .arm-payment-notes .note-card:first-child {
+    height: 185px !important;
+  }
+
+  .case-page--arm .arm-payment-notes .note-card:nth-child(2) {
+    height: 209px !important;
+  }
+
+  .case-page--arm .arm-payment-before-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100% !important;
+  }
+
+  .case-page--arm .arm-figma-screen--before {
+    position: relative;
+    width: 100%;
+    height: 238.191px;
+    overflow: hidden;
+    border-radius: 0;
+    background: #05060a;
+  }
+
+  .case-page--arm .arm-figma-screen--before img {
+    position: absolute;
+    top: -4.62%;
+    left: -7%;
+    width: 115.92%;
+    max-width: none;
+    height: auto;
+    border-radius: 0;
+    opacity: 0;
+  }
+
+  .case-page--arm .arm-figma-screen--before {
+    background-image: url("assets/site/arm-order-before.png");
+    background-repeat: no-repeat;
+    background-size: 115.92% auto;
+    background-position: center -11px;
+  }
+
+  .case-page--arm .arm-figma-screen--before img,
+  .case-page--arm .arm-figma-screen--payment-before img {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+  }
+
+  .case-page--arm .arm-figma-screen--payment-before {
+    height: 719.253px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: #05060a !important;
+    background-image: url("assets/site/arm-payment-before.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: 114.525% auto !important;
+    background-position: center -10px !important;
+    box-shadow: none !important;
+  }
+
+  .case-page--arm .arm-figma-screen--payment-before img {
+    position: absolute;
+    top: -1.39%;
+    left: -7.317%;
+    width: 114.525%;
+    max-width: none;
+    height: auto;
+    border-radius: 0;
+    opacity: 0;
+  }
+
+  .case-page--arm .arm-figma-screen--payment-before {
+    background-image: url("assets/site/arm-payment-before.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: 114.525% auto !important;
+    background-position: center -10px !important;
+  }
+
+  .case-page--arm .arm-figma-screen--payment-before img {
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .case-page--arm .payment-pairs .pair-row:first-child {
+    gap: 24px !important;
+  }
+
+  .case-page--arm .payment-pairs .pair-row:nth-child(2) {
+    gap: 20px !important;
+  }
+
+  .case-page--arm .payment-pairs .pair-row--first > .proof-card:first-child {
+    height: 383px !important;
+  }
+
+  .case-page--arm .payment-pairs .pair-row--first > .proof-card {
+    height: 383px !important;
+    flex: 0 0 383px !important;
+  }
+
+  .case-page--arm .payment-pairs .pair-row--second > .proof-card:first-child {
+    height: 379px !important;
+  }
+
+  .case-page--arm .payment-pairs .pair-row--second > .proof-card {
+    height: 379px !important;
+    flex: 0 0 379px !important;
+  }
+
+  .case-page--arm .payment-pairs .pair-row--first > .proof-card--screen,
+  .case-page--arm .payment-pairs .pair-row--second > .proof-card--screen {
+    height: auto !important;
+    flex: 0 0 auto !important;
+  }
+
+  .case-page--arm .case-section--refund .edge-row .proof-card--screen:first-child {
+    height: 360.047px !important;
+  }
+}
+@media (max-width: 640px) {
+  .case-page--arm .arm-after-card__label {
+    font-size: 18px !important;
+    line-height: 25px !important;
+  }
+
+  .case-page--arm .arm-after-stage {
+    gap: 16px !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .case-page--arm .arm-after-stage .arm-screen {
+    width: 100% !important;
+    height: 421px !important;
+    overflow: hidden;
+    border: 1px solid #0e3532;
+    border-radius: 6px;
+    background: #fff;
+    box-sizing: border-box;
+  }
+
+  .case-page--arm .arm-after-stage .arm-screen img {
+    width: calc(100% + 8px) !important;
+    height: 422px !important;
+    max-width: none;
+    margin-left: -2px;
+    border-radius: 0 !important;
+    object-fit: cover;
+  }
+
+  .case-page--arm .arm-order-popup {
+    height: 154px !important;
+    box-sizing: border-box;
+    flex: 0 0 154px;
+  }
+
+  .case-page--arm .arm-after-card__text {
+    font-size: 18px !important;
+    line-height: 25px !important;
+  }
+
+  .case-page--arm .arm-figma-screen--payment-before {
+    height: 719.253px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: #05060a !important;
+    background-image: url("assets/site/arm-payment-before.png") !important;
+    background-repeat: no-repeat !important;
+    background-size: 114.525% auto !important;
+    background-position: center -10px !important;
+    box-shadow: none !important;
+  }
+
+  .case-page--arm .case-section--refund .edge-row .proof-card--screen:nth-of-type(2) {
+    height: 431.266px !important;
+  }
+
+  .case-page--arm .case-section--refund .edge-row .proof-card--screen:nth-of-type(3) {
+    height: 375.469px !important;
+  }
+}
+@media (max-width: 640px) {
+  .case-page--arm .case-section--order .flow-steps-card,
+  .case-page--arm .case-section--payment .flow-steps-card {
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .case-page--arm .flow-steps {
+    height: auto !important;
+    min-height: 0 !important;
+    flex-wrap: nowrap !important;
+  }
+}
+@media (max-width: 640px) {
+  .case-page--arm .site-header {
+    top: 16px;
+    margin-top: 16px;
+  }
+
+  .case-page--arm .site-header__inner {
+    height: 74px;
+    min-height: 74px;
+  }
+
+  .case-page--arm .case-topbar {
+    height: 64px;
+    margin-top: 0;
+    padding: 16px 16px 20px;
+  }
+
+  .case-page--arm .case-topbar::after {
+    bottom: 0;
+  }
+
+  .case-page--arm .case-hero__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .case-page--arm .case-hero {
+    padding-top: 28px;
+    padding-bottom: 12px;
+  }
+
+  .case-page--arm .case-section > .container,
+  .case-page--arm .case-story > .container {
+    gap: 24px;
+  }
+
+  .case-page--arm .arm-context .case-card {
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .case-page--arm .arm-context .case-card h3 {
+    margin: 0;
+  }
+
+  .case-page--arm .arm-context .case-card > p:not(.case-card__label) {
+    margin: 0;
+    padding-top: 8px;
+  }
+
+  .case-page--arm .case-section {
+    padding: 20px 16px;
+  }
+
+  .case-page--arm .case-section__title,
+  .case-page--arm .case-story__title {
+    font-size: 31px;
+    line-height: 38px;
+  }
+
+  .case-page--arm .case-section__lead {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .case-page--arm .note-card {
+    padding: 16px;
+    gap: 8px;
+  }
+
+  .case-page--arm .flow-steps-card {
+    height: auto;
+    min-height: 0;
+    padding: 16px;
+    gap: 16px;
+  }
+
+  .case-page--arm .flow-steps-card__label {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .case-page--arm .flow-steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+  }
+
+  .case-page--arm .flow-step {
+    width: 100%;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .case-page--arm .flow-connector {
+    width: 2px;
+    height: 14px;
+  }
+
+  .case-page--arm .flow-steps-note {
+    margin-top: 16px;
+  }
+
+  .case-page--arm .arm-after-card {
+    height: auto;
+    min-height: 0;
+    padding: 0;
+    gap: 24px;
+    overflow: visible;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .case-page--arm .arm-after-stage {
+    width: 100%;
+    padding: 16px;
+    gap: 14px;
+    border-radius: 28px;
+    background: #141b27;
+  }
+
+  .case-page--arm .arm-after-stage .arm-screen,
+  .case-page--arm .arm-after-stage .arm-screen img {
+    width: 100%;
+    height: auto;
+  }
+
+  .case-page--arm .arm-order-popup {
+    width: min(305px, 100%);
+    padding: 12px;
+    gap: 4px;
+    border-radius: 16px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .case-page--arm .payment-pairs {
+    gap: 24px;
+  }
+
+  .case-page--arm .payment-pairs .pair-row {
+    flex-direction: column;
+    gap: 24px;
+    margin: 0;
+  }
+
+  .case-page--arm .pair-row > .proof-card {
+    min-height: 0;
+    padding: 16px;
+    gap: 14px;
+  }
+
+  .case-page--arm .proof-card__title {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .case-page--arm .proof-card--screen {
+    padding: 0;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .case-page--arm .value-pair {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+  }
+
+  .case-page--arm .value-pair__item {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .case-page--arm .case-section--refund .edge-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .case-page--arm .case-section--refund .edge-arrow {
+    display: none;
+  }
+
+  .case-page--arm .case-section--refund .edge-row .proof-card--screen {
+    min-height: 0;
+    padding: 16px;
+    border: 0;
+    background: #1d2737;
+  }
+
+  .case-page--arm .case-section--refund .proof-card--screen:nth-of-type(1) img {
+    width: 310px;
+    height: 298px;
+  }
+
+  .case-page--arm .case-section--refund .proof-card--screen:nth-of-type(2) img {
+    width: 100%;
+    height: 351px;
+  }
+
+  .case-page--arm .case-section--refund .proof-card--screen:nth-of-type(3) img {
+    width: 100%;
+    height: 295px;
+  }
+
+  .case-page--arm .other-projects,
+  .case-page--arm .section--contacts {
+    display: none;
+  }
+}
+
+*/
+/* ARM mobile — каноническая адаптивная сборка по Figma 2350:4584 */
+@media (max-width: 640px) {
+  body.case-page--arm { overflow-x: clip; }
+
+  .case-page--arm .site-header {
+    position: sticky;
+    top: 16px;
+    width: calc(100vw - 32px);
+    margin: 16px auto 0;
+  }
+
+  .case-page--arm .site-header__inner {
+    width: 100%;
+    height: 74px;
+    min-height: 74px;
+    padding: 13px 13px 13px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 20px;
+    background: #0e1118;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.36);
+    box-sizing: border-box;
+  }
+
+  .case-page--arm .site-header__nav,
+  .case-page--arm .site-header__cta { display: none; }
+
+  .case-page--arm .site-header__toggle {
+    display: flex;
+    flex: 0 0 44px;
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
+    padding: 0;
+    border: 0;
+    border-radius: 14px;
+    background: #1d2737;
+  }
+
+  .case-page--arm .site-header__toggle span {
+    width: 20px;
+    height: 2px;
+    border-radius: 2px;
+    background: #f6f9ff;
+  }
+
+  .case-page--arm .case-topbar {
+    position: static;
+    width: 100%;
+    height: 64px;
+    margin: 0;
+    padding: 26px 16px 20px;
+    border: 0;
+    background: #05060a;
+    box-sizing: border-box;
+  }
+
+  .case-page--arm .case-topbar::after {
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+    height: 1px;
+    background: #21293b;
+  }
+
+  .case-page--arm .case-topbar__back {
+    color: #8f99b2;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  .case-page--arm .case-hero {
+    height: auto;
+    margin-top: 20px;
+    padding: 28px 16px 12px;
+    background: #05060a;
+  }
+
+  .case-page--arm .case-hero > .container,
+  .case-page--arm .case-story > .container,
+  .case-page--arm .case-section > .container {
+    width: 100%;
+    max-width: 1248px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .case-page--arm .case-hero__title {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0;
+    color: #f6f9ff;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: -0.32px;
+  }
+
+  .case-page--arm .case-hero__lead {
+    width: 100%;
+    max-width: 1040px;
+    margin: 0;
+    color: #7f8c9f;
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .case-page--arm .case-hero__badges {
+    position: relative;
+    width: 100%;
+    height: 72px;
+    margin: 0;
+    gap: 0;
+  }
+
+  .case-page--arm .case-hero__nda {
+    position: absolute;
+    display: inline-flex;
+    align-items: center;
+    height: 30px;
+    padding: 8px 12px;
+    border: 0;
+    border-radius: 99px;
+    background: #1d2737;
+    color: #7f8c9f;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+
+  .case-page--arm .case-hero__nda:nth-child(1) { top: 0; left: 0; width: 259px; }
+  .case-page--arm .case-hero__nda:nth-child(2) { top: 0; left: 268.828px; width: 88px; }
+  .case-page--arm .case-hero__nda:nth-child(3) { top: 42px; left: 0; width: 49px; }
+
+  .case-page--arm .case-hero__cover {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1248 / 630;
+    margin: 0;
+    border: 0;
+    border-radius: 20px;
+    background: #04060e;
+    overflow: hidden;
+  }
+
+  .case-page--arm .case-hero__cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .case-page--arm .case-story,
+  .case-page--arm .case-section {
+    height: auto;
+    min-height: 0;
+    padding: 20px 16px;
+    background: #05060a;
+  }
+
+  .case-page--arm .case-story > .container > *,
+  .case-page--arm .case-section > .container > * { margin: 0; }
+
+  .case-page--arm .case-story__eyebrow,
+  .case-page--arm .case-kicker {
+    align-self: flex-start;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    color: #2f6fe0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+  }
+
+  .case-page--arm .case-story__title {
+    width: 100%;
+    max-width: 1160px;
+    margin: 0;
+    color: #f6f9ff;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: -0.32px;
+    text-wrap: initial;
+  }
+
+  .case-page--arm .case-section__title {
+    width: 100%;
+    max-width: 1120px;
+    margin: 0;
+    color: #f6f9ff;
+    font-size: 31px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: -0.32px;
+    text-wrap: initial;
+  }
+
+  .case-page--arm .case-section__lead {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0;
+    color: #8f99b2;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  .case-page--arm .arm-context .case-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .case-page--arm .arm-context .case-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 0;
+    height: auto;
+    padding: 16px;
+    border: 0;
+    border-radius: 14px;
+    background: #141b27;
+    box-shadow: none;
+  }
+
+  .case-page--arm .arm-context .case-card h3,
+  .case-page--arm .arm-context .case-card p {
+    width: 100%;
+    margin: 0;
+  }
+
+  .case-page--arm .arm-context .case-card h3 {
+    color: #f6f9ff;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25px;
+  }
+
+  .case-page--arm .arm-context .case-card > p:not(.case-card__label) {
+    width: 314px;
+    max-width: 100%;
+    padding-top: 8px;
+    color: #7f8c9f;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .case-page--arm .arm-context .arm-context__principle { background: #101827; }
+
+  .case-page--arm .arm-context .arm-context__principle .case-card__label {
+    width: 100%;
+    margin: 0;
+    color: #8ab6ff !important;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+
+  .case-page--arm .arm-context .arm-context__principle h3 {
+    width: 314px;
+    max-width: 100%;
+    height: 52px;
+    margin: 0 !important;
+    padding-top: 8px;
+    color: #f6f9ff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: normal;
+    overflow: hidden;
+  }
+
+  .case-page--arm .arm-order-notes,
+  .case-page--arm .arm-payment-notes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .case-page--arm .note-card {
+    width: 100%;
+    min-height: 0;
+    padding: 16px;
+    gap: 8px;
+    border: 0;
+    border-radius: 28px;
+    background: #141b27;
+    box-shadow: 0 16px 18px rgba(0, 0, 0, 0.24);
+  }
+
+  .case-page--arm .note-card__label,
+  .case-page--arm .flow-steps-card__label {
+    margin: 0;
+    color: #2e6eeb;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+
+  .case-page--arm .note-card__text {
+    margin: 0;
+    color: #f6f9ff;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .case-page--arm .arm-order-notes .note-card:first-child { height: 137px; }
+  .case-page--arm .arm-order-notes .note-card:nth-child(2) { height: 185px; }
+
+  .case-page--arm .arm-figma-screen {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .case-page--arm .arm-figma-screen--before {
+    position: relative;
+    height: 238.191px;
+    background: #05060a url("assets/site/arm-order-before.png") center -11px / 115.92% auto no-repeat;
+  }
+
+  .case-page--arm .arm-figma-screen--before img,
+  .case-page--arm .arm-figma-screen--payment-before img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    opacity: 0;
+  }
+
+  .case-page--arm .flow-steps-card {
+    width: 100%;
+    min-height: 0;
+    margin: 0;
+    padding: 16px;
+    gap: 16px;
+    border: 0;
+    border-radius: 28px;
+    background: #141b27;
+    box-shadow: 0 16px 18px rgba(0, 0, 0, 0.24);
+  }
+
+  .case-page--arm .case-section--order .flow-steps-card {
+    height: 282px;
+    flex: 0 0 282px;
+  }
+
+  .case-page--arm .flow-steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    width: 100%;
+    min-height: 0;
+    flex-wrap: nowrap;
+  }
+
+  .case-page--arm .flow-step {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 44px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    box-sizing: border-box;
+  }
+
+  .case-page--arm .flow-step--active {
+    height: 43px;
+    padding: 11.5px 19.5px;
+    border: 1px solid #2e6eeb;
+    color: #2e6eeb;
+  }
+
+  .case-page--arm .flow-connector {
+    flex: 0 0 14px;
+    width: 2px;
+    height: 14px;
+    border-radius: 1px;
+    background: #2e6eeb;
+  }
+
+  .case-page--arm .arm-after-card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    min-height: 0;
+    height: auto;
+    padding: 0;
+    overflow: visible;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .case-page--arm .arm-after-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .case-page--arm .arm-after-card__label {
+    margin: 0;
+    color: #2e6eeb;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+  }
+
+  .case-page--arm .arm-after-stage {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .case-page--arm .arm-after-stage .arm-screen {
+    width: 100%;
+    height: 421.09px;
+    overflow: hidden;
+    border: 0.14px solid #0e3532;
+    border-radius: 6.429px;
+    background: #fff;
+  }
+
+  .case-page--arm .arm-after-stage .arm-screen img {
+    width: calc(100% + 8.395px);
+    height: 422.043px;
+    max-width: none;
+    margin-left: -2.37px;
+    border-radius: 0;
+    object-fit: cover;
+  }
+
+  .case-page--arm .arm-order-popup {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 305px;
+    height: 154px;
+    flex: 0 0 154px;
+    padding: 12px;
+    border-radius: 16px;
+    background: #fff;
+    color: #0e1626;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .case-page--arm .arm-order-popup span {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    flex: 0 0 40px;
+    padding: 10px 12px;
+    white-space: nowrap;
+    box-sizing: border-box;
+  }
+
+  .case-page--arm .arm-order-popup span:first-child {
+    border-radius: 8px;
+    background: #f0fdfa;
+  }
+
+  .case-page--arm .arm-order-popup em {
+    color: #8a94a6;
+    font-style: normal;
+  }
+
+  .case-page--arm .arm-after-card__text {
+    margin: 0;
+    color: #8f99b2;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .case-page--arm .arm-payment-intro,
+  .case-page--arm .arm-refund-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .case-page--arm .arm-payment-notes .note-card:first-child { height: 185px; }
+  .case-page--arm .arm-payment-notes .note-card:nth-child(2) { height: 209px; }
+
+  .case-page--arm .arm-payment-before-flow {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .case-page--arm .arm-figma-screen--payment-before {
+    position: relative;
+    height: 719.253px;
+    flex: 0 0 719.253px;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: #05060a url("assets/site/arm-payment-before.png") center -10px / 114.525% auto no-repeat;
+    box-shadow: none;
+  }
+
+  .case-page--arm .case-section--payment .flow-steps-card {
+    height: 320px;
+    flex: 0 0 320px;
+  }
+
+  .case-page--arm .case-section--payment .flow-steps {
+    position: relative;
+    height: 288px;
+    flex: 0 0 288px;
+  }
+
+  .case-page--arm .case-section--payment .flow-steps .flow-step { flex: 0 0 44px; }
+
+  .case-page--arm .case-section--payment .flow-steps-note {
+    position: absolute;
+    top: 264px;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    color: #8f99b2;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .case-page--arm .payment-pairs {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+  }
+
+  .case-page--arm .payment-pairs .pair-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+    margin: 0;
+  }
+
+  .case-page--arm .payment-pairs .pair-row--second { gap: 20px; }
+
+  .case-page--arm .payment-pairs .pair-row > .proof-card {
+    width: 100%;
+    min-height: 0;
+    padding: 16px;
+    border: 0;
+    border-radius: 28px;
+    background: #141b27;
+    box-shadow: 0 16px 18px rgba(0, 0, 0, 0.24);
+  }
+
+  .case-page--arm .payment-pairs .pair-row--first > .proof-card:first-child {
+    height: 383px;
+    flex: 0 0 383px;
+    gap: 14px;
+  }
+
+  .case-page--arm .payment-pairs .pair-row--second > .proof-card:first-child {
+    height: 379px;
+    flex: 0 0 379px;
+    gap: 12px;
+  }
+
+  .case-page--arm .value-pair {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 100%;
+    margin: 0;
+  }
+
+  .case-page--arm .value-pair__item {
+    padding: 12px 14px;
+    border-radius: 18px;
+    background: #05060a;
+    color: #f6f9ff;
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .case-page--arm .value-pair__item strong {
+    display: block;
+    margin: 0 0 8px;
+    color: #2e6eeb;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+  }
+
+  .case-page--arm .payment-pairs .pair-row--second .value-pair { margin-top: 2px; }
+
+  .case-page--arm .pair-row > .proof-card.proof-card--screen {
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    height: auto;
+    min-height: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .case-page--arm .pair-row > .proof-card.proof-card--screen img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 12px;
+    object-fit: contain;
+  }
+
+  .case-page--arm .payment-pairs .pair-row--first > .proof-card.proof-card--screen img {
+    width: 358px;
+    height: 265.89px;
+  }
+
+  .case-page--arm .payment-pairs .pair-row--first > .proof-card.proof-card--screen {
+    height: 295.89px;
+    flex: 0 0 295.89px;
+  }
+
+  .case-page--arm .payment-pairs .pair-row--second > .proof-card.proof-card--screen img {
+    width: 358px;
+    height: 344.202px;
+  }
+
+  .case-page--arm .payment-pairs .pair-row--second > .proof-card.proof-card--screen {
+    height: 374.202px;
+    flex: 0 0 374.202px;
+  }
+
+  .case-page--arm .proof-card__caption {
+    margin: 0;
+    color: #8f99b2;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  .case-page--arm .case-section--refund .edge-row {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    height: auto;
+  }
+
+  .case-page--arm .case-section--refund .edge-arrow { display: none; }
+
+  .case-page--arm .case-section--refund .edge-row .proof-card--screen {
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 0;
+    padding: 16px;
+    border: 0;
+    border-radius: 28px;
+    background: #1d2737;
+    box-shadow: 0 16px 18px rgba(0, 0, 0, 0.24);
+  }
+
+  .case-page--arm .case-section--refund .edge-row .proof-card--screen:nth-of-type(1) { height: 360.047px; }
+  .case-page--arm .case-section--refund .edge-row .proof-card--screen:nth-of-type(2) { height: 431.266px; }
+  .case-page--arm .case-section--refund .edge-row .proof-card--screen:nth-of-type(3) { height: 375.469px; }
+
+  .case-page--arm .case-section--refund .case-section__lead {
+    width: 340px;
+    max-width: 100%;
+  }
+
+  .case-page--arm .case-section--refund .edge-row .proof-card--screen img {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 12px;
+    object-fit: contain;
+  }
+
+  .case-page--arm .case-section--refund .edge-row .proof-card--screen:nth-of-type(1) img {
+    width: 309.984px;
+    height: 298.047px;
+  }
+
+  .case-page--arm .case-section--refund .edge-row .proof-card--screen:nth-of-type(2) img {
+    width: 326px;
+    height: 351.266px;
+  }
+
+  .case-page--arm .case-section--refund .edge-row .proof-card--screen:nth-of-type(3) img {
+    width: 326px;
+    height: 295.469px;
+  }
+
+  .case-page--arm .other-projects,
+  .case-page--arm .section--contacts { display: none; }
 }
