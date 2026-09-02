@@ -8120,3 +8120,29 @@ cod.site-header.is-scrolled .site-header__inner {
     height: 12px;
   }
 }
+
+/* ARM desktop — внутренний контент центрируется на широких экранах */
+@media (min-width: 961px) {
+  .case-page--arm .site-header {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .case-page--arm .case-topbar {
+    padding-right: max(96px, calc((100vw - 1248px) / 2));
+    padding-left: max(96px, calc((100vw - 1248px) / 2));
+  }
+
+  .case-page--arm .case-hero > .container,
+  .case-page--arm .case-story > .container,
+  .case-page--arm .case-section > .container {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .other-projects > .container,
+  body.case-page.case-page--arm:not(.case-page--soul) .section--contacts > .container {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
