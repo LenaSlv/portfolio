@@ -87,6 +87,9 @@ document.querySelectorAll('.other-projects').forEach(function (block) {
         href: 'case-transport-pet.html',
         kicker: 'iOS / Android B2C',
         title: 'Единый транспортный сервис для\u00a0городских и\u00a0междугородних поездок',
+        desktopKicker: 'Product concept',
+        desktopTitle: 'Единый транспортный сервис для городских и междугородних поездок',
+        tags: ['iOS / Android', 'B2C', 'MVP'],
         description: 'Product concept · Information architecture · User flows · Mobile UX/UI · Edge cases',
         image: 'assets/site/preview-kaliningrad.png',
         alt: 'Единый транспортный сервис'
@@ -95,6 +98,9 @@ document.querySelectorAll('.other-projects').forEach(function (block) {
         href: 'case-soul.html',
         kicker: 'Telegram MiniApp',
         title: 'Платформа для\u00a0поиска компании и\u00a0активностей в\u00a0путешествиях',
+        desktopKicker: 'Telegram MiniApp',
+        desktopTitle: 'SOUL — платформа для поиска компании и активностей в путешествиях',
+        tags: ['iOS / Android', 'B2C', 'MVP'],
         description: 'UX Research · Synthesis · Product hypotheses · User Flow · Mobile UX/UI',
         image: 'assets/site/other-project-soul.png',
         alt: 'SOUL'
@@ -103,6 +109,9 @@ document.querySelectorAll('.other-projects').forEach(function (block) {
         href: 'case-arm-kassira.html',
         kicker: 'Web B2B',
         title: 'Автоматизированное рабочее место кассира',
+        desktopKicker: 'Внутренний продукт',
+        desktopTitle: 'АРМ Кассира',
+        tags: ['WEB', 'B2B', 'NDA'],
         description: 'Complex B2B flows · Payment scenarios · Edge cases · Web UI',
         image: 'assets/site/other-project-arm.png',
         alt: 'АРМ кассира'
@@ -111,6 +120,9 @@ document.querySelectorAll('.other-projects').forEach(function (block) {
         href: 'case-corporate.html',
         kicker: 'iOS / Android B2B2E',
         title: 'Сервис корпоративного транспорта',
+        desktopKicker: 'Внутренний продукт',
+        desktopTitle: 'Сервис заказа корпоративного транспорта',
+        tags: ['iOS / Android', 'B2B', 'NDA'],
         description: 'Product logic · User flows · Mobile UX/UI',
         image: 'assets/site/preview-corporate.png',
         alt: 'Сервис корпоративного транспорта'
@@ -121,6 +133,14 @@ document.querySelectorAll('.other-projects').forEach(function (block) {
       return item.href !== currentPage;
     });
 
+    var isArmDesktop = document.body.classList.contains('case-page--arm') && window.matchMedia('(min-width: 961px)').matches;
+    if (isArmDesktop) {
+      var desktopOrder = ['case-corporate.html', 'case-soul.html', 'case-transport-pet.html'];
+      visibleProjectCards.sort(function (a, b) {
+        return desktopOrder.indexOf(a.href) - desktopOrder.indexOf(b.href);
+      });
+    }
+
     cards.forEach(function (card, cardIndex) {
       var item = visibleProjectCards[cardIndex];
       if (!item) {
@@ -128,7 +148,14 @@ document.querySelectorAll('.other-projects').forEach(function (block) {
         return;
       }
       card.href = item.href;
-      card.innerHTML = '<div class="other-project-card__body"><div class="other-project-card__top"><span class="kicker">' + item.kicker + '</span><h3 class="other-project-card__title">' + item.title + '</h3></div><div class="other-project-card__bottom"><p class="other-project-card__desc">' + item.description + '</p><span class="other-project-card__link">Смотреть кейс</span></div></div><div class="other-project-card__preview"><img src="' + item.image + '" alt="' + item.alt + '"></div>';
+      if (isArmDesktop) {
+        var tags = item.tags.map(function (tag) {
+          return '<span>' + tag + '</span>';
+        }).join('');
+        card.innerHTML = '<div class="other-project-card__body other-project-card__body--desktop"><div class="other-project-card__top"><span class="kicker">' + item.desktopKicker + '</span><h3 class="other-project-card__title">' + item.desktopTitle + '</h3></div><div class="other-project-card__meta">' + tags + '</div><span class="other-project-card__link">Смотреть кейс</span></div><div class="other-project-card__preview"><img src="' + item.image + '" alt="' + item.alt + '"></div>';
+      } else {
+        card.innerHTML = '<div class="other-project-card__body"><div class="other-project-card__top"><span class="kicker">' + item.kicker + '</span><h3 class="other-project-card__title">' + item.title + '</h3></div><div class="other-project-card__bottom"><p class="other-project-card__desc">' + item.description + '</p><span class="other-project-card__link">Смотреть кейс</span></div></div><div class="other-project-card__preview"><img src="' + item.image + '" alt="' + item.alt + '"></div>';
+      }
     });
 
     cards = Array.prototype.slice.call(track.querySelectorAll('.other-project-card'));
