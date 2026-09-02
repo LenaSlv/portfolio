@@ -533,7 +533,7 @@
     width: 1248px;
     max-width: 1248px;
     height: 52px;
-    margin: 0;
+    margin: 0 auto;
   }
 
   body.case-page.case-page--corporate .other-projects__title {
