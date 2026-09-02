@@ -3,6 +3,14 @@
   display: none;
 }
 
+/* Навигация блока «Другие проекты»: две кнопки 48px + gap 16px. */
+@media (min-width: 961px) {
+  body.case-page.case-page--arm:not(.case-page--soul) .other-projects__nav {
+    width: 112px;
+    flex: 0 0 112px;
+  }
+}
+
 @media (min-width: 961px) {
   body.case-page.case-page--arm:not(.case-page--soul) .case-section--refund {
     display: block;
