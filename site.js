@@ -150,11 +150,18 @@ document.querySelectorAll('.other-projects').forEach(function (block) {
       }
       card.href = item.href;
       if (isCaseDesktop) {
+        var desktopTitle = item.desktopTitle;
+        if (item.href === 'case-corporate.html') {
+          desktopTitle = 'Сервис заказа<br>корпоративного транспорта';
+        }
+        if (item.href === 'case-soul.html') {
+          desktopTitle = 'SOUL — платформа<br>для поиска компании<br>и активностей<br>в путешествиях';
+        }
         var tags = item.tags.map(function (tag, tagIndex) {
           var separator = tagIndex < item.tags.length - 1 ? '<span>·</span>' : '';
           return '<span>' + tag + '</span>' + separator;
         }).join('');
-        card.innerHTML = '<div class="other-project-card__body other-project-card__body--desktop"><div class="other-project-card__top"><span class="kicker">' + item.desktopKicker + '</span><h3 class="other-project-card__title">' + item.desktopTitle + '</h3></div><div class="other-project-card__meta">' + tags + '</div><span class="other-project-card__link">Смотреть кейс</span></div><div class="other-project-card__preview"><img src="' + item.image + '" alt="' + item.alt + '"></div>';
+        card.innerHTML = '<div class="other-project-card__body other-project-card__body--desktop"><div class="other-project-card__top"><span class="kicker">' + item.desktopKicker + '</span><h3 class="other-project-card__title">' + desktopTitle + '</h3></div><div class="other-project-card__spacer" aria-hidden="true"></div><div class="other-project-card__meta">' + tags + '</div><span class="other-project-card__link">Смотреть кейс</span></div><div class="other-project-card__preview"><img src="' + item.image + '" alt="' + item.alt + '"></div>';
       } else {
         card.innerHTML = '<div class="other-project-card__body"><div class="other-project-card__top"><span class="kicker">' + item.kicker + '</span><h3 class="other-project-card__title">' + item.title + '</h3></div><div class="other-project-card__bottom"><p class="other-project-card__desc">' + item.description + '</p><span class="other-project-card__link">Смотреть кейс</span></div></div><div class="other-project-card__preview"><img src="' + item.image + '" alt="' + item.alt + '"></div>';
       }

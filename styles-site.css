@@ -8486,3 +8486,273 @@ cod.site-header.is-scrolled .site-header__inner {
     height: 405.969px;
   }
 }
+
+/* ARM web — точные внутренние размеры и порядок элементов по Figma 1871:3737. */
+@media (min-width: 961px) {
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .note-card__text,
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .note-card__text {
+    font-size: 18px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .note-card__label,
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .note-card__label,
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .flow-steps-card__label {
+    line-height: normal;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .note-card:first-child .note-card__text {
+    line-height: normal;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .note-card:nth-child(2) .note-card__text,
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .note-card:nth-child(2) .note-card__text {
+    line-height: 1.45;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .flow-step,
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .flow-step,
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .flow-plus,
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .flow-steps-note {
+    font-size: 18px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .flow-step,
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .flow-step {
+    line-height: normal;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .flow-plus,
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .flow-steps-note {
+    line-height: normal;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-after-card {
+    gap: 32px;
+    box-sizing: border-box;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-after-visual {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    height: 836px;
+    gap: 32px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-after-card__label {
+    width: 1192px;
+    height: 18px;
+    font-size: 14px;
+    line-height: normal;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-after-stage {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    width: 1200px;
+    height: 786.02px;
+    gap: 0;
+    padding: 0;
+    overflow: visible;
+    border-radius: 0;
+    background: transparent;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-after-stage .arm-screen {
+    position: relative;
+    flex: 0 0 668px;
+    width: 668px;
+    height: 786.02px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border: 0.26px solid #0e3532;
+    border-radius: 12px;
+    background: #fff;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-after-stage .arm-screen img {
+    position: absolute;
+    top: -0.26px;
+    left: -4.43px;
+    width: 683.671px;
+    height: 787.799px;
+    max-width: none;
+    margin: 0;
+    border-radius: 0;
+    object-fit: fill;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-order-popup {
+    position: absolute;
+    top: 0;
+    left: 895px;
+    z-index: 2;
+    display: flex;
+    flex: 0 0 305px;
+    flex-direction: column;
+    gap: 4px;
+    width: 305px;
+    height: 154px;
+    padding: 12px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #fff;
+    color: #0e1626;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-order-popup span {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    flex: 0 0 40px;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    white-space: nowrap;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-order-popup span:first-child {
+    border-radius: 8px;
+    background: #f0fdfa;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-order-popup em {
+    color: #8a94a6;
+    font-style: normal;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-after-stage::before {
+    position: absolute;
+    top: 77px;
+    left: 425px;
+    z-index: 1;
+    width: 467px;
+    height: 670px;
+    border-right: 1px solid #47536b;
+    border-bottom: 1px solid #47536b;
+    border-radius: 0 0 18px 0;
+    content: '';
+    pointer-events: none;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-after-stage::after {
+    position: absolute;
+    top: 72px;
+    left: 887px;
+    z-index: 1;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #47536b;
+    border-right: 1px solid #47536b;
+    content: '';
+    transform: rotate(45deg);
+    pointer-events: none;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-after-card__text {
+    width: 1192px;
+    height: 46px;
+    color: #8f99b2;
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .proof-card__title {
+    width: 518px;
+    font-size: 21px;
+    line-height: normal;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .proof-card__text {
+    width: 518px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .value-pair {
+    display: flex;
+    gap: 12px;
+    width: 566px;
+    margin: 0;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .value-pair__item {
+    flex: 0 0 277px;
+    width: 277px;
+    box-sizing: border-box;
+    padding-right: 38px;
+    line-height: 1.45;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .pair-row--first .value-pair__item {
+    height: 138px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .pair-row--second .value-pair__item {
+    height: 116px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .arm-payment-notes .note-card:first-child .note-card__text {
+    line-height: 1.45;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .flow-step:nth-of-type(1) { width: 233px; }
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .flow-step:nth-of-type(3) { width: 327px; }
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .flow-step:nth-of-type(5) { width: 144px; }
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .flow-step:nth-of-type(7) { width: 116px; }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .flow-step:nth-of-type(1) { width: 133px; }
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .flow-step:nth-of-type(3) { width: 91px; }
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .flow-step:nth-of-type(5) { width: 78px; }
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .flow-step:nth-of-type(7) { width: 180px; }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .flow-step,
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .flow-step {
+    box-sizing: border-box;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .pair-row {
+    gap: 20px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .pair-row > .proof-card {
+    flex: 0 0 614px;
+    width: 614px;
+    box-sizing: border-box;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .pair-row--second > .proof-card--screen {
+    order: -1;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .pair-row--first > .proof-card--screen img {
+    width: 464px;
+    height: 344.617px;
+    max-width: none;
+    object-fit: cover;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .pair-row--second > .proof-card--screen img {
+    width: 463.858px;
+    height: 445.98px;
+    max-width: none;
+    object-fit: cover;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .other-project-card {
+    border: 0;
+    box-shadow: inset 0 0 0 1px #21293b;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .other-project-card__top {
+    display: contents;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .other-project-card__spacer {
+    width: 0.545px;
+    height: 1px;
+    flex: 0 0 1px;
+  }
+}
