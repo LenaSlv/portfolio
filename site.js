@@ -80,41 +80,58 @@ document.querySelectorAll('.other-projects').forEach(function (block) {
   var cards = Array.prototype.slice.call(track.querySelectorAll('.other-project-card'));
   var index = 0;
 
-  if (document.body.classList.contains('case-page--soul')) {
+  if (document.body.classList.contains('case-page')) {
+    var currentPage = window.location.pathname.split('/').pop() || 'index.html';
     var soulProjectCards = [
       {
         href: 'case-transport-pet.html',
-        kicker: 'Мобильное приложение',
-        title: 'Единый транспортный сервис для городских и междугородних поездок',
-        meta: ['iOS / Android', '·', 'B2C'],
+        kicker: 'iOS / Android B2C',
+        title: 'Единый транспортный сервис для\u00a0городских и\u00a0междугородних поездок',
+        description: 'Product concept · Information architecture · User flows · Mobile UX/UI · Edge cases',
         image: 'assets/site/preview-kaliningrad.png',
         alt: 'Единый транспортный сервис'
       },
       {
-        href: 'case-corporate.html',
-        kicker: 'Внутренний продукт',
-        title: 'Сервис заказа корпоративного транспорта',
-        meta: ['iOS / Android', 'B2B', 'NDA'],
-        image: 'assets/site/other-project-corporate.png',
-        alt: 'Сервис заказа корпоративного транспорта'
+        href: 'case-soul.html',
+        kicker: 'Telegram MiniApp',
+        title: 'Платформа для\u00a0поиска компании и\u00a0активностей в\u00a0путешествиях',
+        description: 'UX Research · Synthesis · Product hypotheses · User Flow · Mobile UX/UI',
+        image: 'assets/site/other-project-soul.png',
+        alt: 'SOUL'
       },
       {
         href: 'case-arm-kassira.html',
-        kicker: 'Внутренний продукт',
+        kicker: 'Web B2B',
         title: 'Автоматизированное рабочее место кассира',
-        meta: ['Web', '·', 'B2B', '·', 'NDA'],
+        description: 'Complex B2B flows · Payment scenarios · Edge cases · Web UI',
         image: 'assets/site/other-project-arm.png',
         alt: 'АРМ кассира'
+      },
+      {
+        href: 'case-corporate.html',
+        kicker: 'iOS / Android B2B2E',
+        title: 'Сервис корпоративного транспорта',
+        description: 'Product logic · User flows · Mobile UX/UI',
+        image: 'assets/site/preview-corporate.png',
+        alt: 'Сервис корпоративного транспорта'
       }
     ];
 
-    cards.forEach(function (card, cardIndex) {
-      var item = soulProjectCards[cardIndex];
-      if (!item) return;
-      card.href = item.href;
-      var meta = '<div class="other-project-card__meta">' + item.meta.map(function (value) { return '<span>' + value + '</span>'; }).join('') + '</div>';
-      card.innerHTML = '<div class="other-project-card__body"><span class="kicker">' + item.kicker + '</span><h3 class="other-project-card__title">' + item.title + '</h3><span class="other-project-card__spacer" aria-hidden="true"></span>' + meta + '<span class="other-project-card__link">Смотреть кейс&nbsp; →</span></div><div class="other-project-card__preview"><img src="' + item.image + '" alt="' + item.alt + '"></div>';
+    var visibleProjectCards = soulProjectCards.filter(function (item) {
+      return item.href !== currentPage;
     });
+
+    cards.forEach(function (card, cardIndex) {
+      var item = visibleProjectCards[cardIndex];
+      if (!item) {
+        card.remove();
+        return;
+      }
+      card.href = item.href;
+      card.innerHTML = '<div class="other-project-card__body"><div class="other-project-card__top"><span class="kicker">' + item.kicker + '</span><h3 class="other-project-card__title">' + item.title + '</h3></div><div class="other-project-card__bottom"><p class="other-project-card__desc">' + item.description + '</p><span class="other-project-card__link">Смотреть кейс</span></div></div><div class="other-project-card__preview"><img src="' + item.image + '" alt="' + item.alt + '"></div>';
+    });
+
+    cards = Array.prototype.slice.call(track.querySelectorAll('.other-project-card'));
   }
 
   cards.forEach(function (card) {
@@ -147,21 +164,6 @@ document.querySelectorAll('.other-projects').forEach(function (block) {
   window.addEventListener('resize', update);
   update();
 });
-
-if (document.body.classList.contains('case-page--soul')) {
-  var soulHeroTitle = document.querySelector('.soul-hero .case-hero__title');
-  if (soulHeroTitle) soulHeroTitle.textContent = 'Платформа для поиска компании и активностей в путешествиях';
-
-  var soulMeta = document.querySelector('.soul-hero .soul-meta');
-  var soulLead = document.querySelector('.soul-hero .case-hero__lead');
-  if (soulMeta && soulLead) {
-    var soulChipRow = document.createElement('div');
-    soulChipRow.className = 'soul-chip-row';
-    soulChipRow.innerHTML = '<span>Роль · Product Designer / UX/UI Designer</span><span>Платформы · iOS / Android</span><span>B2C</span>';
-    soulMeta.remove();
-    soulLead.insertAdjacentElement('afterend', soulChipRow);
-  }
-}
 
 document.querySelectorAll('[data-flow-toggle]').forEach(function (btn) {
   var card = btn.closest('.soul-flow-card');

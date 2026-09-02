@@ -7145,3 +7145,198 @@ cod.site-header.is-scrolled .site-header__inner {
   .case-page--arm .other-projects,
   .case-page--arm .section--contacts { display: none; }
 }
+
+/* ARM — блок «Другие проекты» по Figma 2405:16839, без текущего кейса */
+.case-page--arm .other-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  height: 664px;
+  min-height: 664px;
+  padding: 32px 16px;
+  overflow: hidden;
+  box-sizing: border-box;
+  background: #141b27;
+}
+
+.case-page--arm .other-projects > .container {
+  width: 100%;
+  max-width: none;
+  min-width: 0;
+  margin: 0;
+}
+
+.case-page--arm .other-projects__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 358px;
+  height: 42px;
+  min-height: 42px;
+  flex: 0 0 42px;
+  gap: 16px;
+}
+
+.case-page--arm .other-projects__title {
+  margin: 0;
+  color: #f6f9ff;
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 42px;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+
+.case-page--arm .other-projects__nav {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 16px;
+}
+
+.case-page--arm .other-projects__nav-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 24px;
+  background: #1d2737;
+}
+
+.case-page--arm .other-projects__nav-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.case-page--arm .other-projects__row {
+  width: 100%;
+  height: 522px;
+  flex: 0 0 522px;
+  overflow: hidden;
+}
+
+.case-page--arm .other-projects__track {
+  display: flex;
+  width: max-content;
+  height: 522px;
+  gap: 16px;
+}
+
+.case-page--arm .other-project-card {
+  display: flex;
+  flex: 0 0 343px;
+  flex-direction: column;
+  width: 343px;
+  height: 522px;
+  gap: 20px;
+  padding: 24px;
+  border: 1px solid #21293b;
+  border-radius: 20px;
+  background: #06080b;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.case-page--arm .other-project-card__body {
+  display: flex;
+  flex: 0 0 238px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 293px;
+  height: 238px;
+  gap: 32px;
+  min-width: 0;
+}
+
+.case-page--arm .other-project-card__top {
+  display: flex;
+  flex: 0 0 127px;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 293px;
+  height: 127px;
+  gap: 16px;
+}
+
+.case-page--arm .other-project-card__top > .kicker {
+  display: inline-flex;
+  align-items: center;
+  height: 28px;
+  padding: 6px 12px;
+  border-radius: 99px;
+  background: #2e6eeb;
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.case-page--arm .other-project-card__title {
+  width: 293px;
+  margin: 0;
+  color: #f6f9ff;
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 27.5px;
+  letter-spacing: 0;
+}
+
+.case-page--arm .other-project-card__bottom {
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 293px;
+  gap: 12px;
+}
+
+.case-page--arm .other-project-card__desc {
+  width: 293px;
+  margin: 0;
+  color: #949eb8;
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+}
+
+.case-page--arm .other-project-card:nth-child(1) .other-project-card__desc { height: 44px; }
+.case-page--arm .other-project-card:nth-child(2) .other-project-card__desc,
+.case-page--arm .other-project-card:nth-child(3) .other-project-card__desc { height: 36px; }
+
+.case-page--arm .other-project-card__link {
+  color: #f6f9ff;
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22.5px;
+  white-space: nowrap;
+}
+
+.case-page--arm .other-project-card__link::after {
+  content: ' →';
+}
+
+.case-page--arm .other-project-card__preview {
+  display: block;
+  flex: 0 0 214px;
+  width: 293px;
+  height: 214px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.case-page--arm .other-project-card__preview img {
+  display: block;
+  width: 293px;
+  height: 222px;
+  object-fit: cover;
+}
