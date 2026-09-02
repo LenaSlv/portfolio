@@ -7340,3 +7340,103 @@ cod.site-header.is-scrolled .site-header__inner {
   height: 222px;
   object-fit: cover;
 }
+
+/* ARM — секция «Открыта к сотрудничеству» по Figma 2354:6800 */
+.case-page--arm .section--contacts {
+  display: block;
+  height: 452px;
+  min-height: 452px;
+  padding: 40px 16px 48px;
+  background: #06080b;
+  box-sizing: border-box;
+}
+
+.case-page--arm .section--contacts > .container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: none;
+  height: 364px;
+  margin: 0;
+}
+
+.case-page--arm .section--contacts .section__heading {
+  width: 100%;
+  height: 80px;
+  max-width: 980px;
+  margin: 0;
+  color: #f6f9ff;
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0;
+}
+
+.case-page--arm .section--contacts .contact-methods {
+  display: flex;
+  flex: 0 0 170px;
+  flex-direction: column;
+  width: 100%;
+  height: 170px;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.case-page--arm .section--contacts .contact-item {
+  display: flex;
+  flex: 0 0 79px;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 79px;
+  min-height: 79px;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 18px;
+  background: #0e1118;
+  box-sizing: border-box;
+}
+
+.case-page--arm .section--contacts .contact-item__label {
+  height: 20px;
+  color: #949eb8;
+  font-family: var(--font-text);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+}
+
+.case-page--arm .section--contacts .contact-item__value {
+  height: 27px;
+  color: #f6f9ff;
+  font-family: var(--font-text);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  white-space: nowrap;
+}
+
+.case-page--arm .section--contacts .site-footer {
+  display: flex;
+  flex: 0 0 60px;
+  width: 100%;
+  height: 60px;
+  margin-top: 28px;
+  padding: 20px 0;
+  color: #949eb8;
+  font-family: var(--font-text);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.case-page--arm .section--contacts .site-footer__route {
+  width: 100%;
+  height: 8px;
+  margin: 0;
+  border-radius: 6px;
+  background: #2e6eeb;
+}
