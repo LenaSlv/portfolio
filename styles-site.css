@@ -6197,6 +6197,238 @@ cod.site-header.is-scrolled .site-header__inner {
     flex-wrap: nowrap !important;
   }
 }
+
+/* ARM web — плашка старого интерфейса оплаты по Figma 2180:13813. */
+@media (min-width: 961px) {
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--payment .arm-figma-screen--payment-before > img {
+    display: none;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy {
+    position: relative;
+    display: block;
+    width: 556.5px;
+    height: 447px;
+    flex: 0 0 556.5px;
+    font-family: Inter, Arial, sans-serif;
+    font-size: 11px;
+    line-height: 13px;
+    color: #303238;
+    box-sizing: border-box;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__window {
+    position: absolute;
+    overflow: hidden;
+    border-radius: 6px;
+    background: #f3f3f4;
+    box-shadow: inset 0 0 0 1px #b8b9bf;
+    box-sizing: border-box;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__selector {
+    top: 0;
+    left: 128.25px;
+    width: 300px;
+    height: 226px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__payments {
+    position: absolute;
+    top: 242px;
+    left: 0;
+    display: flex;
+    gap: 16px;
+    width: 556.5px;
+    height: 205px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__payment {
+    position: relative;
+    top: auto;
+    left: auto;
+    width: 270.25px;
+    height: 205px;
+    flex: 0 0 270.25px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__titlebar {
+    position: relative;
+    width: 100%;
+    height: 27px;
+    padding: 7px 10px;
+    background: #4a4a52;
+    color: #f3f3f4;
+    font-size: 11px;
+    line-height: 13px;
+    box-sizing: border-box;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__titlebar i {
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    display: block;
+    width: 9px;
+    height: 9px;
+    border-radius: 2px;
+    background: #d95252;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__body {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 27px);
+    box-sizing: border-box;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__label,
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__option,
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__button,
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__line,
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__field,
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__amount {
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    white-space: nowrap;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__label {
+    top: 14px;
+    left: 14px;
+    color: #73747b;
+    line-height: 11px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__option {
+    left: 14px;
+    width: 272px;
+    height: 24px;
+    align-items: center;
+    padding: 0 8px;
+    background: #fff;
+    line-height: 12px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__option:nth-of-type(2) { top: 33px; }
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__option:nth-of-type(3) { top: 65px; }
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__option:nth-of-type(4) { top: 97px; }
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__option:nth-of-type(5) { top: 129px; }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__option--selected {
+    background: #c9ddf5;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__button {
+    height: 24px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #8d9097;
+    border-radius: 3px;
+    color: #303238;
+    font-size: 11px;
+    line-height: 12px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__button--primary {
+    top: 161px;
+    left: 14px;
+    width: 160px;
+    background: #c9ddf5;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__button--secondary {
+    top: 161px;
+    left: 182px;
+    width: 89px;
+    background: #e6e6e8;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__line {
+    top: 14px;
+    left: 14px;
+    width: 133px;
+    height: 12px;
+    gap: 6px;
+    align-items: flex-start;
+    line-height: 12px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__line--date {
+    top: 34px;
+    width: 229px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__line span {
+    flex: 0 0 auto;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__line strong {
+    font-weight: 400;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__field {
+    top: 54px;
+    left: 14px;
+    width: 242.25px;
+    height: 38px;
+    flex-direction: column;
+    gap: 1px;
+    padding: 5px 8px;
+    border: 1px solid #b8b9bf;
+    background: #fff;
+    line-height: 13px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__field span {
+    color: #73747b;
+    font-size: 10px;
+    line-height: 11px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__field strong {
+    font-weight: 400;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__amount {
+    top: 100px;
+    left: 14px;
+    width: 80px;
+    height: 12px;
+    gap: 6px;
+    line-height: 12px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__amount--remaining {
+    top: 120px;
+    width: 129px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__amount strong {
+    font-weight: 400;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__button--pay {
+    top: 140px;
+    left: 14px;
+    width: 106px;
+    background: #d9e9d9;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .arm-payment-legacy__button--cancel {
+    top: 140px;
+    left: 128px;
+    width: 89px;
+    background: #e6e6e8;
+  }
+}
+
+@media (max-width: 960px) {
+  .case-page--arm .arm-payment-legacy {
+    display: none;
+  }
+}
 @media (max-width: 640px) {
   .case-page--arm .site-header {
     top: 16px;
