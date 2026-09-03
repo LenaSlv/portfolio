@@ -27,7 +27,7 @@
 Для повторного запуска изолированного QA-профиля можно выполнить из корня проекта:
 
 ```powershell
-.\chrome-qa-extension\open-qa-chrome.ps1 -Page case-arm-kassira.html
+.\tests\chrome-qa-extension\open-qa-chrome.ps1 -Page case-arm-kassira.html
 ```
 
 ## Рабочий процесс визуальной проверки

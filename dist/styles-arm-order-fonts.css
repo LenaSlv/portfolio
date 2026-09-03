@@ -1,0 +1,20 @@
+/* Desktop-типографика блока изменения заказа ARM по Figma 2180:13667. */
+@media (min-width: 961px) {
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-order-notes .note-card:first-child .note-card__text,
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-order-notes .note-card:nth-child(2) .note-card__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .flow-steps-card__label,
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-after-card__label {
+    height: 29px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  body.case-page.case-page--arm:not(.case-page--soul) .case-section--order .arm-after-card__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

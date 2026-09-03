@@ -1,0 +1,94 @@
+jnrelf ns dct 'nj dpzk&<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Портфолио UX/UI-дизайнера">
+    <title>Портфолио — новый проект</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=1">
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container site-header__inner">
+        <a class="logo" href="#top" aria-label="На главную">Имя Фамилия</a>
+        <nav class="nav" aria-label="Основная навигация">
+          <a href="#projects">Проекты</a>
+          <a href="#about">Обо мне</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero container">
+        <p class="eyebrow">UX/UI-дизайнер</p>
+        <h1>Проектирую понятные цифровые продукты для людей и бизнеса</h1>
+        <p class="hero__lead">Собираю сложные сценарии в спокойный и последовательный пользовательский опыт.</p>
+        <a class="button" href="#projects">Смотреть проекты</a>
+      </section>
+
+      <section class="section container" id="projects">
+        <div class="section__heading">
+          <p class="eyebrow">Избранное</p>
+          <h2>Проекты</h2>
+        </div>
+        <div class="projects-grid">
+          <a class="project-card project-card--accent" href="#">
+            <span class="project-card__number">01</span>
+            <span class="project-card__content">
+              <span class="project-card__type">Мобильное приложение</span>
+              <strong>Название проекта</strong>
+              <span>Опишите здесь задачу и результат проекта в одной-двух строках.</span>
+            </span>
+            <span class="project-card__arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="project-card" href="#">
+            <span class="project-card__number">02</span>
+            <span class="project-card__content">
+              <span class="project-card__type">Веб-сервис</span>
+              <strong>Ещё один проект</strong>
+              <span>Добавьте короткое описание пользовательской задачи и своей роли.</span>
+            </span>
+            <span class="project-card__arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section section--muted" id="about">
+        <div class="container about">
+          <div class="section__heading">
+            <p class="eyebrow">Коротко</p>
+            <h2>Обо мне</h2>
+          </div>
+          <div class="about__text">
+            <p>Расскажите о своём опыте, подходе к работе и проектах, которыми вы гордитесь.</p>
+            <p>Здесь можно добавить специализацию, основные навыки и формат сотрудничества.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container contacts" id="contacts">
+        <div class="section__heading">
+          <p class="eyebrow">Связаться</p>
+          <h2>Открыта к новым задачам</h2>
+        </div>
+        <a class="contact-link" href="mailto:hello@example.com">hello@example.com <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>© 2026 Имя Фамилия</span>
+        <span>Портфолио</span>
+      </div>
+    </footer>
+
+    <button class="scroll-to-top" type="button" data-scroll-to-top aria-label="Наверх">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+    </button>
+    <script src="site.js?v=1"></script>
+  </body>
+</html>

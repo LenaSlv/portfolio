@@ -1,22 +1,29 @@
 /* Главная · 08 Опыт · Figma 2074:10544 */
+.experience-title span {
+  display: block;
+}
+
 @media (min-width: 961px) {
   .section--experience {
     min-height: 0;
-    padding: 72px var(--page-padding);
+    padding: 0 var(--page-padding);
     background: #0a0e16;
   }
 
   .section--experience .experience-layout {
-    height: auto;
+    grid-template-columns: 520px 720px;
+    height: 420px;
     min-height: 0;
     gap: 56px;
+    overflow: hidden;
   }
 
   .section--experience .experience-intro {
     display: flex;
     flex-direction: column;
     gap: 26px;
-    height: auto;
+    height: 360px;
+    overflow: hidden;
   }
 
   .section--experience .experience-lead {
@@ -24,8 +31,10 @@
   }
 
   .section--experience .experience-list {
-    height: auto;
+    width: 720px;
+    height: 420px;
     min-height: 0;
+    overflow: hidden;
   }
 
   .section--experience .experience-item {
@@ -36,7 +45,7 @@
   .section--experience .education-row {
     height: 90px;
     min-height: 90px;
-    margin-top: 32px;
+    margin-top: 36px;
     padding-top: 24px;
   }
 }

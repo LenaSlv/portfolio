@@ -1,0 +1,843 @@
+/* ARM cashier — mixed payment block from Figma nodes 2435:17025 / 2350:4709.
+   Desktop and adaptive layouts are intentionally isolated in separate media blocks. */
+
+.case-page--arm .case-section--payment-v2 {
+  background: #05060a;
+  color: #eef2f7;
+  box-sizing: border-box;
+}
+
+.case-page--arm .case-section--payment-v2,
+.case-page--arm .case-section--payment-v2 * {
+  box-sizing: border-box;
+}
+
+@media (min-width: 961px) {
+  .case-page--arm .case-section--payment-v2 {
+    height: 2186.2075px !important;
+    padding: 112px 96px 0 !important;
+    overflow: hidden;
+  }
+
+  .case-page--arm .case-section--payment-v2 > .container {
+    position: relative;
+    display: grid !important;
+    grid-template-columns: 1248px !important;
+    grid-template-rows: 17px 112px 56px 137px 140px 226px 1218.2075px !important;
+    row-gap: 28px !important;
+    width: 1248px !important;
+    max-width: 1248px !important;
+    height: 2074.2075px !important;
+    margin: 0 !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 > .container > .case-kicker {
+    grid-column: 1;
+    grid-row: 1;
+    width: 160px;
+    height: 17px;
+    margin: 0 !important;
+    color: #2f6fe0;
+    font: 500 14px/17px Geist, sans-serif !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-intro {
+    display: contents !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-intro .case-section__title {
+    grid-column: 1;
+    grid-row: 2;
+    width: 1120px;
+    height: 112px;
+    margin: 0 !important;
+    color: #eef2f7;
+    font: 600 48px/56px Geist, sans-serif !important;
+    letter-spacing: -0.02em;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-intro .case-section__lead {
+    grid-column: 1;
+    grid-row: 3;
+    width: 1080px;
+    height: 56px;
+    margin: 0 !important;
+    color: #7f8c9f;
+    font: 400 18px/28px Geist, sans-serif !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-notes {
+    display: contents !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-notes .note-card {
+    grid-column: 1;
+    width: 1248px !important;
+    margin: 0 !important;
+    padding: 24px 28px !important;
+    border: 0 !important;
+    border-radius: 28px !important;
+    background: #141b27 !important;
+    box-shadow: none !important;
+    gap: 12px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-notes .note-card:first-child {
+    grid-row: 4;
+    height: 137px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-notes .note-card:nth-child(2) {
+    grid-row: 5;
+    height: 137px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .note-card__label {
+    margin: 0 !important;
+    color: #f6f9ff;
+    font: 500 24px/29px Geist, sans-serif !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .note-card__text {
+    margin: 0 !important;
+    color: #f6f9ff;
+    font: 400 16px/24px Geist, sans-serif !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-notes .note-card:nth-child(2) .note-card__text {
+    width: 1192px !important;
+    flex: 0 1 auto !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-before-flow {
+    display: contents !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-figma-screen--payment-before {
+    grid-column: 1;
+    grid-column: 1 !important;
+    grid-row: 6 !important;
+    position: relative;
+    width: 1248px !important;
+    height: 226px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+    border: 1px solid #21293b !important;
+    border-radius: 28px !important;
+    background: #1d2737 !important;
+    box-shadow: 0 18px 50px rgba(0, 0, 0, .16) !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-figma-screen--payment-before > img {
+    display: none !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-legacy {
+    position: relative !important;
+    inset: auto !important;
+    width: 1248px !important;
+    height: 226px !important;
+    flex: 0 0 1248px !important;
+    margin: 0 !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-legacy__selector {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 300px !important;
+    height: 226px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-legacy__payments {
+    position: absolute !important;
+    left: 316px !important;
+    top: 0 !important;
+    display: flex !important;
+    gap: 16px !important;
+    width: 932px !important;
+    height: 226px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-legacy__payment {
+    position: relative !important;
+    left: auto !important;
+    top: auto !important;
+    flex: 0 0 458px !important;
+    width: 458px !important;
+    height: 226px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-before-flow > .flow-steps-card {
+    position: absolute !important;
+    left: 28px !important;
+    top: 1408.2275px !important;
+    grid-column: auto !important;
+    grid-row: auto !important;
+    display: block !important;
+    width: 1192px !important;
+    height: 92px !important;
+    margin: 0 !important;
+    padding: 24px 28px !important;
+    border: 1px solid rgba(46, 110, 235, .2) !important;
+    border-radius: 18px !important;
+    background: #101725 !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .flow-steps-card__label {
+    display: none !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .flow-steps {
+    display: flex !important;
+    align-items: center !important;
+    width: 738px !important;
+    height: 44px !important;
+    margin: 0 !important;
+    gap: 12px !important;
+    overflow: visible !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .flow-step {
+    flex: 0 0 auto !important;
+    height: 20px !important;
+    color: #eef2f7 !important;
+    font: 500 16px/20px Geist, sans-serif !important;
+    white-space: nowrap;
+  }
+
+  .case-page--arm .case-section--payment-v2 .flow-step:nth-of-type(1) { width: 122px !important; }
+  .case-page--arm .case-section--payment-v2 .flow-step:nth-of-type(3) { width: 85px !important; }
+  .case-page--arm .case-section--payment-v2 .flow-step:nth-of-type(5) { width: 74px !important; }
+  .case-page--arm .case-section--payment-v2 .flow-step:nth-of-type(7) { width: 165px !important; }
+
+  .case-page--arm .case-section--payment-v2 .flow-plus {
+    flex: 0 0 9px !important;
+    height: 24px !important;
+    color: #2e6eeb !important;
+    font: 400 16px/24px Geist, sans-serif !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .flow-steps-note {
+    flex: 0 0 181px !important;
+    width: 181px !important;
+    height: 24px !important;
+    color: #5a6675 !important;
+    font: 400 16px/24px Geist, sans-serif !important;
+    white-space: nowrap;
+  }
+
+  .case-page--arm .case-section--payment-v2 .payment-pairs {
+    grid-column: 1;
+    grid-row: 7;
+    position: relative;
+    display: block !important;
+    width: 1248px !important;
+    height: 1218.2075px !important;
+    margin: 0 !important;
+    padding: 24px 28px !important;
+    border: 1px solid #21293b !important;
+    border-radius: 28px !important;
+    background: #141b27 !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .payment-pairs__title {
+    position: absolute;
+    left: 27px;
+    top: 23px;
+    width: 1192px;
+    height: 29px;
+    margin: 0 !important;
+    color: #2e6eeb;
+    font: 500 24px/29px Geist, sans-serif !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row {
+    position: absolute;
+    left: 27px;
+    display: flex !important;
+    align-items: center !important;
+    width: 1192px !important;
+    margin: 0 !important;
+    gap: 20px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--first {
+    top: 68px;
+    height: 467.2275px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--second {
+    top: 667.2275px;
+    height: 525.98px !important;
+    gap: 16px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row > .proof-card {
+    flex: 0 0 586px !important;
+    width: 586px !important;
+    min-height: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--first > .proof-card:first-child {
+    height: 299px !important;
+    justify-content: center !important;
+    gap: 20px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--first > .proof-card--screen {
+    flex-basis: 586px !important;
+    width: 586px !important;
+    height: 467.2275px !important;
+    justify-content: flex-start !important;
+    gap: 14px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--second > .proof-card--screen {
+    order: 1;
+    flex-basis: 590px !important;
+    width: 590px !important;
+    height: 525.98px !important;
+    justify-content: flex-start !important;
+    gap: 14px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--second > .proof-card:not(.proof-card--screen) {
+    order: 2;
+    flex-basis: 586px !important;
+    width: 586px !important;
+    height: 291px !important;
+    justify-content: center !important;
+    gap: 20px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .proof-card__title {
+    width: 518px;
+    margin: 0 !important;
+    color: #eef2f7;
+    font: 500 18px/29px Geist, sans-serif !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .proof-card__text {
+    width: 518px;
+    margin: 0 !important;
+    color: #eef2f7;
+    font: 400 16px/24px Geist, sans-serif !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .value-pair {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 586px !important;
+    margin: 0 !important;
+    gap: 16px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .value-pair__item {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 586px !important;
+    margin: 0 !important;
+    padding: 16px !important;
+    border: 0 !important;
+    border-radius: 18px !important;
+    background: #05060a !important;
+    color: #eef2f7 !important;
+    font: 400 15px/22px Geist, sans-serif !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--first .value-pair__item:first-child {
+    flex: 0 0 100px !important;
+    height: 100px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--first .value-pair__item:nth-child(2) {
+    flex: 0 0 78px !important;
+    height: 78px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--second .value-pair__item {
+    flex: 0 0 78px !important;
+    height: 78px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .value-pair__item strong {
+    display: block;
+    margin: 0 0 5px;
+    color: #2e6eeb;
+    font: 500 16px/19px Geist, sans-serif !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .proof-card--screen img {
+    display: block;
+    flex: 0 0 auto;
+    object-fit: fill;
+    margin: 0 !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--first .proof-card--screen img {
+    width: 586px !important;
+    height: 435.2275px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--second .proof-card--screen img {
+    width: 463.858px !important;
+    height: 445.98px !important;
+    margin: 24px auto 0 !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .proof-card__caption {
+    width: 518px;
+    height: 18px;
+    margin: 0 auto !important;
+    color: #8f99b2;
+    font: 500 15px/18px Geist, sans-serif !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .case-page--arm .case-section--payment-v2 {
+    height: auto !important;
+    min-height: 3352.3452px;
+    padding: 20px 16px !important;
+    overflow: visible;
+  }
+
+  .case-page--arm .case-section--payment-v2 > .container {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    max-width: 358px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    gap: 24px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 > .container > .case-kicker {
+    flex: 0 0 17px;
+    width: 160px;
+    height: 17px;
+    margin: 0 !important;
+    color: #2f6fe0;
+    font: 500 14px/17px Geist, sans-serif !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-intro {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    width: 100% !important;
+    height: 242px !important;
+    margin: 0 !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-intro .case-section__title {
+    width: 100%;
+    height: 114px;
+    margin: 0 !important;
+    color: #eef2f7;
+    font: 600 31px/38px Geist, sans-serif !important;
+    letter-spacing: -0.02em;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-intro .case-section__lead {
+    width: 100%;
+    height: 112px;
+    margin: 0 !important;
+    color: #8f99b2;
+    font: 400 18px/28px Geist, sans-serif !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-notes {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100% !important;
+    height: 406px !important;
+    margin: 0 !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-notes .note-card {
+    flex: 0 0 auto;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 16px !important;
+    border: 0 !important;
+    border-radius: 28px !important;
+    background: #141b27 !important;
+    box-shadow: none !important;
+    gap: 8px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-notes .note-card:first-child { height: 185px !important; }
+  .case-page--arm .case-section--payment-v2 .arm-payment-notes .note-card:nth-child(2) { height: 209px !important; }
+
+  .case-page--arm .case-section--payment-v2 .note-card__label {
+    margin: 0 !important;
+    color: #f6f9ff;
+    font: 500 18px/25px Geist, sans-serif !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .note-card__text {
+    margin: 0 !important;
+    color: #f6f9ff;
+    font: 400 16px/24px Geist, sans-serif !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-before-flow {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100% !important;
+    height: 1051.253px !important;
+    margin: 0 !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-figma-screen--payment-before {
+    flex: 0 0 719.253px !important;
+    width: 100% !important;
+    height: 719.253px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: #05060a url("assets/site/arm-payment-before.png") center -10px / 114.525% auto no-repeat !important;
+    box-shadow: none !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-figma-screen--payment-before > img,
+  .case-page--arm .case-section--payment-v2 .arm-payment-legacy {
+    display: none !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-before-flow > .flow-steps-card {
+    position: static !important;
+    flex: 0 0 320px !important;
+    width: 100% !important;
+    height: 320px !important;
+    margin: 0 !important;
+    padding: 16px !important;
+    border: 0 !important;
+    border-radius: 28px !important;
+    background: #141b27 !important;
+    box-shadow: none !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .flow-steps-card__label {
+    display: none !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .flow-steps {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    height: 248px !important;
+    margin: 0 !important;
+    gap: 0 !important;
+    overflow: visible !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .flow-step {
+    flex: 0 0 44px !important;
+    width: 100% !important;
+    height: 44px !important;
+    color: #eef2f7 !important;
+    font: 500 16px/20px Geist, sans-serif !important;
+    text-align: center;
+  }
+
+  .case-page--arm .case-section--payment-v2 .flow-plus {
+    flex: 0 0 24px !important;
+    width: 100% !important;
+    height: 24px !important;
+    color: #2e6eeb !important;
+    font: 400 16px/24px Geist, sans-serif !important;
+    text-align: center;
+  }
+
+  .case-page--arm .case-section--payment-v2 .flow-steps-note {
+    display: block !important;
+    flex: 0 0 24px !important;
+    width: 100% !important;
+    height: 24px !important;
+    margin-top: 16px !important;
+    color: #8f99b2 !important;
+    font: 400 16px/24px Geist, sans-serif !important;
+    text-align: center;
+  }
+
+  .case-page--arm .case-section--payment-v2 .payment-pairs {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+    width: 100% !important;
+    height: 1500.092px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .payment-pairs__title {
+    display: none !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row {
+    display: contents !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row > .proof-card {
+    flex: 0 0 auto;
+    width: 100% !important;
+    margin: 0 !important;
+    border: 0 !important;
+    border-radius: 28px !important;
+    box-shadow: none !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--first > .proof-card:first-child,
+  .case-page--arm .case-section--payment-v2 .pair-row--second > .proof-card:first-child {
+    order: initial;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    padding: 16px !important;
+    background: #141b27 !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--first > .proof-card:first-child { height: 383px !important; }
+  .case-page--arm .case-section--payment-v2 .pair-row--second > .proof-card:first-child { height: 379px !important; }
+
+  .case-page--arm .case-section--payment-v2 .proof-card__title {
+    width: 100%;
+    margin: 0 !important;
+    color: #eef2f7;
+    font: 500 18px/25px Geist, sans-serif !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .proof-card__text {
+    width: 100%;
+    margin: 0 !important;
+    color: #eef2f7;
+    font: 400 16px/24px Geist, sans-serif !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .value-pair {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    margin: 0 !important;
+    gap: 14px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .value-pair__item {
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 0 0 auto;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 12px 14px !important;
+    border: 0 !important;
+    border-radius: 18px !important;
+    background: #05060a !important;
+    color: #eef2f7 !important;
+    font: 400 15px/22px Geist, sans-serif !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--first .value-pair__item:first-child { flex: 0 0 117px !important; height: 117px !important; }
+  .case-page--arm .case-section--payment-v2 .pair-row--first .value-pair__item:nth-child(2) { flex: 0 0 95px !important; height: 95px !important; }
+  .case-page--arm .case-section--payment-v2 .pair-row--second .value-pair__item:first-child { flex: 0 0 92px !important; height: 92px !important; }
+  .case-page--arm .case-section--payment-v2 .pair-row--second .value-pair__item:nth-child(2) { flex: 0 0 70px !important; height: 70px !important; }
+
+  .case-page--arm .case-section--payment-v2 .value-pair__item strong {
+    display: block;
+    margin: 0 0 5px;
+    color: #2e6eeb;
+    font: 500 16px/19px Geist, sans-serif !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row > .proof-card--screen {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    gap: 12px !important;
+    width: 100% !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--first > .proof-card--screen { height: 295.89px !important; }
+  .case-page--arm .case-section--payment-v2 .pair-row--second > .proof-card--screen { height: 374.202px !important; }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--second > .proof-card--screen {
+    position: relative;
+    top: -4px;
+  }
+
+  .case-page--arm .case-section--payment-v2 .proof-card--screen img {
+    order: 2;
+    display: block;
+    flex: 0 0 auto;
+    width: 100% !important;
+    object-fit: fill;
+    margin: 0 !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--first > .proof-card--screen img {
+    height: 265.89px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--second > .proof-card--screen img {
+    height: 344.202px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .proof-card__caption {
+    order: 1;
+    flex: 0 0 18px;
+    width: 100%;
+    height: 18px;
+    margin: 0 !important;
+    color: #8f99b2;
+    font: 500 15px/18px Geist, sans-serif !important;
+  }
+}
+
+/* Exact desktop corrections from the current Figma structure. */
+@media (min-width: 961px) {
+  .case-page--arm .case-section--payment-v2 {
+    height: 2179.2075px !important;
+    padding: 112px max(96px, calc((100vw - 1248px) / 2)) 0 !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 > .container {
+    grid-template-rows: 17px 112px 56px 137px 387px 1218.2075px !important;
+    height: 2067.2075px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-notes .note-card {
+    border: 1px solid #21293b !important;
+    box-shadow: 0 16px 36px -10px rgba(0, 0, 0, .24) !important;
+    padding: 23px 27px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-notes .note-card__label {
+    color: #2e6eeb !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-notes .note-card:nth-child(2) {
+    grid-row: 5 !important;
+    height: 387px !important;
+    overflow: hidden !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-notes .note-card:nth-child(2) .note-card__text {
+    width: 1192px !important;
+    height: 48px !important;
+    flex: 0 1 auto !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-figma-screen--payment-before {
+    position: absolute !important;
+    left: 28px !important;
+    top: 571px !important;
+    grid-row: auto !important;
+    grid-column: auto !important;
+    width: 1192px !important;
+    height: 226px !important;
+    z-index: 3;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+    box-shadow: 0 16px 18px rgba(0, 0, 0, .24) !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-legacy {
+    width: 1192px !important;
+    height: 226px !important;
+    flex: 0 0 1192px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-legacy__payments {
+    left: 316px !important;
+    width: 876px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-legacy__payment {
+    flex-basis: 430px !important;
+    width: 430px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .arm-payment-before-flow > .flow-steps-card {
+    top: 1401.2275px !important;
+    z-index: 4;
+    box-shadow: none !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .payment-pairs {
+    grid-row: 6 !important;
+    box-shadow: 0 16px 36px -10px rgba(0, 0, 0, .24) !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row {
+    align-items: flex-start !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--first {
+    top: 68px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--second {
+    top: 667.2275px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .proof-card__title {
+    color: #f6f9ff !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .proof-card__text {
+    color: #8f99b2 !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--first > .proof-card:first-child {
+    gap: 0 !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--first > .proof-card:first-child .proof-card__title {
+    margin-bottom: 8px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--first > .proof-card:first-child .proof-card__text {
+    margin-bottom: 20px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--second > .proof-card:not(.proof-card--screen) {
+    gap: 0 !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--second > .proof-card:not(.proof-card--screen) .proof-card__title {
+    margin-bottom: 8px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .pair-row--second > .proof-card:not(.proof-card--screen) .proof-card__text {
+    margin-bottom: 14px !important;
+  }
+
+  .case-page--arm .case-section--payment-v2 .flow-step {
+    padding: 12px 20px !important;
+    flex-basis: 44px !important;
+    height: 44px !important;
+    border-radius: 18px !important;
+    background: #1d2737 !important;
+  }
+}

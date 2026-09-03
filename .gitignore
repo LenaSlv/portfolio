@@ -1,1 +1,7 @@
 .idea/
+
+# Временные результаты QA и локальные профили Chrome
+/tests/artifacts/
+
+# Локальные настройки инструментов
+/.claude/settings.local.json

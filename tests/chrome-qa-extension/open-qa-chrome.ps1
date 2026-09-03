@@ -3,9 +3,10 @@ param(
 )
 
 $extensionRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
-$projectRoot = Split-Path -Parent $extensionRoot
+$testsRoot = Split-Path -Parent $extensionRoot
+$projectRoot = Split-Path -Parent $testsRoot
 $chromePath = 'C:\Program Files\Google\Chrome\Application\chrome.exe'
-$profilePath = Join-Path $projectRoot '.chrome-qa-profile'
+$profilePath = Join-Path $projectRoot 'tests\artifacts\chrome-qa-profile'
 $pagePath = Join-Path $projectRoot $Page
 
 if (-not (Test-Path -LiteralPath $chromePath)) {
